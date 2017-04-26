@@ -165,7 +165,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/26/git应用场景/">git应用场景</a>
+      <a class="article-title" href="/2017/04/26/git应用场景/">git在项目中的应用场景</a>
     </h1>
   
 
@@ -178,7 +178,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="git在项目中的应用场景"><a href="#git在项目中的应用场景" class="headerlink" title="git在项目中的应用场景"></a>git在项目中的应用场景</h1><p>[TOC]</p>
+        <p>[TOC]</p>
 <h2 id="一、项目情况"><a href="#一、项目情况" class="headerlink" title="一、项目情况"></a>一、项目情况</h2><p>行业版：全国发包</p>
 <p>特例版：基于行业版代码，有自己的个性化定制。行业版升级时，所有特例版要跟随进行升级适配。</p>
 <p><strong>痛点：</strong></p>
@@ -191,32 +191,35 @@
 <p>集中式分布系统必须联网才能工作，因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】，而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到服务器即可。另外，在一个不能连接网络的地方时，就像在突然断网时，出差途中的火车、飞机上等，你仍然能够提交文件，查看历史版本记录，创建项目分支。</p>
 <p>Git的分支管理</p>
 <p>Git的分支与大多数版本控制系统形成了鲜明对比，它们管理分支大多采取备份所有项目文件到特定目录的方式，常常需要创建一个源代码目录的完整副本，所以根据项目文件数量和大小不同，可能花费的时间也会有相当大的差别，快则几秒，慢则数分钟。这是个昂贵的过程，对大型项目来说尤其如此。而 Git 的实现与项目复杂度无关，它永远可以在几毫秒的时间内完成分支的创建和切换。同时，因为每次提交时都记录了指向其父对象的指针（首次提交是没有直接祖先的，普通提交有一个祖先，由两个或多个分支合并产生的提交则有多个祖先）。Git 鼓励开发者频繁使用分支，正是因为有着这些特性作保障。</p>
-<h2 id="三、应用场景"><a href="#三、应用场景" class="headerlink" title="三、应用场景"></a>三、应用场景</h2><h3 id="1）、总览场景"><a href="#1）、总览场景" class="headerlink" title="1）、总览场景"></a>1）、总览场景</h3><p>SVN代码同步下来之后，<strong>去除所有的特例代码</strong>将其用git管理起来。行业版总共分2+3=5类分支，2个主要分支<strong>master</strong>和<strong>hy-dev，</strong>这两个分支是任何时候都不能删除的。3类辅助分支（不一定是3个）预发布分支<strong>hy-release-2.1</strong>、功能分支<strong>hy-feature-功能1</strong>、紧急bug修复分支<strong>hy-hotfix</strong>这三类分支。这些分支一旦到达某个稳定状态，合并完毕后是可以删除的，并且<strong>hy-feature、hy-hotfix </strong>这两个分支一般是本地分支</p>
-<p>默认svn下来的代码（去除所有特例代码）作为行业版目前正在开发的主线分支<strong>master</strong></p>
-<h4 id="Master分支的所有引用指向都是可发布的"><a href="#Master分支的所有引用指向都是可发布的" class="headerlink" title="Master分支的所有引用指向都是可发布的"></a>Master分支的所有引用指向都是可发布的</h4><ul>
+<h2 id="三、应用场景"><a href="#三、应用场景" class="headerlink" title="三、应用场景"></a>三、应用场景</h2><h3 id="3-1-总览场景"><a href="#3-1-总览场景" class="headerlink" title="3.1. 总览场景"></a>3.1. 总览场景</h3><p>SVN代码同步下来之后，<strong>去除所有的特例代码</strong>将其用git管理起来。默认svn同步下来的代码（去除所有特例代码）作为行业版目前正在开发的主线分支<strong>master</strong></p>
+<h4 id="3-1-1-行业版分支"><a href="#3-1-1-行业版分支" class="headerlink" title="3.1.1. 行业版分支"></a>3.1.1. 行业版分支</h4><p>行业版总共分5类分支，主分支是任何时候都不能删除的。辅助分支一旦到达某个稳定状态，合并完毕后是可以删除的，并且<strong>hy-feature、hy-hotfix </strong>这两个分支一般是本地分支，如下对这五类分支的特点做一一描述</p>
+<p>主要分支</p>
+<ul>
+<li>master</li>
+<li>hy-dev</li>
+</ul>
+<p>3类辅助分支</p>
+<ul>
+<li>hy-release</li>
+<li>hy-feature</li>
+<li>hy-hotfix</li>
+</ul>
+<h5 id="1-master分支"><a href="#1-master分支" class="headerlink" title="1. master分支"></a>1. master分支</h5><p>主分支代表一个个版本，每次这个分支代码有变动，代表有新版本发布，有如下特点：</p>
+<ul>
 <li>此分支可以随时打包；</li>
-</ul>
-<ul>
 <li>所有行业版代码的正式版发包都由此分支来；</li>
-</ul>
-<ul>
 <li>master分支的每一次提交（合并）都是预先定义好的一个新版本，必须标识tag；</li>
-</ul>
-<ul>
 <li>原则上不允许直接往此分支直接提交代码（jf上可以锁定此分支）。</li>
 </ul>
-<h4 id="基于master分支创建行业版开发分支hy-dev"><a href="#基于master分支创建行业版开发分支hy-dev" class="headerlink" title="基于master分支创建行业版开发分支hy-dev"></a>基于master分支创建行业版开发分支hy-dev</h4><p>开发分支永远是系统中的最新代码，代表整个系统的整体进度，此分支又称【整合分支】；</p>
+<h5 id="2-开发分支hy-dev"><a href="#2-开发分支hy-dev" class="headerlink" title="2. 开发分支hy-dev"></a>2. 开发分支hy-dev</h5><p>开发分支上永远是系统中的最新代码，代表整个系统的整体进度，此分支又称【整合分支】</p>
 <ul>
 <li>普通开发人员的主要工作是基于此分支进行的；</li>
-</ul>
-<ul>
 <li>行业版开发完成的特性（feature分支）必须合并到<strong>hy-dev</strong>分支；</li>
+<li><strong>hy-dev</strong>分支上的代码达到了一个稳定状态，并且准备封包正式发布时，所有的代码提交都应该合并到master分支，然后打上发布版本号的tag。（也可以通过<strong>release分支</strong>合并到master）</li>
 </ul>
+<h5 id="3-辅助分支"><a href="#3-辅助分支" class="headerlink" title="3. 辅助分支"></a>3. 辅助分支</h5><p>在某个时间结点之后可以删除的分支 解放平台上行业版的辅助分支有预发布分支<strong>hy-release-xx.x</strong> </p>
+<h6 id="预发布分支"><a href="#预发布分支" class="headerlink" title="预发布分支"></a>预发布分支</h6><p>基于hy-dev分支的某个时间结点可以创建一个预发布分支 hy-release-xx.x</p>
 <ul>
-<li><strong>hy-dev</strong>分支上的代码达到了一个稳定状态，并且准备发布时，所有的代码变更都应该合并到master分支，然后打上发布版本号的tag。（也可以通过<strong>release分支</strong>合并到master）</li>
-</ul>
-<h4 id="辅助分支，在某个时间结点之后可以删除的分支"><a href="#辅助分支，在某个时间结点之后可以删除的分支" class="headerlink" title="辅助分支，在某个时间结点之后可以删除的分支"></a>辅助分支，在某个时间结点之后可以删除的分支</h4><p>解放平台上行业版的辅助分支有预发布分支<strong>hy-release-xx.x</strong> </p>
-<h4 id="基于hy-dev分支的某个时间结点可以创建一个预发布分支-hy-release-xx-x"><a href="#基于hy-dev分支的某个时间结点可以创建一个预发布分支-hy-release-xx-x" class="headerlink" title="基于hy-dev分支的某个时间结点可以创建一个预发布分支 hy-release-xx.x"></a>基于hy-dev分支的某个时间结点可以创建一个预发布分支 hy-release-xx.x</h4><ul>
 <li>预发布分支只用于bug修复；</li>
 </ul>
 <ul>
@@ -228,13 +231,15 @@
 <ul>
 <li>一旦稳定将同步合并至<strong>master</strong>分支（写tag），发布正式版本</li>
 </ul>
-<h4 id="基于hy-dev分支创建功能分支（特性分支）hy-feature-功能1"><a href="#基于hy-dev分支创建功能分支（特性分支）hy-feature-功能1" class="headerlink" title="基于hy-dev分支创建功能分支（特性分支）hy-feature-功能1"></a>基于hy-dev分支创建功能分支（特性分支）hy-feature-功能1</h4><ul>
+<h6 id="功能分支（特性分支）"><a href="#功能分支（特性分支）" class="headerlink" title="功能分支（特性分支）"></a>功能分支（特性分支）</h6><p>基于hy-dev分支创建功能分支（特性分支）hy-feature-功能1</p>
+<ul>
 <li>此分支一般不需要推送至远程仓库上，除非需多人协作开发的功能</li>
 </ul>
 <ul>
 <li>功能稳定后需要合并至<strong>hy-dev</strong>分支</li>
 </ul>
-<h4 id="基于master分支创建hy-hotfix分支"><a href="#基于master分支创建hy-hotfix分支" class="headerlink" title="基于master分支创建hy-hotfix分支"></a>基于master分支创建hy-hotfix分支</h4><ul>
+<h6 id="紧急修复分支"><a href="#紧急修复分支" class="headerlink" title="紧急修复分支"></a>紧急修复分支</h6><p>基于master分支创建hy-hotfix分支</p>
+<ul>
 <li>本地管理不需要推送远程仓库；</li>
 </ul>
 <ul>
@@ -247,16 +252,19 @@
 <li>合并至master后会产生一个正式版本的小版本（tag）。</li>
 <li>特例版分支中关乎行业版本的新功能或bug修复原则上也应创建类似hy-hotfix的分支进行修复后合并至master，再同步至特例版分支</li>
 </ul>
-<p>特例版分支示例：如北京局特例版</p>
-<p>北京局特例代码包含行业版代码+北京局特例代码，且这两者必须明确分开以方便后续行业版升级时的合并，为了降低复杂度，这个合并只能单方向进行，即由行业版分支合并至北京特利版分支，而不能将北京特例版分支中的行业更改合并至行业版分支，这样就要求所有北京特例版分支的所有开发操作只涉及北京特例内容，所有的行业版相关内容请在行业版分支进行。</p>
+<p>更复杂的场景，行业版+特例版</p>
 <p><strong>此处待讨论，一些小修改如何特例</strong></p>
-<h4 id="北京特例分支创建："><a href="#北京特例分支创建：" class="headerlink" title="北京特例分支创建："></a>北京特例分支创建：</h4><p>在行业版分支master基础上创建北京master分支<strong>bj-master</strong></p>
-<p>在bj-master基础上创建<strong>bj-dev</strong></p>
-<p>创建辅助分支<strong>bj-release1.1、bj-feature、bj-hotfix</strong></p>
+<h4 id="3-1-2-特例分支"><a href="#3-1-2-特例分支" class="headerlink" title="3.1.2. 特例分支"></a>3.1.2. 特例分支</h4><p>全国各省都会有自己的定制化开发，这些也需要开发，测试，发包等一系列类似行业版的操作，且随行业版本升级而升级。特例版分支示例：如北京局特例版</p>
+<p>北京局特例代码包含行业版代码+北京局特例代码，且这两者必须明确分开以方便后续行业版升级时的合并，为了降低复杂度，这个合并只能单方向进行，即由行业版分支合并至北京特利版分支，而不能将北京特例版分支中的行业更改合并至行业版分支，这样就要求所有北京特例版分支的所有开发操作只涉及北京特例内容，所有的行业版相关内容请在行业版分支进行。</p>
+<h5 id="特例分支创建"><a href="#特例分支创建" class="headerlink" title="特例分支创建"></a>特例分支创建</h5><ul>
+<li>在行业版分支master基础上创建北京master分支<strong>bj-master</strong></li>
+<li>在bj-master基础上创建<strong>bj-dev</strong></li>
+<li>创建辅助分支<strong>bj-release1.1、bj-feature、bj-hotfix</strong></li>
+</ul>
 <p>注意：必须遵循一个规则：所有特例化的代码必须与行业版分离（如：单独文件夹，单独类名）。如此一来，当行业版进行升级时，所有的特例分支可以无冲突的快速与master进行合并。一旦不遵循这个规则，后续的分支合并，行业升级将十分痛苦，甚至无法合并！</p>
 <p><img src="http://oowxnvumd.bkt.clouddn.com/git-branch.jpg" alt="复杂分支示例"></p>
 <p>图1 行业专卖git分支总览</p>
-<h3 id="2）、小场景"><a href="#2）、小场景" class="headerlink" title="2）、小场景"></a>2）、小场景</h3><p>行业功能开发过程中忽然需要进行北京特例2.2版本一个紧急bug的修复，此时行业功能刚开发一半，类还在报错不能提交，提交会影响其他人的工作，此时要进行如下操作<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git stash # 当前工作区工作暂存</div><div class="line"></div><div class="line">git checkout  bj-master #切换至北京特例分支</div><div class="line"></div><div class="line">git branch bj-fixbug-2.2.1 #新建分支</div><div class="line"></div><div class="line">git checkout bj-fixbug-2.2.1 #切换到新分支</div></pre></td></tr></table></figure></p>
+<h3 id="3-2-小场景"><a href="#3-2-小场景" class="headerlink" title="3.2 小场景"></a>3.2 小场景</h3><p>行业功能开发过程中忽然需要进行北京特例2.2版本一个紧急bug的修复，此时行业功能刚开发一半，类还在报错不能提交，提交会影响其他人的工作，此时要进行如下操作<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git stash # 当前工作区工作暂存</div><div class="line"></div><div class="line">git checkout  bj-master #切换至北京特例分支</div><div class="line"></div><div class="line">git branch bj-fixbug-2.2.1 #新建分支</div><div class="line"></div><div class="line">git checkout bj-fixbug-2.2.1 #切换到新分支</div></pre></td></tr></table></figure></p>
 <p>修复bug</p>
 <p>提交测试</p>
 <p>测试通过</p>
@@ -264,9 +272,10 @@
 <p>……总之完成了<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git checkeout hy-feature-1.1 #切换到行业开发功能分支</div><div class="line"></div><div class="line">git stash apply --index # 恢复工作区，暂存区内容</div></pre></td></tr></table></figure></p>
 <p>此时可以继续刚才的开发工作</p>
 <p><strong>大家可以想一下如果不用git，这个场景要如何进行</strong></p>
-<h2 id="四、Git基础"><a href="#四、Git基础" class="headerlink" title="四、Git基础"></a>四、Git基础</h2><p>工作区：</p>
-<p>版本库：工作区的隐藏目录.git</p>
+<h2 id="四、Git基础"><a href="#四、Git基础" class="headerlink" title="四、Git基础"></a>四、Git基础</h2><p>Svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
+<li><strong>工作区：</strong>你的workspace</li>
+<li><strong>版本库：</strong>工作区的隐藏目录.git</li>
 <li>stage（index）：暂存区</li>
 <li>master：git自动创建的第一个分支，指向最新提交</li>
 <li>HEAD：指向master的一个指针</li>
@@ -274,7 +283,7 @@
 <p>这个图非常重要，一定要理解。</p>
 <p> <img src="http://oowxnvumd.bkt.clouddn.com/gitrepo.png" alt="git结构"></p>
 <p>图2 git目录结构</p>
-<p>Svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。所以git的要达到类似svn的提交程度需要进行三步：</p>
+<p>git的要达到类似svn的提交程度需要进行三步：</p>
 <ul>
 <li>第一步【git add】将文件修改添加到暂存区stage</li>
 <li>第二步【git commit】提交更改，将暂存区的所有内容提交到本地版本库</li>
@@ -304,6 +313,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">git应用 企业应用 复杂场景</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -652,6 +672,10 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">git应用 企业应用 复杂场景</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
