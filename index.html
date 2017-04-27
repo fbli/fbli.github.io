@@ -171,7 +171,7 @@
 
         
         <a href="/2017/04/26/搭建博客/" class="archive-article-date">
-  	<time datetime="2017-04-26T09:12:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-26</time>
+  	<time datetime="2017-04-26T08:03:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-26</time>
 </a>
         
       </header>
@@ -179,7 +179,135 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<table>
+<h2 id="一、环境准备"><a href="#一、环境准备" class="headerlink" title="一、环境准备"></a>一、环境准备</h2><ul>
+<li>nodejs</li>
+<li>git</li>
+<li>申请github账号<ul>
+<li>新建仓库 name.github.io（name与账号同名）</li>
+<li>配置ssh</li>
+</ul>
+</li>
+</ul>
+<h2 id="二、安装hexo"><a href="#二、安装hexo" class="headerlink" title="二、安装hexo"></a>二、安装hexo</h2><h3 id="1-切换npm源"><a href="#1-切换npm源" class="headerlink" title="1. 切换npm源"></a>1. 切换npm源</h3><blockquote>
+<p>npm config set registry <a href="https://registry.npm.taobao.org/" target="_blank" rel="external">https://registry.npm.taobao.org</a></p>
+</blockquote>
+<h3 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2. 安装hexo"></a>2. 安装hexo</h3><blockquote>
+<p>npm install -g hexo</p>
+</blockquote>
+<h3 id="3-设置windows的path路径"><a href="#3-设置windows的path路径" class="headerlink" title="3. 设置windows的path路径"></a>3. 设置windows的path路径</h3><blockquote>
+<p>hexo -v</p>
+</blockquote>
+<h3 id="4-初始化hexo"><a href="#4-初始化hexo" class="headerlink" title="4. 初始化hexo"></a>4. 初始化hexo</h3><blockquote>
+<p>hexo init</p>
+</blockquote>
+<h3 id="5-安装hexo依赖包"><a href="#5-安装hexo依赖包" class="headerlink" title="5. 安装hexo依赖包"></a>5. 安装hexo依赖包</h3><blockquote>
+<p>npm install</p>
+</blockquote>
+<h3 id="6-生成、启动服务"><a href="#6-生成、启动服务" class="headerlink" title="6. 生成、启动服务"></a>6. 生成、启动服务</h3><blockquote>
+<p>hexo generate<br>hexo server</p>
+<p># Debug方式启动本地服务<br>hexo s –debug</p>
+</blockquote>
+<h3 id="7-查看hexo是否安装成功"><a href="#7-查看hexo是否安装成功" class="headerlink" title="7. 查看hexo是否安装成功"></a>7. 查看hexo是否安装成功</h3><p><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
+<h2 id="三、完整搭建过程【github-独立域名】"><a href="#三、完整搭建过程【github-独立域名】" class="headerlink" title="三、完整搭建过程【github + 独立域名】"></a>三、完整搭建过程【github + 独立域名】</h2><h3 id="1-本地初始化hexo环境"><a href="#1-本地初始化hexo环境" class="headerlink" title="1. 本地初始化hexo环境"></a>1. 本地初始化hexo环境</h3><pre><code class="shell">mkdir hexo_blog
+cd hexo_blog
+hexo init
+npm config set registry https://registry.npm.taobao.org
+npm install
+</code></pre>
+<h3 id="2-github创建新new-repository"><a href="#2-github创建新new-repository" class="headerlink" title="2. github创建新new repository"></a>2. github创建新new repository</h3><p><strong>新建仓库</strong><br>登陆github，单击+号创建新仓库，比较重要的点是：</p>
+<ul>
+<li>必须以github.io结尾；</li>
+<li>前缀必须与Owner一致【owner.github.io】</li>
+</ul>
+<p><strong>本地生成rsa</strong></p>
+<pre><code class="shell">ssh-keygen -t rsa -C &quot;mail@abc.com&quot;
+</code></pre>
+<p>windows下c:/Users/<strong>Administrator</strong>/.ssh/文件中会生成三个文件（Administrator是你的账户名）</p>
+<ul>
+<li>known_hosts</li>
+<li>id_rsa 私钥</li>
+<li><strong>id_rsa.pub</strong> 公钥 需要保存至github</li>
+</ul>
+<p><strong>github保存ssh key</strong><br>  单击头像-&gt;settings-&gt;SSH keys and GPG keys-&gt;SSH keys_单击[new SSH keys]</p>
+<h3 id="3-配置-config-yml"><a href="#3-配置-config-yml" class="headerlink" title="3. 配置_config.yml"></a>3. 配置_config.yml</h3><p>比较关键的是# Deployment那处需要跟自己的github新创建的repository对应起来</p>
+<pre><code class="properties"># Site
+title: 博客
+subtitle: 生活美好，美好生活
+description: 在哪里跌倒 就在哪里躺下
+author: Lee
+language: zh-CN
+timezone: Asia/Shanghai
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:fbli/fbli.github.io.git
+  branch: master
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+## yilia  https://github.com/litten/hexo-theme-yilia/wiki/Yilia源码目录结构及构建须知
+## landscape
+theme: yilia
+</code></pre>
+<h3 id="3-域名绑定"><a href="#3-域名绑定" class="headerlink" title="3. 域名绑定"></a>3. 域名绑定</h3><p>1）、新建CNAME文件，放到hexo_blog\source\下，内容为不带www的域名如：ezsay.cn<br>2）、配置域名解析</p>
+<ul>
+<li>CNAME www name.github.io</li>
+<li>@ name.github.io</li>
+</ul>
+<p>3）、能转向github，但是显示404<br>hexo_blog\source中增加CNAME文件，发布后停10分钟才生效</p>
+<h3 id="4-发布到git上"><a href="#4-发布到git上" class="headerlink" title="4. 发布到git上"></a>4. 发布到git上</h3><blockquote>
+<p>hexo d</p>
+<p>hexo d -g</p>
+<p>hexo g -d</p>
+</blockquote>
+<h3 id="5-访问"><a href="#5-访问" class="headerlink" title="5. 访问"></a>5. 访问</h3><ul>
+<li><a href="http://fbli.github.io/" target="_blank" rel="external">http://fbli.github.io/</a></li>
+<li><a href="https://fbli.github.io/" target="_blank" rel="external">https://fbli.github.io/</a></li>
+</ul>
+<h3 id="6-更换主题"><a href="#6-更换主题" class="headerlink" title="6. 更换主题"></a>6. 更换主题</h3><pre><code class="shell"># 更换主题前必须clean
+hexo clean
+cd hexo_blog\themes
+git clone git@github.com:litten/hexo-theme-yilia.git yilia # 此处有坑，默认的主题文件夹名需要改一下
+cd yilia
+npm install
+hexo g
+hexo s
+http://localhost:4000/
+# 发布
+hexo d
+</code></pre>
+<h2 id="四、Hexo常用命令汇总"><a href="#四、Hexo常用命令汇总" class="headerlink" title="四、Hexo常用命令汇总"></a>四、Hexo常用命令汇总</h2><pre><code class="shell">hexo new &quot;postName&quot; #新建文章
+hexo new page &quot;pageName&quot; #新建页面
+hexo generate #生成静态页面至public目录
+hexo server #开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）
+hexo deploy #将.deploy目录部署到GitHub
+hexo help # 查看帮助
+hexo version #查看Hexo的版本
+</code></pre>
+<p><strong>Hexo命令简写</strong></p>
+<pre><code class="shell">hexo n == hexo new
+hexo g == hexo generate
+hexo s == hexo server
+hexo d == hexo deploy
+</code></pre>
+<p><strong>yilia主题定制化的需求</strong>（出问题了 TODO）</p>
+<pre><code>- 安装node+npm
+- 安装依赖 进入根目录，执行 npm install
+- 开发 执行npm run dev 此时会用webpack打包，把文件编译到source文件里，但文件不会经过压缩
+- 发布 执行npm run dist 最终确定版本，此时的编译会经过压缩。
+</code></pre><p><strong>解决：</strong></p>
+<h2 id="后记：踩过的坑"><a href="#后记：踩过的坑" class="headerlink" title="后记：踩过的坑"></a>后记：踩过的坑</h2><h3 id="1-hexo-g-生成不了"><a href="#1-hexo-g-生成不了" class="headerlink" title="1. hexo g 生成不了"></a>1. hexo g 生成不了</h3><p>git clone的默认文件夹名需要改成跟主题设置那一致否则</p>
+<h3 id="2-hexo-d-发布不成功"><a href="#2-hexo-d-发布不成功" class="headerlink" title="2. hexo d 发布不成功"></a>2. hexo d 发布不成功</h3><p>配置了ssh，但是发布不成功，尝试本地git clone一下自己的name.github.io 成功后再尝试发布</p>
+<h3 id="3-单击所有文章提示缺失模块-TODO"><a href="#3-单击所有文章提示缺失模块-TODO" class="headerlink" title="3. 单击所有文章提示缺失模块 TODO"></a>3. 单击所有文章提示缺失模块 TODO</h3><p>缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br>npm i hexo-generator-json-content –save</p>
+<p>3、在根目录_config.yml里添加配置</p>
+<p>暂时没找到解决方案</p>
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="常用网址备忘"><a href="#常用网址备忘" class="headerlink" title="常用网址备忘"></a>常用网址备忘</h3><p><a href="https://hexo.io/themes/" target="_blank" rel="external">https://hexo.io/themes/</a><br><strong>正在使用的主题</strong><br><a href="http://litten.me/" target="_blank" rel="external">http://litten.me/</a><br><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia</a></p>
+<p>git@github.com:litten/hexo-theme-yilia.git</p>
+<p><strong>github加星最多的主题</strong> github.com 搜索【hexo theme】<br><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a><br><strong>Hexo文档</strong><br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">https://hexo.io/zh-cn/docs/</a><br><strong>markdown推荐工具</strong>（支持mac windows linux）<br><a href="https://www.typora.io/" target="_blank" rel="external">https://www.typora.io</a><br><strong>在线编辑器</strong><br><a href="https://stackedit.io/editor#" target="_blank" rel="external">https://stackedit.io/editor#</a><br><a href="https://app.classeur.io/" target="_blank" rel="external">https://app.classeur.io</a></p>
+<h3 id="博客搭建软件环境版本"><a href="#博客搭建软件环境版本" class="headerlink" title="博客搭建软件环境版本"></a><strong>博客搭建软件环境版本</strong></h3><table>
 <thead>
 <tr>
 <th>环境</th>
@@ -213,7 +341,8 @@
 </tr>
 </tbody>
 </table>
-<pre><code class="json">hexo: 3.3.1
+<p><strong>更详细的配置信息</strong></p>
+<pre><code>hexo: 3.3.1
 hexo-cli: 1.0.2
 os: Windows_NT 10.0.15063 win32 x64
 http_parser: 2.7.0
@@ -226,131 +355,6 @@ icu: 58.2
 modules: 48
 openssl: 1.0.2k
 </code></pre>
-<h2 id="一、环境准备"><a href="#一、环境准备" class="headerlink" title="一、环境准备"></a>一、环境准备</h2><ul>
-<li>nodejs</li>
-<li>git</li>
-<li>申请github账号<ul>
-<li>新建仓库 name.github.io（name与账号同名）</li>
-<li>配置ssh<h2 id="二、安装hexo"><a href="#二、安装hexo" class="headerlink" title="二、安装hexo"></a>二、安装hexo</h2><h3 id="1-切换npm源"><a href="#1-切换npm源" class="headerlink" title="1. 切换npm源"></a>1. 切换npm源</h3><blockquote>
-<p>npm config set registry <a href="https://registry.npm.taobao.org" target="_blank" rel="external">https://registry.npm.taobao.org</a></p>
-<h3 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2. 安装hexo"></a>2. 安装hexo</h3><p>npm install -g hexo</p>
-<h3 id="3-设置windows的path路径"><a href="#3-设置windows的path路径" class="headerlink" title="3. 设置windows的path路径"></a>3. 设置windows的path路径</h3><p>hexo -v</p>
-<pre><code class="json">hexo: 3.3.1
-hexo-cli: 1.0.2
-os: Windows_NT 10.0.15063 win32 x64
-http_parser: 2.7.0
-node: 6.10.2
-v8: 5.1.281.98
-uv: 1.9.1
-zlib: 1.2.11
-ares: 1.10.1-DEV
-icu: 58.2
-modules: 48
-openssl: 1.0.2k
-</code></pre>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="4-初始化hexo"><a href="#4-初始化hexo" class="headerlink" title="4. 初始化hexo"></a>4. 初始化hexo</h3><blockquote>
-<p>hexo init</p>
-<h3 id="5-安装hexo依赖包"><a href="#5-安装hexo依赖包" class="headerlink" title="5. 安装hexo依赖包"></a>5. 安装hexo依赖包</h3><p>npm install</p>
-<h3 id="6-生成并启动服务"><a href="#6-生成并启动服务" class="headerlink" title="6.  生成并启动服务"></a>6.  生成并启动服务</h3><p>hexo generate<br>hexo server</p>
-</blockquote>
-<h3 id="7-查看hexo是否安装成功"><a href="#7-查看hexo是否安装成功" class="headerlink" title="7.  查看hexo是否安装成功"></a>7.  查看hexo是否安装成功</h3><p><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
-<h2 id="三、完整搭建过程【github-独立域名】"><a href="#三、完整搭建过程【github-独立域名】" class="headerlink" title="三、完整搭建过程【github + 独立域名】"></a>三、完整搭建过程【github + 独立域名】</h2><h3 id="1-本地初始化hexo环境"><a href="#1-本地初始化hexo环境" class="headerlink" title="1. 本地初始化hexo环境"></a>1. 本地初始化hexo环境</h3><pre><code class="shell">mkdir hexo_blog
-cd hexo_blog
-hexo init
-npm config set registry https://registry.npm.taobao.org
-npm install
-</code></pre>
-<h3 id="2-github创建新new-repository"><a href="#2-github创建新new-repository" class="headerlink" title="2. github创建新new repository"></a>2. github创建新new repository</h3><p><strong>新建仓库</strong></p>
-<p>登陆github，单击+号创建新仓库，比较重要的点是：</p>
-<ul>
-<li><p>必须以github.io结尾；</p>
-</li>
-<li><p>前缀必须与Owner一致【owner.github.io】</p>
-</li>
-</ul>
-<p><strong>本地生成rsa</strong></p>
-<pre><code class="shell">ssh-keygen -t rsa -C &quot;mail@abc.com&quot;
-</code></pre>
-<p>windows下c:/Users/<strong>Administrator</strong>/.ssh/文件中会生成三个文件（Administrator是你的账户名）</p>
-<ul>
-<li>known_hosts</li>
-<li>id_rsa 私钥</li>
-<li><strong>id_rsa.pub</strong> 公钥 需要保存至github</li>
-</ul>
-<p><strong>github保存ssh key</strong></p>
-<p>单击头像-&gt;settings-&gt;SSH keys and  GPG keys-&gt;SSH keys_单击[new SSH keys]</p>
-<h3 id="3-配置-config-yml"><a href="#3-配置-config-yml" class="headerlink" title="3. 配置_config.yml"></a>3. 配置_config.yml</h3><p>比较关键的是# Deployment那处需要跟自己的github新创建的repository对应起来</p>
-<pre><code class="properties"># Site
-title: 博客
-subtitle: 生活美好，美好生活
-description: 在哪里跌倒 就在哪里躺下
-author: Lee
-language: zh-CN
-timezone: Asia/Shanghai
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: git@github.com:fbli/fbli.github.io.git
-  branch: master
-
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-## yilia  https://github.com/litten/hexo-theme-yilia/wiki/Yilia源码目录结构及构建须知
-## landscape
-theme: yilia
-</code></pre>
-<h3 id="4-Debug方式启动本地服务"><a href="#4-Debug方式启动本地服务" class="headerlink" title="4. Debug方式启动本地服务"></a>4. Debug方式启动本地服务</h3><blockquote>
-<p>hexo s –debug</p>
-<h3 id="5-访问"><a href="#5-访问" class="headerlink" title="5. 访问"></a>5. 访问</h3><ul>
-<li><a href="http://fbli.github.io/" target="_blank" rel="external">http://fbli.github.io/</a></li>
-<li><a href="https://fbli.github.io/" target="_blank" rel="external">https://fbli.github.io/</a></li>
-</ul>
-</blockquote>
-<h3 id="6-更换主题"><a href="#6-更换主题" class="headerlink" title="6. 更换主题"></a>6. 更换主题</h3><pre><code class="shell"># 更换主题前必须clean
-hexo clean
-cd hexo_blog\themes
-git clone git@github.com:litten/hexo-theme-yilia.git yilia # 此处有坑，默认的主题文件夹名需要改一下
-cd yilia
-npm install
-hexo g
-hexo s
-</code></pre>
-<p><strong>1. 清空</strong></p>
-<blockquote>
-<p>hexo clean<br><strong>2 .重新生成</strong><br>hexo g<br><strong>3. 启动服务</strong><br>hexo s<br><strong>4 .查看页面本地测试</strong><br><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br><strong>5. 发布</strong><br>hexo d</p>
-<p>或者一步重新生成且发布 hexo g -d</p>
-</blockquote>
-<h2 id="Hexo常用命令汇总"><a href="#Hexo常用命令汇总" class="headerlink" title="Hexo常用命令汇总"></a>Hexo常用命令汇总</h2><pre><code>hexo new &quot;postName&quot; #新建文章
-hexo new page &quot;pageName&quot; #新建页面
-hexo generate #生成静态页面至public目录
-hexo server #开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）
-hexo deploy #将.deploy目录部署到GitHub
-hexo help # 查看帮助
-hexo version #查看Hexo的版本
-</code></pre><h2 id="Hexo命令简写"><a href="#Hexo命令简写" class="headerlink" title="Hexo命令简写"></a>Hexo命令简写</h2><pre><code>hexo n == hexo new
-hexo g == hexo generate
-hexo s == hexo server
-hexo d == hexo deploy
-</code></pre><p><strong>yilia主题定制化的需求</strong>（出问题了 TODO）</p>
-<pre><code>- 安装node+npm
-- 安装依赖 进入根目录，执行 npm install
-- 开发 执行npm run dev 此时会用webpack打包，把文件编译到source文件里，但文件不会经过压缩
-- 发布 执行npm run dist 最终确定版本，此时的编译会经过压缩。
-</code></pre><h2 id="后记：踩过的坑"><a href="#后记：踩过的坑" class="headerlink" title="后记：踩过的坑"></a>后记：踩过的坑</h2><h3 id="1、hexo-g-生成不了"><a href="#1、hexo-g-生成不了" class="headerlink" title="1、hexo g 生成不了"></a>1、hexo g 生成不了</h3><p>git clone的默认文件夹名需要改成跟主题设置那一致否则</p>
-<h3 id="2、hexo-d-发布不成功"><a href="#2、hexo-d-发布不成功" class="headerlink" title="2、hexo d 发布不成功"></a>2、hexo d 发布不成功</h3><p>配置了ssh，但是发布不成功，尝试本地git clone一下自己的name.github.io 成功后再尝试发布</p>
-<h3 id="3、域名绑定"><a href="#3、域名绑定" class="headerlink" title="3、域名绑定"></a>3、域名绑定</h3><p>1）、新建CNAME文件，放到hexo_blog\source\下，内容为不带www的域名如：ezsay.cn<br>2）、配置域名解析 CNAME www name.github.io/ @ name.github.io<br>3）、能转向github，但是显示404<br>hexo_blog\source中增加CNAME文件，发布后停10分钟才生效</p>
-<h1 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h1><h2 id="常用网址备忘"><a href="#常用网址备忘" class="headerlink" title="常用网址备忘"></a>常用网址备忘</h2><p><a href="https://hexo.io/themes/" target="_blank" rel="external">https://hexo.io/themes/</a><br><strong>正在使用的主题</strong><br><a href="http://litten.me/" target="_blank" rel="external">http://litten.me/</a><br><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia</a></p>
-<p>git@github.com:litten/hexo-theme-yilia.git</p>
-<p><strong>github加星最多的主题</strong> github.com 搜索【hexo theme】<br><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a><br><strong>Hexo文档</strong><br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">https://hexo.io/zh-cn/docs/</a><br><strong>markdown推荐工具</strong>（支持mac windows linux）<br><a href="https://www.typora.io" target="_blank" rel="external">https://www.typora.io</a><br><strong>在线编辑器</strong><br><a href="https://stackedit.io/editor#" target="_blank" rel="external">https://stackedit.io/editor#</a><br><a href="https://app.classeur.io" target="_blank" rel="external">https://app.classeur.io</a></p>
-
       
 
       
@@ -375,24 +379,13 @@ hexo d == hexo deploy
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">博客搭建</a>
         		</li>
       		
 		</ul>
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术/" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
         <p class="article-more-link">
@@ -759,7 +752,8 @@ Desktop.ini
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>阿公公</p>
+
       
 
       
@@ -767,7 +761,41 @@ Desktop.ini
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">囚徒</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">健身</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">观感</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/随笔/" class="article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -924,6 +952,26 @@ Desktop.ini
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">囚徒</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">健身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">观感</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">博客搭建</a>
               </li>
             
             <div class="clearfix"></div>
