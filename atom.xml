@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
-  <updated>2017-04-27T07:43:02.330Z</updated>
+  <updated>2017-04-27T07:53:29.277Z</updated>
   <id>//ezsay.cn/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="//ezsay.cn/2017/04/26/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>//ezsay.cn/2017/04/26/搭建博客/</id>
     <published>2017-04-26T08:03:25.000Z</published>
-    <updated>2017-04-27T07:43:02.330Z</updated>
+    <updated>2017-04-27T07:53:29.277Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p>
 <h2 id="一、环境准备"><a href="#一、环境准备" class="headerlink" title="一、环境准备"></a>一、环境准备</h2><ul>
@@ -96,12 +96,17 @@ deploy:
 ## landscape
 theme: yilia
 </code></pre>
-<h3 id="3-域名绑定"><a href="#3-域名绑定" class="headerlink" title="3. 域名绑定"></a>3. 域名绑定</h3><p>1）、新建CNAME文件，放到hexo_blog\source\下，内容为不带www的域名如：ezsay.cn<br>2）、配置域名解析</p>
+<h3 id="3-域名绑定"><a href="#3-域名绑定" class="headerlink" title="3. 域名绑定"></a>3. 域名绑定</h3><ol>
+<li><p>新建CNAME文件，放到hexo_blog\source\下，内容为不带www的域名如：ezsay.cn</p>
+</li>
+<li><p>配置域名解析</p>
 <ul>
 <li>CNAME www name.github.io</li>
 <li>@ name.github.io</li>
 </ul>
-<p>3）、能转向github，但是显示404<br>hexo_blog\source中增加CNAME文件，发布后停10分钟才生效</p>
+</li>
+</ol>
+<p>问题：能转向github，但是显示404。初次发布后，停10分钟再试，githubPages需要一定的时间</p>
 <h3 id="4-发布到git上"><a href="#4-发布到git上" class="headerlink" title="4. 发布到git上"></a>4. 发布到git上</h3><blockquote>
 <p>hexo d</p>
 <p>hexo d -g</p>
@@ -145,8 +150,18 @@ hexo d == hexo deploy
 </code></pre><p><strong>解决：</strong></p>
 <h2 id="后记：踩过的坑"><a href="#后记：踩过的坑" class="headerlink" title="后记：踩过的坑"></a>后记：踩过的坑</h2><h3 id="1-hexo-g-生成不了"><a href="#1-hexo-g-生成不了" class="headerlink" title="1. hexo g 生成不了"></a>1. hexo g 生成不了</h3><p>git clone的默认文件夹名需要改成跟主题设置那一致否则</p>
 <h3 id="2-hexo-d-发布不成功"><a href="#2-hexo-d-发布不成功" class="headerlink" title="2. hexo d 发布不成功"></a>2. hexo d 发布不成功</h3><p>配置了ssh，但是发布不成功，尝试本地git clone一下自己的name.github.io 成功后再尝试发布</p>
-<h3 id="3-单击所有文章提示缺失模块-TODO"><a href="#3-单击所有文章提示缺失模块-TODO" class="headerlink" title="3. 单击所有文章提示缺失模块 TODO"></a>3. 单击所有文章提示缺失模块 TODO</h3><p>缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br>npm i hexo-generator-json-content –save</p>
-<p>3、在根目录_config.yml里添加配置</p>
+<h3 id="3-单击所有文章提示缺失模块-TODO"><a href="#3-单击所有文章提示缺失模块-TODO" class="headerlink" title="3. 单击所有文章提示缺失模块 TODO"></a>3. 单击所有文章提示缺失模块 TODO</h3><p>缺失模块。</p>
+<ol>
+<li><p>请确保node版本大于6.2</p>
+</li>
+<li><p>在博客根目录（注意不是yilia根目录）执行以下命令：</p>
+<blockquote>
+<p> npm i hexo-generator-json-content –save</p>
+</blockquote>
+</li>
+<li><p>在根目录_config.yml里添加配置</p>
+</li>
+</ol>
 <p>暂时没找到解决方案</p>
 <h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="常用网址备忘"><a href="#常用网址备忘" class="headerlink" title="常用网址备忘"></a>常用网址备忘</h3><p><a href="https://hexo.io/themes/" target="_blank" rel="external">https://hexo.io/themes/</a><br><strong>正在使用的主题</strong><br><a href="http://litten.me/" target="_blank" rel="external">http://litten.me/</a><br><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia</a></p>
 <p>git@github.com:litten/hexo-theme-yilia.git</p>
@@ -186,7 +201,7 @@ hexo d == hexo deploy
 </tbody>
 </table>
 <p><strong>更详细的配置信息</strong></p>
-<pre><code>hexo: 3.3.1
+<pre><code class="properties">hexo: 3.3.1
 hexo-cli: 1.0.2
 os: Windows_NT 10.0.15063 win32 x64
 http_parser: 2.7.0
@@ -198,7 +213,8 @@ ares: 1.10.1-DEV
 icu: 58.2
 modules: 48
 openssl: 1.0.2k
-</code></pre>]]></content>
+</code></pre>
+]]></content>
     
     <summary type="html">
     
@@ -379,9 +395,11 @@ Desktop.ini
     <link href="//ezsay.cn/2017/04/26/blog_start/"/>
     <id>//ezsay.cn/2017/04/26/blog_start/</id>
     <published>2017-04-26T05:24:24.000Z</published>
-    <updated>2017-04-26T13:22:52.652Z</updated>
+    <updated>2017-04-27T08:35:33.661Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="新旧词汇对比"><a href="#新旧词汇对比" class="headerlink" title="新旧词汇对比"></a>新旧词汇对比</h3><p><img src="http://oowxnvumd.bkt.clouddn.com/bidui.jpg?imageView2/2/w/250/" alt=""></p>
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=694286&auto=0&height=66"></iframe>
+
+<h3 id="新旧词汇对比"><a href="#新旧词汇对比" class="headerlink" title="新旧词汇对比"></a>新旧词汇对比</h3><p><img src="http://oowxnvumd.bkt.clouddn.com/bidui.jpg?imageView2/2/w/250/" alt=""></p>
 <h3 id="组织架构比对"><a href="#组织架构比对" class="headerlink" title="组织架构比对"></a>组织架构比对</h3><p><img src="http://oowxnvumd.bkt.clouddn.com/jiagou.png?imageView2/2/w/250/" alt=""></p>
 <h3 id="影响"><a href="#影响" class="headerlink" title="影响"></a>影响</h3><p><img src="http://oowxnvumd.bkt.clouddn.com/yingxiang.png?imageView2/2/w/250/" alt=""></p>
 <h3 id="完美"><a href="#完美" class="headerlink" title="完美"></a>完美</h3><p><img src="http://oowxnvumd.bkt.clouddn.com/wanmei.gif?imageView2/2/w/250/" alt=""></p>
@@ -389,7 +407,7 @@ Desktop.ini
     
     <summary type="html">
     
-      &lt;h3 id=&quot;新旧词汇对比&quot;&gt;&lt;a href=&quot;#新旧词汇对比&quot; class=&quot;headerlink&quot; title=&quot;新旧词汇对比&quot;&gt;&lt;/a&gt;新旧词汇对比&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://oowxnvumd.bkt.clouddn.com/bidui.jpg?i
+      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=
     
     </summary>
     
