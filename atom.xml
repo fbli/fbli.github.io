@@ -17,8 +17,8 @@
   
   <entry>
     <title>搭建hexo+githubPages+个人域名博客</title>
-    <link href="//ezsay.cn/2017/04/26/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>//ezsay.cn/2017/04/26/搭建博客/</id>
+    <link href="//ezsay.cn/2017/04/26/build_blog/"/>
+    <id>//ezsay.cn/2017/04/26/build_blog/</id>
     <published>2017-04-26T08:03:25.000Z</published>
     <updated>2017-04-27T11:12:43.227Z</updated>
     
@@ -216,14 +216,14 @@ openssl: 1.0.2k
   
   <entry>
     <title>git在项目中的应用场景</title>
-    <link href="//ezsay.cn/2017/04/26/git%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/"/>
-    <id>//ezsay.cn/2017/04/26/git应用场景/</id>
+    <link href="//ezsay.cn/2017/04/26/git_complex/"/>
+    <id>//ezsay.cn/2017/04/26/git_complex/</id>
     <published>2017-04-26T07:57:25.000Z</published>
-    <updated>2017-04-26T13:22:09.902Z</updated>
+    <updated>2017-04-27T11:32:20.241Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p>
-<h2 id="一、项目情况"><a href="#一、项目情况" class="headerlink" title="一、项目情况"></a>一、项目情况</h2><p>行业版：全国发包<br>特例版：基于行业版代码，有自己的个性化定制。行业版升级时，所有特例版要跟随进行升级适配。<br><strong>痛点：</strong><br>所有的代码基于提交至svn，无任何分支管理。生产版本发布、新功能开发、功能改造，特例开发、bug修正多任务同时并行，代码都提交到同一svn项目下，相互影响。<br>1)     生产版本发布<br>没有分支管理，导致bug修复时，但因多任务并行提交，代码已经被多次更改，需要回退到历史代码再进行bug修复，回退时发现历史代码相互引用的位置也需要回退。<br>2)     特例开发打包<br>所有代码基于行业版，为了进行区分，类，jsp都放到各自特例所在省、直辖市简写文件夹下，如北京 BJ。随着特例的进一步增多，代码变得臃肿，编译速度比较慢。这样一来需要新打包方案，把需要的代码打到一起，如北京：要把行业版+所有BJ文件夹打到一起，额外增加工作量，也比较容易出错</p>
-<h2 id="二、为什么使用git，git有什么特点"><a href="#二、为什么使用git，git有什么特点" class="headerlink" title="二、为什么使用git，git有什么特点"></a>二、为什么使用git，git有什么特点</h2><p>Git是<strong>分布式</strong>版本控制系统，与传统的集中式的版本控制系统相比<br>集中式分布系统必须联网才能工作，因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】，而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到服务器即可。另外，在一个不能连接网络的地方时，就像在突然断网时，出差途中的火车、飞机上等，你仍然能够提交文件，查看历史版本记录，创建项目分支。<br>Git的分支管理<br>Git的分支与大多数版本控制系统形成了鲜明对比，它们管理分支大多采取备份所有项目文件到特定目录的方式，常常需要创建一个源代码目录的完整副本，所以根据项目文件数量和大小不同，可能花费的时间也会有相当大的差别，快则几秒，慢则数分钟。这是个昂贵的过程，对大型项目来说尤其如此。而 Git 的实现与项目复杂度无关，它永远可以在几毫秒的时间内完成分支的创建和切换。同时，因为每次提交时都记录了指向其父对象的指针（首次提交是没有直接祖先的，普通提交有一个祖先，由两个或多个分支合并产生的提交则有多个祖先）。Git 鼓励开发者频繁使用分支，正是因为有着这些特性作保障。</p>
+<h2 id="一、为什么使用git，git有什么特点"><a href="#一、为什么使用git，git有什么特点" class="headerlink" title="一、为什么使用git，git有什么特点"></a>一、为什么使用git，git有什么特点</h2><p>Git是<strong>分布式</strong>版本控制系统，与传统的集中式的版本控制系统相比<br>集中式分布系统必须联网才能工作，因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】，而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到服务器即可。另外，在一个不能连接网络的地方时，就像在突然断网时，出差途中的火车、飞机上等，你仍然能够提交文件，查看历史版本记录，创建项目分支。<br><a id="more"></a><br>Git的分支与大多数版本控制系统形成了鲜明对比，它们管理分支大多采取备份所有项目文件到特定目录的方式，常常需要创建一个源代码目录的完整副本，所以根据项目文件数量和大小不同，可能花费的时间也会有相当大的差别，快则几秒，慢则数分钟。这是个昂贵的过程，对大型项目来说尤其如此。而 Git 的实现与项目复杂度无关，它永远可以在几毫秒的时间内完成分支的创建和切换。同时，因为每次提交时都记录了指向其父对象的指针（首次提交是没有直接祖先的，普通提交有一个祖先，由两个或多个分支合并产生的提交则有多个祖先）。Git 鼓励开发者频繁使用分支，正是因为有着这些特性作保障。</p>
+<h2 id="二、项目情况"><a href="#二、项目情况" class="headerlink" title="二、项目情况"></a>二、项目情况</h2><p>行业版：全国发包<br>特例版：基于行业版代码，有自己的个性化定制。行业版升级时，所有特例版要跟随进行升级适配。<br><strong>痛点：</strong><br>所有的代码基于提交至svn，无任何分支管理。生产版本发布、新功能开发、功能改造，特例开发、bug修正多任务同时并行，代码都提交到同一svn项目下，相互影响。<br>1)     生产版本发布<br>没有分支管理，导致bug修复时，但因多任务并行提交，代码已经被多次更改，需要回退到历史代码再进行bug修复，回退时发现历史代码相互引用的位置也需要回退。<br>2)     特例开发打包<br>所有代码基于行业版，为了进行区分，类，jsp都放到各自特例所在省、直辖市简写文件夹下，如北京 BJ。随着特例的进一步增多，代码变得臃肿，编译速度比较慢。这样一来需要新打包方案，把需要的代码打到一起，如北京：要把行业版+所有BJ文件夹打到一起，额外增加工作量，也比较容易出错</p>
 <h2 id="三、应用场景"><a href="#三、应用场景" class="headerlink" title="三、应用场景"></a>三、应用场景</h2><h3 id="3-1-总览场景"><a href="#3-1-总览场景" class="headerlink" title="3.1. 总览场景"></a>3.1. 总览场景</h3><p>SVN代码同步下来之后，<strong>去除所有的特例代码</strong>将其用git管理起来。默认svn同步下来的代码（去除所有特例代码）作为行业版目前正在开发的主线分支<strong>master</strong></p>
 <h4 id="3-1-1-行业版分支"><a href="#3-1-1-行业版分支" class="headerlink" title="3.1.1. 行业版分支"></a>3.1.1. 行业版分支</h4><p>行业版总共分5类分支，主分支是任何时候都不能删除的。辅助分支一旦到达某个稳定状态，合并完毕后是可以删除的，并且<strong>hy-feature、hy-hotfix </strong>这两个分支一般是本地分支，如下对这五类分支的特点做一一描述<br>主要分支</p>
 <ul>
@@ -330,7 +330,7 @@ Desktop.ini
     <summary type="html">
     
       &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;一、项目情况&quot;&gt;&lt;a href=&quot;#一、项目情况&quot; class=&quot;headerlink&quot; title=&quot;一、项目情况&quot;&gt;&lt;/a&gt;一、项目情况&lt;/h2&gt;&lt;p&gt;行业版：全国发包&lt;br&gt;特例版：基于行业版代码，有自己的个性化定制。行业版升级时，
+&lt;h2 id=&quot;一、为什么使用git，git有什么特点&quot;&gt;&lt;a href=&quot;#一、为什么使用git，git有什么特点&quot; class=&quot;headerlink&quot; title=&quot;一、为什么使用git，git有什么特点&quot;&gt;&lt;/a&gt;一、为什么使用git，git有什么特点&lt;/h2&gt;&lt;p&gt;Git是&lt;strong&gt;分布式&lt;/strong&gt;版本控制系统，与传统的集中式的版本控制系统相比&lt;br&gt;集中式分布系统必须联网才能工作，因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】，而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到服务器即可。另外，在一个不能连接网络的地方时，就像在突然断网时，出差途中的火车、飞机上等，你仍然能够提交文件，查看历史版本记录，创建项目分支。&lt;br&gt;
     
     </summary>
     
@@ -347,8 +347,8 @@ Desktop.ini
   
   <entry>
     <title>git入门</title>
-    <link href="//ezsay.cn/2017/04/26/git%E5%85%A5%E9%97%A8/"/>
-    <id>//ezsay.cn/2017/04/26/git入门/</id>
+    <link href="//ezsay.cn/2017/04/26/git_abc/"/>
+    <id>//ezsay.cn/2017/04/26/git_abc/</id>
     <published>2017-04-26T07:57:07.000Z</published>
     <updated>2017-04-26T12:23:05.058Z</updated>
     
@@ -372,35 +372,39 @@ Desktop.ini
     <link href="//ezsay.cn/2017/04/26/blog_start/"/>
     <id>//ezsay.cn/2017/04/26/blog_start/</id>
     <published>2017-04-26T05:24:24.000Z</published>
-    <updated>2017-04-27T08:35:33.661Z</updated>
+    <updated>2017-04-27T11:38:42.269Z</updated>
     
     <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=694286&auto=0&height=66"></iframe>
 
+<p>收集有趣有用的图文，或会心或恍然</p>
+ <a id="more"></a> 
+<h3 id="影响"><a href="#影响" class="headerlink" title="影响"></a>影响</h3><p><img src="http://oowxnvumd.bkt.clouddn.com/yingxiang.png?imageView2/2/w/250/" alt=""></p>
 <h3 id="新旧词汇对比"><a href="#新旧词汇对比" class="headerlink" title="新旧词汇对比"></a>新旧词汇对比</h3><p><img src="http://oowxnvumd.bkt.clouddn.com/bidui.jpg?imageView2/2/w/250/" alt=""></p>
 <h3 id="组织架构比对"><a href="#组织架构比对" class="headerlink" title="组织架构比对"></a>组织架构比对</h3><p><img src="http://oowxnvumd.bkt.clouddn.com/jiagou.png?imageView2/2/w/250/" alt=""></p>
-<h3 id="影响"><a href="#影响" class="headerlink" title="影响"></a>影响</h3><p><img src="http://oowxnvumd.bkt.clouddn.com/yingxiang.png?imageView2/2/w/250/" alt=""></p>
 <h3 id="完美"><a href="#完美" class="headerlink" title="完美"></a>完美</h3><p><img src="http://oowxnvumd.bkt.clouddn.com/wanmei.gif?imageView2/2/w/250/" alt=""></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=
+      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;http://music.163.com/outchain/player?type=2&amp;id=694286&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;收集有趣有用的图文，或会心或恍然&lt;/p&gt;
     
     </summary>
-    
-      <category term="好玩" scheme="//ezsay.cn/categories/%E5%A5%BD%E7%8E%A9/"/>
     
     
       <category term="好玩" scheme="//ezsay.cn/tags/%E5%A5%BD%E7%8E%A9/"/>
     
       <category term="有用" scheme="//ezsay.cn/tags/%E6%9C%89%E7%94%A8/"/>
     
+      <category term="图文" scheme="//ezsay.cn/tags/%E5%9B%BE%E6%96%87/"/>
+    
   </entry>
   
   <entry>
     <title>囚徒健身观感</title>
-    <link href="//ezsay.cn/2017/04/26/%E5%9B%9A%E5%BE%92%E5%81%A5%E8%BA%AB%E8%A7%82%E6%84%9F/"/>
-    <id>//ezsay.cn/2017/04/26/囚徒健身观感/</id>
+    <link href="//ezsay.cn/2017/04/26/convict_conditioning/"/>
+    <id>//ezsay.cn/2017/04/26/convict_conditioning/</id>
     <published>2017-04-26T05:24:24.000Z</published>
     <updated>2017-04-27T07:30:04.871Z</updated>
     

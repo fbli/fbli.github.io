@@ -4,7 +4,52 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/04/26/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>//ezsay.cn/2017/04/26/blog_start/</loc>
+    <lastmod>2017-04-27T11:38:42.269Z</lastmod>
+    <data>
+        <display>
+        <title>点滴累积-图文</title>
+        <pubTime>2017-04-26T05:24:24.000Z</pubTime>
+        
+        <tag>好玩</tag>
+         
+        <tag>有用</tag>
+         
+        <tag>图文</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/04/26/git_complex/</loc>
+    <lastmod>2017-04-27T11:32:20.241Z</lastmod>
+    <data>
+        <display>
+        <title>git在项目中的应用场景</title>
+        <pubTime>2017-04-26T07:57:25.000Z</pubTime>
+        
+        <tag>git应用</tag>
+         
+        <tag>企业应用</tag>
+         
+        <tag>复杂场景</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/04/26/build_blog/</loc>
     <lastmod>2017-04-27T11:12:43.227Z</lastmod>
     <data>
         <display>
@@ -23,29 +68,7 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/04/26/blog_start/</loc>
-    <lastmod>2017-04-27T08:35:33.661Z</lastmod>
-    <data>
-        <display>
-        <title>点滴累积-图文</title>
-        <pubTime>2017-04-26T05:24:24.000Z</pubTime>
-        
-        <tag>好玩</tag>
-         
-        <tag>有用</tag>
-         
-         
-           
-             
-              <breadCrumb title="好玩" url="//ezsay.cn/categories/%E5%A5%BD%E7%8E%A9/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/26/%E5%9B%9A%E5%BE%92%E5%81%A5%E8%BA%AB%E8%A7%82%E6%84%9F/</loc>
+    <loc>//ezsay.cn/2017/04/26/convict_conditioning/</loc>
     <lastmod>2017-04-27T07:30:04.871Z</lastmod>
     <data>
         <display>
@@ -71,31 +94,7 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/04/26/git%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/</loc>
-    <lastmod>2017-04-26T13:22:09.902Z</lastmod>
-    <data>
-        <display>
-        <title>git在项目中的应用场景</title>
-        <pubTime>2017-04-26T07:57:25.000Z</pubTime>
-        
-        <tag>git应用</tag>
-         
-        <tag>企业应用</tag>
-         
-        <tag>复杂场景</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/26/git%E5%85%A5%E9%97%A8/</loc>
+    <loc>//ezsay.cn/2017/04/26/git_abc/</loc>
     <lastmod>2017-04-26T12:23:05.058Z</lastmod>
     <data>
         <display>
