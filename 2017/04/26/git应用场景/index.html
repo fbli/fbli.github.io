@@ -5,14 +5,14 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="//ezsay.cn">
   <title>git在项目中的应用场景 | 哎呦啊唝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="[TOC] 一、项目情况行业版：全国发包特例版：基于行业版代码，有自己的个性化定制。行业版升级时，所有特例版要跟随进行升级适配。痛点：所有的代码基于提交至svn，无任何分支管理。生产版本发布、新功能开发、功能改造，特例开发、bug修正多任务同时并行，代码都提交到同一svn项目下，相互影响。1)     生产版本发布没有分支管理，导致bug修复时，但因多任务并行提交，代码已经被多次更改，需要回退到历">
 <meta name="keywords" content="git应用,企业应用,复杂场景">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git在项目中的应用场景">
-<meta property="og:url" content="http://yoursite.com/2017/04/26/git应用场景/index.html">
+<meta property="og:url" content="//ezsay.cn/2017/04/26/git应用场景/index.html">
 <meta property="og:site_name" content="哎呦啊唝">
 <meta property="og:description" content="[TOC] 一、项目情况行业版：全国发包特例版：基于行业版代码，有自己的个性化定制。行业版升级时，所有特例版要跟随进行升级适配。痛点：所有的代码基于提交至svn，无任何分支管理。生产版本发布、新功能开发、功能改造，特例开发、bug修正多任务同时并行，代码都提交到同一svn项目下，相互影响。1)     生产版本发布没有分支管理，导致bug修复时，但因多任务并行提交，代码已经被多次更改，需要回退到历">
 <meta property="og:image" content="http://oowxnvumd.bkt.clouddn.com/git-branch.jpg">
@@ -220,8 +220,16 @@
 </ul>
 <p>注意：必须遵循一个规则：所有特例化的代码必须与行业版分离（如：单独文件夹，单独类名）。如此一来，当行业版进行升级时，所有的特例分支可以无冲突的快速与master进行合并。一旦不遵循这个规则，后续的分支合并，行业升级将十分痛苦，甚至无法合并！</p>
 <p><img src="http://oowxnvumd.bkt.clouddn.com/git-branch.jpg" alt="复杂分支示例"><br>图1 行业专卖git分支总览</p>
-<h3 id="3-2-小场景"><a href="#3-2-小场景" class="headerlink" title="3.2 小场景"></a>3.2 小场景</h3><p>行业功能开发过程中忽然需要进行北京特例2.2版本一个紧急bug的修复，此时行业功能刚开发一半，类还在报错不能提交，提交会影响其他人的工作，此时要进行如下操作<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git stash # 当前工作区工作暂存</div><div class="line">git checkout  bj-master #切换至北京特例分支</div><div class="line">git branch bj-fixbug-2.2.1 #新建分支</div><div class="line">git checkout bj-fixbug-2.2.1 #切换到新分支</div></pre></td></tr></table></figure></p>
-<p>修复bug<br>提交测试<br>测试通过<br>合并分支<br>……总之完成了<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git checkeout hy-feature-1.1 #切换到行业开发功能分支</div><div class="line">git stash apply --index # 恢复工作区，暂存区内容</div></pre></td></tr></table></figure></p>
+<h3 id="3-2-小场景"><a href="#3-2-小场景" class="headerlink" title="3.2 小场景"></a>3.2 小场景</h3><p>行业功能开发过程中忽然需要进行北京特例2.2版本一个紧急bug的修复，此时行业功能刚开发一半，类还在报错不能提交，提交会影响其他人的工作，此时要进行如下操作</p>
+<pre><code class="shell">git stash # 当前工作区工作暂存
+git checkout  bj-master #切换至北京特例分支
+git branch bj-fixbug-2.2.1 #新建分支
+git checkout bj-fixbug-2.2.1 #切换到新分支
+</code></pre>
+<p>修复bug<br>提交测试<br>测试通过<br>合并分支<br>……总之完成了</p>
+<pre><code class="shell">git checkeout hy-feature-1.1 #切换到行业开发功能分支
+git stash apply --index # 恢复工作区，暂存区内容
+</code></pre>
 <p>此时可以继续刚才的开发工作<br><strong>大家可以想一下如果不用git，这个场景要如何进行</strong></p>
 <h2 id="四、Git基础"><a href="#四、Git基础" class="headerlink" title="四、Git基础"></a>四、Git基础</h2><p>Svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
@@ -232,17 +240,50 @@
 <li>HEAD：指向master的一个指针<br>这个图非常重要，一定要理解。<br> <img src="http://oowxnvumd.bkt.clouddn.com/gitrepo.png" alt="git结构"><br>图2 git目录结构<br>git的要达到类似svn的提交程度需要进行三步：</li>
 <li>第一步【git add】将文件修改添加到暂存区stage</li>
 <li>第二步【git commit】提交更改，将暂存区的所有内容提交到本地版本库</li>
-<li>第三步【git push】将当前分支的本地版本库信息推送到远程版本库<br><strong>注意：</strong>git使用的第一步必须先设定自己的用户名，邮箱地址：<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gitconfig --global user.name "王小二"</div><div class="line">gitconfig --global user.email "wangxiaoer@chinasofti.com"</div></pre></td></tr></table></figure>
+<li>第三步【git push】将当前分支的本地版本库信息推送到远程版本库<br><strong>注意：</strong>git使用的第一步必须先设定自己的用户名，邮箱地址：<pre><code class="shell">gitconfig --global user.name &quot;王小二&quot;
+gitconfig --global user.email &quot;wangxiaoer@chinasofti.com&quot;
+</code></pre>
 </li>
 </ul>
 <p>git分支的一些知识点分享：<br>官方文档推荐在<strong>分支切换之前保证工作区clean</strong>，这个原则很重要原因如下：<br><strong>新增的文件</strong>，分支切换会带着这个文件到新分支中（新增的文件在git中是个特殊的存在，务必注意）<br>更新的文件分三种情况：</p>
 <ul>
 <li>被更新的文件在新分支中没有，不能切换；</li>
 <li>被更新的文件在新分支中有，且跟当前分支的父对象不同（内容相同也不可以） ，不能切换分支；</li>
-<li>被更新的文件在新分支中有，且跟当前分支有共同父对象，这个文件内容会带到新分支中；<br>情况多样且复杂，由此看来分支切换之前保证<strong>工作区clean</strong>非常有必要！<br>当然也也可以用 gitstash来暂存工作区和暂存区的文件（此处注意：新建的文件不能暂存；每次执行此命令，最新的永远是stash@{0}）<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gitstash apply #恢复工作区代码，且暂存区代码也恢复至工作区，</div><div class="line">gitstash apply --index #恢复工作区代码，且暂存区代码恢复至暂存区</div></pre></td></tr></table></figure>
+<li>被更新的文件在新分支中有，且跟当前分支有共同父对象，这个文件内容会带到新分支中；<br>情况多样且复杂，由此看来分支切换之前保证<strong>工作区clean</strong>非常有必要！<br>当然也也可以用 gitstash来暂存工作区和暂存区的文件（此处注意：新建的文件不能暂存；每次执行此命令，最新的永远是stash@{0}）<pre><code class="shell">gitstash apply #恢复工作区代码，且暂存区代码也恢复至工作区，
+gitstash apply --index #恢复工作区代码，且暂存区代码恢复至暂存区
+</code></pre>
 </li>
 </ul>
-<h2 id="附录："><a href="#附录：" class="headerlink" title="附录："></a>附录：</h2><p>svn与git二者可以互相同步，但是要在.gitignore排除[.svn/] ，在svn中排除[/.git/]<br>建议：svn上对行业版、北京特例版、安徽特例版的代码进行区分。不要全部糅合在一起，这样也好跟git的分支代码进行一一对应。若后续以git为准则不需要额外再考虑这些。git足够灵活，可以随时捡出符合条件的代码提交至svn。<br>.gitignore文件定义要忽略的文件，比较重要的是[.svn/]将跟svn版本管理相关的内容排除出去，具体其他配置如下：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> Myconfigurations:</div><div class="line">.svn/</div><div class="line">/WebApp/WEB-INF/classes/</div><div class="line">license.lic</div><div class="line">*.gzcss</div><div class="line">*.gzjs</div><div class="line">*.class</div><div class="line"><span class="meta"></span></div><div class="line">#空文件夹要特殊处理，1、初次提交，空文件夹下加.gitkeep文件 2、push完毕更新.gitignore,添加如下行</div><div class="line">/dist/</div><div class="line">/target/</div><div class="line">/WebApp/pages/upLoadCache/card/</div><div class="line">/WebApp/pages/upLoadCache/caTmp/</div><div class="line"><span class="meta"></span></div><div class="line"># git默认不管理exe文件，需要特殊处理</div><div class="line">!*.exe</div><div class="line"><span class="meta">#</span>Mobile Tools for Java (J2ME)</div><div class="line">.mtj.tmp/</div><div class="line"><span class="meta">#</span>Package Files #</div><div class="line">*.jar</div><div class="line">*.war</div><div class="line">*.ear</div><div class="line"><span class="meta">#</span>virtual machine crash logs, seehttp://www.java.com/en/download/help/error_hotspot.xml</div><div class="line">hs_err_pid*</div><div class="line"><span class="meta">#</span>Windows:</div><div class="line">Thumbs.db</div><div class="line">ehthumbs.db</div><div class="line">Desktop.ini</div></pre></td></tr></table></figure></p>
+<h2 id="附录："><a href="#附录：" class="headerlink" title="附录："></a>附录：</h2><p>svn与git二者可以互相同步，但是要在.gitignore排除[.svn/] ，在svn中排除[/.git/]<br>建议：svn上对行业版、北京特例版、安徽特例版的代码进行区分。不要全部糅合在一起，这样也好跟git的分支代码进行一一对应。若后续以git为准则不需要额外再考虑这些。git足够灵活，可以随时捡出符合条件的代码提交至svn。<br>.gitignore文件定义要忽略的文件，比较重要的是[.svn/]将跟svn版本管理相关的内容排除出去，具体其他配置如下：</p>
+<pre><code class="shell"># Myconfigurations:
+.svn/
+/WebApp/WEB-INF/classes/
+license.lic
+*.gzcss
+*.gzjs
+*.class
+
+#空文件夹要特殊处理，1、初次提交，空文件夹下加.gitkeep文件 2、push完毕更新.gitignore,添加如下行
+/dist/
+/target/
+/WebApp/pages/upLoadCache/card/
+/WebApp/pages/upLoadCache/caTmp/
+
+# git默认不管理exe文件，需要特殊处理
+!*.exe
+#Mobile Tools for Java (J2ME)
+.mtj.tmp/
+#Package Files #
+*.jar
+*.war
+*.ear
+#virtual machine crash logs, seehttp://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+#Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+</code></pre>
 <p>svn上将项目根目录下的[.git]文件夹添加到svn：ignore即可排除</p>
 
       
@@ -257,7 +298,7 @@
             <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>嗯，不错~ 赏！<i class="icon icon-quo-right"></i></p>
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>嗯，赏！<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
                     <div class="reward-box-item">
@@ -363,7 +404,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/04/26/git应用场景/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://ezsay.cn/2017/04/26/git应用场景/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -502,6 +543,26 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">git应用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">企业应用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">复杂场景</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">好玩</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">有用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
@@ -531,26 +592,6 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">博客</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">git应用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">企业应用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">复杂场景</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">好玩</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">有用</a>
               </li>
             
             <div class="clearfix"></div>
@@ -606,7 +647,7 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
             </li>
           
             <li class="search-li">
-              <a href="https://www.lifw.org/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Java程序员_专注于技术分享与交流</a>
+              <a href="http://www.lifw.org/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Java程序员_专注于技术分享与交流</a>
             </li>
           
         </ul>
