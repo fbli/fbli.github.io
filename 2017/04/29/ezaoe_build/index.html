@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//ezsay.cn">
-  <title>Tag: 技巧 | 哎呦啊唝</title>
+  <title>ezaoe.com 网站技术构建过程 | 哎呦啊唝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="生气了，哭了，不乖">
-<meta property="og:type" content="website">
-<meta property="og:title" content="哎呦啊唝">
-<meta property="og:url" content="//ezsay.cn/tags/技巧/index.html">
+  <meta name="description" content="准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积 定位     功能：专而精，小而美；  实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔，起步阶段背负太多，很容易陷入迷惘进而夭折，对个人项目尤其">
+<meta name="keywords" content="管理,架构,功能设计">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ezaoe.com 网站技术构建过程">
+<meta property="og:url" content="//ezsay.cn/2017/04/29/ezaoe_build/index.html">
 <meta property="og:site_name" content="哎呦啊唝">
-<meta property="og:description" content="生气了，哭了，不乖">
+<meta property="og:description" content="准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积 定位     功能：专而精，小而美；  实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔，起步阶段背负太多，很容易陷入迷惘进而夭折，对个人项目尤其">
+<meta property="og:updated_time" content="2017-04-29T15:47:06.014Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="哎呦啊唝">
-<meta name="twitter:description" content="生气了，哭了，不乖">
+<meta name="twitter:title" content="ezaoe.com 网站技术构建过程">
+<meta name="twitter:description" content="准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积 定位     功能：专而精，小而美；  实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔，起步阶段背负太多，很容易陷入迷惘进而夭折，对个人项目尤其">
   
     <link rel="alternative" href="/atom.xml" title="哎呦啊唝" type="application/atom+xml">
   
@@ -180,60 +182,99 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-ezaoe_build" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/02/vim_xyz/" class="archive-article-date">
-  	<time datetime="2017-05-02T02:24:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-02</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/02/vim_xyz/">Vim高级应用</a>
+    <h1 class="article-title" itemprop="name">
+      ezaoe.com 网站技术构建过程
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/04/29/ezaoe_build/" class="archive-article-date">
+  	<time datetime="2017-04-29T08:59:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积</p>
+<p>定位<br>     功能：专而精，小而美；</p>
+<pre><code> 实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔，起步阶段背负太多，很容易陷入迷惘进而夭折，对个人项目尤其如此。一开始不可能想的面面俱到，现实中很多问题是在真正动手的过程中发现进而完善的。so 快速迭代很有必要，一方面很容易发现没有考虑到的问题，更重要的是快速实现的功能所带来的成就感会激励自己持续向前，快感很重要，否则后果很严重。
+</code></pre><p>定好大方向，不要过多纠缠细节，快速实现，小步快跑，快感叠加，高潮迭起</p>
+<p>知识储备<br>     Linux服务器搭建、安全策略、发布脚本、日志分析、性能优化<br>     网站推广<br>     网站运维，内容、服务<br>     开发相关技术累积；<br>          前端：html5,bootstrap , nodejs， vue.js， backbone.js等；<br>          后端：并发，缓存服务，队列，权限验证，图片压缩<br>          内容：python爬虫</p>
+<p>系统待开发功能列表</p>
+<pre><code>1. 网站 https://www.ezaoe.com
+2. 网站配套APP Android/IOS应用（网站业务相关[ezaoe]、方便易用的app[ezphone] ）
+3. 微信公众号
+4. 其他
+</code></pre><p>工程模块命名过程<br>基于待开发功能列表，指定工程的命名规范如下：【参看附录1】<br>Group ID: com.ezaoe<br>Artifact ID:<br>     yiqi-web<br>     yiqi-common<br>     yiqi-shiro<br>     yiqi-schedule<br>     yiqi-weixin<br>     yiqi-phone</p>
+<p>模块命名有两种方式：<br>各模块包名一样，module1:com.ezaoe.common; module2:com.ezaoe.common<br>模块中的包跟模块绑定，module1： com.ezaoe.moudle1.common; module2： com.ezaoe.moudle2.common</p>
+<p>网站初始阶段暂时不分模块，后续进行再进行模块抽取</p>
+<p>==============<br>附录1：阿里巴巴编程规范-二方库规约<br>GroupID格式：com.{公司/BU }.业务线.[子业务线]，最多4级。 说明：{公司/BU} 例如：alibaba/taobao/tmall/aliexpress等BU一级；子业务线可选。<br>正例：com.taobao.jstorm 或 com.alibaba.dubbo.register<br>附录2：阿里巴巴编程规范-命名规约-包命名<br>包名统一使用小写，点分隔符之间有且仅有一个自然语义的英语单词。包名统一使用单数形式，但是类名如果有复数含义，类名可以使用复数形式。<br>正例： 应用工具类包名为com.alibaba.open.util、类名为MessageUtils（此规则参考spring的框架结构）</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>嗯，赏！<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/asset/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/asset/img/weixinpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vim</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">管理</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工具</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">架构</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">进阶</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技巧</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">功能设计</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -246,17 +287,105 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABv0lEQVR42u3aQYrDMAwF0N7/0pntQEnyZcVqC8+rEkz80oWQZL1e8Tr+rfcnZ8/zJw8vXFzcNve4XNcHvO/pv/9sDy4u7jz37JizPf0Qln8qLi7ur3CrKdH1O3FxcX+de8SrWkrh4uJ+GzcpTq5f1CFuqdVwcXEb3Dxl2fd7S38XFxd3iXsUVx6A8kKocDouLu4INw8o1cJmrWkS7cTFxd3MzRsizw5bJI3Uwv+Ki4u7gZsXKtWGxbPjGri4uJ/i9luc1ZQofxsuLu48N09K8vZHnspc78fFxZ3nVpObKrp6iXK6ExcXd5CbX58kbZTC8dVgh4uLO8KtDl7kx1eHrqqpDy4u7m5u0sLIRyj6lzQ3gQwXF/dD3GrQWRuqWAujuLi4k9z899rYVnJNGzVZcHFxB7l58rHWNMmhheIHFxd3kJsPTuUl0GMJEC4u7mbuUVx56pPvKVyW4OLijnDzlX/MWqCsNmpxcXF3c6vBK0938tGufMALFxd3kpunKdWRi07xc9PfxcXF/RpuPkjRSXRumiO4uLhfz10roqrhDBcXd57buUZdw+UXq7i4uPPc/OCnypj872j1d3FxcVe4f1TVuWgfkBQ4AAAAAElFTkSuQmCC" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/04/29/ezaoe_goto/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          网站定位过程-ezaoe.com
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/05/01/vim_abc/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Vim入门</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
   
 
-    
+  
+  <div id="SOHUCS" sid="ezaoe_build" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "cysY18EIq"; 
+var conf = "prod_72d505c557d08a2b430c7c65697f6563"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+  
+
+  
 
 
           </div>
@@ -279,9 +408,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",

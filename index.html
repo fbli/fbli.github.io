@@ -355,6 +355,97 @@
 
 
   
+    <article id="post-ezaoe_build" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/29/ezaoe_build/">ezaoe.com 网站技术构建过程</a>
+    </h1>
+  
+
+        
+        <a href="/2017/04/29/ezaoe_build/" class="archive-article-date">
+  	<time datetime="2017-04-29T08:59:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积</p>
+<p>定位<br>     功能：专而精，小而美；</p>
+<pre><code> 实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔，起步阶段背负太多，很容易陷入迷惘进而夭折，对个人项目尤其如此。一开始不可能想的面面俱到，现实中很多问题是在真正动手的过程中发现进而完善的。so 快速迭代很有必要，一方面很容易发现没有考虑到的问题，更重要的是快速实现的功能所带来的成就感会激励自己持续向前，快感很重要，否则后果很严重。
+</code></pre><p>定好大方向，不要过多纠缠细节，快速实现，小步快跑，快感叠加，高潮迭起</p>
+<p>知识储备<br>     Linux服务器搭建、安全策略、发布脚本、日志分析、性能优化<br>     网站推广<br>     网站运维，内容、服务<br>     开发相关技术累积；<br>          前端：html5,bootstrap , nodejs， vue.js， backbone.js等；<br>          后端：并发，缓存服务，队列，权限验证，图片压缩<br>          内容：python爬虫</p>
+<p>系统待开发功能列表</p>
+<pre><code>1. 网站 https://www.ezaoe.com
+2. 网站配套APP Android/IOS应用（网站业务相关[ezaoe]、方便易用的app[ezphone] ）
+3. 微信公众号
+4. 其他
+</code></pre><p>工程模块命名过程<br>基于待开发功能列表，指定工程的命名规范如下：【参看附录1】<br>Group ID: com.ezaoe<br>Artifact ID:<br>     yiqi-web<br>     yiqi-common<br>     yiqi-shiro<br>     yiqi-schedule<br>     yiqi-weixin<br>     yiqi-phone</p>
+<p>模块命名有两种方式：<br>各模块包名一样，module1:com.ezaoe.common; module2:com.ezaoe.common<br>模块中的包跟模块绑定，module1： com.ezaoe.moudle1.common; module2： com.ezaoe.moudle2.common</p>
+<p>网站初始阶段暂时不分模块，后续进行再进行模块抽取</p>
+<p>==============<br>附录1：阿里巴巴编程规范-二方库规约<br>GroupID格式：com.{公司/BU }.业务线.[子业务线]，最多4级。 说明：{公司/BU} 例如：alibaba/taobao/tmall/aliexpress等BU一级；子业务线可选。<br>正例：com.taobao.jstorm 或 com.alibaba.dubbo.register<br>附录2：阿里巴巴编程规范-命名规约-包命名<br>包名统一使用小写，点分隔符之间有且仅有一个自然语义的英语单词。包名统一使用单数形式，但是类名如果有复数含义，类名可以使用复数形式。<br>正例： 应用工具类包名为com.alibaba.open.util、类名为MessageUtils（此规则参考spring的框架结构）</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">管理</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">架构</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">功能设计</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技能/" class="article-tag-list-link color3">技能</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/04/29/ezaoe_build/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-ezaoe_goto" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -395,11 +486,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">goto</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">定位</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">定位</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">管理</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ezoae</a>
         		</li>
       		
 		</ul>
@@ -411,7 +506,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/ezaoe/" class="article-tag-list-link color1">ezaoe</a>
+        			<a href="/categories/技能/" class="article-tag-list-link color3">技能</a>
         		</li>
       		
 		</ul>
@@ -442,7 +537,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/26/hexo_blog_build/">搭建hexo+githubPages+个人域名博客</a>
+      <a class="article-title" href="/2017/04/26/hexo_blog_build/">搭建hexo + github pages + 独立域名博客</a>
     </h1>
   
 
@@ -477,75 +572,9 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
         		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/04/26/hexo_blog_build/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-git_xyz" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/26/git_xyz/">git在项目中的应用场景</a>
-    </h1>
-  
-
-        
-        <a href="/2017/04/26/git_xyz/" class="archive-article-date">
-  	<time datetime="2017-04-26T07:57:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>[TOC]</p>
-<h2 id="一、为什么使用git，git有什么特点"><a href="#一、为什么使用git，git有什么特点" class="headerlink" title="一、为什么使用git，git有什么特点"></a>一、为什么使用git，git有什么特点</h2><p>Git是<strong>分布式</strong>版本控制系统，与传统的集中式的版本控制系统相比<br>集中式分布系统必须联网才能工作，因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】，而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到服务器即可。另外，在一个不能连接网络的地方时，就像在突然断网时，出差途中的火车、飞机上等，你仍然能够提交文件，查看历史版本记录，创建项目分支。<br>
-        
-          <a class="article-more-a" href="/2017/04/26/git_xyz/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">git应用</a>
-        		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">企业应用</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">复杂场景</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">服务搭建</a>
         		</li>
       		
 		</ul>
@@ -566,7 +595,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/04/26/git_xyz/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/04/26/hexo_blog_build/">展开全文 >></a>
         </p>
       
 
@@ -755,6 +784,30 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">技巧</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">管理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">架构</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">功能设计</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">ezoae</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">阅读</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">服务搭建</a>
               </li>
             
             <div class="clearfix"></div>
