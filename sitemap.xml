@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>//ezsay.cn/2017/04/26/hexo_blog_build/</loc>
+    
+    <lastmod>2017-04-29T23:34:40.576Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>//ezsay.cn/2017/04/29/ezaoe_build/</loc>
     
     <lastmod>2017-04-29T16:25:35.248Z</lastmod>
@@ -9,7 +16,7 @@
   </url>
   
   <url>
-    <loc>//ezsay.cn/2017/04/29/%E5%9B%9A%E5%BE%92%E5%81%A5%E8%BA%AB1/</loc>
+    <loc>//ezsay.cn/2017/04/29/%E5%9B%9A%E5%BE%92%E5%81%A5%E8%BA%AB/</loc>
     
     <lastmod>2017-04-29T16:17:45.068Z</lastmod>
     
@@ -19,13 +26,6 @@
     <loc>//ezsay.cn/2017/04/26/convict_conditioning/</loc>
     
     <lastmod>2017-04-29T16:10:05.934Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>//ezsay.cn/2017/04/26/hexo_blog_build/</loc>
-    
-    <lastmod>2017-04-29T16:09:15.893Z</lastmod>
     
   </url>
   

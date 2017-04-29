@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/04/26/hexo_blog_build/</loc>
+    <lastmod>2017-04-29T23:34:40.576Z</lastmod>
+    <data>
+        <display>
+        <title>搭建hexo + github pages + 独立域名博客</title>
+        <pubTime>2017-04-26T08:03:25.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>yilia</tag>
+         
+        <tag>服务搭建</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/04/29/ezaoe_build/</loc>
     <lastmod>2017-04-29T16:25:35.248Z</lastmod>
     <data>
@@ -28,7 +52,7 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/04/29/%E5%9B%9A%E5%BE%92%E5%81%A5%E8%BA%AB1/</loc>
+    <loc>//ezsay.cn/2017/04/29/%E5%9B%9A%E5%BE%92%E5%81%A5%E8%BA%AB/</loc>
     <lastmod>2017-04-29T16:17:45.068Z</lastmod>
     <data>
         <display>
@@ -69,30 +93,6 @@
            
              
               <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/26/hexo_blog_build/</loc>
-    <lastmod>2017-04-29T16:09:15.893Z</lastmod>
-    <data>
-        <display>
-        <title>搭建hexo + github pages + 独立域名博客</title>
-        <pubTime>2017-04-26T08:03:25.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>yilia</tag>
-         
-        <tag>服务搭建</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>

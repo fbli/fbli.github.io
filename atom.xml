@@ -87,8 +87,8 @@
   
   <entry>
     <title>囚徒健身</title>
-    <link href="//ezsay.cn/2017/04/29/%E5%9B%9A%E5%BE%92%E5%81%A5%E8%BA%AB1/"/>
-    <id>//ezsay.cn/2017/04/29/囚徒健身1/</id>
+    <link href="//ezsay.cn/2017/04/29/%E5%9B%9A%E5%BE%92%E5%81%A5%E8%BA%AB/"/>
+    <id>//ezsay.cn/2017/04/29/囚徒健身/</id>
     <published>2017-04-29T13:23:24.000Z</published>
     <updated>2017-04-29T16:17:45.068Z</updated>
     
@@ -414,14 +414,14 @@
     <link href="//ezsay.cn/2017/04/26/hexo_blog_build/"/>
     <id>//ezsay.cn/2017/04/26/hexo_blog_build/</id>
     <published>2017-04-26T08:03:25.000Z</published>
-    <updated>2017-04-29T16:09:15.893Z</updated>
+    <updated>2017-04-29T23:34:40.576Z</updated>
     
     <content type="html"><![CDATA[<p>Hexo，一个快速、简洁且高效的博客框架，Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。</p>
 <a id="more"></a>
 <p>[TOC]</p>
 <h2 id="一、环境准备"><a href="#一、环境准备" class="headerlink" title="一、环境准备"></a>一、环境准备</h2><ul>
-<li>nodejs</li>
-<li>git</li>
+<li>安装nodejs</li>
+<li>安装git</li>
 <li>申请github账号<ul>
 <li>新建仓库 name.github.io（name与账号同名）</li>
 <li>配置ssh</li>
@@ -435,7 +435,13 @@
 <p>npm install -g hexo</p>
 </blockquote>
 <h3 id="3-设置windows的path路径"><a href="#3-设置windows的path路径" class="headerlink" title="3. 设置windows的path路径"></a>3. 设置windows的path路径</h3><blockquote>
-<p>hexo -v</p>
+<p>右击电脑_&gt;属性-&gt;高级系统设置-&gt;环境变量（N）…-&gt;系统变量（S）-&gt;path <em>D:\java\runtime\nodejs\node_data\node_global</em></p>
+<pre><code>hexo
+hexo.cmd
+...
+</code></pre><p>执行这条命令不报commond not found即可</p>
+<pre><code class="shell">hexo -v
+</code></pre>
 </blockquote>
 <h3 id="4-初始化hexo"><a href="#4-初始化hexo" class="headerlink" title="4. 初始化hexo"></a>4. 初始化hexo</h3><blockquote>
 <p>hexo init</p>
@@ -468,7 +474,7 @@ npm install
 <li>id_rsa # 私钥</li>
 <li><strong>id_rsa.pub</strong>  # 公钥 需要保存至github</li>
 </ul>
-<p><strong>github保存ssh key</strong><br>  单击头像-&gt;settings-&gt;SSH keys and GPG keys-&gt;SSH keys_单击[new SSH keys]</p>
+<p><strong>github保存ssh key</strong><br>  单击头像-&gt;settings-&gt;SSH keys and GPG keys-&gt;SSH keys_单击[new SSH keys] 添加id_rsa.pub公钥的文本内容</p>
 <h3 id="3-配置-config-yml"><a href="#3-配置-config-yml" class="headerlink" title="3. 配置_config.yml"></a>3. 配置_config.yml</h3><p>比较关键的是# Deployment那处需要跟自己的github新创建的repository对应起来</p>
 <pre><code class="properties"># Site
 title: 博客
@@ -512,6 +518,7 @@ cd hexo_blog\themes
 git clone git@github.com:litten/hexo-theme-yilia.git yilia # 此处有坑，默认的主题文件夹名需要改一下
 cd yilia
 npm install
+cd ../../
 hexo g
 hexo s
 http://localhost:4000/
@@ -533,15 +540,15 @@ hexo s == hexo server
 hexo d == hexo deploy
 </code></pre>
 <p><strong>yilia主题定制化的需求</strong>（出问题了 TODO）</p>
-<pre><code>- 安装node+npm
-- 安装依赖 进入根目录，执行 npm install
-- 开发 执行npm run dev 此时会用webpack打包，把文件编译到source文件里，但文件不会经过压缩
-- 发布 执行npm run dist 最终确定版本，此时的编译会经过压缩。
-</code></pre><p><strong>解决：</strong></p>
-<h2 id="后记：踩过的坑"><a href="#后记：踩过的坑" class="headerlink" title="后记：踩过的坑"></a>后记：踩过的坑</h2><h3 id="1-hexo-g-生成不了"><a href="#1-hexo-g-生成不了" class="headerlink" title="1. hexo g 生成不了"></a>1. hexo g 生成不了</h3><p>git clone的默认文件夹名需要改成跟主题设置那一致否则</p>
+<pre><code>安装node+npm
+安装依赖 进入根目录，执行 npm install
+开发 执行npm run dev 此时会用webpack打包，把文件编译到source文件里，但文件不会经过压缩
+发布 执行npm run dist 最终确定版本，此时的编译会经过压缩。
+</code></pre><h2 id="后记：踩过的坑"><a href="#后记：踩过的坑" class="headerlink" title="后记：踩过的坑"></a>后记：踩过的坑</h2><h3 id="1-hexo-g-生成不了"><a href="#1-hexo-g-生成不了" class="headerlink" title="1. hexo g 生成不了"></a>1. hexo g 生成不了</h3><p>git clone的默认文件夹名需要改成跟主题设置那一致否则</p>
 <h3 id="2-hexo-d-发布不成功"><a href="#2-hexo-d-发布不成功" class="headerlink" title="2. hexo d 发布不成功"></a>2. hexo d 发布不成功</h3><p>配置了ssh，但是发布不成功，尝试本地git clone一下自己的name.github.io 成功后再尝试发布</p>
 <h3 id="3-单击【所有文章】提示缺失模块-TODO"><a href="#3-单击【所有文章】提示缺失模块-TODO" class="headerlink" title="3. 单击【所有文章】提示缺失模块 TODO"></a>3. 单击【所有文章】提示缺失模块 TODO</h3><p>缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br>npm i hexo-generator-json-content –save<br>3、在根目录_config.yml里添加配置：</p>
 <p>按提示操作后，发现并未解决</p>
+<p><strong>后续解决方案待填坑：</strong></p>
 <h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="常用网址备忘"><a href="#常用网址备忘" class="headerlink" title="常用网址备忘"></a>常用网址备忘</h3><p>nodejs <a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a>  <a href="http://nodejs.cn/" target="_blank" rel="external">http://nodejs.cn/</a></p>
 <p>github pages <a href="https://pages.github.com/" target="_blank" rel="external">https://pages.github.com/</a></p>
 <p>git <a href="https://git-scm.com/" target="_blank" rel="external">https://git-scm.com/</a></p>
@@ -587,7 +594,7 @@ hexo d == hexo deploy
 </tbody>
 </table>
 <p><strong>更详细的配置信息</strong></p>
-<pre><code class="properties">hexo: 3.3.1
+<pre><code class="json">hexo: 3.3.1
 hexo-cli: 1.0.2
 os: Windows_NT 10.0.15063 win32 x64
 http_parser: 2.7.0
