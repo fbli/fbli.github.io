@@ -4,6 +4,54 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/04/26/convict_conditioning_simple/</loc>
+    <lastmod>2017-04-29T23:58:15.762Z</lastmod>
+    <data>
+        <display>
+        <title>囚徒健身-简明六艺</title>
+        <pubTime>2017-04-26T05:24:24.000Z</pubTime>
+        
+        <tag>囚徒</tag>
+         
+        <tag>健身</tag>
+         
+        <tag>阅读</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/04/29/convict_conditioning/</loc>
+    <lastmod>2017-04-29T23:49:35.515Z</lastmod>
+    <data>
+        <display>
+        <title>囚徒健身</title>
+        <pubTime>2017-04-29T13:23:24.000Z</pubTime>
+        
+        <tag>囚徒</tag>
+         
+        <tag>健身</tag>
+         
+        <tag>健康</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/04/26/hexo_blog_build/</loc>
     <lastmod>2017-04-29T23:34:40.576Z</lastmod>
     <data>
@@ -45,54 +93,6 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/29/%E5%9B%9A%E5%BE%92%E5%81%A5%E8%BA%AB/</loc>
-    <lastmod>2017-04-29T16:17:45.068Z</lastmod>
-    <data>
-        <display>
-        <title>囚徒健身</title>
-        <pubTime>2017-04-29T13:23:24.000Z</pubTime>
-        
-        <tag>囚徒</tag>
-         
-        <tag>健身</tag>
-         
-        <tag>健康</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/26/convict_conditioning/</loc>
-    <lastmod>2017-04-29T16:10:05.934Z</lastmod>
-    <data>
-        <display>
-        <title>囚徒健身</title>
-        <pubTime>2017-04-26T05:24:24.000Z</pubTime>
-        
-        <tag>囚徒</tag>
-         
-        <tag>健身</tag>
-         
-        <tag>阅读</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
           
         </display>
     </data>

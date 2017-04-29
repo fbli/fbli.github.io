@@ -87,13 +87,13 @@
   
   <entry>
     <title>囚徒健身</title>
-    <link href="//ezsay.cn/2017/04/29/%E5%9B%9A%E5%BE%92%E5%81%A5%E8%BA%AB/"/>
-    <id>//ezsay.cn/2017/04/29/囚徒健身/</id>
+    <link href="//ezsay.cn/2017/04/29/convict_conditioning/"/>
+    <id>//ezsay.cn/2017/04/29/convict_conditioning/</id>
     <published>2017-04-29T13:23:24.000Z</published>
-    <updated>2017-04-29T16:17:45.068Z</updated>
+    <updated>2017-04-29T23:49:35.515Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p>
-<p>真格的力量支书<br>用失传的技艺练就强大的<br><strong>生存实力</strong></p>
+<p>真格的力量之书<br>用失传的技艺练就强大的<br><strong>生存实力</strong></p>
 <p>一个真正的男人至少要能做到</p>
 <ul>
 <li>5个单臂俯卧撑（最好100个）</li>
@@ -205,7 +205,7 @@
     <summary type="html">
     
       &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;p&gt;真格的力量支书&lt;br&gt;用失传的技艺练就强大的&lt;br&gt;&lt;strong&gt;生存实力&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;真格的力量之书&lt;br&gt;用失传的技艺练就强大的&lt;br&gt;&lt;strong&gt;生存实力&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;一个真正的男人至少要能做到&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;5个单臂俯卧撑（最好100个）&lt;/li&gt;
@@ -782,34 +782,6 @@ Desktop.ini
   </entry>
   
   <entry>
-    <title>囚徒健身</title>
-    <link href="//ezsay.cn/2017/04/26/convict_conditioning/"/>
-    <id>//ezsay.cn/2017/04/26/convict_conditioning/</id>
-    <published>2017-04-26T05:24:24.000Z</published>
-    <updated>2017-04-29T16:10:05.934Z</updated>
-    
-    <content type="html"><![CDATA[<p>阿公公</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;阿公公&lt;/p&gt;
-
-    
-    </summary>
-    
-      <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-    
-    
-      <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
-    
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
-    
-      <category term="阅读" scheme="//ezsay.cn/tags/%E9%98%85%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
     <title>点滴累积-图文</title>
     <link href="//ezsay.cn/2017/04/26/image_text/"/>
     <id>//ezsay.cn/2017/04/26/image_text/</id>
@@ -850,6 +822,34 @@ Desktop.ini
       <category term="有用" scheme="//ezsay.cn/tags/%E6%9C%89%E7%94%A8/"/>
     
       <category term="图文" scheme="//ezsay.cn/tags/%E5%9B%BE%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>囚徒健身-简明六艺</title>
+    <link href="//ezsay.cn/2017/04/26/convict_conditioning_simple/"/>
+    <id>//ezsay.cn/2017/04/26/convict_conditioning_simple/</id>
+    <published>2017-04-26T05:24:24.000Z</published>
+    <updated>2017-04-29T23:58:15.762Z</updated>
+    
+    <content type="html"><![CDATA[<p>摘录囚徒健身-简明六艺，方便健身时对照</p>
+<a id="more"></a>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;摘录囚徒健身-简明六艺，方便健身时对照&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+    
+    
+      <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
+    
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
+    
+      <category term="阅读" scheme="//ezsay.cn/tags/%E9%98%85%E8%AF%BB/"/>
     
   </entry>
   
