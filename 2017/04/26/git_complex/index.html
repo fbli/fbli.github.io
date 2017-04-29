@@ -17,7 +17,7 @@
 <meta property="og:description" content="[TOC] 一、为什么使用git，git有什么特点Git是分布式版本控制系统，与传统的集中式的版本控制系统相比集中式分布系统必须联网才能工作，因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】，而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到">
 <meta property="og:image" content="http://oowxnvumd.bkt.clouddn.com/git-branch.jpg">
 <meta property="og:image" content="http://oowxnvumd.bkt.clouddn.com/gitrepo.png">
-<meta property="og:updated_time" content="2017-04-27T11:32:20.241Z">
+<meta property="og:updated_time" content="2017-04-29T03:38:16.568Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git在项目中的应用场景">
 <meta name="twitter:description" content="[TOC] 一、为什么使用git，git有什么特点Git是分布式版本控制系统，与传统的集中式的版本控制系统相比集中式分布系统必须联网才能工作，因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】，而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到">
@@ -246,20 +246,20 @@ git stash apply --index # 恢复工作区，暂存区内容
 <li>HEAD：指向master的一个指针<br>这个图非常重要，一定要理解。<br> <img src="http://oowxnvumd.bkt.clouddn.com/gitrepo.png" alt="git结构"><br>图2 git目录结构<br>git的要达到类似svn的提交程度需要进行三步：</li>
 <li>第一步【git add】将文件修改添加到暂存区stage</li>
 <li>第二步【git commit】提交更改，将暂存区的所有内容提交到本地版本库</li>
-<li>第三步【git push】将当前分支的本地版本库信息推送到远程版本库<br><strong>注意：</strong>git使用的第一步必须先设定自己的用户名，邮箱地址：<pre><code class="shell">gitconfig --global user.name &quot;王小二&quot;
+<li>第三步【git push】将当前分支的本地版本库信息推送到远程版本库<br><strong>注意：</strong>git使用的第一步必须先设定自己的用户名，邮箱地址：</li>
+</ul>
+<pre><code class="shell">gitconfig --global user.name &quot;王小二&quot;
 gitconfig --global user.email &quot;wangxiaoer@chinasofti.com&quot;
 </code></pre>
-</li>
-</ul>
 <p>git分支的一些知识点分享：<br>官方文档推荐在<strong>分支切换之前保证工作区clean</strong>，这个原则很重要原因如下：<br><strong>新增的文件</strong>，分支切换会带着这个文件到新分支中（新增的文件在git中是个特殊的存在，务必注意）<br>更新的文件分三种情况：</p>
 <ul>
 <li>被更新的文件在新分支中没有，不能切换；</li>
 <li>被更新的文件在新分支中有，且跟当前分支的父对象不同（内容相同也不可以） ，不能切换分支；</li>
-<li>被更新的文件在新分支中有，且跟当前分支有共同父对象，这个文件内容会带到新分支中；<br>情况多样且复杂，由此看来分支切换之前保证<strong>工作区clean</strong>非常有必要！<br>当然也也可以用 gitstash来暂存工作区和暂存区的文件（此处注意：新建的文件不能暂存；每次执行此命令，最新的永远是stash@{0}）<pre><code class="shell">gitstash apply #恢复工作区代码，且暂存区代码也恢复至工作区，
+<li>被更新的文件在新分支中有，且跟当前分支有共同父对象，这个文件内容会带到新分支中；<br>情况多样且复杂，由此看来分支切换之前保证<strong>工作区clean</strong>非常有必要！<br>当然也也可以用 gitstash来暂存工作区和暂存区的文件（此处注意：新建的文件不能暂存；每次执行此命令，最新的永远是stash@{0}）</li>
+</ul>
+<pre><code class="shell">gitstash apply #恢复工作区代码，且暂存区代码也恢复至工作区，
 gitstash apply --index #恢复工作区代码，且暂存区代码恢复至暂存区
 </code></pre>
-</li>
-</ul>
 <h2 id="附录："><a href="#附录：" class="headerlink" title="附录："></a>附录：</h2><p>svn与git二者可以互相同步，但是要在.gitignore排除[.svn/] ，在svn中排除[/.git/]<br>建议：svn上对行业版、北京特例版、安徽特例版的代码进行区分。不要全部糅合在一起，这样也好跟git的分支代码进行一一对应。若后续以git为准则不需要额外再考虑这些。git足够灵活，可以随时捡出符合条件的代码提交至svn。<br>.gitignore文件定义要忽略的文件，比较重要的是[.svn/]将跟svn版本管理相关的内容排除出去，具体其他配置如下：</p>
 <pre><code class="shell"># Myconfigurations:
 .svn/
@@ -549,39 +549,15 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">基础</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">入门</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">第一课</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">git应用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">企业应用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">复杂场景</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">好玩</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">有用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">图文</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -609,7 +585,31 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">图文</a>
+                <a href="javascript:void(0)" class="js-tag color1">git应用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">企业应用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">复杂场景</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">入门</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">第一课</a>
               </li>
             
             <div class="clearfix"></div>

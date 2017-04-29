@@ -4,29 +4,8 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/04/26/blog_start/</loc>
-    <lastmod>2017-04-29T03:31:15.187Z</lastmod>
-    <data>
-        <display>
-        <title>点滴累积-图文</title>
-        <pubTime>2017-04-26T05:24:24.000Z</pubTime>
-        
-        <tag>好玩</tag>
-         
-        <tag>有用</tag>
-         
-        <tag>图文</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ezsay.cn/2017/04/26/git_complex/</loc>
-    <lastmod>2017-04-27T11:32:20.241Z</lastmod>
+    <lastmod>2017-04-29T03:38:16.568Z</lastmod>
     <data>
         <display>
         <title>git在项目中的应用场景</title>
@@ -43,6 +22,27 @@
              
               <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/04/26/blog_start/</loc>
+    <lastmod>2017-04-29T03:31:15.187Z</lastmod>
+    <data>
+        <display>
+        <title>点滴累积-图文</title>
+        <pubTime>2017-04-26T05:24:24.000Z</pubTime>
+        
+        <tag>好玩</tag>
+         
+        <tag>有用</tag>
+         
+        <tag>图文</tag>
+         
+         
+           
         </display>
     </data>
     </url>
