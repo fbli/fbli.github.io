@@ -4,6 +4,54 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/04/29/ezaoe_build/</loc>
+    <lastmod>2017-04-29T16:25:35.248Z</lastmod>
+    <data>
+        <display>
+        <title>网站技术构建过程 - ezaoe.com</title>
+        <pubTime>2017-04-29T08:59:24.000Z</pubTime>
+        
+        <tag>管理</tag>
+         
+        <tag>架构</tag>
+         
+        <tag>功能设计</tag>
+         
+         
+           
+             
+              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/04/29/%E5%9B%9A%E5%BE%92%E5%81%A5%E8%BA%AB1/</loc>
+    <lastmod>2017-04-29T16:17:45.068Z</lastmod>
+    <data>
+        <display>
+        <title>囚徒健身</title>
+        <pubTime>2017-04-29T13:23:24.000Z</pubTime>
+        
+        <tag>囚徒</tag>
+         
+        <tag>健身</tag>
+         
+        <tag>健康</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/04/26/convict_conditioning/</loc>
     <lastmod>2017-04-29T16:10:05.934Z</lastmod>
     <data>
@@ -45,30 +93,6 @@
            
              
               <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/29/ezaoe_build/</loc>
-    <lastmod>2017-04-29T15:47:06.014Z</lastmod>
-    <data>
-        <display>
-        <title>ezaoe.com 网站技术构建过程</title>
-        <pubTime>2017-04-29T08:59:24.000Z</pubTime>
-        
-        <tag>管理</tag>
-         
-        <tag>架构</tag>
-         
-        <tag>功能设计</tag>
-         
-         
-           
-             
-              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
           
         </display>
     </data>

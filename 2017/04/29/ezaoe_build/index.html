@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//ezsay.cn">
-  <title>ezaoe.com 网站技术构建过程 | 哎呦啊唝</title>
+  <title>网站技术构建过程 - ezaoe.com | 哎呦啊唝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积 定位     功能：专而精，小而美；  实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔，起步阶段背负太多，很容易陷入迷惘进而夭折，对个人项目尤其">
+  <meta name="description" content="功能：专而精，小而美；  准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积。定好大方向，不要过多纠缠细节，快速实现，小步快跑，快感叠加，高潮迭起 实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔">
 <meta name="keywords" content="管理,架构,功能设计">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ezaoe.com 网站技术构建过程">
+<meta property="og:title" content="网站技术构建过程 - ezaoe.com">
 <meta property="og:url" content="//ezsay.cn/2017/04/29/ezaoe_build/index.html">
 <meta property="og:site_name" content="哎呦啊唝">
-<meta property="og:description" content="准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积 定位     功能：专而精，小而美；  实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔，起步阶段背负太多，很容易陷入迷惘进而夭折，对个人项目尤其">
-<meta property="og:updated_time" content="2017-04-29T15:47:06.014Z">
+<meta property="og:description" content="功能：专而精，小而美；  准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积。定好大方向，不要过多纠缠细节，快速实现，小步快跑，快感叠加，高潮迭起 实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔">
+<meta property="og:updated_time" content="2017-04-29T16:25:35.248Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ezaoe.com 网站技术构建过程">
-<meta name="twitter:description" content="准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积 定位     功能：专而精，小而美；  实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔，起步阶段背负太多，很容易陷入迷惘进而夭折，对个人项目尤其">
+<meta name="twitter:title" content="网站技术构建过程 - ezaoe.com">
+<meta name="twitter:description" content="功能：专而精，小而美；  准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积。定好大方向，不要过多纠缠细节，快速实现，小步快跑，快感叠加，高潮迭起 实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔">
   
     <link rel="alternative" href="/atom.xml" title="哎呦啊唝" type="application/atom+xml">
   
@@ -189,7 +189,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      ezaoe.com 网站技术构建过程
+      网站技术构建过程 - ezaoe.com
     </h1>
   
 
@@ -202,10 +202,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积</p>
-<p>定位<br>     功能：专而精，小而美；</p>
-<pre><code> 实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔，起步阶段背负太多，很容易陷入迷惘进而夭折，对个人项目尤其如此。一开始不可能想的面面俱到，现实中很多问题是在真正动手的过程中发现进而完善的。so 快速迭代很有必要，一方面很容易发现没有考虑到的问题，更重要的是快速实现的功能所带来的成就感会激励自己持续向前，快感很重要，否则后果很严重。
-</code></pre><p>定好大方向，不要过多纠缠细节，快速实现，小步快跑，快感叠加，高潮迭起</p>
+        <blockquote>
+<p>功能：专而精，小而美；</p>
+</blockquote>
+<p>准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积。定好大方向，不要过多纠缠细节，快速实现，小步快跑，快感叠加，高潮迭起</p>
+<p>实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔，起步阶段背负太多，很容易陷入迷惘进而夭折，对个人项目尤其如此。一开始不可能想的面面俱到，现实中很多问题是在真正动手的过程中发现进而完善的。so 快速迭代很有必要，一方面很容易发现没有考虑到的问题，更重要的是快速实现的功能所带来的成就感会激励自己持续向前，快感很重要，否则后果很严重。</p>
+<a id="more"></a>
 <p>知识储备<br>     Linux服务器搭建、安全策略、发布脚本、日志分析、性能优化<br>     网站推广<br>     网站运维，内容、服务<br>     开发相关技术累积；<br>          前端：html5,bootstrap , nodejs， vue.js， backbone.js等；<br>          后端：并发，缓存服务，队列，权限验证，图片压缩<br>          内容：python爬虫</p>
 <p>系统待开发功能列表</p>
 <pre><code>1. 网站 https://www.ezaoe.com
@@ -359,8 +361,8 @@
     </a>
   
   
-    <a href="/2017/05/01/vim_abc/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Vim入门</div>
+    <a href="/2017/04/29/囚徒健身1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">囚徒健身</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -579,6 +581,10 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">服务搭建</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">健康</a>
               </li>
             
             <div class="clearfix"></div>
