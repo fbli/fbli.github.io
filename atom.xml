@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
-  <updated>2017-04-29T09:13:34.733Z</updated>
+  <updated>2017-04-29T14:56:11.697Z</updated>
   <id>//ezsay.cn/</id>
   
   <author>
@@ -14,6 +14,76 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vim高级应用</title>
+    <link href="//ezsay.cn/2017/05/02/vim_xyz/"/>
+    <id>//ezsay.cn/2017/05/02/vim_xyz/</id>
+    <published>2017-05-02T02:24:10.000Z</published>
+    <updated>2017-04-29T14:56:11.697Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+    
+    
+      <category term="vim" scheme="//ezsay.cn/tags/vim/"/>
+    
+      <category term="工具" scheme="//ezsay.cn/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="进阶" scheme="//ezsay.cn/tags/%E8%BF%9B%E9%98%B6/"/>
+    
+      <category term="技巧" scheme="//ezsay.cn/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vim入门</title>
+    <link href="//ezsay.cn/2017/05/01/vim_abc/"/>
+    <id>//ezsay.cn/2017/05/01/vim_abc/</id>
+    <published>2017-05-01T05:24:24.000Z</published>
+    <updated>2017-04-29T14:55:56.801Z</updated>
+    
+    <content type="html"><![CDATA[<p>先看一个投票统计排名what-is-the-best-text-editor-for-programming <a href="https://www.diffur.com/what-is-the-best-text-editor-for-programming" target="_blank" rel="external">Link</a></p>
+<p><img src="/asset/blog_img/program_editor_top5.png" alt="" title="排名前五的文本编辑器"></p>
+<ol>
+<li>Vim vim.org 144 upvotes <a href="http://www.vim.org/" target="_blank" rel="external">Link</a> </li>
+<li>Atom atom.io 105 upvotes <a href="https://atom.io/" target="_blank" rel="external">Link</a> </li>
+<li>Sublime Text sublimetext.com 89 upvotes <a href="https://www.sublimetext.com/" target="_blank" rel="external">Link</a> </li>
+<li>GNU Emacs gnu.org 72 upvotes <a href="https://www.gnu.org/software/emacs/" target="_blank" rel="external">Link</a> </li>
+<li>Notepad++ notepad-plus-plus.org 32 upvotes <a href="https://notepad-plus-plus.org/" target="_blank" rel="external">Link</a> </li>
+</ol>
+<a id="more"></a>
+<h2 id="1、vim安装"><a href="#1、vim安装" class="headerlink" title="1、vim安装"></a>1、vim安装</h2><h3 id="1-1、-window下安装vim"><a href="#1-1、-window下安装vim" class="headerlink" title="1.1、 window下安装vim"></a>1.1、 window下安装vim</h3><h3 id="1-2、-centos下安装vim"><a href="#1-2、-centos下安装vim" class="headerlink" title="1.2、 centos下安装vim"></a>1.2、 centos下安装vim</h3><h2 id="2、设置vim"><a href="#2、设置vim" class="headerlink" title="2、设置vim"></a>2、设置vim</h2><h2 id="3、基础命令"><a href="#3、基础命令" class="headerlink" title="3、基础命令"></a>3、基础命令</h2><h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;先看一个投票统计排名what-is-the-best-text-editor-for-programming &lt;a href=&quot;https://www.diffur.com/what-is-the-best-text-editor-for-programming&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/asset/blog_img/program_editor_top5.png&quot; alt=&quot;&quot; title=&quot;排名前五的文本编辑器&quot;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Vim vim.org 144 upvotes &lt;a href=&quot;http://www.vim.org/&quot;&gt;Link&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Atom atom.io 105 upvotes &lt;a href=&quot;https://atom.io/&quot;&gt;Link&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Sublime Text sublimetext.com 89 upvotes &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;Link&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;GNU Emacs gnu.org 72 upvotes &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Link&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Notepad++ notepad-plus-plus.org 32 upvotes &lt;a href=&quot;https://notepad-plus-plus.org/&quot;&gt;Link&lt;/a&gt; &lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+    
+    
+      <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="vim" scheme="//ezsay.cn/tags/vim/"/>
+    
+      <category term="工具" scheme="//ezsay.cn/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>网站定位过程-ezaoe.com</title>
@@ -482,13 +552,13 @@ Desktop.ini
     <link href="//ezsay.cn/2017/04/26/git_abc/"/>
     <id>//ezsay.cn/2017/04/26/git_abc/</id>
     <published>2017-04-26T07:57:07.000Z</published>
-    <updated>2017-04-29T08:39:49.703Z</updated>
+    <updated>2017-04-29T15:00:15.982Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="技术" scheme="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
     
     
       <category term="git" scheme="//ezsay.cn/tags/git/"/>
@@ -534,7 +604,7 @@ Desktop.ini
     <link href="//ezsay.cn/2017/04/26/image_text/"/>
     <id>//ezsay.cn/2017/04/26/image_text/</id>
     <published>2017-04-26T05:24:24.000Z</published>
-    <updated>2017-04-29T07:32:22.848Z</updated>
+    <updated>2017-04-29T15:21:18.136Z</updated>
     
     <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=694286&auto=0&height=66"></iframe>
 
@@ -561,6 +631,8 @@ Desktop.ini
 &lt;p&gt;收集有趣有用的图文，或会心一笑或恍然若得&lt;/p&gt;
     
     </summary>
+    
+      <category term="随笔" scheme="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
       <category term="好玩" scheme="//ezsay.cn/tags/%E5%A5%BD%E7%8E%A9/"/>
