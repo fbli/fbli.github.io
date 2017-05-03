@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
-  <updated>2017-04-30T00:09:33.799Z</updated>
+  <updated>2017-05-03T03:49:28.391Z</updated>
   <id>//ezsay.cn/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="//ezsay.cn/2017/05/03/test/test/"/>
+    <id>//ezsay.cn/2017/05/03/test/test/</id>
+    <published>2017-05-03T03:49:12.000Z</published>
+    <updated>2017-05-03T03:49:28.391Z</updated>
+    
+    <content type="html"><![CDATA[<p>hahah</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;hahah&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Vim高级应用</title>
@@ -29,11 +49,11 @@
       <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
     
     
+      <category term="进阶" scheme="//ezsay.cn/tags/%E8%BF%9B%E9%98%B6/"/>
+    
       <category term="vim" scheme="//ezsay.cn/tags/vim/"/>
     
       <category term="工具" scheme="//ezsay.cn/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-      <category term="进阶" scheme="//ezsay.cn/tags/%E8%BF%9B%E9%98%B6/"/>
     
       <category term="技巧" scheme="//ezsay.cn/tags/%E6%8A%80%E5%B7%A7/"/>
     
@@ -257,9 +277,9 @@
       <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
     
     
-      <category term="定位" scheme="//ezsay.cn/tags/%E5%AE%9A%E4%BD%8D/"/>
-    
       <category term="管理" scheme="//ezsay.cn/tags/%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="定位" scheme="//ezsay.cn/tags/%E5%AE%9A%E4%BD%8D/"/>
     
       <category term="ezoae" scheme="//ezsay.cn/tags/ezoae/"/>
     
@@ -390,11 +410,11 @@ Desktop.ini
     
       <category term="git" scheme="//ezsay.cn/tags/git/"/>
     
-      <category term="企业应用" scheme="//ezsay.cn/tags/%E4%BC%81%E4%B8%9A%E5%BA%94%E7%94%A8/"/>
+      <category term="进阶" scheme="//ezsay.cn/tags/%E8%BF%9B%E9%98%B6/"/>
     
       <category term="复杂场景" scheme="//ezsay.cn/tags/%E5%A4%8D%E6%9D%82%E5%9C%BA%E6%99%AF/"/>
     
-      <category term="进阶" scheme="//ezsay.cn/tags/%E8%BF%9B%E9%98%B6/"/>
+      <category term="企业应用" scheme="//ezsay.cn/tags/%E4%BC%81%E4%B8%9A%E5%BA%94%E7%94%A8/"/>
     
   </entry>
   
@@ -2722,11 +2742,11 @@ Desktop.ini
       <category term="随笔" scheme="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
+      <category term="图文" scheme="//ezsay.cn/tags/%E5%9B%BE%E6%96%87/"/>
+    
       <category term="好玩" scheme="//ezsay.cn/tags/%E5%A5%BD%E7%8E%A9/"/>
     
       <category term="有用" scheme="//ezsay.cn/tags/%E6%9C%89%E7%94%A8/"/>
-    
-      <category term="图文" scheme="//ezsay.cn/tags/%E5%9B%BE%E6%96%87/"/>
     
   </entry>
   
@@ -2939,11 +2959,11 @@ openssl: 1.0.2k
       <category term="技术" scheme="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
+      <category term="服务搭建" scheme="//ezsay.cn/tags/%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA/"/>
+    
       <category term="hexo" scheme="//ezsay.cn/tags/hexo/"/>
     
       <category term="yilia" scheme="//ezsay.cn/tags/yilia/"/>
-    
-      <category term="服务搭建" scheme="//ezsay.cn/tags/%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA/"/>
     
   </entry>
   

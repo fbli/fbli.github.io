@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/05/03/test/test/</loc>
+    <lastmod>2017-05-03T03:49:28.391Z</lastmod>
+    <data>
+        <display>
+        <title>test</title>
+        <pubTime>2017-05-03T03:49:12.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/04/27/convict_conditioning_11-12/</loc>
     <lastmod>2017-05-03T03:47:49.763Z</lastmod>
     <data>
@@ -220,11 +235,11 @@
         <title>点滴累积-图文</title>
         <pubTime>2017-04-26T02:24:24.000Z</pubTime>
         
+        <tag>图文</tag>
+         
         <tag>好玩</tag>
          
         <tag>有用</tag>
-         
-        <tag>图文</tag>
          
          
            
@@ -244,11 +259,11 @@
         <title>Vim高级应用</title>
         <pubTime>2017-04-30T12:24:10.000Z</pubTime>
         
+        <tag>进阶</tag>
+         
         <tag>vim</tag>
          
         <tag>工具</tag>
-         
-        <tag>进阶</tag>
          
         <tag>技巧</tag>
          
@@ -296,9 +311,9 @@
         <title>网站定位过程-ezaoe.com</title>
         <pubTime>2017-04-29T02:55:24.000Z</pubTime>
         
-        <tag>定位</tag>
-         
         <tag>管理</tag>
+         
+        <tag>定位</tag>
          
         <tag>ezoae</tag>
          
@@ -346,11 +361,11 @@
         
         <tag>git</tag>
          
-        <tag>企业应用</tag>
+        <tag>进阶</tag>
          
         <tag>复杂场景</tag>
          
-        <tag>进阶</tag>
+        <tag>企业应用</tag>
          
          
            
@@ -394,11 +409,11 @@
         <title>搭建hexo + github pages + 独立域名博客</title>
         <pubTime>2017-04-26T00:03:25.000Z</pubTime>
         
+        <tag>服务搭建</tag>
+         
         <tag>hexo</tag>
          
         <tag>yilia</tag>
-         
-        <tag>服务搭建</tag>
          
          
            
