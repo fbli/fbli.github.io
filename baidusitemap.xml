@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc/</loc>
-    <lastmod>2017-05-05T12:27:46.410Z</lastmod>
+    <lastmod>2017-05-05T14:58:05.743Z</lastmod>
     <data>
         <display>
         <title>git入门</title>
@@ -16,6 +16,34 @@
         <tag>基础</tag>
          
         <tag>入门</tag>
+         
+         
+           
+             
+              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/04/28/skill/git_xyz/</loc>
+    <lastmod>2017-05-05T14:50:15.616Z</lastmod>
+    <data>
+        <display>
+        <title>git在复杂项目中的应用</title>
+        <pubTime>2017-04-28T07:57:25.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+        <tag>进阶</tag>
+         
+        <tag>复杂场景</tag>
+         
+        <tag>企业应用</tag>
+         
+        <tag>分支管理</tag>
          
          
            
@@ -92,32 +120,6 @@
         <tag>vim</tag>
          
         <tag>工具</tag>
-         
-         
-           
-             
-              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/28/skill/git_xyz/</loc>
-    <lastmod>2017-05-04T10:41:28.034Z</lastmod>
-    <data>
-        <display>
-        <title>git在项目中的应用场景</title>
-        <pubTime>2017-04-28T07:57:25.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-        <tag>进阶</tag>
-         
-        <tag>复杂场景</tag>
-         
-        <tag>企业应用</tag>
          
          
            

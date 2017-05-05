@@ -362,7 +362,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/28/skill/git_xyz/">git在项目中的应用场景</a>
+      <a class="article-title" href="/2017/04/28/skill/git_xyz/">git在复杂项目中的应用</a>
     </h1>
   
 
@@ -376,7 +376,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<h2 id="一、为什么使用git，git有什么特点"><a href="#一、为什么使用git，git有什么特点" class="headerlink" title="一、为什么使用git，git有什么特点"></a>一、为什么使用git，git有什么特点</h2><p>Git是<strong>分布式</strong>版本控制系统，与传统的集中式的版本控制系统相比<br>集中式分布系统必须联网才能工作，因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】，而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到服务器即可。另外，在一个不能连接网络的地方时，就像在突然断网时，出差途中的火车、飞机上等，你仍然能够提交文件，查看历史版本记录，创建项目分支。<br>
+<p>Git是<strong>分布式</strong>版本控制系统，与传统的集中式的版本控制系统相比：集中式分布系统必须联网才能工作。因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】。而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到服务器即可。另外，在一个不能连接网络的地方时，就像在突然断网时，出差途中的火车、飞机上等，你仍然能够提交文件，查看历史版本记录，创建项目分支。</p>
         
           <a class="article-more-a" href="/2017/04/28/skill/git_xyz/#more">more >></a>
         
@@ -405,6 +405,10 @@
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">企业应用</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">分支管理</a>
         		</li>
       		
 		</ul>
@@ -460,66 +464,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h1 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h1><p><strong>git移库</strong></p>
-<p><strong>demo.git -&gt; target.git</strong></p>
-<pre><code class="shell"># linux新建裸库
-git init --bare target.git
-# 裸库递归更改拥有者与仓库地址前缀一致
-chrome -R git:git target.git
-
-# 本地clone待迁移的裸库
-git clone --bare git@XXX.com/xxx/demo.git
-# 进入裸库
-cd demo.git
-# 推送裸库到目标库
-git push --mirror git@xxx.com/xxxx/target.git
-</code></pre>
-<p><strong>验证是否迁移成功</strong></p>
-<pre><code class="shell"># 克隆目标库
-git clone git@XXX.com/xxx/target.git
-# 查看是否已经迁移
-git branch -a
-git log
-</code></pre>
-<p><strong>可能出现的问题</strong></p>
-<p>1、问：新建的裸库，可以克隆但是不能推送</p>
-<p>答：检查裸库目录的权限的<strong>拥有者</strong>和<strong>群组</strong></p>
-<blockquote>
-<p>ls -al 或者 ll命令</p>
-<pre><code class="shell">ls -al
-drwxr-xr-x 7 root  root  4096 May  3 11:33 target.git
-</code></pre>
-<p>此时本地仓库是没法推送的</p>
-<pre><code class="shell">git clone git@XXX.com/xxx/target.git
-
-# 修改文件、本地提交、推送
-git push
-remote: error: insufficient permission for adding an object to repository database ./objects
-remote: fatal: failed to write object
-error: unpack failed: unpack-objects abnormal exit
-</code></pre>
-<p>需要将<strong>拥有者</strong>和<strong>群组</strong>设置成跟地址<strong>git@XX</strong>前缀一致的</p>
-<pre><code class="shell">chown -R git:git target.git
-ll
-drwxr-xr-x 7 git  git  4096 May  3 11:33 target.git
-</code></pre>
-</blockquote>
-<p>2、若两个仓库之间有一样的文件，移库是有问题的，此时拉取会报错。</p>
-<pre><code class="shell">$ git pull
-fatal: refusing to merge unrelated histories
-
-# 用这个命令合并即可
-$ git pull origin master --allow-unrelated-histories
-From git@XXX.com/xxx/target.git
- * branch            master     -&gt; FETCH_HEAD
-Auto-merging README.txt
-CONFLICT (add/add): Merge conflict in README.txt
-Automatic merge failed; fix conflicts and then commit the result.
-
-# 合并完毕必定冲突，此时分支状态变为(master|MERGING) ,解决冲突重新提交即可
-</code></pre>
-<p>推荐：新建的裸库尽量一点东西没有，特别不要有跟要迁移仓库一样的文件</p>
-
+        <h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
+<ul>
+<li><strong>工作区：</strong>你的workspace</li>
+<li><strong>版本库：</strong>工作区的隐藏目录.git</li>
+<li>stage（index）：暂存区</li>
+<li>master：git自动创建的第一个分支，指向最新提交</li>
+<li>HEAD：指向master的一个指针</li>
+</ul>
+        
+          <a class="article-more-a" href="/2017/04/28/skill/git_abc/#more">more >></a>
+        
       
 
       
@@ -1281,6 +1236,10 @@ Automatic merge failed; fix conflicts and then commit the result.
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">技巧</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">分支管理</a>
               </li>
             
             <div class="clearfix"></div>

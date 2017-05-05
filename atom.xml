@@ -86,85 +86,96 @@
   </entry>
   
   <entry>
-    <title>git在项目中的应用场景</title>
+    <title>git在复杂项目中的应用</title>
     <link href="//ezsay.cn/2017/04/28/skill/git_xyz/"/>
     <id>//ezsay.cn/2017/04/28/skill/git_xyz/</id>
     <published>2017-04-28T07:57:25.000Z</published>
-    <updated>2017-05-04T10:41:28.034Z</updated>
+    <updated>2017-05-05T14:50:15.616Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p>
-<h2 id="一、为什么使用git，git有什么特点"><a href="#一、为什么使用git，git有什么特点" class="headerlink" title="一、为什么使用git，git有什么特点"></a>一、为什么使用git，git有什么特点</h2><p>Git是<strong>分布式</strong>版本控制系统，与传统的集中式的版本控制系统相比<br>集中式分布系统必须联网才能工作，因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】，而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到服务器即可。另外，在一个不能连接网络的地方时，就像在突然断网时，出差途中的火车、飞机上等，你仍然能够提交文件，查看历史版本记录，创建项目分支。<br><a id="more"></a><br>Git的分支与大多数版本控制系统形成了鲜明对比，它们管理分支大多采取备份所有项目文件到特定目录的方式，常常需要创建一个源代码目录的完整副本，所以根据项目文件数量和大小不同，可能花费的时间也会有相当大的差别，快则几秒，慢则数分钟。这是个昂贵的过程，对大型项目来说尤其如此。而 Git 的实现与项目复杂度无关，它永远可以在几毫秒的时间内完成分支的创建和切换。同时，因为每次提交时都记录了指向其父对象的指针（首次提交是没有直接祖先的，普通提交有一个祖先，由两个或多个分支合并产生的提交则有多个祖先）。Git 鼓励开发者频繁使用分支，正是因为有着这些特性作保障。</p>
-<h2 id="二、项目情况"><a href="#二、项目情况" class="headerlink" title="二、项目情况"></a>二、项目情况</h2><p>行业版：全国发包<br>特例版：基于行业版代码，有自己的个性化定制。行业版升级时，所有特例版要跟随进行升级适配。<br><strong>痛点：</strong><br>所有的代码基于提交至svn，无任何分支管理。生产版本发布、新功能开发、功能改造，特例开发、bug修正多任务同时并行，代码都提交到同一svn项目下，相互影响。<br>1)     生产版本发布<br>没有分支管理，导致bug修复时，但因多任务并行提交，代码已经被多次更改，需要回退到历史代码再进行bug修复，回退时发现历史代码相互引用的位置也需要回退。<br>2)     特例开发打包<br>所有代码基于行业版，为了进行区分，类，jsp都放到各自特例所在省、直辖市简写文件夹下，如北京 BJ。随着特例的进一步增多，代码变得臃肿，编译速度比较慢。这样一来需要新打包方案，把需要的代码打到一起，如北京：要把行业版+所有BJ文件夹打到一起，额外增加工作量，也比较容易出错</p>
-<h2 id="三、应用场景"><a href="#三、应用场景" class="headerlink" title="三、应用场景"></a>三、应用场景</h2><h3 id="3-1-总览场景"><a href="#3-1-总览场景" class="headerlink" title="3.1. 总览场景"></a>3.1. 总览场景</h3><p>SVN代码同步下来之后，<strong>去除所有的特例代码</strong>将其用git管理起来。默认svn同步下来的代码（去除所有特例代码）作为行业版目前正在开发的主线分支<strong>master</strong></p>
-<h4 id="3-1-1-行业版分支"><a href="#3-1-1-行业版分支" class="headerlink" title="3.1.1. 行业版分支"></a>3.1.1. 行业版分支</h4><p>行业版总共分5类分支，主分支是任何时候都不能删除的。辅助分支一旦到达某个稳定状态，合并完毕后是可以删除的，并且<strong>hy-feature、hy-hotfix </strong>这两个分支一般是本地分支，如下对这五类分支的特点做一一描述<br>主要分支</p>
+<p>Git是<strong>分布式</strong>版本控制系统，与传统的集中式的版本控制系统相比：集中式分布系统必须联网才能工作。因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】。而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到服务器即可。另外，在一个不能连接网络的地方时，就像在突然断网时，出差途中的火车、飞机上等，你仍然能够提交文件，查看历史版本记录，创建项目分支。</p>
+<a id="more"></a>
+<h2 id="一、项目情况"><a href="#一、项目情况" class="headerlink" title="一、项目情况"></a>一、项目情况</h2><p>烟草专卖，国家烟草总局统一全国推广，各省部署，且允许各地有自己的定制，个性化。</p>
+<p>行业版：全国发包<br>特例版：全国22个省加直辖市加自治区，基于行业版代码，可以有自己的个性化定制。但是行业版升级时，所有特例版要跟随进行升级适配。<br><strong>痛点：</strong></p>
+<p>行业+二十好几个特例需要分别打包管理，这么多的特例，行业升级适配，特例代码管理、版本控制等等想想都让人头痛。现实的情形确实也让人焦头烂额！所有的代码都用svn进行管理，且没有创建任何分支。刚开始行业版开发时还没有啥感觉，但是随着时间推进，特例代码的逐渐加入，越来越感觉力不从心。行业版发包、新功能开发、功能改造，特例开发、bug修正多任务同时并行，相互影响越来越大。</p>
+<p>1、生产版本发布<br>没有分支管理，导致bug修复时，但因多任务并行提交，代码已经被多次更改，需要回退到历史代码再进行bug修复，回退时发现历史代码相互引用的位置也需要回退。以至于没有能力修复现场提出的bug，因为当前的代码已经面目全非了<br>2、 特例开发打包<br>所有代码基于行业版，为了实现定制化，把特例代码放到各省、直辖市简写的文件夹下，如北京 BJ、安徽AH、江苏JS等。随着特例的进一步增多，代码变得臃肿，所有代码冗余在一起。这样一来需要专门定制打包方案，把需要的代码打到一起，如北京：要把行业版+所有BJ文件夹打到一起，额外增加工作量，也比较容易出错。</p>
+<p>此种情形下尝试引用git。</p>
+<h2 id="二、为什么使用git，git有什么特点"><a href="#二、为什么使用git，git有什么特点" class="headerlink" title="二、为什么使用git，git有什么特点"></a>二、为什么使用git，git有什么特点</h2><p>Git的分支与大多数版本控制系统形成了鲜明对比，其它的系统管理分支大多采取备份所有项目文件到特定目录的方式【重量级】，常常需要创建一个源代码目录的完整副本，所以根据项目文件数量和大小不同，可能花费的时间也会有相当大的差别，快则几秒，慢则数分钟。这是个昂贵的过程，对大型项目来说尤其如此。而 Git 分支的实现与项目复杂度无关，它永远可以在几毫秒的时间内完成分支的创建和切换。同时，因为每次提交时都记录了指向其父对象的指针（首次提交是没有直接祖先的，普通提交有一个祖先，由两个或多个分支合并产生的提交则有多个祖先）。Git 鼓励开发者频繁使用分支，正是因为有着这些特性作保障。如此看来，git十分适合解决上面项目的那些痛点</p>
+<h2 id="三、分支如何适配复杂应用场景"><a href="#三、分支如何适配复杂应用场景" class="headerlink" title="三、分支如何适配复杂应用场景"></a>三、分支如何适配复杂应用场景</h2><h3 id="总览场景"><a href="#总览场景" class="headerlink" title="总览场景"></a>总览场景</h3><p>SVN代码同步下来之后，去除其中所有特例代码作为行业版目前正在开发的主线分支<strong>master</strong>，将其用git管理起来。主分支是任何时候都不能删除的。辅助分支一旦到达某个稳定状态，合并完毕后是可以删除的，并且<strong>hy-feature、hy-hotfix </strong>这两个分支一般是本地分支，如下对这五类分支的特点做一一描述</p>
+<h4 id="1、行业版分支"><a href="#1、行业版分支" class="headerlink" title="1、行业版分支"></a>1、行业版分支</h4><p>行业版总共分5类分支<br>主要分支</p>
 <ul>
-<li>master</li>
-<li>hy-dev<br>3类辅助分支</li>
-<li>hy-release</li>
-<li>hy-feature</li>
-<li>hy-hotfix<h5 id="1-master分支"><a href="#1-master分支" class="headerlink" title="1. master分支"></a>1. master分支</h5>主分支代表一个个版本，每次这个分支代码有变动，代表有新版本发布，有如下特点：</li>
+<li><p>master</p>
+</li>
+<li><p>hy-dev</p>
+</li>
+</ul>
+<p>3类辅助分支</p>
+<ul>
+<li><p>hy-release</p>
+</li>
+<li><p>hy-feature</p>
+</li>
+<li><p>hy-hotfix<br>下面分别介绍各自特点：</p>
+</li>
+</ul>
+<h5 id="master分支"><a href="#master分支" class="headerlink" title="master分支"></a>master分支</h5><p>主分支代表一个个版本，每次这个分支代码有变动，代表有新版本发布，有如下特点：</p>
+<ul>
 <li>此分支可以随时打包；</li>
 <li>所有行业版代码的正式版发包都由此分支来；</li>
 <li>master分支的每一次提交（合并）都是预先定义好的一个新版本，必须标识tag；</li>
-<li>原则上不允许直接往此分支直接提交代码（jf上可以锁定此分支）。<h5 id="2-开发分支hy-dev"><a href="#2-开发分支hy-dev" class="headerlink" title="2. 开发分支hy-dev"></a>2. 开发分支hy-dev</h5>开发分支上永远是系统中的最新代码，代表整个系统的整体进度，此分支又称【整合分支】</li>
+<li>原则上不允许直接往此分支直接提交代码（jf上可以锁定此分支）。<h5 id="开发分支-hy-dev"><a href="#开发分支-hy-dev" class="headerlink" title="开发分支-hy-dev"></a>开发分支-hy-dev</h5>开发分支上永远是系统中的最新代码，代表整个系统的整体进度，此分支又称【整合分支】</li>
 <li>普通开发人员的主要工作是基于此分支进行的；</li>
 <li>行业版开发完成的特性（feature分支）必须合并到<strong>hy-dev</strong>分支；</li>
-<li><strong>hy-dev</strong>分支上的代码达到了一个稳定状态，并且准备封包正式发布时，所有的代码提交都应该合并到master分支，然后打上发布版本号的tag。（也可以通过<strong>release分支</strong>合并到master）<h5 id="3-辅助分支"><a href="#3-辅助分支" class="headerlink" title="3. 辅助分支"></a>3. 辅助分支</h5>在某个时间结点之后可以删除的分支 解放平台上行业版的辅助分支有预发布分支<strong>hy-release-xx.x</strong> <h6 id="预发布分支"><a href="#预发布分支" class="headerlink" title="预发布分支"></a>预发布分支</h6>基于hy-dev分支的某个时间结点可以创建一个预发布分支 hy-release-xx.x</li>
+<li><strong>hy-dev</strong>分支上的代码达到了一个稳定状态，并且准备封包正式发布时，所有的代码提交都应该合并到master分支，然后打上发布版本号的tag。（也可以通过<strong>release分支</strong>合并到master）<h5 id="辅助分支"><a href="#辅助分支" class="headerlink" title="辅助分支"></a>辅助分支</h5></li>
+</ul>
+<p>在某个时间结点之后可以删除的临时分支</p>
+<h6 id="预发布分支-hy-release-xx-x"><a href="#预发布分支-hy-release-xx-x" class="headerlink" title="预发布分支-hy-release-xx.x"></a><strong>预发布分支</strong>-<strong>hy-release-xx.x</strong></h6><p>基于hy-dev分支的某个时间结点可以创建一个预发布分支 hy-release-xx.x</p>
+<ul>
 <li>预发布分支只用于bug修复；</li>
 <li>Bug修复需要合并至hy-dev分支</li>
 <li>随时合并至hy-dev分支</li>
-<li>一旦稳定将同步合并至<strong>master</strong>分支（写tag），发布正式版本<h6 id="功能分支（特性分支）"><a href="#功能分支（特性分支）" class="headerlink" title="功能分支（特性分支）"></a>功能分支（特性分支）</h6>基于hy-dev分支创建功能分支（特性分支）hy-feature-功能1</li>
+<li>一旦稳定将同步合并至<strong>master</strong>分支（写tag），发布正式版本<h6 id="功能分支（特性分支）"><a href="#功能分支（特性分支）" class="headerlink" title="功能分支（特性分支）"></a><strong>功能分支（特性分支）</strong></h6>基于hy-dev分支创建功能分支（特性分支）hy-feature-功能1</li>
 <li>此分支一般不需要推送至远程仓库上，除非需多人协作开发的功能</li>
-<li>功能稳定后需要合并至<strong>hy-dev</strong>分支<h6 id="紧急修复分支"><a href="#紧急修复分支" class="headerlink" title="紧急修复分支"></a>紧急修复分支</h6>基于master分支创建hy-hotfix分支</li>
+<li>功能稳定后需要合并至<strong>hy-dev</strong>分支<h6 id="紧急BUG修复分支"><a href="#紧急BUG修复分支" class="headerlink" title="紧急BUG修复分支"></a><strong>紧急BUG修复分支</strong></h6>基于master某个tag创建hy-hotfix分支</li>
 <li>本地管理不需要推送远程仓库；</li>
 <li>紧急bug修复；</li>
 <li>稳定后需要同时同步至master和hy-dev分支；</li>
 <li>合并至master后会产生一个正式版本的小版本（tag）。</li>
 <li>特例版分支中关乎行业版本的新功能或bug修复原则上也应创建类似hy-hotfix的分支进行修复后合并至master，再同步至特例版分支</li>
 </ul>
-<h4 id="3-1-2-特例分支"><a href="#3-1-2-特例分支" class="headerlink" title="3.1.2. 特例分支"></a>3.1.2. 特例分支</h4><p>更复杂的场景，行业版+特例版<br>全国各省都会有自己的定制化开发，这些也需要开发，测试，发包等一系列类似行业版的操作，且随行业版本升级而升级。特例版分支示例：如北京局特例版</p>
-<p>北京局特例代码包含行业版代码+北京局特例代码，且这两者必须明确分开以方便后续行业版升级时的合并，为了降低复杂度，这个合并只能单方向进行，即由行业版分支合并至北京特利版分支，而不能将北京特例版分支中的行业更改合并至行业版分支，这样就要求所有北京特例版分支的所有开发操作只涉及北京特例内容，所有的行业版相关内容请在行业版分支进行。</p>
+<h4 id="2、-特例分支"><a href="#2、-特例分支" class="headerlink" title="2、 特例分支"></a>2、 特例分支</h4><p>更复杂的场景，行业版+特例版<br>全国各省都会有自己的定制化开发，这些也需要开发，测试，发包等一系列类似行业版的操作，且随行业版本升级而升级。特例版分支示例：如北京局特例版</p>
+<p>北京局特例代码包含行业版代码+北京局特例代码，且这两者必须明确分开以方便后续行业版升级时的合并，为了降低复杂度，这个合并只能单方向进行，即由行业版分支合并至北京特利版分支，而不能将北京特例版分支中的行业更改合并至行业版分支，这样就要求所有北京特例版分支的所有开发操作只涉及北京特例内容，涉及行业版相关的代码需要在行业版分支进行。</p>
 <h5 id="特例分支创建"><a href="#特例分支创建" class="headerlink" title="特例分支创建"></a>特例分支创建</h5><ul>
 <li>在行业版分支master基础上创建北京master分支<strong>bj-master</strong></li>
 <li>在bj-master基础上创建<strong>bj-dev</strong></li>
 <li>创建辅助分支<strong>bj-release1.1、bj-feature、bj-hotfix</strong></li>
 </ul>
 <p>注意：必须遵循一个规则：所有特例化的代码必须与行业版分离（如：单独文件夹，单独类名）。如此一来，当行业版进行升级时，所有的特例分支可以无冲突的快速与master进行合并。一旦不遵循这个规则，后续的分支合并，行业升级将十分痛苦，甚至无法合并！</p>
-<p><img src="http://oowxnvumd.bkt.clouddn.com/git-branch.jpg" alt="复杂分支示例"><br>图1 行业专卖git分支总览</p>
-<h3 id="3-2-小场景"><a href="#3-2-小场景" class="headerlink" title="3.2 小场景"></a>3.2 小场景</h3><p>行业功能开发过程中忽然需要进行北京特例2.2版本一个紧急bug的修复，此时行业功能刚开发一半，类还在报错不能提交，提交会影响其他人的工作，此时要进行如下操作</p>
-<pre><code class="shell">git stash # 当前工作区工作暂存
-git checkout  bj-master #切换至北京特例分支
-git branch bj-fixbug-2.2.1 #新建分支
-git checkout bj-fixbug-2.2.1 #切换到新分支
+<p><img src="http://oowxnvumd.bkt.clouddn.com/git-branch.jpg" alt="复杂分支示例"><br>看懂这个图，也就理解了这篇文章，基本可以应付各种复杂度极高的企业级项目代码管理了</p>
+<h3 id="3-2-小场景"><a href="#3-2-小场景" class="headerlink" title="3.2 小场景"></a>3.2 小场景</h3><p>行业功能开发过程中忽然需要进行北京特例2.2版本一个紧急bug的修复，此时行业功能刚开发一半，类还在报错不能提交，会影响其他人的工作。</p>
+<p>此种场景在git中可以轻松+愉快的解决</p>
+<blockquote>
+<p>用git stash命令进行快速切换</p>
+<pre><code class="shell"># 当前工作区工作暂存
+git stash
+# 切换至北京特例分支
+git checkout  bj-master
+# 切换至跟生产部署的war包一致的代码环境
+git ck tagv1.0
+# 新建分支
+git branch bj-fixbug-2.2.1
+# 切换到新分支
+git checkout bj-fixbug-2.2.1
 </code></pre>
-<p>修复bug<br>提交测试<br>测试通过<br>合并分支<br>……总之完成了</p>
-<pre><code class="shell">git checkeout hy-feature-1.1 #切换到行业开发功能分支
-git stash apply --index # 恢复工作区，暂存区内容
+<p>修复bug<br>提交测试<br>测试通过<br>合并分支<br>……</p>
+<p>完成了</p>
+<pre><code class="shell"># 切换到行业开发功能分支
+git checkeout hy-feature-1.1
+# 恢复工作区，暂存区内容，此时可以继续刚才的开发工作
+git stash apply --index
 </code></pre>
-<p>此时可以继续刚才的开发工作<br><strong>大家可以想一下如果不用git，这个场景要如何进行</strong></p>
-<h2 id="四、Git基础"><a href="#四、Git基础" class="headerlink" title="四、Git基础"></a>四、Git基础</h2><p>Svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
-<ul>
-<li><strong>工作区：</strong>你的workspace</li>
-<li><strong>版本库：</strong>工作区的隐藏目录.git</li>
-<li>stage（index）：暂存区</li>
-<li>master：git自动创建的第一个分支，指向最新提交</li>
-<li>HEAD：指向master的一个指针<br>这个图非常重要，一定要理解。<br> <img src="http://oowxnvumd.bkt.clouddn.com/gitrepo.png" alt="git结构"><br>图2 git目录结构<br>git的要达到类似svn的提交程度需要进行三步：</li>
-<li>第一步【git add】将文件修改添加到暂存区stage</li>
-<li>第二步【git commit】提交更改，将暂存区的所有内容提交到本地版本库</li>
-<li>第三步【git push】将当前分支的本地版本库信息推送到远程版本库<br><strong>注意：</strong>git使用的第一步必须先设定自己的用户名，邮箱地址：</li>
-</ul>
-<pre><code class="shell">gitconfig --global user.name &quot;王小二&quot;
-gitconfig --global user.email &quot;wangxiaoer@chinasofti.com&quot;
-</code></pre>
-<p>git分支的一些知识点分享：<br>官方文档推荐在<strong>分支切换之前保证工作区clean</strong>，这个原则很重要原因如下：<br><strong>新增的文件</strong>，分支切换会带着这个文件到新分支中（新增的文件在git中是个特殊的存在，务必注意）<br>更新的文件分三种情况：</p>
-<ul>
-<li>被更新的文件在新分支中没有，不能切换；</li>
-<li>被更新的文件在新分支中有，且跟当前分支的父对象不同（内容相同也不可以） ，不能切换分支；</li>
-<li>被更新的文件在新分支中有，且跟当前分支有共同父对象，这个文件内容会带到新分支中；<br>情况多样且复杂，由此看来分支切换之前保证<strong>工作区clean</strong>非常有必要！<br>当然也也可以用 gitstash来暂存工作区和暂存区的文件（此处注意：新建的文件不能暂存；每次执行此命令，最新的永远是stash@{0}）</li>
-</ul>
-<pre><code class="shell">gitstash apply #恢复工作区代码，且暂存区代码也恢复至工作区，
-gitstash apply --index #恢复工作区代码，且暂存区代码恢复至暂存区
-</code></pre>
+</blockquote>
+<p><strong>大家可以想一下如果不用git，这个场景要如何进行</strong></p>
 <h2 id="附录："><a href="#附录：" class="headerlink" title="附录："></a>附录：</h2><p>svn与git二者可以互相同步，但是要在.gitignore排除[.svn/] ，在svn中排除[/.git/]<br>建议：svn上对行业版、北京特例版、安徽特例版的代码进行区分。不要全部糅合在一起，这样也好跟git的分支代码进行一一对应。若后续以git为准则不需要额外再考虑这些。git足够灵活，可以随时捡出符合条件的代码提交至svn。<br>.gitignore文件定义要忽略的文件，比较重要的是[.svn/]将跟svn版本管理相关的内容排除出去，具体其他配置如下：</p>
 <pre><code class="shell"># Myconfigurations:
 .svn/
@@ -201,7 +212,7 @@ Desktop.ini
     <summary type="html">
     
       &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;一、为什么使用git，git有什么特点&quot;&gt;&lt;a href=&quot;#一、为什么使用git，git有什么特点&quot; class=&quot;headerlink&quot; title=&quot;一、为什么使用git，git有什么特点&quot;&gt;&lt;/a&gt;一、为什么使用git，git有什么特点&lt;/h2&gt;&lt;p&gt;Git是&lt;strong&gt;分布式&lt;/strong&gt;版本控制系统，与传统的集中式的版本控制系统相比&lt;br&gt;集中式分布系统必须联网才能工作，因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】，而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到服务器即可。另外，在一个不能连接网络的地方时，就像在突然断网时，出差途中的火车、飞机上等，你仍然能够提交文件，查看历史版本记录，创建项目分支。&lt;br&gt;
+&lt;p&gt;Git是&lt;strong&gt;分布式&lt;/strong&gt;版本控制系统，与传统的集中式的版本控制系统相比：集中式分布系统必须联网才能工作。因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】。而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到服务器即可。另外，在一个不能连接网络的地方时，就像在突然断网时，出差途中的火车、飞机上等，你仍然能够提交文件，查看历史版本记录，创建项目分支。&lt;/p&gt;
     
     </summary>
     
@@ -216,6 +227,8 @@ Desktop.ini
     
       <category term="企业应用" scheme="//ezsay.cn/tags/%E4%BC%81%E4%B8%9A%E5%BA%94%E7%94%A8/"/>
     
+      <category term="分支管理" scheme="//ezsay.cn/tags/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/"/>
+    
   </entry>
   
   <entry>
@@ -223,9 +236,49 @@ Desktop.ini
     <link href="//ezsay.cn/2017/04/28/skill/git_abc/"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc/</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2017-05-05T12:27:46.410Z</updated>
+    <updated>2017-05-05T14:58:05.743Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h1 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h1><p><strong>git移库</strong></p>
+    <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
+<ul>
+<li><strong>工作区：</strong>你的workspace</li>
+<li><strong>版本库：</strong>工作区的隐藏目录.git</li>
+<li>stage（index）：暂存区</li>
+<li>master：git自动创建的第一个分支，指向最新提交</li>
+<li>HEAD：指向master的一个指针</li>
+</ul>
+<a id="more"></a>
+<p><img src="http://oowxnvumd.bkt.clouddn.com/gitrepo.png" alt="git结构"></p>
+<p>这个图非常重要，一定要理解。</p>
+<p>git的要达到类似svn的提交程度需要进行三步：</p>
+<ul>
+<li>第一步【git add】将文件修改添加到暂存区stage</li>
+<li>第二步【git commit】提交更改，将暂存区的所有内容提交到本地版本库</li>
+<li>第三步【git push】将当前分支的本地版本库信息推送到远程版本库</li>
+</ul>
+<p><em>注意：</em>git使用的第一步必须先设定自己的用户名，邮箱地址：</p>
+<pre><code class="shell">gitconfig --global user.name &quot;王小二&quot;
+gitconfig --global user.email &quot;wangxiaoer@xxx.com&quot;
+</code></pre>
+<p><strong>git分支的一些知识点分享：</strong><br>官方文档推荐在<strong>分支切换之前保证工作区clean</strong>，这个原则很重要原因如下：<br><strong>1、新增的文件</strong></p>
+<p>分支切换会带着这个文件到新分支中。新增的文件在git中是个特殊的存在，因为并未被git管理起来<br><strong>2、更新的文件</strong></p>
+<p>三种情况：</p>
+<ul>
+<li><p>被更新的文件在新分支中没有，不能切换；</p>
+</li>
+<li><p>被更新的文件在新分支中有，且跟当前分支的父对象不同（内容相同也不可以） ，不能切换分支；</p>
+</li>
+<li><p>被更新的文件在新分支中有，且跟当前分支有共同父对象，这个文件内容会带到新分支中；</p>
+</li>
+</ul>
+<p>情况多样且复杂，由此看来分支切换之前保证<strong>工作区clean</strong>非常有必要！<br>当然此时也可以用 git stash命令来暂存工作区和暂存区的文件</p>
+<pre><code class="shell"># 恢复工作区代码，且暂存区代码也恢复至工作区
+$ git stash apply 
+
+# 恢复工作区代码，且暂存区代码恢复至暂存区
+git stash apply --index
+</code></pre>
+<p>（此处注意两点：<strong>新添加的文件</strong>不能暂存；每次执行此命令，最新的永远是<strong>stash@{0}</strong>）</p>
+<h1 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h1><p><strong>git移库</strong></p>
 <p><strong>demo.git -&gt; target.git</strong></p>
 <pre><code class="shell"># linux新建裸库
 git init --bare target.git
@@ -288,7 +341,14 @@ Automatic merge failed; fix conflicts and then commit the result.
     
     <summary type="html">
     
-      &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;h1 id=&quot;高级操作&quot;&gt;&lt;a href=&quot;#高级操作&quot; class=&quot;headerlink&quot; title=&quot;高级操作&quot;&gt;&lt;/a&gt;高级操作&lt;/h
+      &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;h2 id=&quot;Git基本概念&quot;&gt;&lt;a href=&quot;#Git基本概念&quot; class=&quot;headerlink&quot; title=&quot;Git基本概念&quot;&gt;&lt;/a&gt;Git基本概念&lt;/h2&gt;&lt;p&gt;svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;工作区：&lt;/strong&gt;你的workspace&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;版本库：&lt;/strong&gt;工作区的隐藏目录.git&lt;/li&gt;
+&lt;li&gt;stage（index）：暂存区&lt;/li&gt;
+&lt;li&gt;master：git自动创建的第一个分支，指向最新提交&lt;/li&gt;
+&lt;li&gt;HEAD：指向master的一个指针&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
