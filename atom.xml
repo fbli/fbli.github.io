@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>哎呦啊唝</title>
-  <subtitle>生活美好，美好生活</subtitle>
+  <subtitle>ez to say,hard to do</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
@@ -403,9 +403,66 @@ Desktop.ini
     <link href="//ezsay.cn/2017/04/28/skill/git_abc/"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc/</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2017-05-04T10:41:28.028Z</updated>
+    <updated>2017-05-05T10:46:11.864Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h1 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h1><p><strong>git移库</strong></p>
+<p><strong>demo.git -&gt; target.git</strong></p>
+<pre><code class="shell"># linux新建裸库
+git init --bare target.git
+# 裸库递归更改拥有者与仓库地址前缀一致
+chrome -R git:git target.git
+
+# 本地clone待迁移的裸库
+git clone --bare git@XXX.com/xxx/demo.git
+# 进入裸库
+cd demo.git
+# 推送裸库到目标库
+git push --mirror git@xxx.com/xxxx/target.git
+</code></pre>
+<p><strong>验证是否迁移成功</strong></p>
+<pre><code class="shell"># 克隆目标库
+git clone git@XXX.com/xxx/target.git
+# 查看是否已经迁移
+git branch -a
+git log
+</code></pre>
+<p><strong>可能出现的问题</strong></p>
+<p>1、问：新建的裸库，可以克隆但是不能推送</p>
+<p>答：检查裸库目录的权限的<strong>拥有者</strong>和<strong>群组</strong></p>
+<blockquote>
+<p>ls -al 或者 ll命令</p>
+<pre><code class="shell">ls -al
+drwxr-xr-x 7 root  root  4096 May  3 11:33 target.git
+</code></pre>
+<p>此时本地仓库是没法推送的</p>
+<pre><code class="shell">git clone git@XXX.com/xxx/target.git
+</code></pre>
+<p>需要将<strong>拥有者</strong>和<strong>群组</strong>设置成跟地址<strong>git@XX</strong>前缀一致的</p>
+<pre><code class="shell">chown -R git:git target.git
+ll
+drwxr-xr-x 7 git  git  4096 May  3 11:33 target.git
+</code></pre>
+</blockquote>
+<p>2、若两个仓库之间有一样的文件，移库是有问题的，此时拉取会报错。</p>
+<pre><code class="shell">$ git pull
+fatal: refusing to merge unrelated histories
+
+# 用这个命令合并即可
+$ git pull origin master --allow-unrelated-histories
+From git@XXX.com/xxx/target.git
+ * branch            master     -&gt; FETCH_HEAD
+Auto-merging README.txt
+CONFLICT (add/add): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+# 合并完毕必定冲突，此时分支状态变为(master|MERGING) ,解决冲突重新提交即可
+</code></pre>
+<p>推荐：新建的裸库尽量一点东西没有，特别不要有跟要迁移仓库一样的文件</p>
+]]></content>
     
     <summary type="html">
+    
+      &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;h1 id=&quot;高级操作&quot;&gt;&lt;a href=&quot;#高级操作&quot; class=&quot;headerlink&quot; title=&quot;高级操作&quot;&gt;&lt;/a&gt;高级操作&lt;/h
     
     </summary>
     
