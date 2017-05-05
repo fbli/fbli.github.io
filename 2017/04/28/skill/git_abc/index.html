@@ -15,7 +15,7 @@
 <meta property="og:url" content="//ezsay.cn/2017/04/28/skill/git_abc/index.html">
 <meta property="og:site_name" content="哎呦啊唝">
 <meta property="og:description" content="序言高级操作git移库 demo.git -&amp;gt; target.git # linux新建裸库 git init --bare target.git # 裸库递归更改拥有者与仓库地址前缀一致 chrome -R git:git target.git  # 本地clone待迁移的裸库 git clone --bare git@XXX.com/xxx/demo.git # 进入裸库 cd demo">
-<meta property="og:updated_time" content="2017-05-05T10:46:11.864Z">
+<meta property="og:updated_time" content="2017-05-05T12:27:46.410Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git入门">
 <meta name="twitter:description" content="序言高级操作git移库 demo.git -&amp;gt; target.git # linux新建裸库 git init --bare target.git # 裸库递归更改拥有者与仓库地址前缀一致 chrome -R git:git target.git  # 本地clone待迁移的裸库 git clone --bare git@XXX.com/xxx/demo.git # 进入裸库 cd demo">
@@ -233,6 +233,12 @@ drwxr-xr-x 7 root  root  4096 May  3 11:33 target.git
 </code></pre>
 <p>此时本地仓库是没法推送的</p>
 <pre><code class="shell">git clone git@XXX.com/xxx/target.git
+
+# 修改文件、本地提交、推送
+git push
+remote: error: insufficient permission for adding an object to repository database ./objects
+remote: fatal: failed to write object
+error: unpack failed: unpack-objects abnormal exit
 </code></pre>
 <p>需要将<strong>拥有者</strong>和<strong>群组</strong>设置成跟地址<strong>git@XX</strong>前缀一致的</p>
 <pre><code class="shell">chown -R git:git target.git

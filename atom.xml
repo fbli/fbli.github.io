@@ -86,186 +86,6 @@
   </entry>
   
   <entry>
-    <title>网站技术构建过程 - ezaoe.com</title>
-    <link href="//ezsay.cn/2017/04/29/skill/ezaoe_build/"/>
-    <id>//ezsay.cn/2017/04/29/skill/ezaoe_build/</id>
-    <published>2017-04-29T08:59:24.000Z</published>
-    <updated>2017-05-04T10:41:28.019Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p>功能：专而精，小而美；</p>
-</blockquote>
-<p>准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积。定好大方向，不要过多纠缠细节，快速实现，小步快跑，快感叠加，高潮迭起</p>
-<p>实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔，起步阶段背负太多，很容易陷入迷惘进而夭折，对个人项目尤其如此。一开始不可能想的面面俱到，现实中很多问题是在真正动手的过程中发现进而完善的。so 快速迭代很有必要，一方面很容易发现没有考虑到的问题，更重要的是快速实现的功能所带来的成就感会激励自己持续向前，快感很重要，否则后果很严重。</p>
-<a id="more"></a>
-<p>知识储备<br>     Linux服务器搭建、安全策略、发布脚本、日志分析、性能优化<br>     网站推广<br>     网站运维，内容、服务<br>     开发相关技术累积；<br>          前端：html5,bootstrap , nodejs， vue.js， backbone.js等；<br>          后端：并发，缓存服务，队列，权限验证，图片压缩<br>          内容：python爬虫</p>
-<p>系统待开发功能列表</p>
-<pre><code>1. 网站 https://www.ezaoe.com
-2. 网站配套APP Android/IOS应用（网站业务相关[ezaoe]、方便易用的app[ezphone] ）
-3. 微信公众号
-4. 其他
-</code></pre><p>工程模块命名过程<br>基于待开发功能列表，指定工程的命名规范如下：【参看附录1】<br>Group ID: com.ezaoe<br>Artifact ID:<br>     yiqi-web<br>     yiqi-common<br>     yiqi-shiro<br>     yiqi-schedule<br>     yiqi-weixin<br>     yiqi-phone</p>
-<p>模块命名有两种方式：<br>各模块包名一样，module1:com.ezaoe.common; module2:com.ezaoe.common<br>模块中的包跟模块绑定，module1： com.ezaoe.moudle1.common; module2： com.ezaoe.moudle2.common</p>
-<p>网站初始阶段暂时不分模块，后续进行再进行模块抽取</p>
-<p>==============<br>附录1：阿里巴巴编程规范-二方库规约<br>GroupID格式：com.{公司/BU }.业务线.[子业务线]，最多4级。 说明：{公司/BU} 例如：alibaba/taobao/tmall/aliexpress等BU一级；子业务线可选。<br>正例：com.taobao.jstorm 或 com.alibaba.dubbo.register<br>附录2：阿里巴巴编程规范-命名规约-包命名<br>包名统一使用小写，点分隔符之间有且仅有一个自然语义的英语单词。包名统一使用单数形式，但是类名如果有复数含义，类名可以使用复数形式。<br>正例： 应用工具类包名为com.alibaba.open.util、类名为MessageUtils（此规则参考spring的框架结构）</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;功能：专而精，小而美；&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;准备重新构建Ezaoe网站，尽可能参看已有成熟经验，少踩雷，记录下构建过程，作为自己的一个累积。定好大方向，不要过多纠缠细节，快速实现，小步快跑，快感叠加，高潮迭起&lt;/p&gt;
-&lt;p&gt;实现过程：小步快跑，快速迭代（试错）。小步快跑跟周密计划再实现是相悖的，任何过程都要把握好一个度，过犹不及。感觉大的架构方向务必要提前规划好，因为这个一旦犯错后续修复的成本太高。但是贸然陷入细节之中不可自拔，起步阶段背负太多，很容易陷入迷惘进而夭折，对个人项目尤其如此。一开始不可能想的面面俱到，现实中很多问题是在真正动手的过程中发现进而完善的。so 快速迭代很有必要，一方面很容易发现没有考虑到的问题，更重要的是快速实现的功能所带来的成就感会激励自己持续向前，快感很重要，否则后果很严重。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-    
-    
-      <category term="管理" scheme="//ezsay.cn/tags/%E7%AE%A1%E7%90%86/"/>
-    
-      <category term="架构" scheme="//ezsay.cn/tags/%E6%9E%B6%E6%9E%84/"/>
-    
-      <category term="功能设计" scheme="//ezsay.cn/tags/%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>网站定位过程-ezaoe.com</title>
-    <link href="//ezsay.cn/2017/04/29/skill/ezaoe_goto/"/>
-    <id>//ezsay.cn/2017/04/29/skill/ezaoe_goto/</id>
-    <published>2017-04-29T02:55:24.000Z</published>
-    <updated>2017-05-04T10:41:28.025Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p>名字：郎朗上口，有一句简洁的宣传口号；</p>
-<p>方向：有市场、有意义、有钱景。</p>
-</blockquote>
-<p>愿景让我们有方向感，告诉我们去哪里；使命让我们知道为什么而存在，使我们不迷茫。ezaoe.com现在需要起好名字，定好方向，设计贴合的Logo。要求有自己精准的定位，小而美的解决一些痛点，让人难忘。</p>
-<a id="more"></a>
-<p>[TOC]</p>
-<h2 id="1、关于域名"><a href="#1、关于域名" class="headerlink" title="1、关于域名"></a>1、关于域名</h2><p>ezaoe.com作为主域名，旗下保护若干相关域名</p>
-<h3 id="1-1、域名特色"><a href="#1-1、域名特色" class="headerlink" title="1.1、域名特色"></a>1.1、域名特色</h3><p><strong>优势：</strong></p>
-<ul>
-<li>五个字母<strong>短</strong>域名；</li>
-<li>com、cn域名都已经保护；</li>
-<li>域名字母多数是元音，看着舒服；</li>
-<li>郎朗上口；</li>
-<li>指向鲜明。</li>
-</ul>
-<p><strong>劣势：</strong></p>
-<ul>
-<li>英文+字母混合域名，非双拼、非纯英文；</li>
-<li>望文生义的取个简单名字不易；</li>
-<li>指向方向过于单一,市场范围不够大;</li>
-<li>定位比较困难</li>
-</ul>
-<blockquote>
-<p>普通青年用拼音域名，文艺青年用英文域名，<strong>2B青年</strong>用英文+字母混合域名</p>
-</blockquote>
-<h3 id="1-2、域名释义"><a href="#1-2、域名释义" class="headerlink" title="1.2、域名释义"></a>1.2、域名释义</h3><p>ez   = 容易的，舒适的，不费力地，从容地 … 重点在一个<strong>易</strong>字<br>aoe = 汉语拼音的前3个字母 ，是我们幼儿园启蒙的开始，读书识字的第一步。重点在一个<strong>始</strong>字</p>
-<ul>
-<li>字面含义 = 容易的阿喔鹅 ，简单的阿喔鹅<ul>
-<li>圆圆脸袋扎小辫，张大嘴巴 a,a,a    </li>
-<li>太阳出来红彤彤，公鸡 一叫o,o,o</li>
-<li>清清池塘一只鹅，水中倒影e,e,e</li>
-</ul>
-</li>
-<li>引申含义 = 小朋友轻松开始读书识字的第一步；中老年人从字母读音开始学习电脑的基础</li>
-</ul>
-<h2 id="2、网站定位"><a href="#2、网站定位" class="headerlink" title="2、网站定位"></a>2、网站定位</h2><p>启蒙小朋友走好第一步，轻松开始读书识字；教中老年人从字母读音开始学习电脑的基础，会拼音能打字，表达自己内心想法，跟儿女畅快沟通。教好小朋友，教会老朋友，启迪新朋友（初心：教会老人入门使用电脑，启蒙宝宝人生第一步）</p>
-<p>使命：让年幼的子女，年迈的父母都能简单快乐的接受基础教育<br>愿景：五年内立住脚实现盈利，十年之内打造一个独一无二的家庭类基础教育网站</p>
-<h3 id="2-1、口号："><a href="#2-1、口号：" class="headerlink" title="2.1、口号："></a>2.1、口号：</h3><p>和年幼的宝宝一起成长，快乐启蒙<br>和年迈的爸妈一起学习，畅快沟通<br>易启学习，一个可以和家人一起进步的基础教育网站</p>
-<h3 id="2-2、使用人群（老，中老，中，少-）"><a href="#2-2、使用人群（老，中老，中，少-）" class="headerlink" title="2.2、使用人群（老，中老，中，少 ）"></a>2.2、使用人群（老，中老，中，少 ）</h3><p>老人孩子二者都需要引导入门，这样网站定位中这个引导人就非常重要，以家庭为单位强调【一起】这个概念，启蒙孩子，沟通父母，启迪自己，一起学习，谐音网站名称：易启学习</p>
-<ul>
-<li>75后以及之前的：中老年人，因为电脑技术飞速发展而没有系统接受培训的断层一代</li>
-<li>10后：刚开始接受启蒙的学前幼儿园小盆友 ，将来的引导人</li>
-<li>00后：即将的引导人</li>
-<li>80后90后：现阶段的引导人，支付人</li>
-</ul>
-<h3 id="2-3、前景展望"><a href="#2-3、前景展望" class="headerlink" title="2.3、前景展望"></a>2.3、前景展望</h3><p>广告联盟 </p>
-<p>VIP精品高级教程概念，月费，季费，年费，终身会员制</p>
-<p>精准定位的幼儿、老年人群，主力引导人做延伸</p>
-<p>TODO</p>
-<h2 id="3、功能设计"><a href="#3、功能设计" class="headerlink" title="3、功能设计"></a>3、功能设计</h2><p>4.1、学习线路图：</p>
-<ul>
-<li>[x] 字母-》拼音-》识字-》打字-》网络-》各种延伸教程-》好玩资讯</li>
-</ul>
-<p>TODO</p>
-<h2 id="4、网站图标设计"><a href="#4、网站图标设计" class="headerlink" title="4、网站图标设计"></a>4、网站图标设计</h2><p>好的logo让人过目难忘，利于后期推广。Logo的设计总体讲滞后起名字，但是好的log创意反过来可能启发名字和方向，但是总的来讲logo、名字、方向其实是一体的。互相贴合才是终极目标。</p>
-<p>1、简洁清晰版-好看的英文字体而已-无设计</p>
-<p><img src="http://oowxnvumd.bkt.clouddn.com/logo_%E7%BA%AF%E5%AD%97%E6%AF%8D.png" alt="" title="纯文"></p>
-<p>2、图文并茂版<br>元素丰富，能够直白体现EZ阿喔鹅 ，但是显得混杂，看着乱，牛逼的图标好似都简洁明了</p>
-<p><img src="http://oowxnvumd.bkt.clouddn.com/logo_%E5%88%9B%E6%84%8FI.png?imageView2/2/w/350/" alt="" title="设计I"></p>
-<p>3、图片精美版<br>不够直白，特别对于【喔】元素来讲，还是过于杂乱</p>
-<p><img src="http://oowxnvumd.bkt.clouddn.com/logo-%E5%88%9B%E6%84%8FII.png?imageView2/2/w/250/" alt="" title="设计II"></p>
-<p>TODO</p>
-<hr>
-<h2 id="附录参照："><a href="#附录参照：" class="headerlink" title="附录参照："></a>附录参照：</h2><p>使命</p>
-<ul>
-<li>阿里巴巴：让天下没有难做的生意；</li>
-<li>迪士尼：make the world happy；</li>
-<li>AT&amp;T的创始人: “要让美国的每个家庭和每间办公室都安上电话”。</li>
-</ul>
-<p>启迪</p>
-<p>​    马太效应告诉我们: 要想在某一个领域保持优势，就必须在此领域迅速做大。当你成为某个领域的领头羊时，即便投资回报率相同，你也能更轻易地获得比弱小的同行更大的收益。而若没有实力迅速在某个领域做大，就要不停地寻找新的发展领域，才能保证获得较好的回报。</p>
-<p>​    早前互联网流传着：三巨头的项目你就不要做，但是新的说法是：三巨头走的行业你必须走，但是不要走一样模式，记住是不一样模式。</p>
-<table>
-<thead>
-<tr>
-<th>域名</th>
-<th>到期时间</th>
-<th>花费</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ezaoe.cn</td>
-<td>2026/03/12</td>
-<td>344</td>
-</tr>
-<tr>
-<td>ezaoe.com</td>
-<td>2026/03/08</td>
-<td>585</td>
-</tr>
-<tr>
-<td>easyaoe.com</td>
-<td>2021/03/14</td>
-<td>285</td>
-</tr>
-<tr>
-<td>共计</td>
-<td></td>
-<td>1214￥</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;名字：郎朗上口，有一句简洁的宣传口号；&lt;/p&gt;
-&lt;p&gt;方向：有市场、有意义、有钱景。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;愿景让我们有方向感，告诉我们去哪里；使命让我们知道为什么而存在，使我们不迷茫。ezaoe.com现在需要起好名字，定好方向，设计贴合的Logo。要求有自己精准的定位，小而美的解决一些痛点，让人难忘。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-    
-    
-      <category term="管理" scheme="//ezsay.cn/tags/%E7%AE%A1%E7%90%86/"/>
-    
-      <category term="定位" scheme="//ezsay.cn/tags/%E5%AE%9A%E4%BD%8D/"/>
-    
-      <category term="ezoae" scheme="//ezsay.cn/tags/ezoae/"/>
-    
-  </entry>
-  
-  <entry>
     <title>git在项目中的应用场景</title>
     <link href="//ezsay.cn/2017/04/28/skill/git_xyz/"/>
     <id>//ezsay.cn/2017/04/28/skill/git_xyz/</id>
@@ -403,7 +223,7 @@ Desktop.ini
     <link href="//ezsay.cn/2017/04/28/skill/git_abc/"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc/</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2017-05-05T10:46:11.864Z</updated>
+    <updated>2017-05-05T12:27:46.410Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h1 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h1><p><strong>git移库</strong></p>
 <p><strong>demo.git -&gt; target.git</strong></p>
@@ -436,6 +256,12 @@ drwxr-xr-x 7 root  root  4096 May  3 11:33 target.git
 </code></pre>
 <p>此时本地仓库是没法推送的</p>
 <pre><code class="shell">git clone git@XXX.com/xxx/target.git
+
+# 修改文件、本地提交、推送
+git push
+remote: error: insufficient permission for adding an object to repository database ./objects
+remote: fatal: failed to write object
+error: unpack failed: unpack-objects abnormal exit
 </code></pre>
 <p>需要将<strong>拥有者</strong>和<strong>群组</strong>设置成跟地址<strong>git@XX</strong>前缀一致的</p>
 <pre><code class="shell">chown -R git:git target.git
