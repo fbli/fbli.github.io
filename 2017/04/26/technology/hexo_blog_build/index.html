@@ -15,7 +15,7 @@
 <meta property="og:url" content="//ezsay.cn/2017/04/26/technology/hexo_blog_build/index.html">
 <meta property="og:site_name" content="哎呦啊唝">
 <meta property="og:description" content="Hexo，一个快速、简洁且高效的博客框架，Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。Hexo 拥有强大的插件系统，安装插件可以让 Hex">
-<meta property="og:updated_time" content="2017-05-06T14:11:38.002Z">
+<meta property="og:updated_time" content="2017-05-06T14:18:18.258Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建hexo + github pages + 独立域名博客">
 <meta name="twitter:description" content="Hexo，一个快速、简洁且高效的博客框架，Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。Hexo 拥有强大的插件系统，安装插件可以让 Hex">
@@ -210,7 +210,7 @@
 <li>安装git</li>
 <li>申请github账号<ul>
 <li>新建仓库 name.github.io（name与账号同名）</li>
-<li>配置ssh</li>
+<li>配置ssh本地免密码推送</li>
 </ul>
 </li>
 </ul>
@@ -228,9 +228,9 @@
 <li>hexo</li>
 <li>hexo.cmd</li>
 </ul>
-<p>右击 电脑_&gt;属性-&gt;高级系统设置-&gt;环境变量（N）…-&gt;系统变量（S）-&gt; 双击path添加路径hexo命令的路径地址D:\java\runtime\nodejs\node_data\node_global </p>
-<p>测试，是否成功。执行这条命令不报commond not found即可</p>
+<p>右击 电脑_&gt;属性-&gt;高级系统设置-&gt;环境变量（N）…-&gt;系统变量（S）-&gt; 双击path添加路径hexo命令的路径地址如：我的地址为：D:\runtime\nodejs\node_data\node_global </p>
 <blockquote>
+<p># 测试，是否成功。执行这条命令不报commond not found即可</p>
 <p>hexo -v</p>
 </blockquote>
 <p><strong>4、初始化hexo</strong></p>
@@ -299,7 +299,7 @@ theme: landscape
 </code></pre>
 <h3 id="4、域名绑定"><a href="#4、域名绑定" class="headerlink" title="4、域名绑定"></a>4、域名绑定</h3><p>1、 新建CNAME文件，放到hexo_blog\source\下，内容为不带www的域名如：ezsay.cn<br>2、 配置域名解析</p>
 <ul>
-<li><p>CNAME CNAME fbli.github.io</p>
+<li><p>CNAME <strong>www</strong> fbli.github.io</p>
 </li>
 <li><p>CNAME <strong>@</strong> fbli.github.io</p>
 <p>  问题：能转向github，但是显示404。初次发布后，停10分钟再试，githubPages需要一定的时间</p>
