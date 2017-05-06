@@ -4,8 +4,32 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/04/26/technology/hexo_blog_build/</loc>
+    <lastmod>2017-05-06T14:11:38.002Z</lastmod>
+    <data>
+        <display>
+        <title>搭建hexo + github pages + 独立域名博客</title>
+        <pubTime>2017-04-26T00:03:25.000Z</pubTime>
+        
+        <tag>服务搭建</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>yilia</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc/</loc>
-    <lastmod>2017-05-05T14:58:05.743Z</lastmod>
+    <lastmod>2017-05-06T05:27:07.220Z</lastmod>
     <data>
         <display>
         <title>git入门</title>
@@ -49,30 +73,6 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/26/technology/hexo_blog_build/</loc>
-    <lastmod>2017-05-04T10:41:28.047Z</lastmod>
-    <data>
-        <display>
-        <title>搭建hexo + github pages + 独立域名博客</title>
-        <pubTime>2017-04-26T00:03:25.000Z</pubTime>
-        
-        <tag>服务搭建</tag>
-         
-        <tag>hexo</tag>
-         
-        <tag>yilia</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>

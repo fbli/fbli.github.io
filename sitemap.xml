@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>//ezsay.cn/2017/04/26/technology/hexo_blog_build/</loc>
+    
+    <lastmod>2017-05-06T14:11:38.002Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc/</loc>
     
-    <lastmod>2017-05-05T14:58:05.743Z</lastmod>
+    <lastmod>2017-05-06T05:27:07.220Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>//ezsay.cn/2017/04/28/skill/git_xyz/</loc>
     
     <lastmod>2017-05-05T14:50:15.616Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>//ezsay.cn/2017/04/26/technology/hexo_blog_build/</loc>
-    
-    <lastmod>2017-05-04T10:41:28.047Z</lastmod>
     
   </url>
   

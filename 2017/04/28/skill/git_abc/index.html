@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="哎呦啊唝">
 <meta property="og:description" content="序言Git基本概念svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。  工作区：你的workspace 版本库：工作区的隐藏目录.git stage（index）：暂存区 master：git自动创建的第一个分支，指向最新提交 HEAD：指向master的一个指针">
 <meta property="og:image" content="http://oowxnvumd.bkt.clouddn.com/gitrepo.png">
-<meta property="og:updated_time" content="2017-05-05T14:58:05.743Z">
+<meta property="og:updated_time" content="2017-05-06T05:27:07.220Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git入门">
 <meta name="twitter:description" content="序言Git基本概念svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。  工作区：你的workspace 版本库：工作区的隐藏目录.git stage（index）：暂存区 master：git自动创建的第一个分支，指向最新提交 HEAD：指向master的一个指针">
@@ -289,11 +289,11 @@ drwxr-xr-x 7 git  git  4096 May  3 11:33 target.git
 </code></pre>
 </blockquote>
 <p>2、若两个仓库之间有一样的文件，移库是有问题的，此时拉取会报错。</p>
-<pre><code class="shell">$ git pull
+<pre><code class="shell">git pull
 fatal: refusing to merge unrelated histories
 
 # 用这个命令合并即可
-$ git pull origin master --allow-unrelated-histories
+git pull origin master --allow-unrelated-histories
 From git@XXX.com/xxx/target.git
  * branch            master     -&gt; FETCH_HEAD
 Auto-merging README.txt
