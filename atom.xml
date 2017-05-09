@@ -624,7 +624,7 @@
     <link href="//ezsay.cn/2017/04/28/skill/git_abc.html"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc.html</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2017-05-08T07:35:48.117Z</updated>
+    <updated>2017-05-09T15:04:51.358Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
@@ -659,7 +659,8 @@
 <p>情况多样且复杂，由此看来分支切换之前保证<strong>工作区clean</strong>非常有必要！<br>当然此时也可以用 git stash命令来暂存工作区和暂存区的文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 恢复工作区代码，且暂存区代码也恢复至工作区</div><div class="line"><span class="meta">$</span> git stash apply </div><div class="line"><span class="meta"></span></div><div class="line"># 恢复工作区代码，且暂存区代码恢复至暂存区</div><div class="line">git stash apply --index</div></pre></td></tr></table></figure>
 <p>（此处注意两点：<strong>新添加的文件</strong>不能暂存；每次执行此命令，最新的永远是<strong>stash@{0}</strong>）</p>
-<h1 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h1><p><strong>git移库</strong></p>
+<h1 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h1><p><a href="https://help.github.com/categories/advanced-git/" target="_blank" rel="external">官方高级操作说明文档</a>里面列举了6种问题的解决方案，可以去了解一下。如下是我自己实践过程中总结的相比较而言比较高级的操作，希望对你有用</p>
+<h2 id="git移库"><a href="#git移库" class="headerlink" title="git移库"></a><strong>git移库</strong></h2><p>想带着历史所有信息迁移git仓库，可以采用如下方式：</p>
 <p><strong>demo.git -&gt; target.git</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> linux新建裸库</div><div class="line">git init --bare target.git</div><div class="line"><span class="meta">#</span> 裸库递归更改拥有者与仓库地址前缀一致</div><div class="line">chrome -R git:git target.git</div><div class="line"><span class="meta"></span></div><div class="line"># 本地clone待迁移的裸库</div><div class="line">git clone --bare git@XXX.com/xxx/demo.git</div><div class="line"><span class="meta">#</span> 进入裸库</div><div class="line">cd demo.git</div><div class="line"><span class="meta">#</span> 推送裸库到目标库</div><div class="line">git push --mirror git@xxx.com/xxxx/target.git</div></pre></td></tr></table></figure>
 <p><strong>验证是否迁移成功</strong></p>
@@ -684,6 +685,47 @@
 <p>2、若两个仓库之间有一样的文件，移库是有问题的，此时拉取会报错。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">git pull</div><div class="line">fatal: refusing to merge unrelated histories</div><div class="line"><span class="meta"></span></div><div class="line"># 用这个命令合并即可</div><div class="line">git pull origin master --allow-unrelated-histories</div><div class="line">From git@XXX.com/xxx/target.git</div><div class="line"> * branch            master     -&gt; FETCH_HEAD</div><div class="line">Auto-merging README.txt</div><div class="line">CONFLICT (add/add): Merge conflict in README.txt</div><div class="line">Automatic merge failed; fix conflicts and then commit the result.</div><div class="line"><span class="meta"></span></div><div class="line"># 合并完毕必定冲突，此时分支状态变为(master|MERGING) ,解决冲突重新提交即可</div></pre></td></tr></table></figure>
 <p>推荐：新建的裸库尽量一点东西没有，特别不要有跟要迁移仓库一样的文件</p>
+<h2 id="git修改错误的作者信息"><a href="#git修改错误的作者信息" class="headerlink" title="git修改错误的作者信息"></a>git修改错误的作者信息</h2><p>现实中，经常会切换不同的git仓库，默认git config –global user.name|user.email全局配置肯定不能满足你公司跟自有仓库的身份切换，时常一不小心身份信息提交错了，且推送到远程了，此时可以用如下方案进行修改。</p>
+<blockquote>
+<p>1、打开git bash</p>
+<p>2、bare clone你的仓库</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> git clone --bare https://github.com/user/repo.git</div><div class="line"><span class="meta">&gt;</span> cd repo.git</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
+<p>3、修改如下命名的<code>OLD_EMAIL</code>,<code>CORRECT_NAME</code>,<code>CORRECT_EMAIL</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> git filter-branch --env-filter '</div><div class="line"><span class="meta">&gt;</span> OLD_EMAIL="old@email.com"</div><div class="line"><span class="meta">&gt;</span> CORRECT_NAME="New name"</div><div class="line"><span class="meta">&gt;</span> CORRECT_EMAIL="new@email.com"</div><div class="line"><span class="meta">&gt;</span></div><div class="line"><span class="meta">&gt;</span> if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]</div><div class="line"><span class="meta">&gt;</span> then</div><div class="line"><span class="meta">&gt;</span>     export GIT_COMMITTER_NAME="$CORRECT_NAME"</div><div class="line"><span class="meta">&gt;</span>     export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"</div><div class="line"><span class="meta">&gt;</span> fi</div><div class="line"><span class="meta">&gt;</span> if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]</div><div class="line"><span class="meta">&gt;</span> then</div><div class="line"><span class="meta">&gt;</span>     export GIT_AUTHOR_NAME="$CORRECT_NAME"</div><div class="line"><span class="meta">&gt;</span>     export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"</div><div class="line"><span class="meta">&gt;</span> fi</div><div class="line"><span class="meta">&gt;</span> ' --tag-name-filter cat -- --branches --tags</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
+<p>4、粘贴修改后的3，回车执行</p>
+<p>5、推送到远程</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> git push --force --tags origin 'refs/heads/*'</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
+<p>6、本地删除刚刚clone的仓库</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> cd ..</div><div class="line"><span class="meta">&gt;</span> rm -rf repo.git</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
+</blockquote>
+<p><strong>提示：除非必要，否则不建议如此操作</strong></p>
+<p>参考资料：</p>
+<p><a href="https://github.com/cytopia/git-rewrite-author" target="_blank" rel="external">https://github.com/cytopia/git-rewrite-author</a></p>
+<p><a href="https://help.github.com/articles/changing-author-info/#platform-windows" target="_blank" rel="external">https://help.github.com/articles/changing-author-info/#platform-windows</a></p>
+<p><a href="https://www.everythingcli.org/git-like-a-pro-rewrite-author-history/" target="_blank" rel="external">https://www.everythingcli.org/git-like-a-pro-rewrite-author-history/</a></p>
+<h2 id="git-clone的三种类型"><a href="#git-clone的三种类型" class="headerlink" title="git clone的三种类型"></a>git clone的三种类型</h2><p>git clone有三种类型，分别是默认的 non-bare, bare 和 mirror。那么这三者之间到底有什么区别?</p>
+<p>The difference is that <em>all</em> refs are copied <em>as-is</em>. This means everything: remote-tracking branches, notes, refs/originals/* (backups from filter-branch). The cloned repo has it all. It’s also set up so that a remote update will re-fetch everything from the origin (overwriting the copied refs). The idea is really to mirror the repository, to have a total copy, so that you could for example host your central repo in multiple places, or back it up. Think of just straight-up copying the repo, except in a much more elegant git way.</p>
+<p>The new documentation pretty much says all this:</p>
+<blockquote>
+<p><code>--mirror</code></p>
+<p>Set up a mirror of the source repository. This implies <code>--bare</code>. Compared to <code>--bare</code>, <code>--mirror</code>not only maps local branches of the source to local branches of the target, it maps all refs (including remote branches, notes etc.) and sets up a refspec configuration such that all these refs are overwritten by a <code>git remote update</code> in the target repository.</p>
+</blockquote>
+<p>My original answer also noted the differences between a bare clone and a normal (non-bare) clone - the non-bare clone sets up remote tracking branches, only creating a local branch for<code>HEAD</code>, while the bare clone copies the branches directly.</p>
+<p>Suppose origin has a few branches (<code>master (HEAD)</code>, <code>next</code>, <code>pu</code>, and <code>maint</code>), some tags (<code>v1</code>,<code>v2</code>, <code>v3</code>), some remote branches (<code>devA/master</code>, <code>devB/master</code>), and some other refs (<code>refs/foo/bar</code>, <code>refs/foo/baz</code>, which might be notes, stashes, other devs’ namespaces, who knows).</p>
+<ul>
+<li><code>git clone origin-url</code> (non-bare): you will get all of the tags copied, a local branch <code>master (HEAD)</code> tracking a remote branch <code>origin/master</code>, and remote branches <code>origin/next</code>,<code>origin/pu</code>, and <code>origin/maint</code>. The tracking branches are set up so that if you do something like <code>git fetch origin</code>, they’ll be fetched as you expect. Any remote branches (in the cloned remote) and other refs are completely ignored.</li>
+<li><code>git clone --bare origin-url</code>: you will get all of the tags copied, local branches <code>master (HEAD)</code>, <code>next</code>, <code>pu</code>, and <code>maint</code>, no remote tracking branches. That is, all branches are copied as is, and it’s set up completely independent, with no expectation of fetching again. Any remote branches (in the cloned remote) and other refs are completely ignored.</li>
+<li><code>git clone --mirror origin-url</code>: every last one of those refs will be copied as-is. You’ll get all the tags, local branches <code>master (HEAD)</code>, <code>next</code>, <code>pu</code>, and <code>maint</code>, remote branches<code>devA/master</code> and <code>devB/master</code>, other refs <code>refs/foo/bar</code> and <code>refs/foo/baz</code>. Everything is exactly as it was in the cloned remote. Remote tracking is set up so that if you run <code>git remote update</code> all refs will be overwritten from origin, as if you’d just deleted the mirror and recloned it. As the docs originally said, it’s a mirror. It’s supposed to be a functionally identical copy, interchangeable with the original.</li>
+</ul>
 ]]></content>
     
     <summary type="html">
@@ -2997,7 +3039,7 @@
     <link href="//ezsay.cn/2017/04/26/technology/hexo_blog_build.html"/>
     <id>//ezsay.cn/2017/04/26/technology/hexo_blog_build.html</id>
     <published>2017-04-26T00:03:25.000Z</published>
-    <updated>2017-05-09T13:10:42.500Z</updated>
+    <updated>2017-05-09T13:20:58.825Z</updated>
     
     <content type="html"><![CDATA[<p>Hexo，一个快速、简洁且高效的博客框架，Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。</p>
 <a id="more"></a>
@@ -3082,13 +3124,21 @@
 <li><a href="http://fbli.github.io/" target="_blank" rel="external">http://fbli.github.io/</a></li>
 <li><a href="https://fbli.github.io/" target="_blank" rel="external">https://fbli.github.io/</a></li>
 </ul>
-<h3 id="7、个性化-更换主题"><a href="#7、个性化-更换主题" class="headerlink" title="7、个性化-更换主题"></a>7、个性化-更换主题</h3><p>yilia主题在github上搜索hexo themes排名第二有如下特点</p>
-<p>优点：看着舒服。<br>缺点：</p>
+<h3 id="7、个性化-更换主题"><a href="#7、个性化-更换主题" class="headerlink" title="7、个性化-更换主题"></a>7、个性化-更换主题</h3><p>yilia主题在github上搜索hexo themes排名第二[201705]有如下特点：</p>
+<p>优点：</p>
+<ul>
+<li>看着自然舒服</li>
+<li>没有花里胡哨的效果</li>
+<li>文章的tag效果漂亮</li>
+</ul>
+<p>缺点：</p>
 <ul>
 <li>无站内全文搜索</li>
-<li>无文章目录</li>
-<li>\<!--more-->处理的感觉有点别扭</li>
-<li>字体不够骚</li>
+<li>无文章目录导航</li>
+<li>菜单没法加图标</li>
+<li>字体中规不够骚</li>
+<li>more处理的感觉有点别扭</li>
+<li>markdown的列表与上面一行的距离太长，效果很差</li>
 </ul>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 更换主题前必须clean</div><div class="line">cd hexo_blog</div><div class="line">hexo clean</div><div class="line"><span class="meta">#</span> 此处有坑，默认的主题文件夹名需要改一下</div><div class="line">git clone git@github.com:litten/hexo-theme-yilia.git themes/yilia</div><div class="line">cd themes/yilia</div><div class="line">npm install</div><div class="line"><span class="meta">#</span> 返回到hexo根目录</div><div class="line">cd ../../</div><div class="line"><span class="meta">#</span> 重新生成</div><div class="line">hexo g</div><div class="line">hexo s</div><div class="line">http://localhost:4000/</div><div class="line"><span class="meta">#</span> 发布至github</div><div class="line">hexo d</div></pre></td></tr></table></figure>
 <h2 id="四、Hexo常用命令汇总"><a href="#四、Hexo常用命令汇总" class="headerlink" title="四、Hexo常用命令汇总"></a>四、Hexo常用命令汇总</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo new "postName" #新建文章</div><div class="line">hexo new page "pageName" #新建页面</div><div class="line">hexo generate #生成静态页面至public目录</div><div class="line">hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</div><div class="line">hexo deploy #将.deploy目录部署到GitHub</div><div class="line">hexo help # 查看帮助</div><div class="line">hexo version #查看Hexo的版本</div></pre></td></tr></table></figure>

@@ -15,7 +15,7 @@
 <meta property="og:url" content="//ezsay.cn/2017/04/26/technology/hexo_blog_build.html">
 <meta property="og:site_name" content="易说博客">
 <meta property="og:description" content="Hexo，一个快速、简洁且高效的博客框架，Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。Hexo 拥有强大的插件系统，安装插件可以让 Hex">
-<meta property="og:updated_time" content="2017-05-09T13:10:42.500Z">
+<meta property="og:updated_time" content="2017-05-09T13:20:58.825Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建hexo + github pages + 独立域名博客">
 <meta name="twitter:description" content="Hexo，一个快速、简洁且高效的博客框架，Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。Hexo 拥有强大的插件系统，安装插件可以让 Hex">
@@ -279,13 +279,21 @@
 <li><a href="http://fbli.github.io/" target="_blank" rel="external">http://fbli.github.io/</a></li>
 <li><a href="https://fbli.github.io/" target="_blank" rel="external">https://fbli.github.io/</a></li>
 </ul>
-<h3 id="7、个性化-更换主题"><a href="#7、个性化-更换主题" class="headerlink" title="7、个性化-更换主题"></a>7、个性化-更换主题</h3><p>yilia主题在github上搜索hexo themes排名第二有如下特点</p>
-<p>优点：看着舒服。<br>缺点：</p>
+<h3 id="7、个性化-更换主题"><a href="#7、个性化-更换主题" class="headerlink" title="7、个性化-更换主题"></a>7、个性化-更换主题</h3><p>yilia主题在github上搜索hexo themes排名第二[201705]有如下特点：</p>
+<p>优点：</p>
+<ul>
+<li>看着自然舒服</li>
+<li>没有花里胡哨的效果</li>
+<li>文章的tag效果漂亮</li>
+</ul>
+<p>缺点：</p>
 <ul>
 <li>无站内全文搜索</li>
-<li>无文章目录</li>
-<li>\<!--more-->处理的感觉有点别扭</li>
-<li>字体不够骚</li>
+<li>无文章目录导航</li>
+<li>菜单没法加图标</li>
+<li>字体中规不够骚</li>
+<li>more处理的感觉有点别扭</li>
+<li>markdown的列表与上面一行的距离太长，效果很差</li>
 </ul>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 更换主题前必须clean</div><div class="line">cd hexo_blog</div><div class="line">hexo clean</div><div class="line"><span class="meta">#</span> 此处有坑，默认的主题文件夹名需要改一下</div><div class="line">git clone git@github.com:litten/hexo-theme-yilia.git themes/yilia</div><div class="line">cd themes/yilia</div><div class="line">npm install</div><div class="line"><span class="meta">#</span> 返回到hexo根目录</div><div class="line">cd ../../</div><div class="line"><span class="meta">#</span> 重新生成</div><div class="line">hexo g</div><div class="line">hexo s</div><div class="line">http://localhost:4000/</div><div class="line"><span class="meta">#</span> 发布至github</div><div class="line">hexo d</div></pre></td></tr></table></figure>
 <h2 id="四、Hexo常用命令汇总"><a href="#四、Hexo常用命令汇总" class="headerlink" title="四、Hexo常用命令汇总"></a>四、Hexo常用命令汇总</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo new "postName" #新建文章</div><div class="line">hexo new page "pageName" #新建页面</div><div class="line">hexo generate #生成静态页面至public目录</div><div class="line">hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</div><div class="line">hexo deploy #将.deploy目录部署到GitHub</div><div class="line">hexo help # 查看帮助</div><div class="line">hexo version #查看Hexo的版本</div></pre></td></tr></table></figure>
