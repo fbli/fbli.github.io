@@ -3,6 +3,30 @@
 
 
     
+  <url>
+    <loc>//ezsay.cn/2017/04/26/technology/hexo_blog_build.html</loc>
+    <lastmod>2017-05-09T15:35:56.634Z</lastmod>
+    <data>
+        <display>
+        <title>搭建hexo + github pages + 独立域名博客</title>
+        <pubTime>2017-04-26T00:03:25.000Z</pubTime>
+        
+        <tag>服务搭建</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>yilia</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
@@ -28,30 +52,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/26/technology/hexo_blog_build.html</loc>
-    <lastmod>2017-05-09T13:20:58.825Z</lastmod>
-    <data>
-        <display>
-        <title>搭建hexo + github pages + 独立域名博客</title>
-        <pubTime>2017-04-26T00:03:25.000Z</pubTime>
-        
-        <tag>服务搭建</tag>
-         
-        <tag>hexo</tag>
-         
-        <tag>yilia</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>//ezsay.cn/2017/05/08/health/stretch.html</loc>
