@@ -216,9 +216,7 @@
 <li>第三步【git push】将当前分支的本地版本库信息推送到远程版本库</li>
 </ul>
 <p><em>注意：</em>git使用的第一步必须先设定自己的用户名，邮箱地址：</p>
-<pre><code class="shell">gitconfig --global user.name &quot;王小二&quot;
-gitconfig --global user.email &quot;wangxiaoer@xxx.com&quot;
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gitconfig --global user.name "王小二"</div><div class="line">gitconfig --global user.email "wangxiaoer@xxx.com"</div></pre></td></tr></table></figure>
 <p><strong>git分支的一些知识点分享：</strong><br>官方文档推荐在<strong>分支切换之前保证工作区clean</strong>，这个原则很重要原因如下：<br><strong>1、新增的文件</strong></p>
 <p>分支切换会带着这个文件到新分支中。新增的文件在git中是个特殊的存在，因为并未被git管理起来<br><strong>2、更新的文件</strong></p>
 <p>三种情况：</p>
@@ -231,71 +229,32 @@ gitconfig --global user.email &quot;wangxiaoer@xxx.com&quot;
 </li>
 </ul>
 <p>情况多样且复杂，由此看来分支切换之前保证<strong>工作区clean</strong>非常有必要！<br>当然此时也可以用 git stash命令来暂存工作区和暂存区的文件</p>
-<pre><code class="shell"># 恢复工作区代码，且暂存区代码也恢复至工作区
-$ git stash apply 
-
-# 恢复工作区代码，且暂存区代码恢复至暂存区
-git stash apply --index
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 恢复工作区代码，且暂存区代码也恢复至工作区</div><div class="line"><span class="meta">$</span> git stash apply </div><div class="line"><span class="meta"></span></div><div class="line"># 恢复工作区代码，且暂存区代码恢复至暂存区</div><div class="line">git stash apply --index</div></pre></td></tr></table></figure>
 <p>（此处注意两点：<strong>新添加的文件</strong>不能暂存；每次执行此命令，最新的永远是<strong>stash@{0}</strong>）</p>
 <h1 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h1><p><strong>git移库</strong></p>
 <p><strong>demo.git -&gt; target.git</strong></p>
-<pre><code class="shell"># linux新建裸库
-git init --bare target.git
-# 裸库递归更改拥有者与仓库地址前缀一致
-chrome -R git:git target.git
-
-# 本地clone待迁移的裸库
-git clone --bare git@XXX.com/xxx/demo.git
-# 进入裸库
-cd demo.git
-# 推送裸库到目标库
-git push --mirror git@xxx.com/xxxx/target.git
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> linux新建裸库</div><div class="line">git init --bare target.git</div><div class="line"><span class="meta">#</span> 裸库递归更改拥有者与仓库地址前缀一致</div><div class="line">chrome -R git:git target.git</div><div class="line"><span class="meta"></span></div><div class="line"># 本地clone待迁移的裸库</div><div class="line">git clone --bare git@XXX.com/xxx/demo.git</div><div class="line"><span class="meta">#</span> 进入裸库</div><div class="line">cd demo.git</div><div class="line"><span class="meta">#</span> 推送裸库到目标库</div><div class="line">git push --mirror git@xxx.com/xxxx/target.git</div></pre></td></tr></table></figure>
 <p><strong>验证是否迁移成功</strong></p>
-<pre><code class="shell"># 克隆目标库
-git clone git@XXX.com/xxx/target.git
-# 查看是否已经迁移
-git branch -a
-git log
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 克隆目标库</div><div class="line">git clone git@XXX.com/xxx/target.git</div><div class="line"><span class="meta">#</span> 查看是否已经迁移</div><div class="line">git branch -a</div><div class="line">git log</div></pre></td></tr></table></figure>
 <p><strong>可能出现的问题</strong></p>
 <p>1、问：新建的裸库，可以克隆但是不能推送</p>
 <p>答：检查裸库目录的权限的<strong>拥有者</strong>和<strong>群组</strong></p>
 <blockquote>
 <p>ls -al 或者 ll命令</p>
-<pre><code class="shell">ls -al
-drwxr-xr-x 7 root  root  4096 May  3 11:33 target.git
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> ls -al</div><div class="line"><span class="meta">&gt;</span> drwxr-xr-x 7 root  root  4096 May  3 11:33 target.git</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
 <p>此时本地仓库是没法推送的</p>
-<pre><code class="shell">git clone git@XXX.com/xxx/target.git
-
-# 修改文件、本地提交、推送
-git push
-remote: error: insufficient permission for adding an object to repository database ./objects
-remote: fatal: failed to write object
-error: unpack failed: unpack-objects abnormal exit
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> git clone git@XXX.com/xxx/target.git</div><div class="line"><span class="meta">&gt;</span></div><div class="line"><span class="meta">&gt;</span> # 修改文件、本地提交、推送</div><div class="line"><span class="meta">&gt;</span> git push</div><div class="line"><span class="meta">&gt;</span> remote: error: insufficient permission for adding an object to repository database ./objects</div><div class="line"><span class="meta">&gt;</span> remote: fatal: failed to write object</div><div class="line"><span class="meta">&gt;</span> error: unpack failed: unpack-objects abnormal exit</div><div class="line"><span class="meta">&gt;</span></div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
 <p>需要将<strong>拥有者</strong>和<strong>群组</strong>设置成跟地址<strong>git@XX</strong>前缀一致的</p>
-<pre><code class="shell">chown -R git:git target.git
-ll
-drwxr-xr-x 7 git  git  4096 May  3 11:33 target.git
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> chown -R git:git target.git</div><div class="line"><span class="meta">&gt;</span> ll</div><div class="line"><span class="meta">&gt;</span> drwxr-xr-x 7 git  git  4096 May  3 11:33 target.git</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
 </blockquote>
 <p>2、若两个仓库之间有一样的文件，移库是有问题的，此时拉取会报错。</p>
-<pre><code class="shell">git pull
-fatal: refusing to merge unrelated histories
-
-# 用这个命令合并即可
-git pull origin master --allow-unrelated-histories
-From git@XXX.com/xxx/target.git
- * branch            master     -&gt; FETCH_HEAD
-Auto-merging README.txt
-CONFLICT (add/add): Merge conflict in README.txt
-Automatic merge failed; fix conflicts and then commit the result.
-
-# 合并完毕必定冲突，此时分支状态变为(master|MERGING) ,解决冲突重新提交即可
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">git pull</div><div class="line">fatal: refusing to merge unrelated histories</div><div class="line"><span class="meta"></span></div><div class="line"># 用这个命令合并即可</div><div class="line">git pull origin master --allow-unrelated-histories</div><div class="line">From git@XXX.com/xxx/target.git</div><div class="line"> * branch            master     -&gt; FETCH_HEAD</div><div class="line">Auto-merging README.txt</div><div class="line">CONFLICT (add/add): Merge conflict in README.txt</div><div class="line">Automatic merge failed; fix conflicts and then commit the result.</div><div class="line"><span class="meta"></span></div><div class="line"># 合并完毕必定冲突，此时分支状态变为(master|MERGING) ,解决冲突重新提交即可</div></pre></td></tr></table></figure>
 <p>推荐：新建的裸库尽量一点东西没有，特别不要有跟要迁移仓库一样的文件</p>
 
       
@@ -590,18 +549,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">基础</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">入门</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">服务搭建</a>
               </li>
              
@@ -611,6 +558,18 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">入门</a>
               </li>
              
               <li class="article-tag-list-item">

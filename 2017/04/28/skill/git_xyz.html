@@ -262,56 +262,14 @@
 <p>此种场景在git中可以轻松+愉快的解决</p>
 <blockquote>
 <p>用git stash命令进行快速切换</p>
-<pre><code class="shell"># 当前工作区工作暂存
-git stash
-# 切换至北京特例分支
-git checkout  bj-master
-# 切换至跟生产部署的war包一致的代码环境
-git ck tagv1.0
-# 新建分支
-git branch bj-fixbug-2.2.1
-# 切换到新分支
-git checkout bj-fixbug-2.2.1
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> # 当前工作区工作暂存</div><div class="line"><span class="meta">&gt;</span> git stash</div><div class="line"><span class="meta">&gt;</span> # 切换至北京特例分支</div><div class="line"><span class="meta">&gt;</span> git checkout  bj-master</div><div class="line"><span class="meta">&gt;</span> # 切换至跟生产部署的war包一致的代码环境</div><div class="line"><span class="meta">&gt;</span> git ck tagv1.0</div><div class="line"><span class="meta">&gt;</span> # 新建分支</div><div class="line"><span class="meta">&gt;</span> git branch bj-fixbug-2.2.1</div><div class="line"><span class="meta">&gt;</span> # 切换到新分支</div><div class="line"><span class="meta">&gt;</span> git checkout bj-fixbug-2.2.1</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
 <p>修复bug<br>提交测试<br>测试通过<br>合并分支<br>……</p>
 <p>完成了</p>
-<pre><code class="shell"># 切换到行业开发功能分支
-git checkeout hy-feature-1.1
-# 恢复工作区，暂存区内容，此时可以继续刚才的开发工作
-git stash apply --index
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> # 切换到行业开发功能分支</div><div class="line"><span class="meta">&gt;</span> git checkeout hy-feature-1.1</div><div class="line"><span class="meta">&gt;</span> # 恢复工作区，暂存区内容，此时可以继续刚才的开发工作</div><div class="line"><span class="meta">&gt;</span> git stash apply --index</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
 </blockquote>
 <p><strong>大家可以想一下如果不用git，这个场景要如何进行</strong></p>
 <h2 id="附录："><a href="#附录：" class="headerlink" title="附录："></a>附录：</h2><p>svn与git二者可以互相同步，但是要在.gitignore排除[.svn/] ，在svn中排除[/.git/]<br>建议：svn上对行业版、北京特例版、安徽特例版的代码进行区分。不要全部糅合在一起，这样也好跟git的分支代码进行一一对应。若后续以git为准则不需要额外再考虑这些。git足够灵活，可以随时捡出符合条件的代码提交至svn。<br>.gitignore文件定义要忽略的文件，比较重要的是[.svn/]将跟svn版本管理相关的内容排除出去，具体其他配置如下：</p>
-<pre><code class="shell"># Myconfigurations:
-.svn/
-/WebApp/WEB-INF/classes/
-license.lic
-*.gzcss
-*.gzjs
-*.class
-
-#空文件夹要特殊处理，1、初次提交，空文件夹下加.gitkeep文件 2、push完毕更新.gitignore,添加如下行
-/dist/
-/target/
-/WebApp/pages/upLoadCache/card/
-/WebApp/pages/upLoadCache/caTmp/
-
-# git默认不管理exe文件，需要特殊处理
-!*.exe
-#Mobile Tools for Java (J2ME)
-.mtj.tmp/
-#Package Files #
-*.jar
-*.war
-*.ear
-#virtual machine crash logs, seehttp://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-#Windows:
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> Myconfigurations:</div><div class="line">.svn/</div><div class="line">/WebApp/WEB-INF/classes/</div><div class="line">license.lic</div><div class="line">*.gzcss</div><div class="line">*.gzjs</div><div class="line">*.class</div><div class="line"><span class="meta"></span></div><div class="line">#空文件夹要特殊处理，1、初次提交，空文件夹下加.gitkeep文件 2、push完毕更新.gitignore,添加如下行</div><div class="line">/dist/</div><div class="line">/target/</div><div class="line">/WebApp/pages/upLoadCache/card/</div><div class="line">/WebApp/pages/upLoadCache/caTmp/</div><div class="line"><span class="meta"></span></div><div class="line"># git默认不管理exe文件，需要特殊处理</div><div class="line">!*.exe</div><div class="line"><span class="meta">#</span>Mobile Tools for Java (J2ME)</div><div class="line">.mtj.tmp/</div><div class="line"><span class="meta">#</span>Package Files #</div><div class="line">*.jar</div><div class="line">*.war</div><div class="line">*.ear</div><div class="line"><span class="meta">#</span>virtual machine crash logs, seehttp://www.java.com/en/download/help/error_hotspot.xml</div><div class="line">hs_err_pid*</div><div class="line"><span class="meta">#</span>Windows:</div><div class="line">Thumbs.db</div><div class="line">ehthumbs.db</div><div class="line">Desktop.ini</div></pre></td></tr></table></figure>
 <p>svn上将项目根目录下的[.git]文件夹添加到svn：ignore即可排除</p>
 
       
@@ -614,18 +572,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">基础</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">入门</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">服务搭建</a>
               </li>
              
@@ -635,6 +581,18 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">入门</a>
               </li>
              
               <li class="article-tag-list-item">
