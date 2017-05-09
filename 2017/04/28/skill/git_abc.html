@@ -6,17 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//ezsay.cn">
-  <title>Tag: 保险 | 易说博客</title>
+  <title>git入门 | 易说博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="易说博客，每篇文章都是精品，我之所得，你之所获！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="易说博客">
-<meta property="og:url" content="//ezsay.cn/tags/保险/index.html">
+  <meta name="description" content="序言Git基本概念svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。  工作区：你的workspace下的工程名文件夹 版本库：工作区的隐藏目录.git stage（index）：暂存区 master：git自动创建的第一个分支，指向最新提交 HEAD：指向master的一个指针">
+<meta name="keywords" content="git,基础,入门">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git入门">
+<meta property="og:url" content="//ezsay.cn/2017/04/28/skill/git_abc.html">
 <meta property="og:site_name" content="易说博客">
-<meta property="og:description" content="易说博客，每篇文章都是精品，我之所得，你之所获！">
+<meta property="og:description" content="序言Git基本概念svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。  工作区：你的workspace下的工程名文件夹 版本库：工作区的隐藏目录.git stage（index）：暂存区 master：git自动创建的第一个分支，指向最新提交 HEAD：指向master的一个指针">
+<meta property="og:image" content="http://oowxnvumd.bkt.clouddn.com/gitrepo.png">
+<meta property="og:updated_time" content="2017-05-08T07:35:48.117Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="易说博客">
-<meta name="twitter:description" content="易说博客，每篇文章都是精品，我之所得，你之所获！">
+<meta name="twitter:title" content="git入门">
+<meta name="twitter:description" content="序言Git基本概念svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。  工作区：你的workspace下的工程名文件夹 版本库：工作区的隐藏目录.git stage（index）：暂存区 master：git自动创建的第一个分支，指向最新提交 HEAD：指向master的一个指针">
+<meta name="twitter:image" content="http://oowxnvumd.bkt.clouddn.com/gitrepo.png">
   
     <link rel="alternative" href="/atom.xml" title="易说博客" type="application/atom+xml">
   
@@ -174,79 +178,295 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-skill/git_abc" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/07/health/safe_abc.html" class="archive-article-date">
-  	<time datetime="2017-05-07T11:14:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-07</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/07/health/safe_abc.html">保险知识入门-如何用保险保障自己的一生</a>
+    <h1 class="article-title" itemprop="name">
+      git入门
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/04/28/skill/git_abc.html" class="archive-article-date">
+  	<time datetime="2017-04-28T02:57:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
+<ul>
+<li><strong>工作区：</strong>你的workspace下的工程名文件夹</li>
+<li><strong>版本库：</strong>工作区的隐藏目录.git</li>
+<li>stage（index）：暂存区</li>
+<li>master：git自动创建的第一个分支，指向最新提交</li>
+<li>HEAD：指向master的一个指针</li>
+</ul>
+<a id="more"></a>
+<p><img src="http://oowxnvumd.bkt.clouddn.com/gitrepo.png" alt="git结构"></p>
+<p>这个图非常重要，一定要理解。</p>
+<p>git的要达到类似svn的提交程度需要进行三步：</p>
+<ul>
+<li>第一步【git add】将文件修改添加到暂存区stage</li>
+<li>第二步【git commit】提交更改，将暂存区的所有内容提交到本地版本库</li>
+<li>第三步【git push】将当前分支的本地版本库信息推送到远程版本库</li>
+</ul>
+<p><em>注意：</em>git使用的第一步必须先设定自己的用户名，邮箱地址：</p>
+<pre><code class="shell">gitconfig --global user.name &quot;王小二&quot;
+gitconfig --global user.email &quot;wangxiaoer@xxx.com&quot;
+</code></pre>
+<p><strong>git分支的一些知识点分享：</strong><br>官方文档推荐在<strong>分支切换之前保证工作区clean</strong>，这个原则很重要原因如下：<br><strong>1、新增的文件</strong></p>
+<p>分支切换会带着这个文件到新分支中。新增的文件在git中是个特殊的存在，因为并未被git管理起来<br><strong>2、更新的文件</strong></p>
+<p>三种情况：</p>
+<ul>
+<li><p>被更新的文件在新分支中没有，不能切换；</p>
+</li>
+<li><p>被更新的文件在新分支中有，且跟当前分支的父对象不同（内容相同也不可以） ，不能切换分支；</p>
+</li>
+<li><p>被更新的文件在新分支中有，且跟当前分支有共同父对象，这个文件内容会带到新分支中；</p>
+</li>
+</ul>
+<p>情况多样且复杂，由此看来分支切换之前保证<strong>工作区clean</strong>非常有必要！<br>当然此时也可以用 git stash命令来暂存工作区和暂存区的文件</p>
+<pre><code class="shell"># 恢复工作区代码，且暂存区代码也恢复至工作区
+$ git stash apply 
+
+# 恢复工作区代码，且暂存区代码恢复至暂存区
+git stash apply --index
+</code></pre>
+<p>（此处注意两点：<strong>新添加的文件</strong>不能暂存；每次执行此命令，最新的永远是<strong>stash@{0}</strong>）</p>
+<h1 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h1><p><strong>git移库</strong></p>
+<p><strong>demo.git -&gt; target.git</strong></p>
+<pre><code class="shell"># linux新建裸库
+git init --bare target.git
+# 裸库递归更改拥有者与仓库地址前缀一致
+chrome -R git:git target.git
+
+# 本地clone待迁移的裸库
+git clone --bare git@XXX.com/xxx/demo.git
+# 进入裸库
+cd demo.git
+# 推送裸库到目标库
+git push --mirror git@xxx.com/xxxx/target.git
+</code></pre>
+<p><strong>验证是否迁移成功</strong></p>
+<pre><code class="shell"># 克隆目标库
+git clone git@XXX.com/xxx/target.git
+# 查看是否已经迁移
+git branch -a
+git log
+</code></pre>
+<p><strong>可能出现的问题</strong></p>
+<p>1、问：新建的裸库，可以克隆但是不能推送</p>
+<p>答：检查裸库目录的权限的<strong>拥有者</strong>和<strong>群组</strong></p>
+<blockquote>
+<p>ls -al 或者 ll命令</p>
+<pre><code class="shell">ls -al
+drwxr-xr-x 7 root  root  4096 May  3 11:33 target.git
+</code></pre>
+<p>此时本地仓库是没法推送的</p>
+<pre><code class="shell">git clone git@XXX.com/xxx/target.git
+
+# 修改文件、本地提交、推送
+git push
+remote: error: insufficient permission for adding an object to repository database ./objects
+remote: fatal: failed to write object
+error: unpack failed: unpack-objects abnormal exit
+</code></pre>
+<p>需要将<strong>拥有者</strong>和<strong>群组</strong>设置成跟地址<strong>git@XX</strong>前缀一致的</p>
+<pre><code class="shell">chown -R git:git target.git
+ll
+drwxr-xr-x 7 git  git  4096 May  3 11:33 target.git
+</code></pre>
+</blockquote>
+<p>2、若两个仓库之间有一样的文件，移库是有问题的，此时拉取会报错。</p>
+<pre><code class="shell">git pull
+fatal: refusing to merge unrelated histories
+
+# 用这个命令合并即可
+git pull origin master --allow-unrelated-histories
+From git@XXX.com/xxx/target.git
+ * branch            master     -&gt; FETCH_HEAD
+Auto-merging README.txt
+CONFLICT (add/add): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+# 合并完毕必定冲突，此时分支状态变为(master|MERGING) ,解决冲突重新提交即可
+</code></pre>
+<p>推荐：新建的裸库尽量一点东西没有，特别不要有跟要迁移仓库一样的文件</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>嗯，赏！<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/asset/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/asset/img/weixinpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">健康</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">转载</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">保险</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">入门</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/健康/" class="article-tag-list-link color3">健康</a>
+        			<a href="/categories/技能/" class="article-tag-list-link color3">技能</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNUlEQVR42u3awa6DMAxEUf7/p6n0VpUq0pkxRS/2ZVXRkHCyMEns45Cv8+9a3/n8973N1Z3Pf9c9ly4YMGBsyziX15pxNaT7rM67HBcGDBgDGPqrrMNoJZgq03d5HwYMGDDkhZ00ZDR9MGDAgHFXd+uW683to98NGDBgbMhQutPbuId3yiHdbXtxGDBgbMhwEwNP/v5hfgMGDBibMM7oytIA2QJReh8YMGC0ZrhLOiXKuVtZd5kovRAMGDAaMW4Ic9GCUp8gqQ0MGDDGMJSO3DIL98jM/lYorwIDBoxGjKzkopLUdHswloYwYMBoxHA3pUraMvutHNiV8rEwYMDYnKEM4AZBfdObJTVhwIAxh+GGS704zJ2I0lMwYMAYz9Db1BeL+gb4S5kFDBgwmjL0Y7UsRFZKNIyACwMGjHaMykGbuxHVJyLsGQYMGE0Z9WSkPrC94NOTlzBgwBjDUEJtNkwWTI0SDRgwYAxj1Au29OIJpR8JCQMGjNYMPZpliYFKmkEvDoMBA8YEhnu4ppdf6AkDvQjDXufCgAGjEcMNmnrwdY/SwpYwYMBozaiUc7npxnvLLGDAgDGBkS3s9KM0t9TMpcKAAWMCwz1Xz9IJ2bHaD9MDMGDA2JDhBtmspKyyBJSmDwYMGAMYWbVVJQF5mNeXyYUBAwYMM4Bm6cn1pDwUcGHAgLE5QxleTz26Txm7ZBgwYDRlKAEuA+htpFwrDBgwRjKyoFxZUFaSCjd/W2DAgPHfGS/YbdsZODAy0QAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/04/27/convict/convict_conditioning_11-12.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          囚徒健身-第三部分：自我指导（第十一章~第十二章）[11P]
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/04/28/skill/git_xyz.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">git在复杂项目中的应用</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
   
 
-    
+  
+  <div id="SOHUCS" sid="skill/git_abc" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "cysY18EIq"; 
+var conf = "prod_72d505c557d08a2b430c7c65697f6563"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+  
+
+  
 
 
           </div>
@@ -269,9 +489,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",

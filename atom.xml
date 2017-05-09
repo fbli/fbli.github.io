@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>易说博客</title>
-  
+  <subtitle>ez to say</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
-  <updated>2017-05-08T03:51:53.863Z</updated>
+  <updated>2017-05-09T07:49:23.491Z</updated>
   <id>//ezsay.cn/</id>
   
   <author>
@@ -17,12 +17,12 @@
   
   <entry>
     <title>筋长一寸，寿延十年</title>
-    <link href="//ezsay.cn/2017/05/08/health/stretch/"/>
-    <id>//ezsay.cn/2017/05/08/health/stretch/</id>
+    <link href="//ezsay.cn/2017/05/08/health/stretch.html"/>
+    <id>//ezsay.cn/2017/05/08/health/stretch.html</id>
     <published>2017-05-08T03:29:24.000Z</published>
-    <updated>2017-05-08T03:51:53.863Z</updated>
+    <updated>2017-05-09T07:49:23.491Z</updated>
     
-    <content type="html"><![CDATA[<p>俗话说，筋长一寸，寿延十年，来来来，闲暇之余延延寿<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p>俗话说，筋长一寸，寿延十年，来来来，闲暇之余延延寿！<br><a id="more"></a></p>
 <p><img src="/asset/blog_img/stretch/1-2.jpg" alt="img"></p>
 <p><img src="/asset/blog_img/stretch/3-4.jpg" alt="img"></p>
 <p><img src="/asset/blog_img/stretch/5-6.jpg" alt="img"></p>
@@ -44,7 +44,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;俗话说，筋长一寸，寿延十年，来来来，闲暇之余延延寿&lt;br&gt;
+      &lt;p&gt;俗话说，筋长一寸，寿延十年，来来来，闲暇之余延延寿！&lt;br&gt;
     
     </summary>
     
@@ -61,8 +61,8 @@
   
   <entry>
     <title>保险知识入门-如何用保险保障自己的一生</title>
-    <link href="//ezsay.cn/2017/05/07/health/safe_abc/"/>
-    <id>//ezsay.cn/2017/05/07/health/safe_abc/</id>
+    <link href="//ezsay.cn/2017/05/07/health/safe_abc.html"/>
+    <id>//ezsay.cn/2017/05/07/health/safe_abc.html</id>
     <published>2017-05-07T11:14:24.000Z</published>
     <updated>2017-05-07T14:44:53.959Z</updated>
     
@@ -517,8 +517,8 @@
   
   <entry>
     <title>git在复杂项目中的应用</title>
-    <link href="//ezsay.cn/2017/04/28/skill/git_xyz/"/>
-    <id>//ezsay.cn/2017/04/28/skill/git_xyz/</id>
+    <link href="//ezsay.cn/2017/04/28/skill/git_xyz.html"/>
+    <id>//ezsay.cn/2017/04/28/skill/git_xyz.html</id>
     <published>2017-04-28T07:57:25.000Z</published>
     <updated>2017-05-05T14:50:15.616Z</updated>
     
@@ -663,8 +663,8 @@ Desktop.ini
   
   <entry>
     <title>git入门</title>
-    <link href="//ezsay.cn/2017/04/28/skill/git_abc/"/>
-    <id>//ezsay.cn/2017/04/28/skill/git_abc/</id>
+    <link href="//ezsay.cn/2017/04/28/skill/git_abc.html"/>
+    <id>//ezsay.cn/2017/04/28/skill/git_abc.html</id>
     <published>2017-04-28T02:57:07.000Z</published>
     <updated>2017-05-08T07:35:48.117Z</updated>
     
@@ -795,8 +795,8 @@ Automatic merge failed; fix conflicts and then commit the result.
   
   <entry>
     <title>囚徒健身-第三部分：自我指导（第十一章~第十二章）[11P]</title>
-    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_11-12/"/>
-    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_11-12/</id>
+    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_11-12.html"/>
+    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_11-12.html</id>
     <published>2017-04-27T10:23:24.000Z</published>
     <updated>2017-05-04T10:41:27.983Z</updated>
     
@@ -1040,8 +1040,8 @@ Automatic merge failed; fix conflicts and then commit the result.
   
   <entry>
     <title>囚徒健身-第十章健康、强力的肩膀[20P]</title>
-    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_10/"/>
-    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_10/</id>
+    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_10.html"/>
+    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_10.html</id>
     <published>2017-04-27T09:23:24.000Z</published>
     <updated>2017-05-04T10:41:27.978Z</updated>
     
@@ -1316,8 +1316,8 @@ Automatic merge failed; fix conflicts and then commit the result.
   
   <entry>
     <title>囚徒健身-第九章严阵以待的脊柱[20P]</title>
-    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_9/"/>
-    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_9/</id>
+    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_9.html"/>
+    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_9.html</id>
     <published>2017-04-27T08:23:24.000Z</published>
     <updated>2017-05-04T10:41:28.006Z</updated>
     
@@ -1594,8 +1594,8 @@ Automatic merge failed; fix conflicts and then commit the result.
   
   <entry>
     <title>囚徒健身-第八章魔鬼六块[25P]</title>
-    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_8/"/>
-    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_8/</id>
+    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_8.html"/>
+    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_8.html</id>
     <published>2017-04-27T06:23:24.000Z</published>
     <updated>2017-05-04T10:41:28.002Z</updated>
     
@@ -1895,8 +1895,8 @@ Automatic merge failed; fix conflicts and then commit the result.
   
   <entry>
     <title>囚徒健身-第七章仓门般的背部与大炮般的肱二头肌[24P]</title>
-    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_7/"/>
-    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_7/</id>
+    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_7.html"/>
+    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_7.html</id>
     <published>2017-04-27T05:23:24.000Z</published>
     <updated>2017-05-04T10:41:27.997Z</updated>
     
@@ -2160,8 +2160,8 @@ Automatic merge failed; fix conflicts and then commit the result.
   
   <entry>
     <title>囚徒健身-第六章升降机般的大腿[25P]</title>
-    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_6/"/>
-    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_6/</id>
+    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_6.html"/>
+    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_6.html</id>
     <published>2017-04-27T04:23:24.000Z</published>
     <updated>2017-05-04T10:41:27.993Z</updated>
     
@@ -2465,8 +2465,8 @@ Automatic merge failed; fix conflicts and then commit the result.
   
   <entry>
     <title>囚徒健身-第五章铠甲般的胸肌与钢铁般的肱三头肌[25P]</title>
-    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_5/"/>
-    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_5/</id>
+    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_5.html"/>
+    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_5.html</id>
     <published>2017-04-27T03:23:24.000Z</published>
     <updated>2017-05-04T10:41:27.988Z</updated>
     
@@ -2762,8 +2762,8 @@ Automatic merge failed; fix conflicts and then commit the result.
   
   <entry>
     <title>囚徒健身-第一部分：预备（第一章~第四章）[15P]</title>
-    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_1-4/"/>
-    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_1-4/</id>
+    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_1-4.html"/>
+    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_1-4.html</id>
     <published>2017-04-27T02:10:24.000Z</published>
     <updated>2017-05-04T10:41:27.973Z</updated>
     
@@ -3033,8 +3033,8 @@ Automatic merge failed; fix conflicts and then commit the result.
   
   <entry>
     <title>点滴累积-图文</title>
-    <link href="//ezsay.cn/2017/04/26/essay/image_text/"/>
-    <id>//ezsay.cn/2017/04/26/essay/image_text/</id>
+    <link href="//ezsay.cn/2017/04/26/essay/image_text.html"/>
+    <id>//ezsay.cn/2017/04/26/essay/image_text.html</id>
     <published>2017-04-26T02:24:24.000Z</published>
     <updated>2017-05-04T10:41:28.014Z</updated>
     
@@ -3077,10 +3077,10 @@ Automatic merge failed; fix conflicts and then commit the result.
   
   <entry>
     <title>搭建hexo + github pages + 独立域名博客</title>
-    <link href="//ezsay.cn/2017/04/26/technology/hexo_blog_build/"/>
-    <id>//ezsay.cn/2017/04/26/technology/hexo_blog_build/</id>
+    <link href="//ezsay.cn/2017/04/26/technology/hexo_blog_build.html"/>
+    <id>//ezsay.cn/2017/04/26/technology/hexo_blog_build.html</id>
     <published>2017-04-26T00:03:25.000Z</published>
-    <updated>2017-05-09T06:13:04.126Z</updated>
+    <updated>2017-05-09T08:18:20.852Z</updated>
     
     <content type="html"><![CDATA[<p>Hexo，一个快速、简洁且高效的博客框架，Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。</p>
 <a id="more"></a>
@@ -3130,12 +3130,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 </blockquote>
 <p><strong>7、查看hexo是否安装成功</strong></p>
 <p><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
-<h2 id="三、完整搭建过程【github-独立域名】"><a href="#三、完整搭建过程【github-独立域名】" class="headerlink" title="三、完整搭建过程【github + 独立域名】"></a>三、完整搭建过程【github + 独立域名】</h2><h3 id="1、本地初始化hexo环境"><a href="#1、本地初始化hexo环境" class="headerlink" title="1、本地初始化hexo环境"></a>1、本地初始化hexo环境</h3><pre><code class="shell">mkdir hexo_blog
-cd hexo_blog
-hexo init
-npm config set registry https://registry.npm.taobao.org
-npm install
-</code></pre>
+<h2 id="三、完整搭建过程【github-独立域名】"><a href="#三、完整搭建过程【github-独立域名】" class="headerlink" title="三、完整搭建过程【github + 独立域名】"></a>三、完整搭建过程【github + 独立域名】</h2><h3 id="1、本地初始化hexo环境"><a href="#1、本地初始化hexo环境" class="headerlink" title="1、本地初始化hexo环境"></a>1、本地初始化hexo环境</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">mkdir hexo_blog</div><div class="line">cd hexo_blog</div><div class="line">hexo init</div><div class="line">npm config set registry https://registry.npm.taobao.org</div><div class="line">npm install</div></pre></td></tr></table></figure>
 <h3 id="2、github配置"><a href="#2、github配置" class="headerlink" title="2、github配置"></a>2、github配置</h3><p><strong>新建仓库</strong><br>登陆github，单击+号创建新仓库，比较重要两点是：</p>
 <ul>
 <li><p>Repository name必须以github.io结尾；</p>
@@ -3147,9 +3142,7 @@ npm install
 <p><strong>本地免密码提交git设置</strong></p>
 <p>默认情况下，每次推送hexo动态生成的静态页面到刚刚创建的github仓库时需要输入用户名/密码，但是可以通过本地生成密钥的方式来实现免密码推送，且更安全。只要将本地生成的公钥保存到github即可，具体实现步骤如下：</p>
 <p><strong>本地生成rsa</strong></p>
-<pre><code class="shell"># 输入如下命令，一路回车即可
-ssh-keygen -t rsa -C &quot;mail@abc.com&quot;
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 输入如下命令，一路回车即可</div><div class="line">ssh-keygen -t rsa -C "mail@abc.com"</div></pre></td></tr></table></figure>
 <p>windows默认会再c:/Users/<strong>Administrator</strong>/.ssh/文件夹中生成三个文件（Administrator是你的账户名）</p>
 <ul>
 <li>known_hosts</li>
@@ -3158,25 +3151,7 @@ ssh-keygen -t rsa -C &quot;mail@abc.com&quot;
 </ul>
 <p><strong>github保存ssh key</strong><br>  单击头像-&gt;settings-&gt;SSH keys and GPG keys-&gt;SSH keys_单击[new SSH keys] 添加id_rsa.pub公钥的文本内容</p>
 <h3 id="3、hexo配置-config-yml"><a href="#3、hexo配置-config-yml" class="headerlink" title="3、hexo配置_config.yml"></a>3、hexo配置_config.yml</h3><p>比较关键的是# Deployment那处需要跟自己的github新创建的repository对应起来。其他更详细的配置可以参照<a href="https://hexo.io/zh-cn/api/index.html" target="_blank" rel="external">官网API</a></p>
-<pre><code class="properties"># Site
-title: 博客
-subtitle: 生活美好，美好生活
-description: 在哪里跌倒 就在哪里躺下
-author: Lee
-language: zh-CN
-timezone: Asia/Shanghai
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: git@github.com:fbli/fbli.github.io.git
-  branch: master
-
-# Extensions
-# 官方默认主题，可以找自己比较喜欢的主题随意切换
-theme: landscape
-</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"># Site</div><div class="line">title: 博客</div><div class="line">subtitle: 生活美好，美好生活</div><div class="line">description: 在哪里跌倒 就在哪里躺下</div><div class="line">author: Lee</div><div class="line">language: zh-CN</div><div class="line">timezone: Asia/Shanghai</div><div class="line"></div><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:fbli/fbli.github.io.git</div><div class="line">  branch: master</div><div class="line"></div><div class="line"># Extensions</div><div class="line"># 官方默认主题，可以找自己比较喜欢的主题随意切换</div><div class="line">theme: landscape</div></pre></td></tr></table></figure>
 <h3 id="4、域名绑定"><a href="#4、域名绑定" class="headerlink" title="4、域名绑定"></a>4、域名绑定</h3><p>1、 新建CNAME文件，放到hexo_blog\source\下，内容为不带www的域名如：ezsay.cn<br>2、 配置域名解析</p>
 <ul>
 <li><p>CNAME <strong>www</strong> fbli.github.io</p>
@@ -3185,45 +3160,15 @@ theme: landscape
 <p>  问题：能转向github，但是显示404。初次发布后，停10分钟再试，githubPages需要一定的时间</p>
 </li>
 </ul>
-<h3 id="5、发布到git上"><a href="#5、发布到git上" class="headerlink" title="5、发布到git上"></a>5、发布到git上</h3><pre><code class="shell"># 发布到git上
-hexo d
-# 发布前先重新生成，如下两个命令都可以
-hexo d -g
-hexo g -d
-</code></pre>
+<h3 id="5、发布到git上"><a href="#5、发布到git上" class="headerlink" title="5、发布到git上"></a>5、发布到git上</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 发布到git上</div><div class="line">hexo d</div><div class="line"><span class="meta">#</span> 发布前先重新生成，如下两个命令都可以</div><div class="line">hexo d -g</div><div class="line">hexo g -d</div></pre></td></tr></table></figure>
 <h3 id="6、访问跟刚才仓库名一致的域名即可看到自己的博客了"><a href="#6、访问跟刚才仓库名一致的域名即可看到自己的博客了" class="headerlink" title="6、访问跟刚才仓库名一致的域名即可看到自己的博客了"></a>6、访问跟刚才仓库名一致的域名即可看到自己的博客了</h3><ul>
 <li><a href="http://fbli.github.io/" target="_blank" rel="external">http://fbli.github.io/</a></li>
 <li><a href="https://fbli.github.io/" target="_blank" rel="external">https://fbli.github.io/</a></li>
 </ul>
-<h3 id="7、个性化-更换主题"><a href="#7、个性化-更换主题" class="headerlink" title="7、个性化-更换主题"></a>7、个性化-更换主题</h3><pre><code class="shell"># 更换主题前必须clean
-hexo clean
-cd hexo_blog\themes
-git clone git@github.com:litten/hexo-theme-yilia.git yilia # 此处有坑，默认的主题文件夹名需要改一下
-cd yilia
-npm install
-# 返回到hexo根目录
-cd ../../
-# 重新生成
-hexo g
-hexo s
-http://localhost:4000/
-# 发布至github
-hexo d
-</code></pre>
-<h2 id="四、Hexo常用命令汇总"><a href="#四、Hexo常用命令汇总" class="headerlink" title="四、Hexo常用命令汇总"></a>四、Hexo常用命令汇总</h2><pre><code class="shell">hexo new &quot;postName&quot; #新建文章
-hexo new page &quot;pageName&quot; #新建页面
-hexo generate #生成静态页面至public目录
-hexo server #开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）
-hexo deploy #将.deploy目录部署到GitHub
-hexo help # 查看帮助
-hexo version #查看Hexo的版本
-</code></pre>
+<h3 id="7、个性化-更换主题"><a href="#7、个性化-更换主题" class="headerlink" title="7、个性化-更换主题"></a>7、个性化-更换主题</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 更换主题前必须clean</div><div class="line">hexo clean</div><div class="line">cd hexo_blog\themes</div><div class="line">git clone git@github.com:litten/hexo-theme-yilia.git yilia # 此处有坑，默认的主题文件夹名需要改一下</div><div class="line">cd yilia</div><div class="line">npm install</div><div class="line"><span class="meta">#</span> 返回到hexo根目录</div><div class="line">cd ../../</div><div class="line"><span class="meta">#</span> 重新生成</div><div class="line">hexo g</div><div class="line">hexo s</div><div class="line">http://localhost:4000/</div><div class="line"><span class="meta">#</span> 发布至github</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+<h2 id="四、Hexo常用命令汇总"><a href="#四、Hexo常用命令汇总" class="headerlink" title="四、Hexo常用命令汇总"></a>四、Hexo常用命令汇总</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo new "postName" #新建文章</div><div class="line">hexo new page "pageName" #新建页面</div><div class="line">hexo generate #生成静态页面至public目录</div><div class="line">hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</div><div class="line">hexo deploy #将.deploy目录部署到GitHub</div><div class="line">hexo help # 查看帮助</div><div class="line">hexo version #查看Hexo的版本</div></pre></td></tr></table></figure>
 <p><strong>Hexo命令简写</strong></p>
-<pre><code class="shell">hexo n == hexo new
-hexo g == hexo generate
-hexo s == hexo server
-hexo d == hexo deploy
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo n == hexo new</div><div class="line">hexo g == hexo generate</div><div class="line">hexo s == hexo server</div><div class="line">hexo d == hexo deploy</div></pre></td></tr></table></figure>
 <h3 id="博客搭建软件环境版本"><a href="#博客搭建软件环境版本" class="headerlink" title="博客搭建软件环境版本"></a>博客搭建软件环境版本</h3><table>
 <thead>
 <tr>
@@ -3259,19 +3204,7 @@ hexo d == hexo deploy
 </tbody>
 </table>
 <p><strong>更详细的配置信息</strong></p>
-<pre><code class="json">hexo: 3.3.1
-hexo-cli: 1.0.2
-os: Windows_NT 10.0.15063 win32 x64
-http_parser: 2.7.0
-node: 6.10.2
-v8: 5.1.281.98
-uv: 1.9.1
-zlib: 1.2.11
-ares: 1.10.1-DEV
-icu: 58.2
-modules: 48
-openssl: 1.0.2k
-</code></pre>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">hexo: 3.3.1</div><div class="line">hexo-cli: 1.0.2</div><div class="line">os: Windows_NT 10.0.15063 win32 x64</div><div class="line">http_parser: 2.7.0</div><div class="line">node: 6.10.2</div><div class="line">v8: 5.1.281.98</div><div class="line">uv: 1.9.1</div><div class="line">zlib: 1.2.11</div><div class="line">ares: 1.10.1-DEV</div><div class="line">icu: 58.2</div><div class="line">modules: 48</div><div class="line">openssl: 1.0.2k</div></pre></td></tr></table></figure>
 <h2 id="后记：踩过的坑"><a href="#后记：踩过的坑" class="headerlink" title="后记：踩过的坑"></a>后记：踩过的坑</h2><h3 id="1、hexo-g-生成不了"><a href="#1、hexo-g-生成不了" class="headerlink" title="1、hexo g 生成不了"></a>1、hexo g 生成不了</h3><p>git clone的默认主题文件夹名需要改成跟主题设置那一致否则命令报错生成不了。如：<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">hexo-theme-<em>yilia</em></a>变更为yilia</p>
 <h3 id="2、hexo-d-发布不成功"><a href="#2、hexo-d-发布不成功" class="headerlink" title="2、hexo d 发布不成功"></a>2、hexo d 发布不成功</h3><p>配置了ssh，但是发布不成功，尝试本地随意找个文件夹用命令方式git clone一下自己刚刚创建的仓库fbli.github.io 成功后，再尝试hexo d发布</p>
 <h3 id="3、单击【所有文章】提示缺失模块-TODO"><a href="#3、单击【所有文章】提示缺失模块-TODO" class="headerlink" title="3、单击【所有文章】提示缺失模块 TODO"></a>3、单击【所有文章】提示缺失模块 TODO</h3><p>缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br>npm i hexo-generator-json-content –save<br>3、在根目录_config.yml里添加配置：</p>
@@ -3287,7 +3220,8 @@ openssl: 1.0.2k
 <ul>
 <li>无站内全文搜索</li>
 <li>无文章目录</li>
-<li>\<!--more-->处理的不好，跟【展开全文】重复</li>
+<li>\<!--more-->处理的感觉有点别扭</li>
+<li>字体不够骚</li>
 <li>【所有文章】单击报错，高版本多人反馈不好用，官方提示方案不能解决</li>
 </ul>
 <p><strong>github加星最多的主题</strong> github.com 搜索【hexo theme】<br><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a></p>
