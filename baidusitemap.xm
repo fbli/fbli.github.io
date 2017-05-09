@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2017/04/26/technology/hexo_blog_build.html</loc>
-    <lastmod>2017-05-09T08:18:20.852Z</lastmod>
+    <lastmod>2017-05-09T13:10:42.500Z</lastmod>
     <data>
         <display>
         <title>搭建hexo + github pages + 独立域名博客</title>

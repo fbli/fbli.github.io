@@ -2997,7 +2997,7 @@
     <link href="//ezsay.cn/2017/04/26/technology/hexo_blog_build.html"/>
     <id>//ezsay.cn/2017/04/26/technology/hexo_blog_build.html</id>
     <published>2017-04-26T00:03:25.000Z</published>
-    <updated>2017-05-09T08:18:20.852Z</updated>
+    <updated>2017-05-09T13:10:42.500Z</updated>
     
     <content type="html"><![CDATA[<p>Hexo，一个快速、简洁且高效的博客框架，Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。</p>
 <a id="more"></a>
@@ -3082,7 +3082,15 @@
 <li><a href="http://fbli.github.io/" target="_blank" rel="external">http://fbli.github.io/</a></li>
 <li><a href="https://fbli.github.io/" target="_blank" rel="external">https://fbli.github.io/</a></li>
 </ul>
-<h3 id="7、个性化-更换主题"><a href="#7、个性化-更换主题" class="headerlink" title="7、个性化-更换主题"></a>7、个性化-更换主题</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 更换主题前必须clean</div><div class="line">hexo clean</div><div class="line">cd hexo_blog\themes</div><div class="line">git clone git@github.com:litten/hexo-theme-yilia.git yilia # 此处有坑，默认的主题文件夹名需要改一下</div><div class="line">cd yilia</div><div class="line">npm install</div><div class="line"><span class="meta">#</span> 返回到hexo根目录</div><div class="line">cd ../../</div><div class="line"><span class="meta">#</span> 重新生成</div><div class="line">hexo g</div><div class="line">hexo s</div><div class="line">http://localhost:4000/</div><div class="line"><span class="meta">#</span> 发布至github</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+<h3 id="7、个性化-更换主题"><a href="#7、个性化-更换主题" class="headerlink" title="7、个性化-更换主题"></a>7、个性化-更换主题</h3><p>yilia主题在github上搜索hexo themes排名第二有如下特点</p>
+<p>优点：看着舒服。<br>缺点：</p>
+<ul>
+<li>无站内全文搜索</li>
+<li>无文章目录</li>
+<li>\<!--more-->处理的感觉有点别扭</li>
+<li>字体不够骚</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 更换主题前必须clean</div><div class="line">cd hexo_blog</div><div class="line">hexo clean</div><div class="line"><span class="meta">#</span> 此处有坑，默认的主题文件夹名需要改一下</div><div class="line">git clone git@github.com:litten/hexo-theme-yilia.git themes/yilia</div><div class="line">cd themes/yilia</div><div class="line">npm install</div><div class="line"><span class="meta">#</span> 返回到hexo根目录</div><div class="line">cd ../../</div><div class="line"><span class="meta">#</span> 重新生成</div><div class="line">hexo g</div><div class="line">hexo s</div><div class="line">http://localhost:4000/</div><div class="line"><span class="meta">#</span> 发布至github</div><div class="line">hexo d</div></pre></td></tr></table></figure>
 <h2 id="四、Hexo常用命令汇总"><a href="#四、Hexo常用命令汇总" class="headerlink" title="四、Hexo常用命令汇总"></a>四、Hexo常用命令汇总</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo new "postName" #新建文章</div><div class="line">hexo new page "pageName" #新建页面</div><div class="line">hexo generate #生成静态页面至public目录</div><div class="line">hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</div><div class="line">hexo deploy #将.deploy目录部署到GitHub</div><div class="line">hexo help # 查看帮助</div><div class="line">hexo version #查看Hexo的版本</div></pre></td></tr></table></figure>
 <p><strong>Hexo命令简写</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo n == hexo new</div><div class="line">hexo g == hexo generate</div><div class="line">hexo s == hexo server</div><div class="line">hexo d == hexo deploy</div></pre></td></tr></table></figure>
@@ -3124,23 +3132,15 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">hexo: 3.3.1</div><div class="line">hexo-cli: 1.0.2</div><div class="line">os: Windows_NT 10.0.15063 win32 x64</div><div class="line">http_parser: 2.7.0</div><div class="line">node: 6.10.2</div><div class="line">v8: 5.1.281.98</div><div class="line">uv: 1.9.1</div><div class="line">zlib: 1.2.11</div><div class="line">ares: 1.10.1-DEV</div><div class="line">icu: 58.2</div><div class="line">modules: 48</div><div class="line">openssl: 1.0.2k</div></pre></td></tr></table></figure>
 <h2 id="后记：踩过的坑"><a href="#后记：踩过的坑" class="headerlink" title="后记：踩过的坑"></a>后记：踩过的坑</h2><h3 id="1、hexo-g-生成不了"><a href="#1、hexo-g-生成不了" class="headerlink" title="1、hexo g 生成不了"></a>1、hexo g 生成不了</h3><p>git clone的默认主题文件夹名需要改成跟主题设置那一致否则命令报错生成不了。如：<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">hexo-theme-<em>yilia</em></a>变更为yilia</p>
 <h3 id="2、hexo-d-发布不成功"><a href="#2、hexo-d-发布不成功" class="headerlink" title="2、hexo d 发布不成功"></a>2、hexo d 发布不成功</h3><p>配置了ssh，但是发布不成功，尝试本地随意找个文件夹用命令方式git clone一下自己刚刚创建的仓库fbli.github.io 成功后，再尝试hexo d发布</p>
-<h3 id="3、单击【所有文章】提示缺失模块-TODO"><a href="#3、单击【所有文章】提示缺失模块-TODO" class="headerlink" title="3、单击【所有文章】提示缺失模块 TODO"></a>3、单击【所有文章】提示缺失模块 TODO</h3><p>缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br>npm i hexo-generator-json-content –save<br>3、在根目录_config.yml里添加配置：</p>
+<h3 id="3、单击【所有文章】提示缺失模块-TODO"><a href="#3、单击【所有文章】提示缺失模块-TODO" class="headerlink" title="3、单击【所有文章】提示缺失模块 TODO"></a>3、单击【所有文章】提示缺失模块 TODO</h3><p>缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br>npm i hexo-generator-json-content –save<br>3、在根目录_config.yml里添加配置：……</p>
 <p>按提示操作后，发现并未解决</p>
-<p><strong>后续解决方案待填坑：</strong></p>
+<p>最后直接用yilia主题作者<a href="https://github.com/litten/BlogBackup" target="_blank" rel="external">博客备份</a>的hexo配置的_config.yml改了一下才好的</p>
 <h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="常用网址备忘"><a href="#常用网址备忘" class="headerlink" title="常用网址备忘"></a>常用网址备忘</h3><p>nodejs <a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a>  <a href="http://nodejs.cn/" target="_blank" rel="external">http://nodejs.cn/</a></p>
 <p>github pages <a href="https://pages.github.com/" target="_blank" rel="external">https://pages.github.com/</a></p>
 <p>git <a href="https://git-scm.com/" target="_blank" rel="external">https://git-scm.com/</a></p>
 <p>hexo <a href="https://hexo.io/" target="_blank" rel="external">https://hexo.io/</a></p>
 <p>hexo API <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">https://hexo.io/zh-cn/docs/</a></p>
 <h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p><a href="https://hexo.io/themes/" target="_blank" rel="external">https://hexo.io/themes/</a><br><strong>正在使用的主题</strong><br><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia</a><br><a href="http://litten.me/" target="_blank" rel="external">http://litten.me/</a></p>
-<p>优点：看着舒服。<br>缺点：</p>
-<ul>
-<li>无站内全文搜索</li>
-<li>无文章目录</li>
-<li>\<!--more-->处理的感觉有点别扭</li>
-<li>字体不够骚</li>
-<li>【所有文章】单击报错，高版本多人反馈不好用，官方提示方案不能解决</li>
-</ul>
 <p><strong>github加星最多的主题</strong> github.com 搜索【hexo theme】<br><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a></p>
 <h3 id="Markdown编辑器"><a href="#Markdown编辑器" class="headerlink" title="Markdown编辑器"></a>Markdown编辑器</h3><p><strong>markdown推荐编辑器</strong>（支持mac windows linux） <a href="https://www.typora.io](https://www.typora.io/" target="_blank" rel="external">https://www.typora.io](https://www.typora.io/</a>)</p>
 <p><strong>在线编辑器</strong><br><a href="https://stackedit.io/editor#" target="_blank" rel="external">https://stackedit.io/editor#</a><br><a href="https://app.classeur.io/" target="_blank" rel="external">https://app.classeur.io</a></p>
