@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>//ezsay.cn/2017/04/28/skill/git_abc/</loc>
+    
+    <lastmod>2017-05-08T07:35:48.117Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>//ezsay.cn/2017/05/08/health/stretch/</loc>
     
     <lastmod>2017-05-08T03:51:53.863Z</lastmod>
@@ -23,13 +30,6 @@
   </url>
   
   <url>
-    <loc>//ezsay.cn/2017/04/28/skill/git_abc/</loc>
-    
-    <lastmod>2017-05-06T05:27:07.220Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_xyz/</loc>
     
     <lastmod>2017-05-05T14:50:15.616Z</lastmod>
@@ -37,30 +37,9 @@
   </url>
   
   <url>
-    <loc>//ezsay.cn/2017/04/30/skill/vim_xyz/</loc>
-    
-    <lastmod>2017-05-04T10:41:28.042Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>//ezsay.cn/2017/04/30/skill/vim_abc/</loc>
-    
-    <lastmod>2017-05-04T10:41:28.038Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>//ezsay.cn/2017/04/26/essay/image_text/</loc>
     
     <lastmod>2017-05-04T10:41:28.014Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_simple/</loc>
-    
-    <lastmod>2017-05-04T10:41:28.009Z</lastmod>
     
   </url>
   
@@ -124,6 +103,41 @@
     <loc>//ezsay.cn/google50e80117291cc4c5.html</loc>
     
     <lastmod>2017-05-02T08:32:07.048Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//ezsay.cn/photos/lazyload.min.js</loc>
+    
+    <lastmod>2017-04-27T03:55:53.291Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//ezsay.cn/photos/ins.json</loc>
+    
+    <lastmod>2017-04-27T03:55:53.291Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//ezsay.cn/photos/ins.css</loc>
+    
+    <lastmod>2017-04-27T03:55:53.276Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//ezsay.cn/photos/ins.js</loc>
+    
+    <lastmod>2017-04-27T03:55:53.276Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//ezsay.cn/photos/index.html</loc>
+    
+    <lastmod>2017-04-27T03:55:53.260Z</lastmod>
     
   </url>
   

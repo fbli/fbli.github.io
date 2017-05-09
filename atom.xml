@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>哎呦啊唝</title>
-  <subtitle>ez to say,hard to do</subtitle>
+  <title>易说博客</title>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
@@ -516,76 +516,6 @@
   </entry>
   
   <entry>
-    <title>Vim高级应用</title>
-    <link href="//ezsay.cn/2017/04/30/skill/vim_xyz/"/>
-    <id>//ezsay.cn/2017/04/30/skill/vim_xyz/</id>
-    <published>2017-04-30T12:24:10.000Z</published>
-    <updated>2017-05-04T10:41:28.042Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-    
-    
-      <category term="进阶" scheme="//ezsay.cn/tags/%E8%BF%9B%E9%98%B6/"/>
-    
-      <category term="vim" scheme="//ezsay.cn/tags/vim/"/>
-    
-      <category term="工具" scheme="//ezsay.cn/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-      <category term="技巧" scheme="//ezsay.cn/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vim入门</title>
-    <link href="//ezsay.cn/2017/04/30/skill/vim_abc/"/>
-    <id>//ezsay.cn/2017/04/30/skill/vim_abc/</id>
-    <published>2017-04-30T02:24:24.000Z</published>
-    <updated>2017-05-04T10:41:28.038Z</updated>
-    
-    <content type="html"><![CDATA[<p>先看一个投票统计排名what-is-the-best-text-editor-for-programming <a href="https://www.diffur.com/what-is-the-best-text-editor-for-programming" target="_blank" rel="external">Link</a></p>
-<p><img src="/asset/blog_img/program_editor_top5.png" alt="" title="排名前五的文本编辑器"></p>
-<ol>
-<li>Vim vim.org 144 upvotes <a href="http://www.vim.org/" target="_blank" rel="external">Link</a> </li>
-<li>Atom atom.io 105 upvotes <a href="https://atom.io/" target="_blank" rel="external">Link</a> </li>
-<li>Sublime Text sublimetext.com 89 upvotes <a href="https://www.sublimetext.com/" target="_blank" rel="external">Link</a> </li>
-<li>GNU Emacs gnu.org 72 upvotes <a href="https://www.gnu.org/software/emacs/" target="_blank" rel="external">Link</a> </li>
-<li>Notepad++ notepad-plus-plus.org 32 upvotes <a href="https://notepad-plus-plus.org/" target="_blank" rel="external">Link</a> </li>
-</ol>
-<a id="more"></a>
-<h2 id="1、vim安装"><a href="#1、vim安装" class="headerlink" title="1、vim安装"></a>1、vim安装</h2><h3 id="1-1、-window下安装vim"><a href="#1-1、-window下安装vim" class="headerlink" title="1.1、 window下安装vim"></a>1.1、 window下安装vim</h3><h3 id="1-2、-centos下安装vim"><a href="#1-2、-centos下安装vim" class="headerlink" title="1.2、 centos下安装vim"></a>1.2、 centos下安装vim</h3><h2 id="2、设置vim"><a href="#2、设置vim" class="headerlink" title="2、设置vim"></a>2、设置vim</h2><h2 id="3、基础命令"><a href="#3、基础命令" class="headerlink" title="3、基础命令"></a>3、基础命令</h2><h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;先看一个投票统计排名what-is-the-best-text-editor-for-programming &lt;a href=&quot;https://www.diffur.com/what-is-the-best-text-editor-for-programming&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/asset/blog_img/program_editor_top5.png&quot; alt=&quot;&quot; title=&quot;排名前五的文本编辑器&quot;&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Vim vim.org 144 upvotes &lt;a href=&quot;http://www.vim.org/&quot;&gt;Link&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;Atom atom.io 105 upvotes &lt;a href=&quot;https://atom.io/&quot;&gt;Link&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;Sublime Text sublimetext.com 89 upvotes &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;Link&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;GNU Emacs gnu.org 72 upvotes &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;Link&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;Notepad++ notepad-plus-plus.org 32 upvotes &lt;a href=&quot;https://notepad-plus-plus.org/&quot;&gt;Link&lt;/a&gt; &lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-      <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-    
-    
-      <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
-    
-      <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
-    
-      <category term="vim" scheme="//ezsay.cn/tags/vim/"/>
-    
-      <category term="工具" scheme="//ezsay.cn/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
     <title>git在复杂项目中的应用</title>
     <link href="//ezsay.cn/2017/04/28/skill/git_xyz/"/>
     <id>//ezsay.cn/2017/04/28/skill/git_xyz/</id>
@@ -723,11 +653,11 @@ Desktop.ini
     
       <category term="进阶" scheme="//ezsay.cn/tags/%E8%BF%9B%E9%98%B6/"/>
     
+      <category term="分支管理" scheme="//ezsay.cn/tags/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/"/>
+    
       <category term="复杂场景" scheme="//ezsay.cn/tags/%E5%A4%8D%E6%9D%82%E5%9C%BA%E6%99%AF/"/>
     
       <category term="企业应用" scheme="//ezsay.cn/tags/%E4%BC%81%E4%B8%9A%E5%BA%94%E7%94%A8/"/>
-    
-      <category term="分支管理" scheme="//ezsay.cn/tags/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
@@ -736,11 +666,11 @@ Desktop.ini
     <link href="//ezsay.cn/2017/04/28/skill/git_abc/"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc/</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2017-05-06T05:27:07.220Z</updated>
+    <updated>2017-05-08T07:35:48.117Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
-<li><strong>工作区：</strong>你的workspace</li>
+<li><strong>工作区：</strong>你的workspace下的工程名文件夹</li>
 <li><strong>版本库：</strong>工作区的隐藏目录.git</li>
 <li>stage（index）：暂存区</li>
 <li>master：git自动创建的第一个分支，指向最新提交</li>
@@ -843,7 +773,7 @@ Automatic merge failed; fix conflicts and then commit the result.
     
       &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;h2 id=&quot;Git基本概念&quot;&gt;&lt;a href=&quot;#Git基本概念&quot; class=&quot;headerlink&quot; title=&quot;Git基本概念&quot;&gt;&lt;/a&gt;Git基本概念&lt;/h2&gt;&lt;p&gt;svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;工作区：&lt;/strong&gt;你的workspace&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工作区：&lt;/strong&gt;你的workspace下的工程名文件夹&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;版本库：&lt;/strong&gt;工作区的隐藏目录.git&lt;/li&gt;
 &lt;li&gt;stage（index）：暂存区&lt;/li&gt;
 &lt;li&gt;master：git自动创建的第一个分支，指向最新提交&lt;/li&gt;
@@ -860,34 +790,6 @@ Automatic merge failed; fix conflicts and then commit the result.
       <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
     
       <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>囚徒健身-简明六艺</title>
-    <link href="//ezsay.cn/2017/04/27/convict/convict_conditioning_simple/"/>
-    <id>//ezsay.cn/2017/04/27/convict/convict_conditioning_simple/</id>
-    <published>2017-04-27T14:24:24.000Z</published>
-    <updated>2017-05-04T10:41:28.009Z</updated>
-    
-    <content type="html"><![CDATA[<p>摘录囚徒健身-简明六艺，方便健身时对照</p>
-<a id="more"></a>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;摘录囚徒健身-简明六艺，方便健身时对照&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-    
-    
-      <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
-    
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
-    
-      <category term="阅读" scheme="//ezsay.cn/tags/%E9%98%85%E8%AF%BB/"/>
     
   </entry>
   
