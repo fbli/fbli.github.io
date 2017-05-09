@@ -624,7 +624,7 @@
     <link href="//ezsay.cn/2017/04/28/skill/git_abc.html"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc.html</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2017-05-09T15:15:40.414Z</updated>
+    <updated>2017-05-09T15:50:13.642Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
@@ -668,45 +668,26 @@
 <p><strong>可能出现的问题</strong></p>
 <p>1、问：新建的裸库，可以克隆但是不能推送</p>
 <p>答：检查裸库目录的权限的<strong>拥有者</strong>和<strong>群组</strong></p>
-<blockquote>
 <p>ls -al 或者 ll命令</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> ls -al</div><div class="line"><span class="meta">&gt;</span> drwxr-xr-x 7 root  root  4096 May  3 11:33 target.git</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ls -al</div><div class="line">drwxr-xr-x 7 root  root  4096 May  3 11:33 target.git</div></pre></td></tr></table></figure>
 <p>此时本地仓库是没法推送的</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> git clone git@XXX.com/xxx/target.git</div><div class="line"><span class="meta">&gt;</span></div><div class="line"><span class="meta">&gt;</span> # 修改文件、本地提交、推送</div><div class="line"><span class="meta">&gt;</span> git push</div><div class="line"><span class="meta">&gt;</span> remote: error: insufficient permission for adding an object to repository database ./objects</div><div class="line"><span class="meta">&gt;</span> remote: fatal: failed to write object</div><div class="line"><span class="meta">&gt;</span> error: unpack failed: unpack-objects abnormal exit</div><div class="line"><span class="meta">&gt;</span></div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git clone git@XXX.com/xxx/target.git</div><div class="line"><span class="meta"></span></div><div class="line"># 修改文件、本地提交、推送</div><div class="line">git push</div><div class="line">remote: error: insufficient permission for adding an object to repository database ./objects</div><div class="line">remote: fatal: failed to write object</div><div class="line">error: unpack failed: unpack-objects abnormal exit</div></pre></td></tr></table></figure>
 <p>需要将<strong>拥有者</strong>和<strong>群组</strong>设置成跟地址<strong>git@XX</strong>前缀一致的</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> chown -R git:git target.git</div><div class="line"><span class="meta">&gt;</span> ll</div><div class="line"><span class="meta">&gt;</span> drwxr-xr-x 7 git  git  4096 May  3 11:33 target.git</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
-</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">chown -R git:git target.git</div><div class="line">ll</div><div class="line">drwxr-xr-x 7 git  git  4096 May  3 11:33 target.git</div></pre></td></tr></table></figure>
 <p>2、若两个仓库之间有一样的文件，移库是有问题的，此时拉取会报错。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">git pull</div><div class="line">fatal: refusing to merge unrelated histories</div><div class="line"><span class="meta"></span></div><div class="line"># 用这个命令合并即可</div><div class="line">git pull origin master --allow-unrelated-histories</div><div class="line">From git@XXX.com/xxx/target.git</div><div class="line"> * branch            master     -&gt; FETCH_HEAD</div><div class="line">Auto-merging README.txt</div><div class="line">CONFLICT (add/add): Merge conflict in README.txt</div><div class="line">Automatic merge failed; fix conflicts and then commit the result.</div><div class="line"><span class="meta"></span></div><div class="line"># 合并完毕必定冲突，此时分支状态变为(master|MERGING) ,解决冲突重新提交即可</div></pre></td></tr></table></figure>
 <p>推荐：新建的裸库尽量一点东西没有，特别不要有跟要迁移仓库一样的文件</p>
 <h2 id="git修改错误的作者信息"><a href="#git修改错误的作者信息" class="headerlink" title="git修改错误的作者信息"></a>git修改错误的作者信息</h2><p>现实中，经常会切换不同的git仓库，默认git config –global user.name|user.email全局配置肯定不能满足你公司跟自有仓库的身份切换，时常一不小心身份信息提交错了，且推送到远程了，此时可以用如下方案进行修改。</p>
-<blockquote>
 <p>1、打开git bash</p>
 <p>2、bare clone你的仓库</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> git clone --bare https://github.com/user/repo.git</div><div class="line"><span class="meta">&gt;</span> cd repo.git</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git clone --bare https://github.com/user/repo.git</div><div class="line">cd repo.git</div></pre></td></tr></table></figure>
 <p>3、修改如下命名的<code>OLD_EMAIL</code>,<code>CORRECT_NAME</code>,<code>CORRECT_EMAIL</code></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> git filter-branch --env-filter '</div><div class="line"><span class="meta">&gt;</span> OLD_EMAIL="old@email.com"</div><div class="line"><span class="meta">&gt;</span> CORRECT_NAME="New name"</div><div class="line"><span class="meta">&gt;</span> CORRECT_EMAIL="new@email.com"</div><div class="line"><span class="meta">&gt;</span></div><div class="line"><span class="meta">&gt;</span> if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]</div><div class="line"><span class="meta">&gt;</span> then</div><div class="line"><span class="meta">&gt;</span>     export GIT_COMMITTER_NAME="$CORRECT_NAME"</div><div class="line"><span class="meta">&gt;</span>     export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"</div><div class="line"><span class="meta">&gt;</span> fi</div><div class="line"><span class="meta">&gt;</span> if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]</div><div class="line"><span class="meta">&gt;</span> then</div><div class="line"><span class="meta">&gt;</span>     export GIT_AUTHOR_NAME="$CORRECT_NAME"</div><div class="line"><span class="meta">&gt;</span>     export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"</div><div class="line"><span class="meta">&gt;</span> fi</div><div class="line"><span class="meta">&gt;</span> ' --tag-name-filter cat -- --branches --tags</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">git filter-branch --env-filter '</div><div class="line">OLD_EMAIL="old@email.com"</div><div class="line">CORRECT_NAME="New name"</div><div class="line">CORRECT_EMAIL="new@email.com"</div><div class="line"></div><div class="line">if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]</div><div class="line">then</div><div class="line">    export GIT_COMMITTER_NAME="$CORRECT_NAME"</div><div class="line">    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"</div><div class="line">fi</div><div class="line">if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]</div><div class="line">then</div><div class="line">    export GIT_AUTHOR_NAME="$CORRECT_NAME"</div><div class="line">    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"</div><div class="line">fi</div><div class="line">' --tag-name-filter cat -- --branches --tags</div></pre></td></tr></table></figure>
 <p>4、粘贴修改后的3，回车执行</p>
 <p>5、推送到远程</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> git push --force --tags origin 'refs/heads/*'</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push --force --tags origin 'refs/heads/*'</div></pre></td></tr></table></figure>
 <p>6、本地删除刚刚clone的仓库</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> cd ..</div><div class="line"><span class="meta">&gt;</span> rm -rf repo.git</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
-</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd ..</div><div class="line">rm -rf repo.git</div></pre></td></tr></table></figure>
 <p><strong>提示：除非必要，否则不建议如此操作</strong></p>
 <p>参考资料：</p>
 <p><a href="https://github.com/cytopia/git-rewrite-author" target="_blank" rel="external">https://github.com/cytopia/git-rewrite-author</a></p>
