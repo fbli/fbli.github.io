@@ -3,12 +3,13 @@
 
 
     
+    
   <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
-    <lastmod>2017-05-09T15:04:51.358Z</lastmod>
+    <lastmod>2017-05-09T15:15:40.414Z</lastmod>
     <data>
         <display>
-        <title>git入门</title>
+        <title>git入门到精通</title>
         <pubTime>2017-04-28T02:57:07.000Z</pubTime>
         
         <tag>git</tag>
