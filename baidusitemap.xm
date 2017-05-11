@@ -4,8 +4,52 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/05/11/health/body_building_muscle_abc.html</loc>
+    <lastmod>2017-05-11T06:38:17.319Z</lastmod>
+    <data>
+        <display>
+        <title>健身-认识人体的肌肉</title>
+        <pubTime>2017-05-11T06:18:24.000Z</pubTime>
+        
+        <tag>健身</tag>
+         
+        <tag>肌肉</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/05/11/health/body_building_some_action.html</loc>
+    <lastmod>2017-05-11T06:37:43.839Z</lastmod>
+    <data>
+        <display>
+        <title>健身-适合平时训练的几组动作 [1P]</title>
+        <pubTime>2017-05-11T06:14:24.000Z</pubTime>
+        
+        <tag>健身</tag>
+         
+        <tag>动作</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/05/08/health/stretch.html</loc>
-    <lastmod>2017-05-11T06:01:19.911Z</lastmod>
+    <lastmod>2017-05-11T06:36:21.625Z</lastmod>
     <data>
         <display>
         <title>筋长一寸，寿延十年</title>
