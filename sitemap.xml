@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
+    <loc>//ezsay.cn/2017/05/08/health/stretch.html</loc>
     
-    <lastmod>2017-05-10T11:22:59.055Z</lastmod>
+    <lastmod>2017-05-11T06:01:19.911Z</lastmod>
     
   </url>
   
   <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
     
-    <lastmod>2017-05-09T15:50:13.642Z</lastmod>
+    <lastmod>2017-05-11T02:19:23.196Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
+    
+    <lastmod>2017-05-10T11:33:46.148Z</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>//ezsay.cn/404.html</loc>
     
     <lastmod>2017-05-09T13:51:55.708Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>//ezsay.cn/2017/05/08/health/stretch.html</loc>
-    
-    <lastmod>2017-05-09T07:49:23.491Z</lastmod>
     
   </url>
   

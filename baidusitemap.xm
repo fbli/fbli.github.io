@@ -4,23 +4,23 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
-    <lastmod>2017-05-10T11:22:59.055Z</lastmod>
+    <loc>//ezsay.cn/2017/05/08/health/stretch.html</loc>
+    <lastmod>2017-05-11T06:01:19.911Z</lastmod>
     <data>
         <display>
-        <title>redis入门</title>
-        <pubTime>2017-05-10T07:19:24.000Z</pubTime>
+        <title>筋长一寸，寿延十年</title>
+        <pubTime>2017-05-08T03:29:24.000Z</pubTime>
         
-        <tag>基础</tag>
+        <tag>健康</tag>
          
-        <tag>入门</tag>
+        <tag>转载</tag>
          
-        <tag>redis</tag>
+        <tag>拉筋</tag>
          
          
            
              
-              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
           
         </display>
     </data>
@@ -29,7 +29,7 @@
     
   <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
-    <lastmod>2017-05-09T15:50:13.642Z</lastmod>
+    <lastmod>2017-05-11T02:19:23.196Z</lastmod>
     <data>
         <display>
         <title>git入门到精通</title>
@@ -45,6 +45,30 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
+    <lastmod>2017-05-10T11:33:46.148Z</lastmod>
+    <data>
+        <display>
+        <title>redis入门</title>
+        <pubTime>2017-05-10T07:19:24.000Z</pubTime>
+        
+        <tag>基础</tag>
+         
+        <tag>入门</tag>
+         
+        <tag>redis</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>
@@ -76,30 +100,6 @@
 
     
     
-    
-  <url>
-    <loc>//ezsay.cn/2017/05/08/health/stretch.html</loc>
-    <lastmod>2017-05-09T07:49:23.491Z</lastmod>
-    <data>
-        <display>
-        <title>筋长一寸，寿延十年</title>
-        <pubTime>2017-05-08T03:29:24.000Z</pubTime>
-        
-        <tag>健康</tag>
-         
-        <tag>转载</tag>
-         
-        <tag>拉筋</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>//ezsay.cn/2017/05/07/health/safe_abc.html</loc>
