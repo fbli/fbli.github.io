@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2017/04/26/essay/image_text.html</loc>
-    <lastmod>2017-05-11T07:40:55.486Z</lastmod>
+    <lastmod>2017-05-11T07:53:56.596Z</lastmod>
     <data>
         <display>
         <title>点滴累积-图文</title>
