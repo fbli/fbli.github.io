@@ -4,11 +4,35 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/05/11/health/body_building_muscle_abc.html</loc>
-    <lastmod>2017-05-11T06:38:17.319Z</lastmod>
+    <loc>//ezsay.cn/2017/04/26/essay/image_text.html</loc>
+    <lastmod>2017-05-11T07:40:55.486Z</lastmod>
     <data>
         <display>
-        <title>健身-认识人体的肌肉</title>
+        <title>点滴累积-图文</title>
+        <pubTime>2017-04-26T02:24:24.000Z</pubTime>
+        
+        <tag>图文</tag>
+         
+        <tag>好玩</tag>
+         
+        <tag>有用</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/05/11/health/body_building_muscle_abc.html</loc>
+    <lastmod>2017-05-11T06:55:33.934Z</lastmod>
+    <data>
+        <display>
+        <title>健身-认识人体的肌肉[8P]</title>
         <pubTime>2017-05-11T06:18:24.000Z</pubTime>
         
         <tag>健身</tag>
@@ -26,29 +50,7 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/05/11/health/body_building_some_action.html</loc>
-    <lastmod>2017-05-11T06:37:43.839Z</lastmod>
-    <data>
-        <display>
-        <title>健身-适合平时训练的几组动作 [1P]</title>
-        <pubTime>2017-05-11T06:14:24.000Z</pubTime>
-        
-        <tag>健身</tag>
-         
-        <tag>动作</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/05/08/health/stretch.html</loc>
+    <loc>//ezsay.cn/2017/05/08/health/body_building_stretch.html</loc>
     <lastmod>2017-05-11T06:36:21.625Z</lastmod>
     <data>
         <display>
@@ -191,30 +193,6 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/26/essay/image_text.html</loc>
-    <lastmod>2017-05-04T10:41:28.014Z</lastmod>
-    <data>
-        <display>
-        <title>点滴累积-图文</title>
-        <pubTime>2017-04-26T02:24:24.000Z</pubTime>
-        
-        <tag>图文</tag>
-         
-        <tag>好玩</tag>
-         
-        <tag>有用</tag>
-         
-         
-           
-             
-              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>
