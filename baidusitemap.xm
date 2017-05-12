@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
+    <lastmod>2017-05-11T10:24:24.119Z</lastmod>
+    <data>
+        <display>
+        <title>redis入门</title>
+        <pubTime>2017-05-10T07:19:24.000Z</pubTime>
+        
+        <tag>基础</tag>
+         
+        <tag>入门</tag>
+         
+        <tag>redis</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/04/26/essay/image_text.html</loc>
     <lastmod>2017-05-11T07:53:56.596Z</lastmod>
     <data>
@@ -91,30 +115,6 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
-    <lastmod>2017-05-10T11:33:46.148Z</lastmod>
-    <data>
-        <display>
-        <title>redis入门</title>
-        <pubTime>2017-05-10T07:19:24.000Z</pubTime>
-        
-        <tag>基础</tag>
-         
-        <tag>入门</tag>
-         
-        <tag>redis</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>
