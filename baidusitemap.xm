@@ -5,22 +5,46 @@
     
   <url>
     <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
-    <lastmod>2017-05-11T10:24:24.119Z</lastmod>
+    <lastmod>2017-05-14T02:27:47.769Z</lastmod>
     <data>
         <display>
         <title>redis入门</title>
         <pubTime>2017-05-10T07:19:24.000Z</pubTime>
         
+        <tag>redis</tag>
+         
         <tag>基础</tag>
          
         <tag>入门</tag>
-         
-        <tag>redis</tag>
          
          
            
              
               <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
+    <lastmod>2017-05-12T09:33:02.463Z</lastmod>
+    <data>
+        <display>
+        <title>git入门到精通</title>
+        <pubTime>2017-04-28T02:57:07.000Z</pubTime>
+        
+        <tag>基础</tag>
+         
+        <tag>入门</tag>
+         
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
           
         </display>
     </data>
@@ -98,30 +122,6 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
-    <lastmod>2017-05-11T02:19:23.196Z</lastmod>
-    <data>
-        <display>
-        <title>git入门到精通</title>
-        <pubTime>2017-04-28T02:57:07.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-        <tag>基础</tag>
-         
-        <tag>入门</tag>
-         
-         
-           
-             
-              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ezsay.cn/2017/04/26/technology/hexo_blog_build.html</loc>
     <lastmod>2017-05-09T15:35:56.634Z</lastmod>
     <data>
@@ -144,7 +144,6 @@
     </data>
     </url>
 
-    
     
     
   <url>
