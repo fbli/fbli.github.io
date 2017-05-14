@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
-    <lastmod>2017-05-14T02:27:47.769Z</lastmod>
+    <lastmod>2017-05-14T02:36:04.170Z</lastmod>
     <data>
         <display>
         <title>redis入门</title>
