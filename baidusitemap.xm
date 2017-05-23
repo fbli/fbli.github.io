@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
-    <lastmod>2017-05-14T02:36:04.170Z</lastmod>
+    <lastmod>2017-05-23T15:16:26.113Z</lastmod>
     <data>
         <display>
         <title>redis入门</title>
@@ -29,7 +29,7 @@
     
   <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
-    <lastmod>2017-05-12T09:33:02.463Z</lastmod>
+    <lastmod>2017-05-22T03:13:02.983Z</lastmod>
     <data>
         <display>
         <title>git入门到精通</title>
@@ -52,32 +52,8 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/04/26/essay/image_text.html</loc>
-    <lastmod>2017-05-11T07:53:56.596Z</lastmod>
-    <data>
-        <display>
-        <title>点滴累积-图文</title>
-        <pubTime>2017-04-26T02:24:24.000Z</pubTime>
-        
-        <tag>图文</tag>
-         
-        <tag>好玩</tag>
-         
-        <tag>有用</tag>
-         
-         
-           
-             
-              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ezsay.cn/2017/05/11/health/body_building_muscle_abc.html</loc>
-    <lastmod>2017-05-11T06:55:33.934Z</lastmod>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
     <data>
         <display>
         <title>健身-认识人体的肌肉[8P]</title>
@@ -98,57 +74,8 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/05/08/health/body_building_stretch.html</loc>
-    <lastmod>2017-05-11T06:36:21.625Z</lastmod>
-    <data>
-        <display>
-        <title>筋长一寸，寿延十年</title>
-        <pubTime>2017-05-08T03:29:24.000Z</pubTime>
-        
-        <tag>健康</tag>
-         
-        <tag>转载</tag>
-         
-        <tag>拉筋</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/26/technology/hexo_blog_build.html</loc>
-    <lastmod>2017-05-09T15:35:56.634Z</lastmod>
-    <data>
-        <display>
-        <title>搭建hexo + github pages + 独立域名博客</title>
-        <pubTime>2017-04-26T00:03:25.000Z</pubTime>
-        
-        <tag>服务搭建</tag>
-         
-        <tag>hexo</tag>
-         
-        <tag>yilia</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
     <loc>//ezsay.cn/2017/05/07/health/safe_abc.html</loc>
-    <lastmod>2017-05-07T14:44:53.959Z</lastmod>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
     <data>
         <display>
         <title>保险知识入门-如何用保险保障自己的一生</title>
@@ -171,8 +98,32 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/04/26/essay/image_text.html</loc>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
+    <data>
+        <display>
+        <title>点滴累积-图文</title>
+        <pubTime>2017-04-26T02:24:24.000Z</pubTime>
+        
+        <tag>图文</tag>
+         
+        <tag>好玩</tag>
+         
+        <tag>有用</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_xyz.html</loc>
-    <lastmod>2017-05-05T14:50:15.616Z</lastmod>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
     <data>
         <display>
         <title>git在复杂项目中的应用</title>
@@ -197,6 +148,79 @@
     </data>
     </url>
 
+    
+  <url>
+    <loc>//ezsay.cn/2017/05/08/health/stretch.html</loc>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
+    <data>
+        <display>
+        <title>筋长一寸，寿延十年</title>
+        <pubTime>2017-05-08T03:29:24.000Z</pubTime>
+        
+        <tag>健康</tag>
+         
+        <tag>转载</tag>
+         
+        <tag>拉筋</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/05/08/health/body_building_stretch.html</loc>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
+    <data>
+        <display>
+        <title>筋长一寸，寿延十年</title>
+        <pubTime>2017-05-08T03:29:24.000Z</pubTime>
+        
+        <tag>健康</tag>
+         
+        <tag>转载</tag>
+         
+        <tag>拉筋</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/04/26/technology/hexo_blog_build.html</loc>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
+    <data>
+        <display>
+        <title>搭建hexo + github pages + 独立域名博客</title>
+        <pubTime>2017-04-26T00:03:25.000Z</pubTime>
+        
+        <tag>服务搭建</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>yilia</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_9.html</loc>

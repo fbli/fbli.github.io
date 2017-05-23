@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
-  <updated>2017-05-11T06:55:33.934Z</updated>
+  <updated>2017-05-22T02:50:21.256Z</updated>
   <id>//ezsay.cn/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="//ezsay.cn/2017/05/11/health/body_building_muscle_abc.html"/>
     <id>//ezsay.cn/2017/05/11/health/body_building_muscle_abc.html</id>
     <published>2017-05-11T06:18:24.000Z</published>
-    <updated>2017-05-11T06:55:33.934Z</updated>
+    <updated>2017-05-22T02:50:21.256Z</updated>
     
     <content type="html"><![CDATA[<p>认识一下健身时的肌肉</p>
 <a id="more"></a>
@@ -54,7 +54,7 @@
     <link href="//ezsay.cn/2017/05/10/technology/redis_abc.html"/>
     <id>//ezsay.cn/2017/05/10/technology/redis_abc.html</id>
     <published>2017-05-10T07:19:24.000Z</published>
-    <updated>2017-05-14T02:36:04.170Z</updated>
+    <updated>2017-05-23T15:16:26.113Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。 它支持多种类型的数据结构，如 <code>字符串（strings）</code> <code>散列（hashes）</code>， <code>列表（lists）</code>， <code>集合（sets）</code>， <code>有序集合（sorted sets）</code> 与范围查询， <code>bitmaps</code>， <code>hyperloglogs</code> 和<code>地理空间（geospatial）</code> 索引半径查询。 Redis 内置了 <code>复制（replication）</code>，<code>LUA脚本（Lua scripting）</code>， <code>LRU驱动事件（LRU eviction）</code>，<code>事务（transactions）</code> 和不同级别的 <code>磁盘持久化（persistence）</code>， 并通过 <code>Redis哨兵（Sentinel）</code>和<code>自动 分区（Cluster）</code>提供高可用性（high availability）。</p>
 <a id="more"></a>
@@ -110,7 +110,7 @@
 </tbody>
 </table>
 <p><strong>注意：</strong></p>
-<p>当Redis 以守护进程的方式运行的时候，Redis 默认会把 pid 文件放在/var/run/redis.pid，可配置到其他地址，当运行多个 redis 服务时，需要指定不同的 pid 文件和端口（PID (Process ID)：线程ID）</p>
+<p>当Redis 以守护进程的方式运行的时候，Redis 默认会把 pid 文件放在/var/run/redis.pid，可配置到其他地址，当运行多个 redis 服务时，需要指定不同的 pid 文件和端口【PID (Process ID)：线程ID】</p>
 <p>Redis3.2 之后加入的新特性Protected-mode 是为了禁止公网访问redis cache，加强redis安全的。它启用的条件，有两个：</p>
 <ol>
 <li>没有bind IP</li>
@@ -119,7 +119,7 @@
 <p><strong>设置开机自动启动redis</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> ./utils/install_server.sh </div><div class="line">Welcome to the redis service installer</div><div class="line">This script will help you easily set up a running redis server</div><div class="line"></div><div class="line">Please select the redis port for this instance: [6379] 6379</div><div class="line">Please select the redis config file name [/etc/redis/6379.conf] </div><div class="line">Selected default - /etc/redis/6379.conf</div><div class="line">Please select the redis log file name [/var/log/redis_6379.log] </div><div class="line">Selected default - /var/log/redis_6379.log</div><div class="line">Please select the data directory for this instance [/var/lib/redis/6379] /var/r</div><div class="line">Please select the redis executable path [/usr/local/bin/redis-server] </div><div class="line">Selected config:</div><div class="line">Port           : 6379</div><div class="line">Config file    : /etc/redis/6379.conf</div><div class="line">Log file       : /var/log/redis_6379.log</div><div class="line">Data dir       : /var/redis/6379</div><div class="line">Executable     : /usr/local/bin/redis-server</div><div class="line">Cli Executable : /usr/local/bin/redis-cli</div><div class="line">Is this ok? Then press ENTER to go on or Ctrl-C to abort.</div><div class="line">Copied /tmp/6379.conf =&gt; /etc/init.d/redis_6379</div><div class="line">Installing service...</div><div class="line">Successfully added to chkconfig!</div><div class="line">Successfully added to runlevels 345!</div><div class="line">/var/run/redis_6379.pid exists, process is already running or crashed</div><div class="line">Installation successful!</div><div class="line"><span class="meta"></span></div><div class="line"># 手动开启|关闭|重启redis服务</div><div class="line">/etc/init.d/redis_6379 start|stop|restart</div><div class="line"><span class="meta">#</span> 或者</div><div class="line">service redis_6379 start|stop|restart</div><div class="line"><span class="meta"></span></div><div class="line"># 如果设置了redis密码，需要在自动启动脚本位置更改一下命令，否则stop命令提示没有权限</div><div class="line">vim /etc/init.d/redis_6379</div><div class="line"><span class="meta">$</span>CLIEXEC -a "your_password" -p $REDISPORT shutdown</div><div class="line"><span class="meta"></span></div><div class="line"></div><div class="line"># 查看redis是否启动</div><div class="line">ps -ef | grep redis</div><div class="line">root      1946     1  0 17:31 ?        00:00:00 /usr/local/bin/redis-server *:6379  </div><div class="line"><span class="meta"></span></div><div class="line"># 查看redis版本</div><div class="line">redis-cli -v</div><div class="line"><span class="meta"></span></div><div class="line"># 测试redis是否启动成功，有密码时用redis-cli -a 密码</div><div class="line">redis-cli</div><div class="line">127.0.0.1:6379&gt; PING</div><div class="line">PONG</div></pre></td></tr></table></figure>
 <p>关闭开机自动启动redis</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 显示自动启动的redis设置情况</div><div class="line">chkconfig --list | grep redis</div><div class="line">redis_6379     	0:off	1:off	2:on	3:on	4:on	5:on	6:off</div><div class="line"><span class="meta">#</span> 关闭或开启自动启动，后续可以开启</div><div class="line">chkconfig --level 2345 redis_6639 off|on</div><div class="line"><span class="meta">#</span> 删除自动启动，后续可以用 ./utils/install_server.sh重新添加</div><div class="line">chkconfig --del redis_6639</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 显示自动启动的redis设置情况</div><div class="line">chkconfig --list | grep redis</div><div class="line">redis_6379     	0:off	1:off	2:on	3:on	4:on	5:on	6:off</div><div class="line"><span class="meta">#</span> 关闭或开启自动启动，后续可以开启</div><div class="line">chkconfig --level 2345 redis_6639 off|on</div><div class="line"><span class="meta">#</span> 或者</div><div class="line">chkconfig redis_6639 off|on</div><div class="line"><span class="meta">#</span> 删除自动启动，后续可以用 ./utils/install_server.sh重新添加</div><div class="line">chkconfig --del redis_6639</div></pre></td></tr></table></figure>
 <p><strong>其他常用配置</strong></p>
 <p> 1、防止background save db 不成功</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span>修改linux内核配置</div><div class="line">vim /etc/sysctl.conf</div><div class="line"><span class="meta">#</span> 添加</div><div class="line">vm.overcommit_memory = 1</div><div class="line"><span class="meta">#</span> 重启或用如下命令立即生效</div><div class="line">sysctl -p</div><div class="line">sysctl vm.overcommit_memory</div></pre></td></tr></table></figure>
@@ -162,7 +162,7 @@
 <p>方法2：设置值时同时指定过期时间</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> set phone 110 ex 10</div><div class="line">OK</div></pre></td></tr></table></figure>
 <p>公共方法</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 得到剩余时间 </div><div class="line">ttl phone</div><div class="line">(integer) 5 # 剩余秒数</div><div class="line">(integer) -2 # 已经过期</div><div class="line">(integer) -1 # key无过期时间，是永久的</div><div class="line"><span class="meta"></span></div><div class="line"># 取消过期设定</div><div class="line">persist phone</div><div class="line">(integer) 1 # 设置成功</div><div class="line">persist phone</div><div class="line">(integer) 0 # phone这个key原来就是永久的</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 得到剩余存活时间 </div><div class="line">ttl phone</div><div class="line">(integer) 5 # 剩余秒数</div><div class="line">(integer) -2 # 已经过期</div><div class="line">(integer) -1 # key无过期时间，是永久的</div><div class="line"><span class="meta"></span></div><div class="line"># 取消过期设定</div><div class="line">persist phone</div><div class="line">(integer) 1 # 设置成功</div><div class="line">persist phone</div><div class="line">(integer) 0 # phone这个key原来就是永久的</div></pre></td></tr></table></figure>
 <h3 id="原子递增减，重置"><a href="#原子递增减，重置" class="headerlink" title="原子递增减，重置"></a>原子递增减，重置</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 原子递增</div><div class="line"><span class="meta">&gt;</span> incr age</div><div class="line">(integer) 4</div><div class="line"><span class="meta">#</span> 指定增加多少</div><div class="line"><span class="meta">&gt;</span> incrby age 10</div><div class="line">(integer) 14</div><div class="line"><span class="meta"></span></div><div class="line"># 同理原子递减</div><div class="line"><span class="meta">&gt;</span> decr age</div><div class="line">(integer) 13</div><div class="line"><span class="meta">&gt;</span> decrby age 14</div><div class="line">(integer) -1</div><div class="line"><span class="meta"></span></div><div class="line"># 数值重置，且返回重置前的值</div><div class="line"><span class="meta">&gt;</span> getset age 3</div><div class="line">"-1"</div><div class="line"><span class="meta">&gt;</span> get age</div><div class="line">"3"</div></pre></td></tr></table></figure>
 <h3 id="其他补遗"><a href="#其他补遗" class="headerlink" title="其他补遗"></a>其他补遗</h3><p>decrby age -2 = incrby age 2</p>
 <p># 增加浮点数</p>
@@ -172,7 +172,22 @@
 <p>setbit key offset value</p>
 <p>bitcount key [start][end]</p>
 <p>bitop operation destkey key[key …]</p>
-<h2 id="List类型"><a href="#List类型" class="headerlink" title="List类型"></a>List类型</h2>]]></content>
+<h2 id="List类型"><a href="#List类型" class="headerlink" title="List类型"></a>List类型</h2><p>一般意义上讲列表就是<strong>有序</strong>元素的序列，数组实现跟列表实现的list，属性方面大不相同</p>
+<p>列表list：头尾添加元素速度极快且相同，跟list到底有多少值无关</p>
+<p>数组list：索引访问元素速度极快</p>
+<p>Redis的列表类型（list）可以存储一个<strong>有序</strong>的字符串列表，通常的操作是向列表两端添加元素，或者获取列表的某一个片段。其内部使用双向链表（double linked list）实现的，所以两端添加元素的时间复杂度是O(1)，获取越接近两端元素的速度就越快。快速访问集合元素能力不行</p>
+<h3 id="设置List值"><a href="#设置List值" class="headerlink" title="设置List值"></a>设置List值</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> rpush向右侧末尾添加元素，显示添加后的list数量</div><div class="line">rpush list 0 1 2 3 4 5</div><div class="line">(integer) 6</div><div class="line"><span class="meta">#</span> 显示0~2共3个位置的元素，注意list只有一个lrange用于显示list值，没有rrange</div><div class="line">lrange list 0 2</div><div class="line">1) "0"</div><div class="line">2) "1"</div><div class="line">3) "2"</div><div class="line"><span class="meta">#</span> -1代表最后一个元素</div><div class="line">lrange list 0 -1</div><div class="line">1) "0"</div><div class="line">2) "1"</div><div class="line">3) "2"</div><div class="line">4) "3"</div><div class="line">5) "4"</div><div class="line">6) "5"</div><div class="line"><span class="meta">#</span> 右侧末尾弹出1个元素，返回弹出的元素值</div><div class="line">rpop list</div><div class="line">"5"</div><div class="line"><span class="meta"></span></div><div class="line"># 左侧头部添加元素</div><div class="line">lpush list a b c d</div><div class="line">lrange list 0 -1</div><div class="line"> 1) "d"</div><div class="line"> 2) "c"</div><div class="line"> 3) "b"</div><div class="line"> 4) "a"</div><div class="line"> 5) "0"</div><div class="line"> 6) "1"</div><div class="line"> 7) "2"</div><div class="line"> 8) "3"</div><div class="line"> 9) "4"</div><div class="line"><span class="meta"> </span></div><div class="line"> # 左侧头部弹出1个元素，返回被弹出的元素值</div><div class="line">lpop list</div><div class="line">"d"</div><div class="line">lrange list 0 -1</div><div class="line">1) "c"</div><div class="line">2) "b"</div><div class="line">3) "a"</div><div class="line">4) "0"</div><div class="line">5) "1"</div><div class="line">6) "2"</div><div class="line">7) "3"</div><div class="line">8) "4"</div></pre></td></tr></table></figure>
+<h3 id="异常情况"><a href="#异常情况" class="headerlink" title="异常情况"></a>异常情况</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 一个list一直弹，最后无元素可弹时，返回nil，且此时删除该键</div><div class="line">rpop poplist</div><div class="line">(nil)</div><div class="line">exists poplist</div><div class="line">(integer) 0</div></pre></td></tr></table></figure>
+<h3 id="列表常用命令"><a href="#列表常用命令" class="headerlink" title="列表常用命令"></a>列表常用命令</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">rpush mylist 1 2 3 4 5 </div><div class="line">(integer) 5</div><div class="line"><span class="meta">#</span> 列表截取</div><div class="line">127.0.0.1:6379&gt; ltrim mylist 0 2</div><div class="line">OK</div><div class="line">127.0.0.1:6379&gt; lrange mylist 0 -1</div><div class="line">1) "1"</div><div class="line">2) "2"</div><div class="line">3) "3"</div><div class="line"><span class="meta"></span></div><div class="line"># 设置某个值的数据</div><div class="line">127.0.0.1:6379&gt; lset mylist 0 11</div><div class="line">OK</div><div class="line">127.0.0.1:6379&gt; lrange mylist 0 -1</div><div class="line">1) "11"</div><div class="line">2) "2"</div><div class="line">3) "3"</div><div class="line">127.0.0.1:6379&gt; lset mylist -1 33</div><div class="line">OK</div><div class="line">127.0.0.1:6379&gt; lrange mylist 0 -1</div><div class="line">1) "11"</div><div class="line">2) "2"</div><div class="line">3) "33"</div><div class="line"><span class="meta">#</span> 列表长度</div><div class="line">127.0.0.1:6379&gt; llen mylist</div><div class="line">(integer) 3</div><div class="line"><span class="meta">#</span> 删除列表值为2的元素；0 ：删除所有；</div><div class="line">127.0.0.1:6379&gt; lrem mylist 0 2</div><div class="line">(integer) 1</div></pre></td></tr></table></figure>
+<p>移除source列表最后一个元素，插入destination列表头部</p>
+<blockquote>
+<p>rpoplpush source destination</p>
+<p>brpoplpush source destination timeout # 阻塞版，0：代表无限期阻塞</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 示例</div><div class="line">del list1 list2</div><div class="line">(integer) 2</div><div class="line">rpush list1 1 2 3 4</div><div class="line">(integer) 4</div><div class="line"><span class="meta">#</span> 如果目标list不存在的话会创建一个</div><div class="line">rpoplpush list1 list2</div><div class="line">"4"</div><div class="line">keys list*</div><div class="line">1) "list1"</div><div class="line">2) "list2"</div><div class="line">lrange list2 0 -1</div><div class="line">1) "4"</div><div class="line">lrange list1 0 -1</div><div class="line">1) "1"</div><div class="line">2) "2"</div><div class="line">3) "3"</div><div class="line"><span class="meta">#</span> 如果源list不存在返回nil</div><div class="line">rpoplpush list3 list1</div><div class="line">(nil)</div><div class="line"><span class="meta">#</span> 只有rpoplpush，即弹出源末尾值插入目标头部</div><div class="line">lpoprpush list2 list1</div><div class="line">(error) ERR unknown command 'lpoprpush'</div><div class="line"><span class="meta"></span></div><div class="line"># 源跟目标都有值时可以更明显看出</div><div class="line">127.0.0.1:6379&gt; lrange list1 0 -1</div><div class="line">1) "1"</div><div class="line">2) "2"</div><div class="line">3) "3"</div><div class="line"></div><div class="line">127.0.0.1:6379&gt; lrange list2 0 -1</div><div class="line">1) "a"</div><div class="line">2) "b"</div><div class="line">3) "c"</div><div class="line">4) "d"</div><div class="line"></div><div class="line">127.0.0.1:6379&gt; rpoplpush list1 list2</div><div class="line">"3"</div><div class="line">127.0.0.1:6379&gt; lrange list1 0 -1</div><div class="line">1) "1"</div><div class="line">2) "2"</div><div class="line">127.0.0.1:6379&gt; lrange list2 0 -1</div><div class="line">1) "3"</div><div class="line">2) "a"</div><div class="line">3) "b"</div><div class="line">4) "c"</div><div class="line">5) "d"</div><div class="line"><span class="meta"></span></div><div class="line"># 源跟目标一样时末尾元素移到头部，旋转列表</div><div class="line">127.0.0.1:6379&gt; rpoplpush list2 list2</div><div class="line">"d"</div><div class="line">127.0.0.1:6379&gt; lrange list2 0 -1</div><div class="line">1) "d"</div><div class="line">2) "3"</div><div class="line">3) "a"</div><div class="line">4) "b"</div><div class="line">5) "c"</div></pre></td></tr></table></figure>
+<hr>
+<p>2017-05-23 23:15 更新列表list命令用法，困了:-s睡觉去</p>
+]]></content>
     
     <summary type="html">
     
@@ -196,7 +211,51 @@
     <link href="//ezsay.cn/2017/05/08/health/body_building_stretch.html"/>
     <id>//ezsay.cn/2017/05/08/health/body_building_stretch.html</id>
     <published>2017-05-08T03:29:24.000Z</published>
-    <updated>2017-05-11T06:36:21.625Z</updated>
+    <updated>2017-05-22T02:50:21.256Z</updated>
+    
+    <content type="html"><![CDATA[<p>俗话说，筋长一寸，寿延十年，来来来，闲暇之余延延寿！<br><a id="more"></a></p>
+<p><img src="/asset/blog_img/stretch/1-2.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/3-4.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/5-6.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/7-8.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/9-10.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/11-12.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/13-14.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/15-16.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/17-18.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/19-20.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/21-22.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/23-24.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/25-26.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/27-28.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/29-30.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/31-32.jpg" alt="img"></p>
+<p><img src="/asset/blog_img/stretch/33-34.jpg" alt="img"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;俗话说，筋长一寸，寿延十年，来来来，闲暇之余延延寿！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+    
+    
+      <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
+    
+      <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+      <category term="拉筋" scheme="//ezsay.cn/tags/%E6%8B%89%E7%AD%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>筋长一寸，寿延十年</title>
+    <link href="//ezsay.cn/2017/05/08/health/stretch.html"/>
+    <id>//ezsay.cn/2017/05/08/health/stretch.html</id>
+    <published>2017-05-08T03:29:24.000Z</published>
+    <updated>2017-05-22T02:50:21.256Z</updated>
     
     <content type="html"><![CDATA[<p>俗话说，筋长一寸，寿延十年，来来来，闲暇之余延延寿！<br><a id="more"></a></p>
 <p><img src="/asset/blog_img/stretch/1-2.jpg" alt="img"></p>
@@ -240,7 +299,7 @@
     <link href="//ezsay.cn/2017/05/07/health/safe_abc.html"/>
     <id>//ezsay.cn/2017/05/07/health/safe_abc.html</id>
     <published>2017-05-07T11:14:24.000Z</published>
-    <updated>2017-05-07T14:44:53.959Z</updated>
+    <updated>2017-05-22T02:50:21.256Z</updated>
     
     <content type="html"><![CDATA[<p>支付宝，小米金融等各种主流互联网企业最近都在卖各种保险。对于保险的认知还是停留在不靠谱，骗人这样的印象上。但是看互联网企业上的各种宣传感觉投了保之后赚大便宜了，怦然心动的赶脚。自然而然的问了问从事保险事业的老同学，网上做了一下功课。最后知乎上看到一篇精算师关于保险的介绍，感觉比较靠谱，适合大家一读，看完之后反过来再看这些互联网主推的保险宣传字眼上有啥套路，是否真的适合你！</p>
 <a id="more"></a>
@@ -696,7 +755,7 @@
     <link href="//ezsay.cn/2017/04/28/skill/git_xyz.html"/>
     <id>//ezsay.cn/2017/04/28/skill/git_xyz.html</id>
     <published>2017-04-28T07:57:25.000Z</published>
-    <updated>2017-05-05T14:50:15.616Z</updated>
+    <updated>2017-05-22T02:50:21.256Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p>
 <p>Git是<strong>分布式</strong>版本控制系统，与传统的集中式的版本控制系统相比：集中式分布系统必须联网才能工作。因为版本库信息都在集中在服务器上，你本地只是一个版本的代码，一旦服务器挂掉，所有人都停止工作，历史信息全部丢失【单点故障】。而git不会如此，每个人的版本库都是一个完整的仓库（它拥有中心版本库上所有的东西，例如标签，分支，版本记录），任何人的仓库clone到服务器即可。另外，在一个不能连接网络的地方时，就像在突然断网时，出差途中的火车、飞机上等，你仍然能够提交文件，查看历史版本记录，创建项目分支。</p>
@@ -800,7 +859,7 @@
     <link href="//ezsay.cn/2017/04/28/skill/git_abc.html"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc.html</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2017-05-12T09:33:02.463Z</updated>
+    <updated>2017-05-22T03:13:02.983Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
@@ -840,7 +899,7 @@
 <h1 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h1><p><a href="https://help.github.com/categories/advanced-git/" target="_blank" rel="external">官方高级操作说明文档</a>里面列举了6种问题的解决方案，可以去了解一下。如下是我自己实践过程中总结的相比较而言比较高级的操作，希望对你有用</p>
 <h2 id="git移库"><a href="#git移库" class="headerlink" title="git移库"></a><strong>git移库</strong></h2><p>想带着历史所有信息迁移git仓库，可以采用如下方式：</p>
 <p><strong>demo.git -&gt; target.git</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> linux新建裸库</div><div class="line">git init --bare target.git</div><div class="line"><span class="meta">#</span> 裸库递归更改裸库文件夹的【拥有者:群组】与仓库地址前缀一致</div><div class="line">chown -R git:git target.git</div><div class="line"><span class="meta"></span></div><div class="line"># 本地clone待迁移的裸库</div><div class="line">git clone --bare git@XXX.com/xxx/demo.git</div><div class="line"><span class="meta">#</span> 进入裸库</div><div class="line">cd demo.git</div><div class="line"><span class="meta">#</span> 推送裸库到目标库</div><div class="line">git push --mirror git@xxx.com/xxxx/target.git</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> linux新建裸库</div><div class="line">git init --bare target.git</div><div class="line"><span class="meta"></span></div><div class="line"># 裸库递归更改裸库文件夹的【拥有者:群组】与仓库地址前缀一致</div><div class="line">chown -R git:git target.git</div><div class="line"><span class="meta"></span></div><div class="line"># 本地clone待迁移的裸库</div><div class="line">git clone --bare git@XXX.com/xxx/demo.git</div><div class="line"><span class="meta">#</span> 进入裸库</div><div class="line">cd demo.git</div><div class="line"><span class="meta">#</span> 推送裸库到目标库</div><div class="line">git push --mirror git@xxx.com/xxxx/target.git</div></pre></td></tr></table></figure>
 <p><strong>验证是否迁移成功</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 克隆目标库</div><div class="line">git clone git@XXX.com/xxx/target.git</div><div class="line"><span class="meta">#</span> 查看是否已经迁移</div><div class="line">git branch -a</div><div class="line">git log</div></pre></td></tr></table></figure>
 <p><strong>可能出现的问题</strong></p>
@@ -3154,7 +3213,7 @@
     <link href="//ezsay.cn/2017/04/26/essay/image_text.html"/>
     <id>//ezsay.cn/2017/04/26/essay/image_text.html</id>
     <published>2017-04-26T02:24:24.000Z</published>
-    <updated>2017-05-11T07:53:56.596Z</updated>
+    <updated>2017-05-22T02:50:21.256Z</updated>
     
     <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=694286&auto=0&height=66"></iframe>
 
@@ -3199,7 +3258,7 @@
     <link href="//ezsay.cn/2017/04/26/technology/hexo_blog_build.html"/>
     <id>//ezsay.cn/2017/04/26/technology/hexo_blog_build.html</id>
     <published>2017-04-26T00:03:25.000Z</published>
-    <updated>2017-05-09T15:35:56.634Z</updated>
+    <updated>2017-05-22T02:50:21.256Z</updated>
     
     <content type="html"><![CDATA[<p>Hexo，一个快速、简洁且高效的博客框架，Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。</p>
 <a id="more"></a>
