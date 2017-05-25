@@ -4,32 +4,8 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
-    <lastmod>2017-05-23T15:16:26.113Z</lastmod>
-    <data>
-        <display>
-        <title>redis入门</title>
-        <pubTime>2017-05-10T07:19:24.000Z</pubTime>
-        
-        <tag>redis</tag>
-         
-        <tag>基础</tag>
-         
-        <tag>入门</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
-    <lastmod>2017-05-22T03:13:02.983Z</lastmod>
+    <lastmod>2017-05-24T13:03:14.916Z</lastmod>
     <data>
         <display>
         <title>git入门到精通</title>
@@ -45,6 +21,30 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
+    <lastmod>2017-05-24T03:05:15.650Z</lastmod>
+    <data>
+        <display>
+        <title>redis入门</title>
+        <pubTime>2017-05-10T07:19:24.000Z</pubTime>
+        
+        <tag>redis</tag>
+         
+        <tag>基础</tag>
+         
+        <tag>入门</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>

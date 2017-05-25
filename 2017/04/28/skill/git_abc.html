@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="易说博客">
 <meta property="og:description" content="序言Git基本概念svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。  工作区：你的workspace下的工程名文件夹 版本库：工作区的隐藏目录.git stage（index）：暂存区 master：git自动创建的第一个分支，指向最新提交 HEAD：指向master的一个指针">
 <meta property="og:image" content="http://oowxnvumd.bkt.clouddn.com/gitrepo.png">
-<meta property="og:updated_time" content="2017-05-22T03:13:02.983Z">
+<meta property="og:updated_time" content="2017-05-24T13:03:14.916Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git入门到精通">
 <meta name="twitter:description" content="序言Git基本概念svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。  工作区：你的workspace下的工程名文件夹 版本库：工作区的隐藏目录.git stage（index）：暂存区 master：git自动创建的第一个分支，指向最新提交 HEAD：指向master的一个指针">
@@ -217,7 +217,9 @@
 </ul>
 <p><em>注意：</em>git使用的第一步必须先设定自己的用户名，邮箱地址：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gitconfig --global user.name "王小二"</div><div class="line">gitconfig --global user.email "wangxiaoer@xxx.com"</div></pre></td></tr></table></figure>
-<p><strong>git分支的一些知识点分享：</strong><br>官方文档推荐在<strong>分支切换之前保证工作区clean</strong>，这个原则很重要原因如下：<br><strong>1、新增的文件</strong></p>
+<p>暂存区会退到工作区</p>
+<p>git reset head file</p>
+<h2 id="git分支的一些知识点"><a href="#git分支的一些知识点" class="headerlink" title="git分支的一些知识点"></a>git分支的一些知识点</h2><p>官方文档推荐在<strong>分支切换之前保证工作区clean</strong>，这个原则很重要原因如下：<br><strong>1、新增的文件</strong></p>
 <p>分支切换会带着这个文件到新分支中。新增的文件在git中是个特殊的存在，因为并未被git管理起来<br><strong>2、更新的文件</strong></p>
 <p>三种情况：</p>
 <ul>
@@ -231,8 +233,14 @@
 <p>情况多样且复杂，由此看来分支切换之前保证<strong>工作区clean</strong>非常有必要！<br>当然此时也可以用 git stash命令来暂存工作区和暂存区的文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 恢复工作区代码，且暂存区代码也恢复至工作区</div><div class="line"><span class="meta">$</span> git stash apply </div><div class="line"><span class="meta"></span></div><div class="line"># 恢复工作区代码，且暂存区代码恢复至暂存区</div><div class="line">git stash apply --index</div></pre></td></tr></table></figure>
 <p>（此处注意两点：<strong>新添加的文件</strong>不能暂存；每次执行此命令，最新的永远是<strong>stash@{0}</strong>）</p>
-<p>更改仓库地址</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git remote set-url origin [new-url]</div><div class="line"><span class="meta">#</span> 或者先删后加</div><div class="line">git remote rm origin</div><div class="line">git remote add origin [new-url]</div></pre></td></tr></table></figure>
+<h2 id="更改仓库地址"><a href="#更改仓库地址" class="headerlink" title="更改仓库地址"></a>更改仓库地址</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git remote set-url origin [new-url]</div><div class="line"><span class="meta">#</span> 或者先删后加</div><div class="line">git remote rm origin</div><div class="line">git remote add origin [new-url]</div></pre></td></tr></table></figure>
+<h2 id="gitignore配置"><a href="#gitignore配置" class="headerlink" title=".gitignore配置"></a>.gitignore配置</h2><p>可以在目录下增加这个文件来配置忽略不提交的文件，当前目录以及子目录都起作用，当然也可以设置强制某些git默认不管理的文件，进行管理。如exe文件，另外不必自己从头配置这个文件，官网提供了各种语言、项目的.gitignore模板，<a href="https://github.com/github/gitignore" target="_blank" rel="external">官网gitignore模板</a>下载一份相关的改一下即可。</p>
+<p>自定义配置举例</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> My configurations:</div><div class="line">*.gzjs</div><div class="line">*.gzcss</div><div class="line">license.lic</div><div class="line">.svn/</div><div class="line"></div><div class="line">/WebApp/WEB-INF/classes/</div><div class="line"><span class="meta">#</span> 空文件夹要特殊处理，最终达到的效果是：git仓库中管理这个空文件夹且忽略这个文件夹下的所有文件</div><div class="line"><span class="meta">#</span> 1、初次提交，空文件夹下加.gitkeep文件 </div><div class="line"><span class="meta">#</span> 2、push完毕更新.gitignore,添加如下行</div><div class="line">/dist/</div><div class="line">/target/</div><div class="line">/WebApp/pages/upLoadCache/card/</div><div class="line">/WebApp/pages/upLoadCache/caTmp/</div><div class="line"><span class="meta"></span></div><div class="line"># git默认不管理exe文件，即不能提交exe文件到git仓库，需要特殊处理</div><div class="line">!*.exe</div></pre></td></tr></table></figure>
+<p><strong>.gitignore常见问题</strong></p>
+<p>把已经提交至git仓库的文件，添加.gitignore不起作用，因为此时想忽略的文件已经被git追踪管理起来了。若想忽略已经提交的文件可以采用如下方式</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 更新.gitignore文件，添加要忽略的文件或文件夹，后执行下面的命令</div><div class="line">git rm -r --cached .</div><div class="line">git add .</div><div class="line">git commit -m "update .gitignore"</div></pre></td></tr></table></figure>
+<h2 id="git-rm-操作-TODO"><a href="#git-rm-操作-TODO" class="headerlink" title="git rm 操作-TODO"></a>git rm 操作-TODO</h2><p>搞清楚git rm操作</p>
 <h1 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h1><p><a href="https://help.github.com/categories/advanced-git/" target="_blank" rel="external">官方高级操作说明文档</a>里面列举了6种问题的解决方案，可以去了解一下。如下是我自己实践过程中总结的相比较而言比较高级的操作，希望对你有用</p>
 <h2 id="git移库"><a href="#git移库" class="headerlink" title="git移库"></a><strong>git移库</strong></h2><p>想带着历史所有信息迁移git仓库，可以采用如下方式：</p>
 <p><strong>demo.git -&gt; target.git</strong></p>
@@ -281,6 +289,8 @@
 <li><code>git clone --bare origin-url</code>: you will get all of the tags copied, local branches <code>master (HEAD)</code>, <code>next</code>, <code>pu</code>, and <code>maint</code>, no remote tracking branches. That is, all branches are copied as is, and it’s set up completely independent, with no expectation of fetching again. Any remote branches (in the cloned remote) and other refs are completely ignored.</li>
 <li><code>git clone --mirror origin-url</code>: every last one of those refs will be copied as-is. You’ll get all the tags, local branches <code>master (HEAD)</code>, <code>next</code>, <code>pu</code>, and <code>maint</code>, remote branches<code>devA/master</code> and <code>devB/master</code>, other refs <code>refs/foo/bar</code> and <code>refs/foo/baz</code>. Everything is exactly as it was in the cloned remote. Remote tracking is set up so that if you run <code>git remote update</code> all refs will be overwritten from origin, as if you’d just deleted the mirror and recloned it. As the docs originally said, it’s a mirror. It’s supposed to be a functionally identical copy, interchangeable with the original.</li>
 </ul>
+<hr>
+<p>2017-05-24 20:56 新增.gitignore配置</p>
 
       
 

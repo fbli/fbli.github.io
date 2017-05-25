@@ -15,7 +15,7 @@
 <meta property="og:url" content="//ezsay.cn/2017/05/10/technology/redis_abc.html">
 <meta property="og:site_name" content="易说博客">
 <meta property="og:description" content="前言Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。 它支持多种类型的数据结构，如 字符串（strings） 散列（hashes）， 列表（lists）， 集合（sets）， 有序集合（sorted sets） 与范围查询， bitmaps， hyperloglogs 和地理空间（geospatial） 索引半径查询。 Redis 内置了 复制">
-<meta property="og:updated_time" content="2017-05-23T15:16:26.113Z">
+<meta property="og:updated_time" content="2017-05-24T03:05:15.650Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="redis入门">
 <meta name="twitter:description" content="前言Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。 它支持多种类型的数据结构，如 字符串（strings） 散列（hashes）， 列表（lists）， 集合（sets）， 有序集合（sorted sets） 与范围查询， bitmaps， hyperloglogs 和地理空间（geospatial） 索引半径查询。 Redis 内置了 复制">
@@ -198,6 +198,7 @@
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。 它支持多种类型的数据结构，如 <code>字符串（strings）</code> <code>散列（hashes）</code>， <code>列表（lists）</code>， <code>集合（sets）</code>， <code>有序集合（sorted sets）</code> 与范围查询， <code>bitmaps</code>， <code>hyperloglogs</code> 和<code>地理空间（geospatial）</code> 索引半径查询。 Redis 内置了 <code>复制（replication）</code>，<code>LUA脚本（Lua scripting）</code>， <code>LRU驱动事件（LRU eviction）</code>，<code>事务（transactions）</code> 和不同级别的 <code>磁盘持久化（persistence）</code>， 并通过 <code>Redis哨兵（Sentinel）</code>和<code>自动 分区（Cluster）</code>提供高可用性（high availability）。</p>
 <a id="more"></a>
+<p>[TOC]</p>
 <h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h2 id="安装redis"><a href="#安装redis" class="headerlink" title="安装redis"></a>安装redis</h2><p>centos安装redis过程如下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="meta"></span></div><div class="line"># 下载最新稳定包，截止2017年5月最新稳定版本是Redis 3.2.8</div><div class="line">wget http://download.redis.io/releases/redis-3.2.8.tar.gz</div><div class="line"><span class="meta">#</span> 解压gz包</div><div class="line">tar xzf redis-3.2.8.tar.gz</div><div class="line"><span class="meta">#</span> 进入解压后的文件夹</div><div class="line">cd redis-3.2.8</div><div class="line"><span class="meta">#</span> 编译前安装gcc tcl 此步可忽略，编译redis错误时返回再执行也可以</div><div class="line">yum install gcc</div><div class="line">yum install tcl</div><div class="line"><span class="meta">#</span> 编译redis</div><div class="line">make</div><div class="line"><span class="meta">#</span> 安装redis，会将make编译生成的可执行文件拷贝到/usr/local/bin目录下</div><div class="line">make install</div><div class="line"><span class="meta">#</span> 测试redis，成功后显示【\o/ All tests passed without errors!】</div><div class="line">make test</div></pre></td></tr></table></figure>
 <h2 id="配置redis"><a href="#配置redis" class="headerlink" title="配置redis"></a>配置redis</h2><p>刚刚的redis目录下会生成一个redis模板配置文件redis.conf，我们的配置可以基于此文件进行。配置过程如下：</p>
