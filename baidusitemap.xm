@@ -4,6 +4,54 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/05/31/health/fitness_diary.html</loc>
+    <lastmod>2017-05-31T06:13:47.767Z</lastmod>
+    <data>
+        <display>
+        <title>健身日记</title>
+        <pubTime>2017-05-31T02:49:00.000Z</pubTime>
+        
+        <tag>健身</tag>
+         
+        <tag>记录</tag>
+         
+        <tag>日记</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
+    <lastmod>2017-05-27T09:49:48.140Z</lastmod>
+    <data>
+        <display>
+        <title>redis入门</title>
+        <pubTime>2017-05-10T07:19:24.000Z</pubTime>
+        
+        <tag>redis</tag>
+         
+        <tag>基础</tag>
+         
+        <tag>入门</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
     <lastmod>2017-05-24T13:03:14.916Z</lastmod>
     <data>
@@ -21,30 +69,6 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
-    <lastmod>2017-05-24T03:05:15.650Z</lastmod>
-    <data>
-        <display>
-        <title>redis入门</title>
-        <pubTime>2017-05-10T07:19:24.000Z</pubTime>
-        
-        <tag>redis</tag>
-         
-        <tag>基础</tag>
-         
-        <tag>入门</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>
@@ -122,6 +146,30 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/05/08/health/stretch.html</loc>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
+    <data>
+        <display>
+        <title>筋长一寸，寿延十年</title>
+        <pubTime>2017-05-08T03:29:24.000Z</pubTime>
+        
+        <tag>健康</tag>
+         
+        <tag>转载</tag>
+         
+        <tag>拉筋</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_xyz.html</loc>
     <lastmod>2017-05-22T02:50:21.256Z</lastmod>
     <data>
@@ -143,30 +191,6 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/05/08/health/stretch.html</loc>
-    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
-    <data>
-        <display>
-        <title>筋长一寸，寿延十年</title>
-        <pubTime>2017-05-08T03:29:24.000Z</pubTime>
-        
-        <tag>健康</tag>
-         
-        <tag>转载</tag>
-         
-        <tag>拉筋</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
           
         </display>
     </data>
