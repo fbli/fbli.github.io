@@ -98,30 +98,6 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/05/07/health/safe_abc.html</loc>
-    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
-    <data>
-        <display>
-        <title>保险知识入门-如何用保险保障自己的一生</title>
-        <pubTime>2017-05-07T11:14:24.000Z</pubTime>
-        
-        <tag>健康</tag>
-         
-        <tag>转载</tag>
-         
-        <tag>保险</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ezsay.cn/2017/04/26/essay/image_text.html</loc>
     <lastmod>2017-05-22T02:50:21.256Z</lastmod>
     <data>
@@ -139,30 +115,6 @@
            
              
               <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/05/08/health/stretch.html</loc>
-    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
-    <data>
-        <display>
-        <title>筋长一寸，寿延十年</title>
-        <pubTime>2017-05-08T03:29:24.000Z</pubTime>
-        
-        <tag>健康</tag>
-         
-        <tag>转载</tag>
-         
-        <tag>拉筋</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
           
         </display>
     </data>
@@ -191,6 +143,30 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/05/07/health/safe_abc.html</loc>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
+    <data>
+        <display>
+        <title>保险知识入门-如何用保险保障自己的一生</title>
+        <pubTime>2017-05-07T11:14:24.000Z</pubTime>
+        
+        <tag>健康</tag>
+         
+        <tag>转载</tag>
+         
+        <tag>保险</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
           
         </display>
     </data>
