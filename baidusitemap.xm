@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/05/31/health/fitness_diary.html</loc>
+    <lastmod>2017-08-14T13:27:11.320Z</lastmod>
+    <data>
+        <display>
+        <title>健身日记</title>
+        <pubTime>2017-05-31T02:49:00.000Z</pubTime>
+        
+        <tag>健身</tag>
+         
+        <tag>记录</tag>
+         
+        <tag>日记</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
     <lastmod>2017-07-31T08:50:04.216Z</lastmod>
     <data>
@@ -21,30 +45,6 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/05/31/health/fitness_diary.html</loc>
-    <lastmod>2017-07-31T06:42:03.933Z</lastmod>
-    <data>
-        <display>
-        <title>健身日记</title>
-        <pubTime>2017-05-31T02:49:00.000Z</pubTime>
-        
-        <tag>健身</tag>
-         
-        <tag>记录</tag>
-         
-        <tag>日记</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
           
         </display>
     </data>
