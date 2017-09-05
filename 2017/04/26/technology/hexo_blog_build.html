@@ -256,7 +256,7 @@
 <p><strong>本地免密码提交git设置</strong></p>
 <p>默认情况下，每次推送hexo动态生成的静态页面到刚刚创建的github仓库时需要输入用户名/密码，但是可以通过本地生成密钥的方式来实现免密码推送，且更安全。只要将本地生成的公钥保存到github即可，具体实现步骤如下：</p>
 <p><strong>本地生成rsa</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 输入如下命令，一路回车即可</div><div class="line">ssh-keygen -t rsa -C "mail@abc.com"</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 输入如下命令，一路回车即可</span></div><div class="line">ssh-keygen -t rsa -C "mail@abc.com"</div></pre></td></tr></table></figure>
 <p>windows默认会再c:/Users/<strong>Administrator</strong>/.ssh/文件夹中生成三个文件（Administrator是你的账户名）</p>
 <ul>
 <li>known_hosts</li>
@@ -274,7 +274,7 @@
 <p>  问题：能转向github，但是显示404。初次发布后，停10分钟再试，githubPages需要一定的时间</p>
 </li>
 </ul>
-<h3 id="5、发布到git上"><a href="#5、发布到git上" class="headerlink" title="5、发布到git上"></a>5、发布到git上</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 发布到git上</div><div class="line">hexo d</div><div class="line"><span class="meta">#</span> 发布前先重新生成，如下两个命令都可以</div><div class="line">hexo d -g</div><div class="line">hexo g -d</div></pre></td></tr></table></figure>
+<h3 id="5、发布到git上"><a href="#5、发布到git上" class="headerlink" title="5、发布到git上"></a>5、发布到git上</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 发布到git上</span></div><div class="line">hexo d</div><div class="line"><span class="meta">#</span><span class="bash"> 发布前先重新生成，如下两个命令都可以</span></div><div class="line">hexo d -g</div><div class="line">hexo g -d</div></pre></td></tr></table></figure>
 <h3 id="6、访问跟刚才仓库名一致的域名即可看到自己的博客了"><a href="#6、访问跟刚才仓库名一致的域名即可看到自己的博客了" class="headerlink" title="6、访问跟刚才仓库名一致的域名即可看到自己的博客了"></a>6、访问跟刚才仓库名一致的域名即可看到自己的博客了</h3><ul>
 <li><a href="http://fbli.github.io/" target="_blank" rel="external">http://fbli.github.io/</a></li>
 <li><a href="https://fbli.github.io/" target="_blank" rel="external">https://fbli.github.io/</a></li>
@@ -297,7 +297,7 @@
 <li>more处理的感觉有点别扭</li>
 <li>markdown的列表与上面一行的距离太长，效果很差</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 更换主题前必须clean</div><div class="line">cd hexo_blog</div><div class="line">hexo clean</div><div class="line"><span class="meta">#</span> 此处有坑，默认的主题文件夹名需要改一下</div><div class="line">git clone git@github.com:litten/hexo-theme-yilia.git themes/yilia</div><div class="line">cd themes/yilia</div><div class="line">npm install</div><div class="line"><span class="meta">#</span> 返回到hexo根目录</div><div class="line">cd ../../</div><div class="line"><span class="meta">#</span> 重新生成</div><div class="line">hexo g</div><div class="line">hexo s</div><div class="line">http://localhost:4000/</div><div class="line"><span class="meta">#</span> 发布至github</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 更换主题前必须clean</span></div><div class="line">cd hexo_blog</div><div class="line">hexo clean</div><div class="line"><span class="meta">#</span><span class="bash"> 此处有坑，默认的主题文件夹名需要改一下</span></div><div class="line">git clone git@github.com:litten/hexo-theme-yilia.git themes/yilia</div><div class="line">cd themes/yilia</div><div class="line">npm install</div><div class="line"><span class="meta">#</span><span class="bash"> 返回到hexo根目录</span></div><div class="line">cd ../../</div><div class="line"><span class="meta">#</span><span class="bash"> 重新生成</span></div><div class="line">hexo g</div><div class="line">hexo s</div><div class="line">http://localhost:4000/</div><div class="line"><span class="meta">#</span><span class="bash"> 发布至github</span></div><div class="line">hexo d</div></pre></td></tr></table></figure>
 <h2 id="四、Hexo常用命令汇总"><a href="#四、Hexo常用命令汇总" class="headerlink" title="四、Hexo常用命令汇总"></a>四、Hexo常用命令汇总</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo new "postName" #新建文章</div><div class="line">hexo new page "pageName" #新建页面</div><div class="line">hexo generate #生成静态页面至public目录</div><div class="line">hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</div><div class="line">hexo deploy #将.deploy目录部署到GitHub</div><div class="line">hexo help # 查看帮助</div><div class="line">hexo version #查看Hexo的版本</div></pre></td></tr></table></figure>
 <p><strong>Hexo命令简写</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo n == hexo new</div><div class="line">hexo g == hexo generate</div><div class="line">hexo s == hexo server</div><div class="line">hexo d == hexo deploy</div></pre></td></tr></table></figure>
@@ -603,18 +603,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">图文</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">好玩</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">有用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">囚徒</a>
               </li>
              
@@ -631,7 +619,35 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">redis</a>
+                <a href="javascript:void(0)" class="js-tag color3">拉筋</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">记录</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">肌肉</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">图文</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">好玩</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">有用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -643,23 +659,7 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">服务搭建</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">拉筋</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color1">redis</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -679,19 +679,19 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">肌肉</a>
+                <a href="javascript:void(0)" class="js-tag color5">服务搭建</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">保险</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">记录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日记</a>
               </li>
             
             <div class="clearfix"></div>
