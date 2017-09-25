@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="易说博客">
 <meta property="og:description" content="序言Git基本概念svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。  工作区：你的workspace下的工程名文件夹 版本库：工作区的隐藏目录.git stage（index）：暂存区 master：git自动创建的第一个分支，指向最新提交 HEAD：指向master的一个指针">
 <meta property="og:image" content="http://oowxnvumd.bkt.clouddn.com/gitrepo.png">
-<meta property="og:updated_time" content="2017-07-31T08:50:04.216Z">
+<meta property="og:updated_time" content="2017-09-20T04:39:34.643Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git入门到精通">
 <meta name="twitter:description" content="序言Git基本概念svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。  工作区：你的workspace下的工程名文件夹 版本库：工作区的隐藏目录.git stage（index）：暂存区 master：git自动创建的第一个分支，指向最新提交 HEAD：指向master的一个指针">
@@ -241,6 +241,9 @@
 <p>把已经提交至git仓库的文件，添加.gitignore不起作用，因为此时想忽略的文件已经被git追踪管理起来了。若想忽略已经提交的文件可以采用如下方式</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 更新.gitignore文件，添加要忽略的文件或文件夹，后执行下面的命令</span></div><div class="line">git rm -r --cached .</div><div class="line">git add .</div><div class="line">git commit -m "update .gitignore"</div></pre></td></tr></table></figure>
 <h2 id="git-rm-操作-TODO"><a href="#git-rm-操作-TODO" class="headerlink" title="git rm 操作-TODO"></a>git rm 操作-TODO</h2><p>搞清楚git rm操作</p>
+<h2 id="git分支与tag重名"><a href="#git分支与tag重名" class="headerlink" title="git分支与tag重名"></a>git分支与tag重名</h2><p>比较麻烦的是每个人都将tag同步到了本地，你即使删除掉了远程的同名tag，依然会有人推送本地所有tag到远程（sourcetree默认推送会勾选【】）</p>
+<p>查看分支的创建时间</p>
+<p>git reflog show –date=iso bug_on_staging</p>
 <h1 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h1><p><a href="https://help.github.com/categories/advanced-git/" target="_blank" rel="external">官方高级操作说明文档</a>里面列举了6种问题的解决方案，可以去了解一下。如下是我自己实践过程中总结的相比较而言比较高级的操作，希望对你有用</p>
 <h2 id="git分支合并忽略部分文件"><a href="#git分支合并忽略部分文件" class="headerlink" title="git分支合并忽略部分文件"></a>git分支合并忽略部分文件</h2><p><strong>合并分支时忽略某些文件</strong>，举例说明两个分支 base、基于base创建target</p>
 <p>正常的流程是</p>
@@ -295,6 +298,10 @@
 <li><code>git clone --bare origin-url</code>: you will get all of the tags copied, local branches <code>master (HEAD)</code>, <code>next</code>, <code>pu</code>, and <code>maint</code>, no remote tracking branches. That is, all branches are copied as is, and it’s set up completely independent, with no expectation of fetching again. Any remote branches (in the cloned remote) and other refs are completely ignored.</li>
 <li><code>git clone --mirror origin-url</code>: every last one of those refs will be copied as-is. You’ll get all the tags, local branches <code>master (HEAD)</code>, <code>next</code>, <code>pu</code>, and <code>maint</code>, remote branches<code>devA/master</code> and <code>devB/master</code>, other refs <code>refs/foo/bar</code> and <code>refs/foo/baz</code>. Everything is exactly as it was in the cloned remote. Remote tracking is set up so that if you run <code>git remote update</code> all refs will be overwritten from origin, as if you’d just deleted the mirror and recloned it. As the docs originally said, it’s a mirror. It’s supposed to be a functionally identical copy, interchangeable with the original.</li>
 </ul>
+<hr>
+<h1 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h1><p>入门参考</p>
+<p><a href="http://git.oschina.net/progit/" target="_blank" rel="external">git中文文档</a></p>
+<p><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/" target="_blank" rel="external">廖雪峰git教程</a></p>
 <hr>
 <p>2017-05-24 20:56 新增.gitignore配置</p>
 
