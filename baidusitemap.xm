@@ -5,23 +5,14 @@
     
   <url>
     <loc>//ezsay.cn/2017/05/31/health/fitness_diary.html</loc>
-    <lastmod>2017-10-19T09:53:31.349Z</lastmod>
+    <lastmod>2017-10-23T07:59:11.654Z</lastmod>
     <data>
         <display>
-        <title>健身日记</title>
-        <pubTime>2017-05-31T02:49:00.000Z</pubTime>
+        <title></title>
+        <pubTime>2017-05-31T02:44:16.708Z</pubTime>
         
-        <tag>健身</tag>
-         
-        <tag>记录</tag>
-         
-        <tag>日记</tag>
-         
          
            
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
         </display>
     </data>
     </url>
