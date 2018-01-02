@@ -4,6 +4,58 @@
 
     
   <url>
+    <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</loc>
+    <lastmod>2018-01-02T08:50:40.352Z</lastmod>
+    <data>
+        <display>
+        <title>2018健身日志</title>
+        <pubTime>2018-01-02T08:07:00.000Z</pubTime>
+        
+        <tag>健身</tag>
+         
+        <tag>记录</tag>
+         
+        <tag>日记</tag>
+         
+        <tag>2018</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2017_end.html</loc>
+    <lastmod>2018-01-02T08:06:55.207Z</lastmod>
+    <data>
+        <display>
+        <title>2017健身总结</title>
+        <pubTime>2018-01-02T06:23:00.000Z</pubTime>
+        
+        <tag>健身</tag>
+         
+        <tag>记录</tag>
+         
+        <tag>日记</tag>
+         
+        <tag>2018</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/05/31/health/fitness_diary.html</loc>
     <lastmod>2018-01-02T06:22:22.323Z</lastmod>
     <data>
@@ -76,88 +128,12 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_6.html</loc>
+    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_8.html</loc>
     <lastmod>2017-05-22T02:50:21.256Z</lastmod>
     <data>
         <display>
-        <title>囚徒健身-第六章升降机般的大腿[25P]</title>
-        <pubTime>2017-04-27T04:23:24.000Z</pubTime>
-        
-        <tag>囚徒</tag>
-         
-        <tag>健身</tag>
-         
-        <tag>健康</tag>
-         
-        <tag>转载</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/05/08/health/body_building_stretch.html</loc>
-    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
-    <data>
-        <display>
-        <title>筋长一寸，寿延十年</title>
-        <pubTime>2017-05-08T03:29:24.000Z</pubTime>
-        
-        <tag>健康</tag>
-         
-        <tag>转载</tag>
-         
-        <tag>拉筋</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_5.html</loc>
-    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
-    <data>
-        <display>
-        <title>囚徒健身-第五章铠甲般的胸肌与钢铁般的肱三头肌[25P]</title>
-        <pubTime>2017-04-27T03:23:24.000Z</pubTime>
-        
-        <tag>囚徒</tag>
-         
-        <tag>健身</tag>
-         
-        <tag>健康</tag>
-         
-        <tag>转载</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_10.html</loc>
-    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
-    <data>
-        <display>
-        <title>囚徒健身-第十章健康、强力的肩膀[20P]</title>
-        <pubTime>2017-04-27T09:23:24.000Z</pubTime>
+        <title>囚徒健身-第八章魔鬼六块[25P]</title>
+        <pubTime>2017-04-27T06:23:24.000Z</pubTime>
         
         <tag>囚徒</tag>
          
@@ -204,6 +180,32 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_9.html</loc>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
+    <data>
+        <display>
+        <title>囚徒健身-第九章严阵以待的脊柱[20P]</title>
+        <pubTime>2017-04-27T08:23:24.000Z</pubTime>
+        
+        <tag>囚徒</tag>
+         
+        <tag>健身</tag>
+         
+        <tag>健康</tag>
+         
+        <tag>转载</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/05/11/health/body_building_muscle_abc.html</loc>
     <lastmod>2017-05-22T02:50:21.256Z</lastmod>
     <data>
@@ -226,23 +228,49 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/04/26/essay/image_text.html</loc>
+    <loc>//ezsay.cn/2017/05/08/health/body_building_stretch.html</loc>
     <lastmod>2017-05-22T02:50:21.256Z</lastmod>
     <data>
         <display>
-        <title>点滴累积-图文</title>
-        <pubTime>2017-04-26T02:24:24.000Z</pubTime>
+        <title>筋长一寸，寿延十年</title>
+        <pubTime>2017-05-08T03:29:24.000Z</pubTime>
         
-        <tag>图文</tag>
+        <tag>健康</tag>
          
-        <tag>好玩</tag>
+        <tag>转载</tag>
          
-        <tag>有用</tag>
+        <tag>拉筋</tag>
          
          
            
              
-              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_10.html</loc>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
+    <data>
+        <display>
+        <title>囚徒健身-第十章健康、强力的肩膀[20P]</title>
+        <pubTime>2017-04-27T09:23:24.000Z</pubTime>
+        
+        <tag>囚徒</tag>
+         
+        <tag>健身</tag>
+         
+        <tag>健康</tag>
+         
+        <tag>转载</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
           
         </display>
     </data>
@@ -276,12 +304,12 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_9.html</loc>
+    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_6.html</loc>
     <lastmod>2017-05-22T02:50:21.256Z</lastmod>
     <data>
         <display>
-        <title>囚徒健身-第九章严阵以待的脊柱[20P]</title>
-        <pubTime>2017-04-27T08:23:24.000Z</pubTime>
+        <title>囚徒健身-第六章升降机般的大腿[25P]</title>
+        <pubTime>2017-04-27T04:23:24.000Z</pubTime>
         
         <tag>囚徒</tag>
          
@@ -302,12 +330,12 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_8.html</loc>
+    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_5.html</loc>
     <lastmod>2017-05-22T02:50:21.256Z</lastmod>
     <data>
         <display>
-        <title>囚徒健身-第八章魔鬼六块[25P]</title>
-        <pubTime>2017-04-27T06:23:24.000Z</pubTime>
+        <title>囚徒健身-第五章铠甲般的胸肌与钢铁般的肱三头肌[25P]</title>
+        <pubTime>2017-04-27T03:23:24.000Z</pubTime>
         
         <tag>囚徒</tag>
          
@@ -373,6 +401,30 @@
            
              
               <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/04/26/essay/image_text.html</loc>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
+    <data>
+        <display>
+        <title>点滴累积-图文</title>
+        <pubTime>2017-04-26T02:24:24.000Z</pubTime>
+        
+        <tag>图文</tag>
+         
+        <tag>好玩</tag>
+         
+        <tag>有用</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>
