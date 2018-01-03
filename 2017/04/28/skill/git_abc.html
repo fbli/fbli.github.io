@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="易说博客">
 <meta property="og:description" content="序言Git基本概念svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。  工作区：你的workspace下的工程名文件夹 版本库：工作区的隐藏目录.git stage（index）：暂存区 master：git自动创建的第一个分支，指向最新提交 HEAD：指向master的一个指针">
 <meta property="og:image" content="http://oowxnvumd.bkt.clouddn.com/gitrepo.png">
-<meta property="og:updated_time" content="2017-09-20T04:39:34.643Z">
+<meta property="og:updated_time" content="2018-01-03T09:35:54.575Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git入门到精通">
 <meta name="twitter:description" content="序言Git基本概念svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。  工作区：你的workspace下的工程名文件夹 版本库：工作区的隐藏目录.git stage（index）：暂存区 master：git自动创建的第一个分支，指向最新提交 HEAD：指向master的一个指针">
@@ -219,6 +219,7 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gitconfig --global user.name "王小二"</div><div class="line">gitconfig --global user.email "wangxiaoer@xxx.com"</div></pre></td></tr></table></figure>
 <p>暂存区会退到工作区</p>
 <p>git reset head file</p>
+<h2 id="git-log"><a href="#git-log" class="headerlink" title="git log"></a>git log</h2><figure class="highlight perl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 一行显示日志信息，排除包含Merge branch字符串的描述，导出到lic.txt文件中</span></div><div class="line">git <span class="keyword">log</span> --oneline | <span class="keyword">grep</span> -v <span class="string">"Merge branch"</span> &gt;&gt; lic.txt</div></pre></td></tr></table></figure>
 <h2 id="git分支的一些知识点"><a href="#git分支的一些知识点" class="headerlink" title="git分支的一些知识点"></a>git分支的一些知识点</h2><p>官方文档推荐在<strong>分支切换之前保证工作区clean</strong>，这个原则很重要原因如下：<br><strong>1、新增的文件</strong></p>
 <p>分支切换会带着这个文件到新分支中。新增的文件在git中是个特殊的存在，因为并未被git管理起来<br><strong>2、更新的文件</strong></p>
 <p>三种情况：</p>
