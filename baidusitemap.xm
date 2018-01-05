@@ -4,8 +4,34 @@
 
     
   <url>
+    <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2017_end.html</loc>
+    <lastmod>2018-01-05T06:11:23.551Z</lastmod>
+    <data>
+        <display>
+        <title>2017健身总结</title>
+        <pubTime>2018-01-02T06:23:00.000Z</pubTime>
+        
+        <tag>健身</tag>
+         
+        <tag>记录</tag>
+         
+        <tag>日记</tag>
+         
+        <tag>2018</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</loc>
-    <lastmod>2018-01-04T08:20:04.175Z</lastmod>
+    <lastmod>2018-01-05T06:10:41.032Z</lastmod>
     <data>
         <display>
         <title>2018健身日志</title>
@@ -47,32 +73,6 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2017_end.html</loc>
-    <lastmod>2018-01-02T08:06:55.207Z</lastmod>
-    <data>
-        <display>
-        <title>2017健身总结</title>
-        <pubTime>2018-01-02T06:23:00.000Z</pubTime>
-        
-        <tag>健身</tag>
-         
-        <tag>记录</tag>
-         
-        <tag>日记</tag>
-         
-        <tag>2018</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
           
         </display>
     </data>
