@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2017_end.html</loc>
-    <lastmod>2018-01-05T06:11:23.551Z</lastmod>
+    <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</loc>
+    <lastmod>2018-01-08T06:22:26.408Z</lastmod>
     <data>
         <display>
-        <title>2017健身总结</title>
-        <pubTime>2018-01-02T06:23:00.000Z</pubTime>
+        <title>2018健身日志</title>
+        <pubTime>2018-01-02T08:07:00.000Z</pubTime>
         
         <tag>健身</tag>
          
@@ -30,12 +30,12 @@
 
     
   <url>
-    <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</loc>
-    <lastmod>2018-01-05T06:10:41.032Z</lastmod>
+    <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2017_end.html</loc>
+    <lastmod>2018-01-05T06:11:23.551Z</lastmod>
     <data>
         <display>
-        <title>2018健身日志</title>
-        <pubTime>2018-01-02T08:07:00.000Z</pubTime>
+        <title>2017健身总结</title>
+        <pubTime>2018-01-02T06:23:00.000Z</pubTime>
         
         <tag>健身</tag>
          
