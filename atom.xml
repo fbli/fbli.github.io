@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
-  <updated>2018-03-13T03:23:03.774Z</updated>
+  <updated>2018-03-14T10:18:38.730Z</updated>
   <id>//ezsay.cn/</id>
   
   <author>
@@ -14,6 +14,71 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL学习笔记</title>
+    <link href="//ezsay.cn/2018/03/14/technology/MySQL_abc.html"/>
+    <id>//ezsay.cn/2018/03/14/technology/MySQL_abc.html</id>
+    <published>2018-03-14T02:26:24.000Z</published>
+    <updated>2018-03-14T10:18:38.730Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>学习MySQL过程中的一些心得体会，知识点梳理汇总</p>
+<a id="more"></a>
+<h3 id="一、SQL连接"><a href="#一、SQL连接" class="headerlink" title="一、SQL连接"></a>一、SQL连接</h3><p>SQL的四种连接：内连接；外连接：左外连接、右外连接、全连接；</p>
+<p>内连接有两种写法（显式、隐式内连接），作用一样</p>
+<h4 id="ON和WHERE的区别"><a href="#ON和WHERE的区别" class="headerlink" title="ON和WHERE的区别"></a>ON和WHERE的区别</h4><p>left join,right join,full join的特殊性决定了ON条件的特殊性</p>
+<ul>
+<li>inner join中条件放在ON和WHERE中，<strong>作用相同返回的结果一样</strong>；</li>
+<li>WHERE条件是在临时表生成好后，再对临时表进行过滤的条件；</li>
+<li>ON在生成连接表时起作用<ul>
+<li>left join 无论ON的条件是否满足，都会返回<strong>左</strong>表的<strong>所有</strong>记录，即on条件对左表<strong>不起作用</strong>,右表起作用；</li>
+<li>right join 无论ON的条件是否满足，都会返回<strong>右</strong>表的<strong>所有</strong>记录，即on条件对右表<strong>不起作用</strong>,左表起作用；</li>
+<li>full join 无论ON的条件是否满足，都会返回左、右表的<strong>所有</strong>记录，即on条件对左、右表<strong>都不起作用。</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>总结：</strong></p>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">对于左连接来说,放在<span class="keyword">ON</span>里面的右表条件就是-先筛选后连接，保证连接左边数据完整；放在<span class="keyword">WHERE</span>中就得-先连接后筛选。同理右外，全外。</div><div class="line"><span class="keyword">ON</span>只进行连接操作，<span class="keyword">WHERE</span>只过滤中间表的记录。</div><div class="line"></div><div class="line">如果使用INNER <span class="keyword">JOIN</span> 效果是一样的所以建议统一放在<span class="keyword">WHERE</span>条件后面。</div><div class="line">全外 = 左外 <span class="keyword">UNION</span> 右外（MySQL不支持全外连接）</div></pre></td></tr></table></figure>
+<h4 id="举例说明"><a href="#举例说明" class="headerlink" title="举例说明"></a>举例说明</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> student a,score b <span class="keyword">where</span> a.id = b.stu_id <span class="keyword">and</span> b.score &gt; <span class="number">90</span></div><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> student a <span class="keyword">inner</span> <span class="keyword">join</span> score b <span class="keyword">on</span> a.id = b.stu_id <span class="keyword">where</span> b.score &gt; <span class="number">90</span></div></pre></td></tr></table></figure>
+<p>Nested Loop Join、Merge Join、Hash Join –TODO</p>
+<h3 id="二、索引使用"><a href="#二、索引使用" class="headerlink" title="二、索引使用"></a>二、索引使用</h3><p>1、索引命名</p>
+<blockquote>
+<p><strong>阿里java编程规范</strong></p>
+<p>【强制】主键索引名为pk<em>字段名；唯一索引名为uk</em>字段名；普通索引名则为idx_字段名。</p>
+<p><strong>说明：</strong>pk<em>即primary key；uk</em>即unique key；idx_即index的简称。</p>
+</blockquote>
+<p><strong>待确认</strong></p>
+<p>A表（base_org_dtl） 607493条记录</p>
+<p>B表（dict_dtl）8条记录</p>
+<p>当B表的dict_code<strong>不创建</strong>索引时，执行速度<strong>2.224s</strong>，数据字典小表创建索引后<strong>3.003s</strong>，相差将近0.8秒</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">-- 执行速度比对（b表关联字段创建索引后，查询速度反而变慢）</div><div class="line">SELECT a.org_code,a.org_name,a.short_name,</div><div class="line">	a.merge_s_name,</div><div class="line">	a.org_type,</div><div class="line">	b.dict_value</div><div class="line"> FROM base_org_dtl a INNER JOIN dict_dtl b</div><div class="line">   ON a.org_type = b.dict_code AND b.dict_type_code=&apos;QHLB&apos;</div><div class="line">WHERE org_type IS NOT NULL</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">-- 创建索引</div><div class="line">ALTER TABLE `dict_dtl`</div><div class="line">ADD INDEX `idx_dict_code` (`DICT_CODE`) ;</div></pre></td></tr></table></figure>
+<p>分析SQL执行计划</p>
+<p>大表A的Extra 带索引和不带索引分别是： <code>Using where</code>和<code>Using where; Using join buffer (Block Nested Loop)</code>的区别</p>
+<h3 id="三、MySQL执行计划"><a href="#三、MySQL执行计划" class="headerlink" title="三、MySQL执行计划"></a>三、MySQL执行计划</h3><p><strong>待学习知识点</strong></p>
+<p>join buffer</p>
+<p>join类型为all, index, range</p>
+<p>扫描类型是all或者index。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;学习MySQL过程中的一些心得体会，知识点梳理汇总&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+    
+    
+      <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="MySQL" scheme="//ezsay.cn/tags/MySQL/"/>
+    
+      <category term="连接查询" scheme="//ezsay.cn/tags/%E8%BF%9E%E6%8E%A5%E6%9F%A5%E8%AF%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>定个小目标</title>
@@ -107,12 +172,25 @@
     <link href="//ezsay.cn/2018/01/02/health/fitness_diary_2018.html"/>
     <id>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</id>
     <published>2018-01-02T08:07:00.000Z</published>
-    <updated>2018-03-13T03:29:08.214Z</updated>
+    <updated>2018-03-15T05:02:32.073Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>2018年走起，新年新气象，这一年身体管理的目标是：跑步成常态，成习惯；引体向上15个，双杠臂力撑15个，学会双力臂；体重控制在60kg以下，彻底纠正耸肩驼背。</p>
 <p><strong>告诫自己：</strong> 不要逞强不要作、做好热身运动！</p>
 <a id="more"></a>
-<h2 id="三月份"><a href="#三月份" class="headerlink" title="三月份"></a>三月份</h2><p>2018年3月13号    星期二    多云    重度污染</p>
+<h2 id="三月份"><a href="#三月份" class="headerlink" title="三月份"></a>三月份</h2><p>2018年3月14号    星期三     优</p>
+<p>没有污染，中午感觉很舒服，上午考试，顺利通过。而后发生了一些事儿，极度绝望。今天锻炼完没有吃饭，尝试一下饥饿的感觉，晚上看情况跑个步，这样的好天气不多见，要把握好。</p>
+<p>引体向上    8</p>
+<p>双杠臂屈伸    5</p>
+<p>倒立    26秒</p>
+<p>双杠挂臂举腿    10</p>
+<p>斜上俯卧撑    20</p>
+<p>三角肌弯曲    10</p>
+<p>倒立    26秒</p>
+<p>太空漫步  100 * 2</p>
+<p>太极转盘    36 * 2</p>
+<p>2018年3月14号    星期三     多云转阴    6/17℃    重度污染</p>
+<p>雾霾指数 341，早晨小区竟然有个胖子在跑步，真是无畏啊。</p>
+<p>2018年3月13号    星期二    多云    重度污染</p>
 <p>体重122斤，历史新低。雾霾指数273，重度污染，今天不锻炼了，晚上看看做点室内的运动。今天开始重拾日记，自省开始（非健身），修正了一下自己的2018小目标，增加最小读书数量。不限类别，不限字数。读就成。</p>
 <p>2018年3月12号    星期一    晴    轻度污染</p>
 <p>吹着风听歌挺舒服的，一瞬间沉浸感觉很好。</p>

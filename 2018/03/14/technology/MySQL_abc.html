@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//ezsay.cn">
-  <title>Tag: 图文 | 易说博客</title>
+  <title>MySQL学习笔记 | 易说博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="易说博客，用心写好每篇文章。我之所得，你之所获！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="易说博客">
-<meta property="og:url" content="//ezsay.cn/tags/图文/index.html">
+  <meta name="description" content="前言学习MySQL过程中的一些心得体会，知识点梳理汇总">
+<meta name="keywords" content="基础,入门,MySQL,连接查询">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL学习笔记">
+<meta property="og:url" content="//ezsay.cn/2018/03/14/technology/MySQL_abc.html">
 <meta property="og:site_name" content="易说博客">
-<meta property="og:description" content="易说博客，用心写好每篇文章。我之所得，你之所获！">
+<meta property="og:description" content="前言学习MySQL过程中的一些心得体会，知识点梳理汇总">
+<meta property="og:updated_time" content="2018-03-14T10:18:38.730Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="易说博客">
-<meta name="twitter:description" content="易说博客，用心写好每篇文章。我之所得，你之所获！">
+<meta name="twitter:title" content="MySQL学习笔记">
+<meta name="twitter:description" content="前言学习MySQL过程中的一些心得体会，知识点梳理汇总">
   
     <link rel="alternative" href="/atom.xml" title="易说博客" type="application/atom+xml">
   
@@ -174,79 +176,232 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-technology/MySQL_abc" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/26/ezsay/image_text.html" class="archive-article-date">
-  	<time datetime="2017-04-26T02:24:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-26</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/26/ezsay/image_text.html">点滴累积-图文</a>
+    <h1 class="article-title" itemprop="name">
+      MySQL学习笔记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/03/14/technology/MySQL_abc.html" class="archive-article-date">
+  	<time datetime="2018-03-14T02:26:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>学习MySQL过程中的一些心得体会，知识点梳理汇总</p>
+<a id="more"></a>
+<h3 id="一、SQL连接"><a href="#一、SQL连接" class="headerlink" title="一、SQL连接"></a>一、SQL连接</h3><p>SQL的四种连接：内连接；外连接：左外连接、右外连接、全连接；</p>
+<p>内连接有两种写法（显式、隐式内连接），作用一样</p>
+<h4 id="ON和WHERE的区别"><a href="#ON和WHERE的区别" class="headerlink" title="ON和WHERE的区别"></a>ON和WHERE的区别</h4><p>left join,right join,full join的特殊性决定了ON条件的特殊性</p>
+<ul>
+<li>inner join中条件放在ON和WHERE中，<strong>作用相同返回的结果一样</strong>；</li>
+<li>WHERE条件是在临时表生成好后，再对临时表进行过滤的条件；</li>
+<li>ON在生成连接表时起作用<ul>
+<li>left join 无论ON的条件是否满足，都会返回<strong>左</strong>表的<strong>所有</strong>记录，即on条件对左表<strong>不起作用</strong>,右表起作用；</li>
+<li>right join 无论ON的条件是否满足，都会返回<strong>右</strong>表的<strong>所有</strong>记录，即on条件对右表<strong>不起作用</strong>,左表起作用；</li>
+<li>full join 无论ON的条件是否满足，都会返回左、右表的<strong>所有</strong>记录，即on条件对左、右表<strong>都不起作用。</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>总结：</strong></p>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">对于左连接来说,放在<span class="keyword">ON</span>里面的右表条件就是-先筛选后连接，保证连接左边数据完整；放在<span class="keyword">WHERE</span>中就得-先连接后筛选。同理右外，全外。</div><div class="line"><span class="keyword">ON</span>只进行连接操作，<span class="keyword">WHERE</span>只过滤中间表的记录。</div><div class="line"></div><div class="line">如果使用INNER <span class="keyword">JOIN</span> 效果是一样的所以建议统一放在<span class="keyword">WHERE</span>条件后面。</div><div class="line">全外 = 左外 <span class="keyword">UNION</span> 右外（MySQL不支持全外连接）</div></pre></td></tr></table></figure>
+<h4 id="举例说明"><a href="#举例说明" class="headerlink" title="举例说明"></a>举例说明</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> student a,score b <span class="keyword">where</span> a.id = b.stu_id <span class="keyword">and</span> b.score &gt; <span class="number">90</span></div><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> student a <span class="keyword">inner</span> <span class="keyword">join</span> score b <span class="keyword">on</span> a.id = b.stu_id <span class="keyword">where</span> b.score &gt; <span class="number">90</span></div></pre></td></tr></table></figure>
+<p>Nested Loop Join、Merge Join、Hash Join –TODO</p>
+<h3 id="二、索引使用"><a href="#二、索引使用" class="headerlink" title="二、索引使用"></a>二、索引使用</h3><p>1、索引命名</p>
+<blockquote>
+<p><strong>阿里java编程规范</strong></p>
+<p>【强制】主键索引名为pk<em>字段名；唯一索引名为uk</em>字段名；普通索引名则为idx_字段名。</p>
+<p><strong>说明：</strong>pk<em>即primary key；uk</em>即unique key；idx_即index的简称。</p>
+</blockquote>
+<p><strong>待确认</strong></p>
+<p>A表（base_org_dtl） 607493条记录</p>
+<p>B表（dict_dtl）8条记录</p>
+<p>当B表的dict_code<strong>不创建</strong>索引时，执行速度<strong>2.224s</strong>，数据字典小表创建索引后<strong>3.003s</strong>，相差将近0.8秒</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">-- 执行速度比对（b表关联字段创建索引后，查询速度反而变慢）</div><div class="line">SELECT a.org_code,a.org_name,a.short_name,</div><div class="line">	a.merge_s_name,</div><div class="line">	a.org_type,</div><div class="line">	b.dict_value</div><div class="line"> FROM base_org_dtl a INNER JOIN dict_dtl b</div><div class="line">   ON a.org_type = b.dict_code AND b.dict_type_code=&apos;QHLB&apos;</div><div class="line">WHERE org_type IS NOT NULL</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">-- 创建索引</div><div class="line">ALTER TABLE `dict_dtl`</div><div class="line">ADD INDEX `idx_dict_code` (`DICT_CODE`) ;</div></pre></td></tr></table></figure>
+<p>分析SQL执行计划</p>
+<p>大表A的Extra 带索引和不带索引分别是： <code>Using where</code>和<code>Using where; Using join buffer (Block Nested Loop)</code>的区别</p>
+<h3 id="三、MySQL执行计划"><a href="#三、MySQL执行计划" class="headerlink" title="三、MySQL执行计划"></a>三、MySQL执行计划</h3><p><strong>待学习知识点</strong></p>
+<p>join buffer</p>
+<p>join类型为all, index, range</p>
+<p>扫描类型是all或者index。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>嗯，赏！<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/asset/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/asset/img/weixinpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">图文</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">好玩</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">入门</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">有用</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">连接查询</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/随笔/" class="article-tag-list-link color3">随笔</a>
+        			<a href="/categories/技能/" class="article-tag-list-link color3">技能</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACL0lEQVR42u3a0WrDMAwF0P3/T2evg+LkSnYHsY+fykganxQ0ydLPT7yuP+v+7/dXJp8/7122MDAwXsu4btfoms9NrH0R+d4wMDDOYYwe3NvuqrCe7A0DAwNjdE2e0uXpY/76MDAwMHqlZrLdPBHEwMDA6BWx1eOzalGaFM8LanEMDIwXMqql6X9+/kp/AwMD41WMq7iq6Vq1kXC1FgYGxt6MPMDlhWteHlfvevgGDAyMTRnzow/34TL/zmrL4eF3wMDA2I7xcFEcCquNgeQQLQJjYGBszVib9iWJYD54UW4AYGBgHMnIQ2oecPNcrtw2wMDA2JqRP7LaKuh980xrAQMDYz9GddyqN85VDak54KETi4GBsSmjF8HuS9xV7YSHFiYGBsZhjOqoRI/da20Op0UwMDA2ZSQH/dV0MC9r87vyV4yBgbEfIw+1+dbnw3R5gAwDA+MARhIEZ47Jqs3L8qgHBgbG1ozeIEXeeuylmNU0EQMD4zRG7xhufggjD+uF4zYMDIyNGPmQRH7c39t00sgcviYMDIwDGHnQ/EZrMw/Tw9eKgYFxAKNwED9xKJYnoNUyGwMDY1fGVVzzx3O9e5tJIQYGxhaMfFW3kieLM0NjZQwGBsZrGTPjWUli1yuS86CMgYFxDqN6BLb2WD//DxC1MDEwMDBWPXgRDAMDA6P6gOpQRZ5cPpTBGBgYBzCqR/nzW++1RRfU4hgYGC9kVPOuJPg2R7smdoKBgbEp4xez2mqYpBmqpwAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2018/02/22/ezsay/target_2018.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          定个小目标
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+
+
+
+  
+  
   
 
-    
+  
+  <div id="SOHUCS" sid="technology/MySQL_abc" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "cysY18EIq"; 
+var conf = "prod_72d505c557d08a2b430c7c65697f6563"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+  
+
+  
 
 
           </div>
@@ -269,9 +424,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
