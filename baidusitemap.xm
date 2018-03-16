@@ -4,30 +4,8 @@
 
     
   <url>
-    <loc>//ezsay.cn/2018/02/22/ezsay/target_2018.html</loc>
-    <lastmod>2018-03-16T09:16:00.634Z</lastmod>
-    <data>
-        <display>
-        <title>定个小目标</title>
-        <pubTime>2018-02-22T08:10:00.000Z</pubTime>
-        
-        <tag>历年小目标</tag>
-         
-        <tag>实现情况</tag>
-         
-         
-           
-             
-              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</loc>
-    <lastmod>2018-03-16T09:03:19.914Z</lastmod>
+    <lastmod>2018-03-16T09:31:35.866Z</lastmod>
     <data>
         <display>
         <title>2018健身日志</title>
@@ -45,6 +23,28 @@
            
              
               <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2018/02/22/ezsay/target_2018.html</loc>
+    <lastmod>2018-03-16T09:16:00.634Z</lastmod>
+    <data>
+        <display>
+        <title>定个小目标</title>
+        <pubTime>2018-02-22T08:10:00.000Z</pubTime>
+        
+        <tag>历年小目标</tag>
+         
+        <tag>实现情况</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>
@@ -274,6 +274,30 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/04/26/ezsay/image_text.html</loc>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
+    <data>
+        <display>
+        <title>点滴累积-图文</title>
+        <pubTime>2017-04-26T02:24:24.000Z</pubTime>
+        
+        <tag>图文</tag>
+         
+        <tag>好玩</tag>
+         
+        <tag>有用</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_6.html</loc>
     <lastmod>2017-05-22T02:50:21.256Z</lastmod>
     <data>
@@ -293,30 +317,6 @@
            
              
               <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/26/ezsay/image_text.html</loc>
-    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
-    <data>
-        <display>
-        <title>点滴累积-图文</title>
-        <pubTime>2017-04-26T02:24:24.000Z</pubTime>
-        
-        <tag>图文</tag>
-         
-        <tag>好玩</tag>
-         
-        <tag>有用</tag>
-         
-         
-           
-             
-              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>
@@ -480,30 +480,6 @@
 
     
   <url>
-    <loc>//ezsay.cn/2017/05/07/health/safe_abc.html</loc>
-    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
-    <data>
-        <display>
-        <title>保险知识入门-如何用保险保障自己的一生</title>
-        <pubTime>2017-05-07T11:14:24.000Z</pubTime>
-        
-        <tag>健康</tag>
-         
-        <tag>转载</tag>
-         
-        <tag>保险</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_1-4.html</loc>
     <lastmod>2017-05-22T02:50:21.256Z</lastmod>
     <data>
@@ -518,6 +494,30 @@
         <tag>健康</tag>
          
         <tag>转载</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/05/07/health/safe_abc.html</loc>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
+    <data>
+        <display>
+        <title>保险知识入门-如何用保险保障自己的一生</title>
+        <pubTime>2017-05-07T11:14:24.000Z</pubTime>
+        
+        <tag>健康</tag>
+         
+        <tag>转载</tag>
+         
+        <tag>保险</tag>
          
          
            
