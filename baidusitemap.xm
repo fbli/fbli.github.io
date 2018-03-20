@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</loc>
-    <lastmod>2018-03-20T07:12:16.996Z</lastmod>
+    <lastmod>2018-03-20T08:57:37.830Z</lastmod>
     <data>
         <display>
         <title>2018健身日志</title>
