@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2018/02/22/ezsay/target_2018.html</loc>
-    <lastmod>2018-03-28T07:50:33.203Z</lastmod>
+    <lastmod>2018-03-28T07:54:54.379Z</lastmod>
     <data>
         <display>
         <title>定个小目标</title>
