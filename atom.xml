@@ -3067,7 +3067,7 @@
     <link href="//ezsay.cn/2017/04/28/skill/git_abc.html"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc.html</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2018-04-09T03:33:46.207Z</updated>
+    <updated>2018-04-09T05:36:41.136Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
@@ -3105,11 +3105,7 @@
 <p>常见场景</p>
 <p>github本地免密码</p>
 <blockquote>
-<p>1）、本地生成SSH KEY</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> ssh-keygen -t rsa -C "mail@xxx.net"</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
+<p>1）、本地生成SSH KEY<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> ssh-keygen -t rsa -C "mail@xxx.net"</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure></p>
 <p>上面命令一路回车会生成如下3个文件</p>
 <ul>
 <li>id_rsa :私钥</li>
