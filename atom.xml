@@ -305,13 +305,24 @@
     <link href="//ezsay.cn/2018/01/02/health/fitness_diary_2018.html"/>
     <id>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</id>
     <published>2018-01-02T08:07:00.000Z</published>
-    <updated>2018-04-08T06:05:25.894Z</updated>
+    <updated>2018-04-09T05:34:08.002Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>2018走起，新年新气象，野蛮其体魄，文明其精神。bigger your body,bigger your mind.</p>
 <p>这一年身体管理的目标是：跑步成常态，成习惯；引体向上15个，双杠臂力撑15个，学会双力臂；体重控制在60kg以下，彻底纠正耸肩驼背。</p>
 <p><strong>告诫自己：</strong> 不要逞强不要作、做好热身运动！</p>
 <a id="more"></a>
-<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h3 id="四月份"><a href="#四月份" class="headerlink" title="四月份"></a>四月份</h3><h3 id="2018-04-08"><a href="#2018-04-08" class="headerlink" title="2018/04/08"></a>2018/04/08</h3><p><em>周日    晴    18/2℃    良 57</em></p>
+<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h3 id="四月份"><a href="#四月份" class="headerlink" title="四月份"></a>四月份</h3><h3 id="2018-04-09-打哈欠"><a href="#2018-04-09-打哈欠" class="headerlink" title="2018/04/09 打哈欠"></a>2018/04/09 打哈欠</h3><p><em>周日    晴    20/6℃    轻度污染 114</em></p>
+<p>气温稳步上升中。几天来状态不太好，今中午锻炼时，哈欠了好几次，疲惫感很强。</p>
+<blockquote>
+<p>引体向上 6 + 5 + 4反握 + 4窄距</p>
+<p>倒立 30秒</p>
+<p>斜上俯卧撑 10</p>
+<p>桥    10秒</p>
+<p>挂臂举腿 10</p>
+<p>双杠臂屈伸 5 * 3</p>
+<p>坐姿屈膝 30 * 3</p>
+</blockquote>
+<h3 id="2018-04-08"><a href="#2018-04-08" class="headerlink" title="2018/04/08"></a>2018/04/08</h3><p><em>周日    晴    18/2℃    良 57</em></p>
 <p>今天上班，补清明节放假。尽管放晴还是有些许寒冷，中午小区里锻炼了一下，有些疲惫。尝试站桩，中途来了两位高挑美女，在附近聊天不走，羞涩了，中途放弃。好似一动一静的锻炼方向不同，疲惫时挺适合站桩的，但要克服这种羞涩，找个完全无人的位置相当不易。</p>
 <blockquote>
 <p>引体向上 4 + 5 + 7</p>
@@ -3056,7 +3067,7 @@
     <link href="//ezsay.cn/2017/04/28/skill/git_abc.html"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc.html</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2018-04-09T03:10:47.698Z</updated>
+    <updated>2018-04-09T03:33:46.207Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
@@ -3109,11 +3120,17 @@
 <p>3）、验证是否成功</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> ssh -T git@github.com</div><div class="line"><span class="meta">&gt;</span></div><div class="line"><span class="meta">&gt;</span> # Hi XXXX! You've successfully authenticated, but GitHub does not provide shell access.</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
 </blockquote>
-<p>4、</p>
+<p>4、分支命令</p>
+<p>基本命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 查看本地分支列表，前带*号的为当前分支</div><div class="line">git branch</div><div class="line"><span class="meta">#</span> 查看所有分支列表，本地+远程（remotes/origin/***）</div><div class="line">git branch -a</div><div class="line"><span class="meta">#</span> 切换分支到dev</div><div class="line">git checkout dev</div><div class="line"><span class="meta"></span></div><div class="line"># 显示远程分支等信息</div><div class="line"><span class="meta">$</span> git remote show origin</div><div class="line"><span class="meta">$</span> git ls-remote --heads origin</div><div class="line"><span class="meta"></span></div><div class="line"># 合并release2.1分支到当前分支</div><div class="line">git merge release2.1</div></pre></td></tr></table></figure>
+<p>高频使用分支命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 新建dev分支并与远程分支建立关联，且切换至该分支</div><div class="line">git checkout -b dev origin/dev</div><div class="line"><span class="meta"></span></div><div class="line"># 推送本地分支【dev_locale 】到远程并进行关联，二者名称一致</div><div class="line">git push -u origin dev_locale</div></pre></td></tr></table></figure>
+<p>谨慎使用分支命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 删除本地分支</div><div class="line">git branch -d dev</div><div class="line">git branch -D dev # 强制删除（本地有未push的commit时使用）</div><div class="line"><span class="meta"></span></div><div class="line"># 删除远程分支dev： </div><div class="line">git push origin:dev</div><div class="line">git push origin --delete dev</div></pre></td></tr></table></figure>
 <p>暂存区会退到工作区</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset head file</div></pre></td></tr></table></figure>
 <h2 id="Git-log"><a href="#Git-log" class="headerlink" title="Git log"></a>Git log</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 一行显示日志信息，排除包含Merge branch字符串的描述，导出到lic.txt文件中</div><div class="line">git log --oneline | grep -v "Merge branch" &gt;&gt; lic.txt</div></pre></td></tr></table></figure>
-<h2 id="Git分支"><a href="#Git分支" class="headerlink" title="Git分支"></a>Git分支</h2><p>官方文档推荐在<strong>分支切换之前保证工作区clean</strong>，这个原则很重要原因如下：<br><strong>1、新增的文件</strong></p>
+<h2 id="Git分支切换要点"><a href="#Git分支切换要点" class="headerlink" title="Git分支切换要点"></a>Git分支切换要点</h2><p>官方文档推荐在<strong>分支切换之前保证工作区clean</strong>，这个原则很重要原因如下：<br><strong>1、新增的文件</strong></p>
 <p>分支切换会带着这个文件到新分支中。新增的文件在git中是个特殊的存在，因为并未被git管理起来<br><strong>2、更新的文件</strong></p>
 <p>三种情况：</p>
 <ul>
@@ -3143,7 +3160,7 @@
 <p>正常的流程是</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 1、base分支新建.gitattributes文件</div><div class="line">echo file1.txt merge=ours &gt;&gt; .gitattributes</div><div class="line"><span class="meta">#</span> 2、开启merge.ours.driver</div><div class="line">git config --global merge.ours.driver=true</div><div class="line"><span class="meta">#</span> 3、切换到target分支进行分支合并</div><div class="line">git checkout target</div><div class="line">git merge base</div><div class="line"><span class="meta">#</span> 4、坑：此时发现配置的file1.txt merge=ours根本没起作用，会正常合并至当前分支，不仅如此，此时切换到base分支再编辑一下file1.txt，再切换回target，再次合并base分支到target，会发现刚刚的base上的提交依旧会合并至当前分支，那么问题来了，怎么才能不合并file1.txt呢</div><div class="line"></div><div class="line">git checkout target</div><div class="line">echo "update file1.txt by target" &gt;&gt; file.txt</div><div class="line">git commit -am "target分支更新并提交想忽略的文件"</div><div class="line">git checkout base</div><div class="line">echo "update file1.txt by base" &gt;&gt; file.txt</div><div class="line">git commit -am "base分支更新并提交想忽略的文件"</div><div class="line">git checkout target</div><div class="line">git merge base # 此时会发现target分支的file文件还是之前的内容，base分支的并没有合并过来</div></pre></td></tr></table></figure>
 <p>结论：</p>
-<p>合并分支要忽略的文件必须分别做过commit，此时合并分支才会忽略</p>
+<p>合并分支要忽略的文件<strong>必须分别做过commit</strong>，此时合并分支才会忽略</p>
 <p>这样看来ours应该这样理解，我有自己的提交了，之后都以我自己的为准。</p>
 <h2 id="git移库"><a href="#git移库" class="headerlink" title="git移库"></a><strong>git移库</strong></h2><p>想带着历史所有信息迁移git仓库，可以采用如下方式：</p>
 <p><strong>demo.git -&gt; target.git</strong></p>
