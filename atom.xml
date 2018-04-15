@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
-  <updated>2018-03-14T10:18:38.730Z</updated>
+  <updated>2018-04-14T11:16:07.436Z</updated>
   <id>//ezsay.cn/</id>
   
   <author>
@@ -14,6 +14,68 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux提高</title>
+    <link href="//ezsay.cn/2018/04/14/skill/linux_raise.html"/>
+    <id>//ezsay.cn/2018/04/14/skill/linux_raise.html</id>
+    <published>2018-04-14T02:02:00.000Z</published>
+    <updated>2018-04-14T11:16:07.436Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>总结汇总Linux实用技巧，提升效率</p>
+<p>通过管道<strong>多次过滤</strong>得到想要的结果</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netstat -tanpl | grep tcp | grep LISTEN</div></pre></td></tr></table></figure>
+<p>/tmp文件是linux运行时产生的缓存文件，用于加速二次打开文件的速度。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> (清除/tmp下三小时以内没有使用的文件，并将结果输出)。</span></div><div class="line"><span class="meta">$</span><span class="bash"> /usr/sbin/tmpwatch -afv 3 /tmp</span></div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;p&gt;总结汇总Linux实用技巧，提升效率&lt;/p&gt;
+&lt;p&gt;通过管道&lt;strong&gt;多次过滤&lt;/strong&gt;得到想要的结果&lt;/p&gt;
+&lt;figure
+    
+    </summary>
+    
+      <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+    
+    
+      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
+    
+      <category term="提升" scheme="//ezsay.cn/tags/%E6%8F%90%E5%8D%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux常用命令</title>
+    <link href="//ezsay.cn/2018/04/14/skill/linux_abc.html"/>
+    <id>//ezsay.cn/2018/04/14/skill/linux_abc.html</id>
+    <published>2018-04-14T01:59:00.000Z</published>
+    <updated>2018-04-15T03:29:32.172Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>归纳Linux系统高频命令，备查</p>
+<p>一级目录大小</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> Human-readable. Filesystem：档案系统 | Mounted on：挂载点</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -h</span></div><div class="line">Filesystem            Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1              40G  6.7G   31G  18% /</div><div class="line">tmpfs                 939M     0  939M   0% /dev/shm</div><div class="line">nas:/ 	              1.0P     0  1.0P   0% /nas</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 分区的文件系统</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -Th</span></div><div class="line">Filesystem           Type   Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1            ext4    40G  6.7G   31G  18% /</div><div class="line">tmpfs                tmpfs  939M     0  939M   0% /dev/shm</div><div class="line">nas:/                nfs    1.0P     0  1.0P   0% /nas</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;p&gt;归纳Linux系统高频命令，备查&lt;/p&gt;
+&lt;p&gt;一级目录大小&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;ta
+    
+    </summary>
+    
+      <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+    
+    
+      <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>MySQL学习笔记</title>
@@ -85,7 +147,7 @@
     <link href="//ezsay.cn/2018/02/22/ezsay/target_2018.html"/>
     <id>//ezsay.cn/2018/02/22/ezsay/target_2018.html</id>
     <published>2018-02-22T08:10:00.000Z</published>
-    <updated>2018-04-01T14:57:08.526Z</updated>
+    <updated>2018-04-10T10:13:39.637Z</updated>
     
     <content type="html"><![CDATA[<h1 id="2018年"><a href="#2018年" class="headerlink" title="2018年"></a>2018年</h1><p>2018年2月22号，年后上班第一天，给自己定了个小目标，希望自己年底的时候能看到这些全部实现。在这里记录下过程，希望看到这篇日志的你有所感悟。</p>
 <h2 id="一、年度目标"><a href="#一、年度目标" class="headerlink" title="一、年度目标"></a>一、年度目标</h2><blockquote>
@@ -111,7 +173,45 @@
 </ul>
 </blockquote>
 <a id="more"></a> 
-<h2 id="二、历程"><a href="#二、历程" class="headerlink" title="二、历程"></a>二、历程</h2><h3 id="2018-3-29-完成晨间日记阅读"><a href="#2018-3-29-完成晨间日记阅读" class="headerlink" title="2018/3/29 完成晨间日记阅读"></a>2018/3/29 完成晨间日记阅读</h3><p>早晨称重59.9kg，昨中午吃的辣椒，傍晚到今早各种不舒服，因为这个的原因又减重2两吧。上班地铁中完成了《晨间日记的奇迹》的阅读，还是有一定的收获的，准备践行一下，并且尝试能否开发个应用。</p>
+<h2 id="二、历程"><a href="#二、历程" class="headerlink" title="二、历程"></a>二、历程</h2><h3 id="2018-4-10-引体向上11个"><a href="#2018-4-10-引体向上11个" class="headerlink" title="2018/4/10 引体向上11个"></a>2018/4/10 引体向上11个</h3><p>中午强做引体向上，可以完成11个，最后一个不太标准，第一次达到这个程度，身体很久没有酸痛的感觉了，强度不够，还是过于温和，可以尝试谨慎加量。</p>
+<p>4月份阅读计划如下：</p>
+<p>再过2,3个周需要接回康康，跟小孩的相处之道需要深入研究一下，4月决定读一下育儿方面的图书；理财一塌糊涂，需要理财的书籍纠正一下目前的观念；其他图书看缘分吧，随便找本</p>
+<table>
+<thead>
+<tr>
+<th>书名</th>
+<th>作者</th>
+<th>类别</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>道森博士的育儿圣经</td>
+<td>[美]</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>富爸爸财务自由之路</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2018-3-29-完成晨间日记阅读"><a href="#2018-3-29-完成晨间日记阅读" class="headerlink" title="2018/3/29 完成晨间日记阅读"></a>2018/3/29 完成晨间日记阅读</h3><p>早晨称重59.9kg，昨中午吃的辣椒，傍晚到今早各种不舒服，因为这个的原因又减重2两吧。上班地铁中完成了《晨间日记的奇迹》的阅读，还是有一定的收获的，准备践行一下，并且尝试能否开发个应用。</p>
 <h3 id="2018-3-28-体重目标达成60kg"><a href="#2018-3-28-体重目标达成60kg" class="headerlink" title="2018/3/28 体重目标达成60kg"></a>2018/3/28 体重目标达成60kg</h3><p>不易，1个月零6天，终于第一次刚刚达到自己的2018减重目标。后续要继续保持，不要每次光着腚才刚刚达标(◔.̮◔)</p>
 <h3 id="2018-3-27-焦虑，阅读目标悬"><a href="#2018-3-27-焦虑，阅读目标悬" class="headerlink" title="2018/3/27 焦虑，阅读目标悬"></a>2018/3/27 焦虑，阅读目标悬</h3><p>还有4天，本月3本书才完成1本，尽管网易公开课听完了1本，但不自欺，那个不算。</p>
 <h3 id="2018-3-16-小有所成"><a href="#2018-3-16-小有所成" class="headerlink" title="2018/3/16 小有所成"></a>2018/3/16 小有所成</h3><ul>
@@ -244,6 +344,8 @@
 </ul>
 </li>
 </ul>
+<hr>
+<hr>
 <h2 id="格言"><a href="#格言" class="headerlink" title="格言"></a>格言</h2><p><strong>读书与健身</strong></p>
 <blockquote>
 <p><strong>读书</strong>是为了心平气和地跟傻逼说话，而<strong>健身</strong>是为了让傻逼心平气和地和你说话</p>
@@ -305,14 +407,56 @@
     <link href="//ezsay.cn/2018/01/02/health/fitness_diary_2018.html"/>
     <id>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</id>
     <published>2018-01-02T08:07:00.000Z</published>
-    <updated>2018-04-10T08:41:35.752Z</updated>
+    <updated>2018-04-15T13:21:52.087Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>2018走起，新年新气象，野蛮其体魄，文明其精神。bigger your body,bigger your mind.</p>
 <p>这一年身体管理的目标是：跑步成常态，成习惯；引体向上15个，双杠臂力撑15个，学会双力臂；体重控制在60kg以下，彻底纠正耸肩驼背。</p>
 <p><strong>告诫自己：</strong> 不要逞强不要作、做好热身运动！</p>
+<blockquote>
+<p>2018/04/10 尝试突破引体向上11次，右肩旧伤复发，<strong>时隔半年</strong></p>
+<p>2018/3/2 单手虎口向上强提大桶水，嘎巴一声巨响，右腕受伤</p>
+<p>2017/10/10 没做热身引体7+4，肩痛加重</p>
+<p>2017年9月14号 强练了几组引体向上（8+8+5+3），右侧肩膀隐隐不舒服的感觉</p>
+</blockquote>
 <a id="more"></a>
-<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h3 id="四月份"><a href="#四月份" class="headerlink" title="四月份"></a>四月份</h3><h3 id="2018-04-10-引体向上11次"><a href="#2018-04-10-引体向上11次" class="headerlink" title="2018/04/10 引体向上11次"></a>2018/04/10 引体向上11次</h3><p><em>周一    多云    24/8℃    良 82</em></p>
-<p>今天风很大，阳光很好，中午感觉还可以，引体尝试11次</p>
+<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h3 id="四月份"><a href="#四月份" class="headerlink" title="四月份"></a>四月份</h3><h3 id="2018-04-15-过敏鼻炎发作"><a href="#2018-04-15-过敏鼻炎发作" class="headerlink" title="2018/04/15 过敏鼻炎发作"></a>2018/04/15 过敏鼻炎发作</h3><p>周日    晴    22/5℃    良 69</p>
+<p>中午跑步，到处飘飞絮。下午开始鼻子流水，怎么都止不住，今晚早点睡</p>
+<blockquote>
+<p>上午跑步 1km</p>
+</blockquote>
+<h3 id="2018-04-14-瑜伽-皱市明"><a href="#2018-04-14-瑜伽-皱市明" class="headerlink" title="2018/04/14 瑜伽+皱市明"></a>2018/04/14 瑜伽+皱市明</h3><p>周六    晴    20/6℃    大风</p>
+<p>基本在家憋了1天，keep皱市明拳击燃脂，做了瑜伽练习，不知道哪个将左侧背部肌肉拉伤了</p>
+<blockquote>
+<p>晚上跑步1km</p>
+</blockquote>
+<h3 id="2018-04-13-下雨没锻炼"><a href="#2018-04-13-下雨没锻炼" class="headerlink" title="2018/04/13 下雨没锻炼"></a>2018/04/13 下雨没锻炼</h3><p><em>周五    雨    14/6℃    良 77</em></p>
+<p>下雨降温，保暖+羽绒。湿漉漉的没法锻炼，暂停1天。</p>
+<h3 id="2018-04-12-肩痛继续"><a href="#2018-04-12-肩痛继续" class="headerlink" title="2018/04/12 肩痛继续"></a>2018/04/12 肩痛继续</h3><p><em>周四    多云    22/7℃    良 97</em></p>
+<p>右手腕开始不舒服，肩膀疼痛加剧，非不能忍受，但是每每胳膊姿势变换就隐隐的不舒服感很让人讨厌，真伤着了，想彻底好起来真的很困难！久违的肌肉酸痛来临（背阔肌，竖脊肌），引体11个不仅带来伤痛，确实也锻炼到了肌肉，今天没敢拉太多。再养一段时间吧。</p>
+<blockquote>
+<p>引体向上 3</p>
+<p>水平引体 10 + 10</p>
+<p>倒立 30秒</p>
+<p>斜上俯卧撑 10</p>
+<p>桥    10次</p>
+<p>坐姿屈膝  20 + 30</p>
+<p>站桩 3分钟</p>
+</blockquote>
+<h3 id="2018-04-11-柳絮飘摇，肩膀难受"><a href="#2018-04-11-柳絮飘摇，肩膀难受" class="headerlink" title="2018/04/11 柳絮飘摇，肩膀难受"></a>2018/04/11 柳絮飘摇，肩膀难受</h3><p><em>周三    多云    24/8℃    良 82</em></p>
+<p>今天上班途中发现大团的杨柳飞絮，较之前几天白杨树下发现的小团壮大了好多，正式进入飞絮期。好天气、好空气真的很珍贵。昨天引体突破尽管谨慎，但是还是过于牵强了，<strong>右肩又隐隐不舒服</strong>。看样子方式方法还是不对，当引体下降到底部时<strong>不要完全放松</strong>，否则就需要脆弱的肩袖肌肉吊起身体，这样就非常容易造成损伤。这次的损伤并非自己不注意导致，1，尽管平时是没感觉，但是旧伤其实没有完全好利索；2、尝试突破极限时，肯定会力有不逮，此时动作必然变形，所以受伤成了必然，不可避免</p>
+<blockquote>
+<p>引体向上 6 + 4 + 4</p>
+<p>水平引体 10 + 10</p>
+<p>倒立 1分钟</p>
+<p>斜上俯卧撑 10</p>
+<p>桥    10次</p>
+<p>挂臂抬膝 10</p>
+<p>坐姿屈膝 30 + 20</p>
+<p>深蹲 50</p>
+<p>站桩 3分钟 * 2</p>
+</blockquote>
+<h3 id="2018-04-10-引体向上11次"><a href="#2018-04-10-引体向上11次" class="headerlink" title="2018/04/10 引体向上11次"></a>2018/04/10 引体向上11次</h3><p><em>周二    多云    24/8℃    良 82</em></p>
+<p>今天风很大，阳光很好，中午感觉还可以，引体尝试11次。(右肩旧伤复发)</p>
 <blockquote>
 <p>引体向上 11 + 6 + 7 + 3 宽</p>
 <p>倒立 30秒 * 2</p>
@@ -1156,6 +1300,12 @@
       &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;p&gt;2018走起，新年新气象，野蛮其体魄，文明其精神。bigger your body,bigger your mind.&lt;/p&gt;
 &lt;p&gt;这一年身体管理的目标是：跑步成常态，成习惯；引体向上15个，双杠臂力撑15个，学会双力臂；体重控制在60kg以下，彻底纠正耸肩驼背。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;告诫自己：&lt;/strong&gt; 不要逞强不要作、做好热身运动！&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2018/04/10 尝试突破引体向上11次，右肩旧伤复发，&lt;strong&gt;时隔半年&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2018/3/2 单手虎口向上强提大桶水，嘎巴一声巨响，右腕受伤&lt;/p&gt;
+&lt;p&gt;2017/10/10 没做热身引体7+4，肩痛加重&lt;/p&gt;
+&lt;p&gt;2017年9月14号 强练了几组引体向上（8+8+5+3），右侧肩膀隐隐不舒服的感觉&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -1208,7 +1358,7 @@
     <link href="//ezsay.cn/2017/05/31/health/fitness_diary.html"/>
     <id>//ezsay.cn/2017/05/31/health/fitness_diary.html</id>
     <published>2017-05-31T02:49:00.000Z</published>
-    <updated>2018-01-02T06:22:22.323Z</updated>
+    <updated>2018-04-12T08:24:44.183Z</updated>
     
     <content type="html"><![CDATA[<h1 id="感言"><a href="#感言" class="headerlink" title="感言"></a>感言</h1><p>何时起，从来不走楼梯；偶尔端详镜中的自己弯腰驼背形象，会一瞬间下意识去挺一下，但这样也就过去了。知道不好但是不知道应该去改变。时光飞逝，茫茫然无所知…… </p>
 <p>5月中旬开始有意识锻炼身体，这个过程中慢慢开始关注自己的身体，越发对自身的这种状态感到不满。2017年6月开始记录健身日记，7月开始尝试管理自己的体重，纠正不好的习惯，作息，尝试管理自己的身体，影响家人。</p>
@@ -1571,7 +1721,7 @@
 <p>引体向上 1</p>
 <p>反向划船 10</p>
 <p>2017年10月30号    星期一    晴</p>
-<p>今天穿羽绒服了，真TM冷，今天的天气很好，右侧肩膀的不舒服感觉好像家中了，今天一个引体向上没有做，上个周末过得太肆无忌惮了，久违的偏头痛，鼻塞又来了，脑袋紧张的好久放松不下来，不能这么搞了，删了游戏，晚上别玩手机，争取早点睡</p>
+<p>今天穿羽绒服了，真TM冷，今天的天气很好，右侧肩膀的不舒服感觉好像加重了，今天一个引体向上没有做，上个周末过得太肆无忌惮了，久违的偏头痛，鼻塞又来了，脑袋紧张的好久放松不下来，不能这么搞了，删了游戏，晚上别玩手机，争取早点睡</p>
 <p>扭腰器 100下</p>
 <p>太空漫步 100 + 100</p>
 <p>健骑机 100</p>
@@ -1669,8 +1819,8 @@
 <p>坐姿屈膝 20</p>
 <p>反向划船 10</p>
 <p>斜上俯卧撑 10</p>
-<p>2017年10月10号    星期三    晴 冷</p>
-<p>昨天强做的第一组引体，今天右侧肩膀有点不得劲，天气冷的厉害，活动了半天才感觉好点，一组动作下来丝毫没有要出汗的感觉，竟然有点怀念夏练三伏的时光。这个地夏天是宝地，秋冬天过于阴冷了。</p>
+<p>2017年10月11号    星期三    晴 冷</p>
+<p>昨天强做的第一组引体，今天<strong>右侧肩膀有点不得劲</strong>，天气冷的厉害，活动了半天才感觉好点，一组动作下来丝毫没有要出汗的感觉，竟然有点怀念夏练三伏的时光。这个地夏天是宝地，秋冬天过于阴冷了。</p>
 <p>引体向上 4</p>
 <p>深蹲 20</p>
 <p>三角肌弯曲 10</p>
@@ -1679,8 +1829,12 @@
 <p>反向划船 10</p>
 <p>斜上俯卧撑 10</p>
 <p>2017年10月10号    星期二    雨</p>
-<p>天凉个好秋，冻的慌</p>
+<p>天凉个好秋，冻的慌 </p>
 <p>引体向上 7 + 4</p>
+<blockquote>
+<p>肩痛加重，因为这次不热身7个引体直接干残了右侧肩膀，后悔啊！冻得慌还TM第一组做7个！！！</p>
+<p>2018/04/12补记</p>
+</blockquote>
 <p>2017年10月9号    星期一    雨</p>
 <p>下雨天真不适合在室外，今天够呛能锻炼了，十一回家8天，来回路上2天；回来卧铺客车9个小时遭老罪了，偏头痛。在家基本没有锻炼，偶尔拉几个单杠，最多不超过4个。但是好像也不轻松，早起晚睡，帮着干点活，也是浑身酸痛。</p>
 <h2 id="9月"><a href="#9月" class="headerlink" title="9月"></a>9月</h2><p>2017年9月27号    星期二    阴</p>
@@ -1747,7 +1901,8 @@
 <p>深蹲 20</p>
 <p>单腿深蹲 6 * 2</p>
 <p>划船变种 10</p>
-<p>2017年9月14号    星期四    晴</p>
+<p>2017年9月14号 这有可能是肩痛的起点</p>
+<p><em>星期四    晴</em></p>
 <p>强练了几组引体向上，右侧肩膀隐隐不舒服的感觉</p>
 <p>引体向上 4组（8+8+5+3）</p>
 <p>反向划船 10 * 2</p>
@@ -1755,6 +1910,9 @@
 <p>单腿深蹲 左右腿各10</p>
 <p>坐姿屈膝 20 * 2</p>
 <p>鹅卵石小路 15圈 右脚掌咯坏了，痛</p>
+<blockquote>
+<p>肩痛起点？？ 2018/04/12添加</p>
+</blockquote>
 <p>2017年9月13号    星期三    晴</p>
 <p>不敢练了</p>
 <p>引体向上 5 + 4</p>
