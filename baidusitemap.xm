@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>//ezsay.cn/2018/02/22/ezsay/target_2018.html</loc>
+    <lastmod>2018-04-18T02:47:42.887Z</lastmod>
+    <data>
+        <display>
+        <title>定个小目标</title>
+        <pubTime>2018-02-22T08:10:00.000Z</pubTime>
+        
+        <tag>历年小目标</tag>
+         
+        <tag>实现情况</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</loc>
-    <lastmod>2018-04-15T13:21:52.087Z</lastmod>
+    <lastmod>2018-04-17T06:11:56.729Z</lastmod>
     <data>
         <display>
         <title>2018健身日志</title>
@@ -30,18 +52,16 @@
 
     
   <url>
-    <loc>//ezsay.cn/2018/04/14/skill/linux_abc.html</loc>
-    <lastmod>2018-04-15T03:29:32.172Z</lastmod>
+    <loc>//ezsay.cn/2018/04/14/skill/linux_raise.html</loc>
+    <lastmod>2018-04-16T10:00:11.377Z</lastmod>
     <data>
         <display>
-        <title>Linux常用命令</title>
-        <pubTime>2018-04-14T01:59:00.000Z</pubTime>
+        <title>Linux提高</title>
+        <pubTime>2018-04-14T02:02:00.000Z</pubTime>
         
-        <tag>基础</tag>
-         
-        <tag>入门</tag>
-         
         <tag>Linux</tag>
+         
+        <tag>提升</tag>
          
          
            
@@ -54,16 +74,48 @@
 
     
   <url>
-    <loc>//ezsay.cn/2018/04/14/skill/linux_raise.html</loc>
-    <lastmod>2018-04-14T11:16:07.436Z</lastmod>
+    <loc>//ezsay.cn/2018/04/14/skill/linux_abc.html</loc>
+    <lastmod>2018-04-16T09:26:20.053Z</lastmod>
     <data>
         <display>
-        <title>Linux提高</title>
-        <pubTime>2018-04-14T02:02:00.000Z</pubTime>
+        <title>Linux常用命令</title>
+        <pubTime>2018-04-14T01:59:00.000Z</pubTime>
         
+        <tag>基础</tag>
+         
+        <tag>入门</tag>
+         
         <tag>Linux</tag>
          
-        <tag>提升</tag>
+        <tag>高频</tag>
+         
+        <tag>常用</tag>
+         
+         
+           
+             
+              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2018/04/16/skill/linux_basic.html</loc>
+    <lastmod>2018-04-16T08:09:51.238Z</lastmod>
+    <data>
+        <display>
+        <title>Linux基础概念</title>
+        <pubTime>2018-04-16T07:20:00.000Z</pubTime>
+        
+        <tag>基础</tag>
+         
+        <tag>入门</tag>
+         
+        <tag>Linux</tag>
+         
+        <tag>概念</tag>
          
          
            
@@ -93,28 +145,6 @@
            
              
               <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2018/02/22/ezsay/target_2018.html</loc>
-    <lastmod>2018-04-10T10:13:39.637Z</lastmod>
-    <data>
-        <display>
-        <title>定个小目标</title>
-        <pubTime>2018-02-22T08:10:00.000Z</pubTime>
-        
-        <tag>历年小目标</tag>
-         
-        <tag>实现情况</tag>
-         
-         
-           
-             
-              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>
@@ -267,32 +297,6 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_8.html</loc>
-    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
-    <data>
-        <display>
-        <title>囚徒健身-第八章魔鬼六块[25P]</title>
-        <pubTime>2017-04-27T06:23:24.000Z</pubTime>
-        
-        <tag>囚徒</tag>
-         
-        <tag>健身</tag>
-         
-        <tag>健康</tag>
-         
-        <tag>转载</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
           
         </display>
     </data>
@@ -556,6 +560,32 @@
         <display>
         <title>囚徒健身-第七章仓门般的背部与大炮般的肱二头肌[24P]</title>
         <pubTime>2017-04-27T05:23:24.000Z</pubTime>
+        
+        <tag>囚徒</tag>
+         
+        <tag>健身</tag>
+         
+        <tag>健康</tag>
+         
+        <tag>转载</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_8.html</loc>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
+    <data>
+        <display>
+        <title>囚徒健身-第八章魔鬼六块[25P]</title>
+        <pubTime>2017-04-27T06:23:24.000Z</pubTime>
         
         <tag>囚徒</tag>
          

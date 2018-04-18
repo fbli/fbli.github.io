@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
-  <updated>2018-04-14T11:16:07.436Z</updated>
+  <updated>2018-04-16T08:09:51.238Z</updated>
   <id>//ezsay.cn/</id>
   
   <author>
@@ -16,18 +16,87 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux基础概念</title>
+    <link href="//ezsay.cn/2018/04/16/skill/linux_basic.html"/>
+    <id>//ezsay.cn/2018/04/16/skill/linux_basic.html</id>
+    <published>2018-04-16T07:20:00.000Z</published>
+    <updated>2018-04-16T08:09:51.238Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>学习Linux基础概念</p>
+<p>写作顺序</p>
+<ul>
+<li>知识点总结</li>
+<li>知识点归类</li>
+</ul>
+<p>文件系统</p>
+<ul>
+<li>d 目录 </li>
+<li>l 符号链接</li>
+<li>b 块设备文件</li>
+<li>c 字符设备文件</li>
+</ul>
+<p>权限</p>
+<p>r 读<br>w 写<br>x 执行。对于目录，表示进入权限。</p>
+<h3 id="命令参数格式"><a href="#命令参数格式" class="headerlink" title="命令参数格式"></a>命令参数格式</h3><p>命令参数可以用长格式（完整的选项名称），也可以用短格式（单个字母的缩写），两者分别用–与-作为前缀</p>
+<table>
+<thead>
+<tr>
+<th>命令参数格式</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>长格式</td>
+<td>man –help</td>
+</tr>
+<tr>
+<td>短格式</td>
+<td>man -h</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;p&gt;学习Linux基础概念&lt;/p&gt;
+&lt;p&gt;写作顺序&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;知识点总结&lt;/li&gt;
+&lt;li&gt;知识点归类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;
+    
+    </summary>
+    
+      <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+    
+    
+      <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
+    
+      <category term="概念" scheme="//ezsay.cn/tags/%E6%A6%82%E5%BF%B5/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux提高</title>
     <link href="//ezsay.cn/2018/04/14/skill/linux_raise.html"/>
     <id>//ezsay.cn/2018/04/14/skill/linux_raise.html</id>
     <published>2018-04-14T02:02:00.000Z</published>
-    <updated>2018-04-14T11:16:07.436Z</updated>
+    <updated>2018-04-16T10:00:11.377Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>总结汇总Linux实用技巧，提升效率</p>
 <p>通过管道<strong>多次过滤</strong>得到想要的结果</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netstat -tanpl | grep tcp | grep LISTEN</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netstat -anptl | grep tcp | grep LISTEN</div></pre></td></tr></table></figure>
 <p>/tmp文件是linux运行时产生的缓存文件，用于加速二次打开文件的速度。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> (清除/tmp下三小时以内没有使用的文件，并将结果输出)。</span></div><div class="line"><span class="meta">$</span><span class="bash"> /usr/sbin/tmpwatch -afv 3 /tmp</span></div></pre></td></tr></table></figure>
-]]></content>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> (清除/tmp下三小时以内没有使用的文件，并将结果输出)。</div><div class="line"><span class="meta">$</span> /usr/sbin/tmpwatch -afv 3 /tmp</div></pre></td></tr></table></figure>
+<p>注意用法</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 动态显示机器各端口的链接情况</div><div class="line"><span class="meta">$</span> while :; do netstat -apn | grep ":80"  | wc -l; sleep 1; done</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -51,18 +120,83 @@
     <link href="//ezsay.cn/2018/04/14/skill/linux_abc.html"/>
     <id>//ezsay.cn/2018/04/14/skill/linux_abc.html</id>
     <published>2018-04-14T01:59:00.000Z</published>
-    <updated>2018-04-15T03:29:32.172Z</updated>
+    <updated>2018-04-16T09:26:20.053Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>归纳Linux系统高频命令，备查</p>
-<p>一级目录大小</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> Human-readable. Filesystem：档案系统 | Mounted on：挂载点</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -h</span></div><div class="line">Filesystem            Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1              40G  6.7G   31G  18% /</div><div class="line">tmpfs                 939M     0  939M   0% /dev/shm</div><div class="line">nas:/ 	              1.0P     0  1.0P   0% /nas</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 分区的文件系统</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -Th</span></div><div class="line">Filesystem           Type   Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1            ext4    40G  6.7G   31G  18% /</div><div class="line">tmpfs                tmpfs  939M     0  939M   0% /dev/shm</div><div class="line">nas:/                nfs    1.0P     0  1.0P   0% /nas</div></pre></td></tr></table></figure>
+    <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>归纳Linux系统<strong>高频</strong>命令，备查</p>
+<h2 id="磁盘相关"><a href="#磁盘相关" class="headerlink" title="磁盘相关"></a>磁盘相关</h2><h3 id="df-Disk-Free"><a href="#df-Disk-Free" class="headerlink" title="df(Disk Free)"></a><strong>df(Disk Free)</strong></h3><p>用于显示<strong>磁盘分区</strong>上的可使用的磁盘空间。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> -h：Human-readable； Filesystem：档案系统 | Mounted on：挂载点</div><div class="line"><span class="meta">$</span> df -h</div><div class="line">Filesystem            Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1              40G  6.7G   31G  18% /</div><div class="line">tmpfs                 939M     0  939M   0% /dev/shm</div><div class="line">nas:/ 	              1.0P     0  1.0P   0% /nas</div><div class="line"><span class="meta"></span></div><div class="line"># -T：显示磁盘分区类型；注意看多了一个Type</div><div class="line"><span class="meta">$</span> df -Th</div><div class="line">Filesystem           Type   Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1            ext4    40G  6.7G   31G  18% /</div><div class="line">tmpfs                tmpfs  939M     0  939M   0% /dev/shm</div><div class="line">nas:/                nfs    1.0P     0  1.0P   0% /nas</div></pre></td></tr></table></figure>
+<h3 id="du-Disk-usage"><a href="#du-Disk-usage" class="headerlink" title="du (Disk usage)"></a><strong>du (Disk usage)</strong></h3><p>用于计算<strong>文件或目录</strong>所占的磁盘空间</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 显示/mnt文件夹总大小 -s：显示工作目录所占总空间；-h：human-readable</div><div class="line"><span class="meta">$</span> du -sh /mnt</div><div class="line">748M	/mnt</div><div class="line"><span class="meta"></span></div><div class="line"># 显示/mnt文件夹下的所有文件夹和文件大小，注意*号</div><div class="line"><span class="meta">$</span> du -sh /mnt/*</div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 简略用法</div><div class="line">du -sh # 当前目录总空间</div><div class="line">du -sh * # 当前目录下所有文件夹大小排序</div></pre></td></tr></table></figure>
+<h3 id="按大小排序-ls-du-sort"><a href="#按大小排序-ls-du-sort" class="headerlink" title="按大小排序 ls | du sort"></a>按大小排序 ls | du sort</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 文件夹按照大小排序，缺点：并不显示文件夹真实大小</div><div class="line"><span class="meta">$</span> ls -lhS /mnt</div><div class="line">总用量 16K</div><div class="line">drwxr-xr-x. 3 root root 4.0K 2月  26 2017 fastdfs_storage_data</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_storage_info</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_tracker</div><div class="line">drwxr-xr-x. 2 root root 4.0K 2月  26 2017 hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 列出所有文件、文件夹大小|管道排序 -h:human-readable -r:以相反的顺序 | 前20条</div><div class="line"><span class="meta">$</span> du -sh /mnt/* | sort -hr | head -20</div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 简略用法</div><div class="line">ll -hS</div><div class="line">du -sh * | sort -hr | head # 显示前10个最大文件或文件夹</div></pre></td></tr></table></figure>
+<p>注意：</p>
+<blockquote>
+<p>sort命令默认由小到大排序，加上-r参数逆序，即由大到小</p>
+<p>-h：human-readable 区分kb、mb、gb…</p>
+<p>-n：依照数值的大小排序，此参数与-h冲突，举例说明 5M &lt; 3G(数字 5 &gt; 3)</p>
+</blockquote>
+<h3 id="文件归档命令-tar"><a href="#文件归档命令-tar" class="headerlink" title="文件归档命令 tar"></a>文件归档命令 tar</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 创建压缩文件 c：创建；z：gzip压缩；v:显示过程；f：固定必须有，后面接归档文档名</div><div class="line">tar -czvf jpgfile.tar.gz *.jpg</div><div class="line"><span class="meta"></span></div><div class="line"># 查看归档文件</div><div class="line">tar -tf jpgfile.tar.gz</div><div class="line"><span class="meta"></span></div><div class="line"># 解压文件到当前jpeg文件夹下</div><div class="line">tar -xvf jpgfile.tar.gz -C ./jpeg</div></pre></td></tr></table></figure>
+<h4 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h4><h5 id="常用参数"><a href="#常用参数" class="headerlink" title="常用参数"></a>常用参数</h5><blockquote>
+<p>-c：<strong>建立</strong>一个压缩文件(create 的意思)；    </p>
+<p>-x：<strong>解开</strong>一个压缩文件</p>
+<p>-t：<strong>查看</strong> tarfile 里面的文件</p>
+<p>-r：向压缩归档文件末尾<strong>追加</strong>文件</p>
+<p>-u：<strong>更新</strong>原压缩包中的文件</p>
+</blockquote>
+<p><strong>注意：</strong>c/x/t/r/u 仅能存在一个！不可同时存在！因为不可能同时压缩与解压缩。</p>
+<h5 id="其它参数："><a href="#其它参数：" class="headerlink" title="其它参数："></a>其它参数：</h5><blockquote>
+<p>-z：有gzip属性,即需要用 gzip 压缩</p>
+<p>-j：有bz2属性,即需要用 bzip2 压缩 </p>
+<p>-v ：压缩的过程中显示文件(显示所有过程)！这个常用，但不建议用在背景执行过程！</p>
+<p>-f ：使用档名，请留意，在 f 之后要立即接档名！不要再加参数！</p>
+<p>-p ：使用原文件的原来属性（属性不会依据使用者而变）</p>
+<p>-P ：可以使用绝对路径来压缩！</p>
+<p>–exclude FILE：在压缩的过程中，不要将 FILE 打包！</p>
+</blockquote>
+<p><strong>注意：</strong>-f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。</p>
+<h4 id="常见压缩类型"><a href="#常见压缩类型" class="headerlink" title="常见压缩类型"></a>常见压缩类型</h4><table>
+<thead>
+<tr>
+<th>扩展名</th>
+<th>解压命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*.tar</td>
+<td>tar –xvf</td>
+</tr>
+<tr>
+<td>*.tar.gz 或者.tgz</td>
+<td>tar –xzvf</td>
+</tr>
+<tr>
+<td>*.tar.bz2</td>
+<td>tar –xjvf</td>
+</tr>
+<tr>
+<td>*.tar.Z</td>
+<td>tar –xZf</td>
+</tr>
+<tr>
+<td>*.bz2</td>
+<td>bzip2 -d 或者 bunzip2</td>
+</tr>
+<tr>
+<td>*.gz</td>
+<td>gzip -d或者gunzip</td>
+</tr>
+<tr>
+<td>*.Z</td>
+<td>uncompress</td>
+</tr>
+</tbody>
+</table>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;p&gt;归纳Linux系统高频命令，备查&lt;/p&gt;
-&lt;p&gt;一级目录大小&lt;/p&gt;
-&lt;figure class=&quot;highlight shell&quot;&gt;&lt;ta
+      &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;p&gt;归纳Linux系统&lt;strong&gt;高频&lt;/strong&gt;命令，备查&lt;/p&gt;
+&lt;h2 id=&quot;磁盘相关&quot;&gt;&lt;a href=&quot;#磁盘相关&quot; cl
     
     </summary>
     
@@ -74,6 +208,10 @@
       <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
     
       <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
+    
+      <category term="高频" scheme="//ezsay.cn/tags/%E9%AB%98%E9%A2%91/"/>
+    
+      <category term="常用" scheme="//ezsay.cn/tags/%E5%B8%B8%E7%94%A8/"/>
     
   </entry>
   
@@ -147,7 +285,7 @@
     <link href="//ezsay.cn/2018/02/22/ezsay/target_2018.html"/>
     <id>//ezsay.cn/2018/02/22/ezsay/target_2018.html</id>
     <published>2018-02-22T08:10:00.000Z</published>
-    <updated>2018-04-10T10:13:39.637Z</updated>
+    <updated>2018-04-18T02:47:42.887Z</updated>
     
     <content type="html"><![CDATA[<h1 id="2018年"><a href="#2018年" class="headerlink" title="2018年"></a>2018年</h1><p>2018年2月22号，年后上班第一天，给自己定了个小目标，希望自己年底的时候能看到这些全部实现。在这里记录下过程，希望看到这篇日志的你有所感悟。</p>
 <h2 id="一、年度目标"><a href="#一、年度目标" class="headerlink" title="一、年度目标"></a>一、年度目标</h2><blockquote>
@@ -173,7 +311,13 @@
 </ul>
 </blockquote>
 <a id="more"></a> 
-<h2 id="二、历程"><a href="#二、历程" class="headerlink" title="二、历程"></a>二、历程</h2><h3 id="2018-4-10-引体向上11个"><a href="#2018-4-10-引体向上11个" class="headerlink" title="2018/4/10 引体向上11个"></a>2018/4/10 引体向上11个</h3><p>中午强做引体向上，可以完成11个，最后一个不太标准，第一次达到这个程度，身体很久没有酸痛的感觉了，强度不够，还是过于温和，可以尝试谨慎加量。</p>
+<h2 id="二、历程"><a href="#二、历程" class="headerlink" title="二、历程"></a>二、历程</h2><h3 id="2018-4-18-体重反弹"><a href="#2018-4-18-体重反弹" class="headerlink" title="2018/4/18 体重反弹"></a>2018/4/18 体重反弹</h3><p>早起称重：61.4kg；阅读进度0；python学习0；网站搭建0.1（ECS服务器重新搭建，Linux服务学习有点小进展）；驾照科目2数据，好似全面崩盘中，需要警醒！</p>
+<p>此时需要：</p>
+<p>12/3 = 读完1本/4天</p>
+<p>网站推进，服务器搭建，业务梳理，技术选型</p>
+<p>python本周必须开始</p>
+<p>不要过多分散自己注意力，限制花费在网络小说、刷新闻、看电视之类的无太大意义的事情中，可以闲暇娱乐，但必须在保证月目标的大前提下！</p>
+<h3 id="2018-4-10-引体向上11个"><a href="#2018-4-10-引体向上11个" class="headerlink" title="2018/4/10 引体向上11个"></a>2018/4/10 引体向上11个</h3><p>中午强做引体向上，可以完成11个，最后一个不太标准，第一次达到这个程度，身体很久没有酸痛的感觉了，强度不够，还是过于温和，可以尝试谨慎加量。</p>
 <p>4月份阅读计划如下：</p>
 <p>再过2,3个周需要接回康康，跟小孩的相处之道需要深入研究一下，4月决定读一下育儿方面的图书；理财一塌糊涂，需要理财的书籍纠正一下目前的观念；其他图书看缘分吧，随便找本</p>
 <table>
@@ -407,7 +551,7 @@
     <link href="//ezsay.cn/2018/01/02/health/fitness_diary_2018.html"/>
     <id>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</id>
     <published>2018-01-02T08:07:00.000Z</published>
-    <updated>2018-04-15T13:21:52.087Z</updated>
+    <updated>2018-04-17T06:11:56.729Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>2018走起，新年新气象，野蛮其体魄，文明其精神。bigger your body,bigger your mind.</p>
 <p>这一年身体管理的目标是：跑步成常态，成习惯；引体向上15个，双杠臂力撑15个，学会双力臂；体重控制在60kg以下，彻底纠正耸肩驼背。</p>
@@ -419,8 +563,29 @@
 <p>2017年9月14号 强练了几组引体向上（8+8+5+3），右侧肩膀隐隐不舒服的感觉</p>
 </blockquote>
 <a id="more"></a>
-<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h3 id="四月份"><a href="#四月份" class="headerlink" title="四月份"></a>四月份</h3><h3 id="2018-04-15-过敏鼻炎发作"><a href="#2018-04-15-过敏鼻炎发作" class="headerlink" title="2018/04/15 过敏鼻炎发作"></a>2018/04/15 过敏鼻炎发作</h3><p>周日    晴    22/5℃    良 69</p>
-<p>中午跑步，到处飘飞絮。下午开始鼻子流水，怎么都止不住，今晚早点睡</p>
+<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h3 id="四月份"><a href="#四月份" class="headerlink" title="四月份"></a>四月份</h3><h3 id="2018-04-17-吹花不起午风轻"><a href="#2018-04-17-吹花不起午风轻" class="headerlink" title="2018/04/17 吹花不起午风轻"></a>2018/04/17 吹花不起午风轻</h3><p><em>周二 23/11℃    多云    轻度污染135</em></p>
+<p>吹花不起午风轻，懒絮闲丝颺暖晴。中午树下静坐一小会儿。满树桃花怒放，清风拂面，感觉很惬意。情、景不错，意却难以融入。</p>
+<blockquote>
+<p>倒立 20秒</p>
+<p>斜上俯卧撑 20</p>
+<p>深蹲 20 * 2</p>
+<p>坐姿屈膝  20 + 20</p>
+<p>水平引体 20</p>
+<p>桥 10秒</p>
+<p>站桩 2分钟</p>
+<p>冥想 5分钟</p>
+</blockquote>
+<h3 id="2018-04-16-不敢多做引体"><a href="#2018-04-16-不敢多做引体" class="headerlink" title="2018/04/16 不敢多做引体"></a>2018/04/16 不敢多做引体</h3><p>昨天，前天右侧肩膀症状基本没有了，今天稍微做了几组数量少的引体，完事肩膀又开始隐隐不舒服，或许要彻底停做一段时间</p>
+<blockquote>
+<p>引体向上 4 4 4 3</p>
+<p>倒立 30秒</p>
+<p>斜上俯卧撑 10 * 2</p>
+<p>深蹲 30 * 2</p>
+<p>坐姿屈膝  20 + 30</p>
+<p>挂臂屈膝 5</p>
+</blockquote>
+<h3 id="2018-04-15-过敏鼻炎发作"><a href="#2018-04-15-过敏鼻炎发作" class="headerlink" title="2018/04/15 过敏鼻炎发作"></a>2018/04/15 过敏鼻炎发作</h3><p>周日    晴    22/5℃    良 69</p>
+<p>中午跑步，到处飘飞絮。下午开始过敏性鼻炎发作，今晚早点睡</p>
 <blockquote>
 <p>上午跑步 1km</p>
 </blockquote>

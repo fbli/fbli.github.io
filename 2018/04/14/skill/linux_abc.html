@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="//ezsay.cn">
   <title>Linux常用命令 | 易说博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="序言归纳Linux系统高频命令，备查 一级目录大小 12345678910111213# Human-readable. Filesystem：档案系统 | Mounted on：挂载点$ df -hFilesystem            Size  Used Avail Use% Mounted on/dev/vda1              40G  6.7G   31G  18% /t">
-<meta name="keywords" content="基础,入门,Linux">
+  <meta name="description" content="序言归纳Linux系统高频命令，备查 磁盘相关df(Disk Free)用于显示磁盘分区上的可使用的磁盘空间。 12345678910111213# -h：Human-readable； Filesystem：档案系统 | Mounted on：挂载点$ df -hFilesystem            Size  Used Avail Use% Mounted on/dev/vda1">
+<meta name="keywords" content="基础,入门,Linux,高频,常用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux常用命令">
 <meta property="og:url" content="//ezsay.cn/2018/04/14/skill/linux_abc.html">
 <meta property="og:site_name" content="易说博客">
-<meta property="og:description" content="序言归纳Linux系统高频命令，备查 一级目录大小 12345678910111213# Human-readable. Filesystem：档案系统 | Mounted on：挂载点$ df -hFilesystem            Size  Used Avail Use% Mounted on/dev/vda1              40G  6.7G   31G  18% /t">
-<meta property="og:updated_time" content="2018-04-15T03:29:32.172Z">
+<meta property="og:description" content="序言归纳Linux系统高频命令，备查 磁盘相关df(Disk Free)用于显示磁盘分区上的可使用的磁盘空间。 12345678910111213# -h：Human-readable； Filesystem：档案系统 | Mounted on：挂载点$ df -hFilesystem            Size  Used Avail Use% Mounted on/dev/vda1">
+<meta property="og:updated_time" content="2018-04-16T09:26:20.053Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux常用命令">
-<meta name="twitter:description" content="序言归纳Linux系统高频命令，备查 一级目录大小 12345678910111213# Human-readable. Filesystem：档案系统 | Mounted on：挂载点$ df -hFilesystem            Size  Used Avail Use% Mounted on/dev/vda1              40G  6.7G   31G  18% /t">
+<meta name="twitter:description" content="序言归纳Linux系统高频命令，备查 磁盘相关df(Disk Free)用于显示磁盘分区上的可使用的磁盘空间。 12345678910111213# -h：Human-readable； Filesystem：档案系统 | Mounted on：挂载点$ df -hFilesystem            Size  Used Avail Use% Mounted on/dev/vda1">
   
     <link rel="alternative" href="/atom.xml" title="易说博客" type="application/atom+xml">
   
@@ -196,9 +196,75 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>归纳Linux系统高频命令，备查</p>
-<p>一级目录大小</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> Human-readable. Filesystem：档案系统 | Mounted on：挂载点</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -h</span></div><div class="line">Filesystem            Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1              40G  6.7G   31G  18% /</div><div class="line">tmpfs                 939M     0  939M   0% /dev/shm</div><div class="line">nas:/ 	              1.0P     0  1.0P   0% /nas</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 分区的文件系统</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -Th</span></div><div class="line">Filesystem           Type   Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1            ext4    40G  6.7G   31G  18% /</div><div class="line">tmpfs                tmpfs  939M     0  939M   0% /dev/shm</div><div class="line">nas:/                nfs    1.0P     0  1.0P   0% /nas</div></pre></td></tr></table></figure>
+        <h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>归纳Linux系统<strong>高频</strong>命令，备查</p>
+<h2 id="磁盘相关"><a href="#磁盘相关" class="headerlink" title="磁盘相关"></a>磁盘相关</h2><h3 id="df-Disk-Free"><a href="#df-Disk-Free" class="headerlink" title="df(Disk Free)"></a><strong>df(Disk Free)</strong></h3><p>用于显示<strong>磁盘分区</strong>上的可使用的磁盘空间。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> -h：Human-readable； Filesystem：档案系统 | Mounted on：挂载点</div><div class="line"><span class="meta">$</span> df -h</div><div class="line">Filesystem            Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1              40G  6.7G   31G  18% /</div><div class="line">tmpfs                 939M     0  939M   0% /dev/shm</div><div class="line">nas:/ 	              1.0P     0  1.0P   0% /nas</div><div class="line"><span class="meta"></span></div><div class="line"># -T：显示磁盘分区类型；注意看多了一个Type</div><div class="line"><span class="meta">$</span> df -Th</div><div class="line">Filesystem           Type   Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1            ext4    40G  6.7G   31G  18% /</div><div class="line">tmpfs                tmpfs  939M     0  939M   0% /dev/shm</div><div class="line">nas:/                nfs    1.0P     0  1.0P   0% /nas</div></pre></td></tr></table></figure>
+<h3 id="du-Disk-usage"><a href="#du-Disk-usage" class="headerlink" title="du (Disk usage)"></a><strong>du (Disk usage)</strong></h3><p>用于计算<strong>文件或目录</strong>所占的磁盘空间</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 显示/mnt文件夹总大小 -s：显示工作目录所占总空间；-h：human-readable</div><div class="line"><span class="meta">$</span> du -sh /mnt</div><div class="line">748M	/mnt</div><div class="line"><span class="meta"></span></div><div class="line"># 显示/mnt文件夹下的所有文件夹和文件大小，注意*号</div><div class="line"><span class="meta">$</span> du -sh /mnt/*</div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 简略用法</div><div class="line">du -sh # 当前目录总空间</div><div class="line">du -sh * # 当前目录下所有文件夹大小排序</div></pre></td></tr></table></figure>
+<h3 id="按大小排序-ls-du-sort"><a href="#按大小排序-ls-du-sort" class="headerlink" title="按大小排序 ls | du sort"></a>按大小排序 ls | du sort</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 文件夹按照大小排序，缺点：并不显示文件夹真实大小</div><div class="line"><span class="meta">$</span> ls -lhS /mnt</div><div class="line">总用量 16K</div><div class="line">drwxr-xr-x. 3 root root 4.0K 2月  26 2017 fastdfs_storage_data</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_storage_info</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_tracker</div><div class="line">drwxr-xr-x. 2 root root 4.0K 2月  26 2017 hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 列出所有文件、文件夹大小|管道排序 -h:human-readable -r:以相反的顺序 | 前20条</div><div class="line"><span class="meta">$</span> du -sh /mnt/* | sort -hr | head -20</div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 简略用法</div><div class="line">ll -hS</div><div class="line">du -sh * | sort -hr | head # 显示前10个最大文件或文件夹</div></pre></td></tr></table></figure>
+<p>注意：</p>
+<blockquote>
+<p>sort命令默认由小到大排序，加上-r参数逆序，即由大到小</p>
+<p>-h：human-readable 区分kb、mb、gb…</p>
+<p>-n：依照数值的大小排序，此参数与-h冲突，举例说明 5M &lt; 3G(数字 5 &gt; 3)</p>
+</blockquote>
+<h3 id="文件归档命令-tar"><a href="#文件归档命令-tar" class="headerlink" title="文件归档命令 tar"></a>文件归档命令 tar</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 创建压缩文件 c：创建；z：gzip压缩；v:显示过程；f：固定必须有，后面接归档文档名</div><div class="line">tar -czvf jpgfile.tar.gz *.jpg</div><div class="line"><span class="meta"></span></div><div class="line"># 查看归档文件</div><div class="line">tar -tf jpgfile.tar.gz</div><div class="line"><span class="meta"></span></div><div class="line"># 解压文件到当前jpeg文件夹下</div><div class="line">tar -xvf jpgfile.tar.gz -C ./jpeg</div></pre></td></tr></table></figure>
+<h4 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h4><h5 id="常用参数"><a href="#常用参数" class="headerlink" title="常用参数"></a>常用参数</h5><blockquote>
+<p>-c：<strong>建立</strong>一个压缩文件(create 的意思)；    </p>
+<p>-x：<strong>解开</strong>一个压缩文件</p>
+<p>-t：<strong>查看</strong> tarfile 里面的文件</p>
+<p>-r：向压缩归档文件末尾<strong>追加</strong>文件</p>
+<p>-u：<strong>更新</strong>原压缩包中的文件</p>
+</blockquote>
+<p><strong>注意：</strong>c/x/t/r/u 仅能存在一个！不可同时存在！因为不可能同时压缩与解压缩。</p>
+<h5 id="其它参数："><a href="#其它参数：" class="headerlink" title="其它参数："></a>其它参数：</h5><blockquote>
+<p>-z：有gzip属性,即需要用 gzip 压缩</p>
+<p>-j：有bz2属性,即需要用 bzip2 压缩 </p>
+<p>-v ：压缩的过程中显示文件(显示所有过程)！这个常用，但不建议用在背景执行过程！</p>
+<p>-f ：使用档名，请留意，在 f 之后要立即接档名！不要再加参数！</p>
+<p>-p ：使用原文件的原来属性（属性不会依据使用者而变）</p>
+<p>-P ：可以使用绝对路径来压缩！</p>
+<p>–exclude FILE：在压缩的过程中，不要将 FILE 打包！</p>
+</blockquote>
+<p><strong>注意：</strong>-f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。</p>
+<h4 id="常见压缩类型"><a href="#常见压缩类型" class="headerlink" title="常见压缩类型"></a>常见压缩类型</h4><table>
+<thead>
+<tr>
+<th>扩展名</th>
+<th>解压命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*.tar</td>
+<td>tar –xvf</td>
+</tr>
+<tr>
+<td>*.tar.gz 或者.tgz</td>
+<td>tar –xzvf</td>
+</tr>
+<tr>
+<td>*.tar.bz2</td>
+<td>tar –xjvf</td>
+</tr>
+<tr>
+<td>*.tar.Z</td>
+<td>tar –xZf</td>
+</tr>
+<tr>
+<td>*.bz2</td>
+<td>bzip2 -d 或者 bunzip2</td>
+</tr>
+<tr>
+<td>*.gz</td>
+<td>gzip -d或者gunzip</td>
+</tr>
+<tr>
+<td>*.Z</td>
+<td>uncompress</td>
+</tr>
+</tbody>
+</table>
 
       
 
@@ -252,6 +318,14 @@
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">高频</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">常用</a>
         		</li>
       		
 		</ul>
@@ -577,6 +651,18 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">提升</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">概念</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">高频</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">常用</a>
               </li>
             
             <div class="clearfix"></div>
