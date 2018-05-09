@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
-  <updated>2018-04-16T08:09:51.238Z</updated>
+  <updated>2018-05-09T05:07:16.302Z</updated>
   <id>//ezsay.cn/</id>
   
   <author>
@@ -20,14 +20,10 @@
     <link href="//ezsay.cn/2018/04/16/skill/linux_basic.html"/>
     <id>//ezsay.cn/2018/04/16/skill/linux_basic.html</id>
     <published>2018-04-16T07:20:00.000Z</published>
-    <updated>2018-04-16T08:09:51.238Z</updated>
+    <updated>2018-05-09T05:07:16.302Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>学习Linux基础概念</p>
-<p>写作顺序</p>
-<ul>
-<li>知识点总结</li>
-<li>知识点归类</li>
-</ul>
+<a id="more"></a>
 <p>文件系统</p>
 <ul>
 <li>d 目录 </li>
@@ -61,12 +57,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;p&gt;学习Linux基础概念&lt;/p&gt;
-&lt;p&gt;写作顺序&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;知识点总结&lt;/li&gt;
-&lt;li&gt;知识点归类&lt;/li&gt;
-&lt;/ul&gt;
-&lt;
     
     </summary>
     

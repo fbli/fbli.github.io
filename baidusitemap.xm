@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>//ezsay.cn/2018/04/16/skill/linux_basic.html</loc>
+    <lastmod>2018-05-09T05:07:16.302Z</lastmod>
+    <data>
+        <display>
+        <title>Linux基础概念</title>
+        <pubTime>2018-04-16T07:20:00.000Z</pubTime>
+        
+        <tag>基础</tag>
+         
+        <tag>入门</tag>
+         
+        <tag>Linux</tag>
+         
+        <tag>概念</tag>
+         
+         
+           
+             
+              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</loc>
     <lastmod>2018-05-09T05:00:47.313Z</lastmod>
     <data>
@@ -90,32 +116,6 @@
         <tag>高频</tag>
          
         <tag>常用</tag>
-         
-         
-           
-             
-              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2018/04/16/skill/linux_basic.html</loc>
-    <lastmod>2018-04-16T08:09:51.238Z</lastmod>
-    <data>
-        <display>
-        <title>Linux基础概念</title>
-        <pubTime>2018-04-16T07:20:00.000Z</pubTime>
-        
-        <tag>基础</tag>
-         
-        <tag>入门</tag>
-         
-        <tag>Linux</tag>
-         
-        <tag>概念</tag>
          
          
            
