@@ -4,6 +4,56 @@
 
     
   <url>
+    <loc>//ezsay.cn/2018/04/14/skill/linux_abc.html</loc>
+    <lastmod>2018-05-09T05:08:22.287Z</lastmod>
+    <data>
+        <display>
+        <title>Linux常用命令</title>
+        <pubTime>2018-04-14T01:59:00.000Z</pubTime>
+        
+        <tag>基础</tag>
+         
+        <tag>入门</tag>
+         
+        <tag>Linux</tag>
+         
+        <tag>高频</tag>
+         
+        <tag>常用</tag>
+         
+         
+           
+             
+              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2018/04/14/skill/linux_raise.html</loc>
+    <lastmod>2018-05-09T05:08:05.608Z</lastmod>
+    <data>
+        <display>
+        <title>Linux提高</title>
+        <pubTime>2018-04-14T02:02:00.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>提升</tag>
+         
+         
+           
+             
+              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2018/04/16/skill/linux_basic.html</loc>
     <lastmod>2018-05-09T05:07:16.302Z</lastmod>
     <data>
@@ -71,56 +121,6 @@
            
              
               <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2018/04/14/skill/linux_raise.html</loc>
-    <lastmod>2018-04-16T10:00:11.377Z</lastmod>
-    <data>
-        <display>
-        <title>Linux提高</title>
-        <pubTime>2018-04-14T02:02:00.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>提升</tag>
-         
-         
-           
-             
-              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2018/04/14/skill/linux_abc.html</loc>
-    <lastmod>2018-04-16T09:26:20.053Z</lastmod>
-    <data>
-        <display>
-        <title>Linux常用命令</title>
-        <pubTime>2018-04-14T01:59:00.000Z</pubTime>
-        
-        <tag>基础</tag>
-         
-        <tag>入门</tag>
-         
-        <tag>Linux</tag>
-         
-        <tag>高频</tag>
-         
-        <tag>常用</tag>
-         
-         
-           
-             
-              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
           
         </display>
     </data>

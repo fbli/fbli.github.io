@@ -78,9 +78,10 @@
     <link href="//ezsay.cn/2018/04/14/skill/linux_raise.html"/>
     <id>//ezsay.cn/2018/04/14/skill/linux_raise.html</id>
     <published>2018-04-14T02:02:00.000Z</published>
-    <updated>2018-04-16T10:00:11.377Z</updated>
+    <updated>2018-05-09T05:08:05.608Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>总结汇总Linux实用技巧，提升效率</p>
+<a id="more"></a>
 <p>通过管道<strong>多次过滤</strong>得到想要的结果</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netstat -anptl | grep tcp | grep LISTEN</div></pre></td></tr></table></figure>
 <p>/tmp文件是linux运行时产生的缓存文件，用于加速二次打开文件的速度。</p>
@@ -91,8 +92,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;p&gt;总结汇总Linux实用技巧，提升效率&lt;/p&gt;
-&lt;p&gt;通过管道&lt;strong&gt;多次过滤&lt;/strong&gt;得到想要的结果&lt;/p&gt;
-&lt;figure
     
     </summary>
     
@@ -110,9 +109,10 @@
     <link href="//ezsay.cn/2018/04/14/skill/linux_abc.html"/>
     <id>//ezsay.cn/2018/04/14/skill/linux_abc.html</id>
     <published>2018-04-14T01:59:00.000Z</published>
-    <updated>2018-04-16T09:26:20.053Z</updated>
+    <updated>2018-05-09T05:08:22.287Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>归纳Linux系统<strong>高频</strong>命令，备查</p>
+<a id="more"></a>
 <h2 id="磁盘相关"><a href="#磁盘相关" class="headerlink" title="磁盘相关"></a>磁盘相关</h2><h3 id="df-Disk-Free"><a href="#df-Disk-Free" class="headerlink" title="df(Disk Free)"></a><strong>df(Disk Free)</strong></h3><p>用于显示<strong>磁盘分区</strong>上的可使用的磁盘空间。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> -h：Human-readable； Filesystem：档案系统 | Mounted on：挂载点</div><div class="line"><span class="meta">$</span> df -h</div><div class="line">Filesystem            Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1              40G  6.7G   31G  18% /</div><div class="line">tmpfs                 939M     0  939M   0% /dev/shm</div><div class="line">nas:/ 	              1.0P     0  1.0P   0% /nas</div><div class="line"><span class="meta"></span></div><div class="line"># -T：显示磁盘分区类型；注意看多了一个Type</div><div class="line"><span class="meta">$</span> df -Th</div><div class="line">Filesystem           Type   Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1            ext4    40G  6.7G   31G  18% /</div><div class="line">tmpfs                tmpfs  939M     0  939M   0% /dev/shm</div><div class="line">nas:/                nfs    1.0P     0  1.0P   0% /nas</div></pre></td></tr></table></figure>
 <h3 id="du-Disk-usage"><a href="#du-Disk-usage" class="headerlink" title="du (Disk usage)"></a><strong>du (Disk usage)</strong></h3><p>用于计算<strong>文件或目录</strong>所占的磁盘空间</p>
@@ -186,7 +186,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h1&gt;&lt;p&gt;归纳Linux系统&lt;strong&gt;高频&lt;/strong&gt;命令，备查&lt;/p&gt;
-&lt;h2 id=&quot;磁盘相关&quot;&gt;&lt;a href=&quot;#磁盘相关&quot; cl
     
     </summary>
     
