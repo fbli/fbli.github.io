@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
-  <updated>2018-05-16T09:16:40.240Z</updated>
+  <updated>2018-05-16T09:27:05.963Z</updated>
   <id>//ezsay.cn/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="//ezsay.cn/2018/05/15/skill/driving_test_II.html"/>
     <id>//ezsay.cn/2018/05/15/skill/driving_test_II.html</id>
     <published>2018-05-15T02:26:00.000Z</published>
-    <updated>2018-05-16T09:16:40.240Z</updated>
+    <updated>2018-05-16T09:27:05.963Z</updated>
     
     <content type="html"><![CDATA[<h2 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h2><p>科目二包含5个项目，分别是：</p>
 <ul>
@@ -166,7 +166,6 @@
 <h2 id="三、侧方停车"><a href="#三、侧方停车" class="headerlink" title="三、侧方停车"></a>三、侧方停车</h2><p>进入前<strong>对准箭头</strong>，待右侧后视镜中看到库区横线，超出后停车，挂倒挡，待后视镜中库区左前脚边线消失<strong>50cm</strong>时（不能过早，早了必触碰库边线），向<strong>右打方向盘1.5圈</strong>；看左侧后视镜车身与库区右边角对齐时，向盘左打1.5圈（回正方向)，继续后退，探头看左后轮触库线后，向<strong>左打方向盘1.5圈</strong>，车正停车。打左灯，挂1挡，前引擎盖左皱褶处对齐边线，向右打方向盘1.5圈（回正方向），继续向前右皱褶处对齐边线后右打1圈，整个车身出来后继续向前，左打1圈回正方向进入下一科目考试</p>
 <h3 id="关键字-1"><a href="#关键字-1" class="headerlink" title="关键字"></a>关键字</h3><p>右侧后视镜<strong>超出库区横线</strong> -》库区<strong>左前角消失50cm</strong>（库区第二个虚线处）-》左侧看<strong>车身对齐库区右边角线</strong>-》车轮触线-》打左灯-》左皱褶-》右皱褶</p>
 <p>对齐箭头-》找准位置停车-》开始倒车-》右打1.5圈-》左打1.5圈（回正）-》左打1.5圈进入库区-》打左灯-》右打1.5圈（回正）-》左打1圈-》右打1圈</p>
-<p><img src="D:\java\data\hexo_blog\source\asset\blog_img\drive\侧方停车.png" alt="侧方"></p>
 <h3 id="不合格评判标准-2"><a href="#不合格评判标准-2" class="headerlink" title="不合格评判标准"></a>不合格评判标准</h3><table>
 <thead>
 <tr>
@@ -214,21 +213,26 @@
 <h3 id="详细步骤-1"><a href="#详细步骤-1" class="headerlink" title="详细步骤"></a>详细步骤</h3><ul>
 <li>进入考试场地<ul>
 <li>提前对准箭头，争取停车时车身摆正，右侧靠边线不要过远</li>
-<li>看右后视镜中库区前边线超出一部分距离（不要太远）</li>
+<li>看右后视镜中库区前边线超出一部分距离时停车（不要太远）</li>
 </ul>
 </li>
-<li>挂倒挡，看右后视镜中库区左前角消失50cm后（即下沿对准第二个虚线开始位置，非第一个虚线结束位置）</li>
+<li>挂倒挡看1点：看右后视镜中库区左前角消失50cm后<ul>
+<li>即下沿对准<strong>第二个虚线</strong>开始位置，非第一个虚线结束位置</li>
 <li>右打死方向1.5圈</li>
-<li>看左侧后视镜车身对齐库区右角</li>
+</ul>
+</li>
+<li>2点：看左侧后视镜车身<strong>对齐库区右角</strong><ul>
 <li>左打方向1.5圈回正车身继续后倒车</li>
-<li>探头看窗外左后轮触线</li>
-<li>触线即刻左打死方向1.5圈</li>
+</ul>
+</li>
+<li>3点：探头看窗外左后轮触线，触线即刻左打死方向1.5圈</li>
 <li>车身平行时刹车，方向盘不动依旧保持左打1.5圈位置</li>
 <li>开左转向灯，挂1挡</li>
 <li>车左引擎盖皱褶处重合道路边线时右打1.5圈回正方向</li>
 <li>右皱褶处重合继续右打1圈</li>
 <li>车身平行路边线时左打1圈回正</li>
 </ul>
+<p><img src="/asset/blog_img/drive/侧方停车.png" alt="侧方停车" title="侧方停车点位"></p>
 <h2 id="四、倒车入库"><a href="#四、倒车入库" class="headerlink" title="四、倒车入库"></a>四、倒车入库</h2><h3 id="详细步骤-2"><a href="#详细步骤-2" class="headerlink" title="详细步骤"></a>详细步骤</h3><ul>
 <li>上线<ul>
 <li>向右打一圈，看左后视镜进线向左打两圈，车正向右回一圈</li>
