@@ -4,18 +4,20 @@
 
     
   <url>
-    <loc>//ezsay.cn/2018/05/15/skill/driving_test_II.html</loc>
-    <lastmod>2018-05-16T09:27:05.963Z</lastmod>
+    <loc>//ezsay.cn/2018/03/14/technology/MySQL_abc.html</loc>
+    <lastmod>2018-05-18T05:41:58.874Z</lastmod>
     <data>
         <display>
-        <title>驾校学习-科目二</title>
-        <pubTime>2018-05-15T02:26:00.000Z</pubTime>
+        <title>MySQL学习笔记</title>
+        <pubTime>2018-03-14T02:26:24.000Z</pubTime>
         
         <tag>基础</tag>
          
-        <tag>科目二</tag>
+        <tag>入门</tag>
          
-        <tag>知识点</tag>
+        <tag>MySQL</tag>
+         
+        <tag>连接查询</tag>
          
          
            
@@ -29,7 +31,7 @@
     
   <url>
     <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</loc>
-    <lastmod>2018-05-16T06:04:25.369Z</lastmod>
+    <lastmod>2018-05-18T04:40:13.598Z</lastmod>
     <data>
         <display>
         <title>2018健身日志</title>
@@ -47,6 +49,56 @@
            
              
               <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2018/05/18/ezsay/listen_book.html</loc>
+    <lastmod>2018-05-18T01:24:00.020Z</lastmod>
+    <data>
+        <display>
+        <title>听书日记</title>
+        <pubTime>2018-05-18T01:05:00.000Z</pubTime>
+        
+        <tag>听书</tag>
+         
+        <tag>片段</tag>
+         
+        <tag>提高</tag>
+         
+        <tag>总结</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2018/05/15/skill/driving_test_II.html</loc>
+    <lastmod>2018-05-16T09:27:05.963Z</lastmod>
+    <data>
+        <display>
+        <title>驾校学习-科目二</title>
+        <pubTime>2018-05-15T02:26:00.000Z</pubTime>
+        
+        <tag>基础</tag>
+         
+        <tag>科目二</tag>
+         
+        <tag>知识点</tag>
+         
+         
+           
+             
+              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
           
         </display>
     </data>
@@ -224,32 +276,6 @@
 
     
   <url>
-    <loc>//ezsay.cn/2018/03/14/technology/MySQL_abc.html</loc>
-    <lastmod>2018-03-14T10:18:38.730Z</lastmod>
-    <data>
-        <display>
-        <title>MySQL学习笔记</title>
-        <pubTime>2018-03-14T02:26:24.000Z</pubTime>
-        
-        <tag>基础</tag>
-         
-        <tag>入门</tag>
-         
-        <tag>MySQL</tag>
-         
-        <tag>连接查询</tag>
-         
-         
-           
-             
-              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2017_end.html</loc>
     <lastmod>2018-01-05T06:11:23.551Z</lastmod>
     <data>
@@ -317,32 +343,6 @@
            
              
               <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_9.html</loc>
-    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
-    <data>
-        <display>
-        <title>囚徒健身-第九章严阵以待的脊柱[20P]</title>
-        <pubTime>2017-04-27T08:23:24.000Z</pubTime>
-        
-        <tag>囚徒</tag>
-         
-        <tag>健身</tag>
-         
-        <tag>健康</tag>
-         
-        <tag>转载</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
           
         </display>
     </data>
@@ -610,6 +610,32 @@
         <display>
         <title>囚徒健身-第三部分：自我指导（第十一章~第十二章）[11P]</title>
         <pubTime>2017-04-27T10:23:24.000Z</pubTime>
+        
+        <tag>囚徒</tag>
+         
+        <tag>健身</tag>
+         
+        <tag>健康</tag>
+         
+        <tag>转载</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/04/27/convict/convict_conditioning_9.html</loc>
+    <lastmod>2017-05-22T02:50:21.256Z</lastmod>
+    <data>
+        <display>
+        <title>囚徒健身-第九章严阵以待的脊柱[20P]</title>
+        <pubTime>2017-04-27T08:23:24.000Z</pubTime>
         
         <tag>囚徒</tag>
          

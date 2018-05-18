@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
-  <updated>2018-05-16T09:27:05.963Z</updated>
+  <updated>2018-05-18T01:24:00.020Z</updated>
   <id>//ezsay.cn/</id>
   
   <author>
@@ -14,6 +14,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>听书日记</title>
+    <link href="//ezsay.cn/2018/05/18/ezsay/listen_book.html"/>
+    <id>//ezsay.cn/2018/05/18/ezsay/listen_book.html</id>
+    <published>2018-05-18T01:05:00.000Z</published>
+    <updated>2018-05-18T01:24:00.020Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>记录一下每天上班途中听书片段</p>
+<a id="more"></a>
+<p>5/18 周五</p>
+<p>读书不苦，不读书的人生更苦</p>
+<p><strong>最好的自律，是断舍离</strong></p>
+<p>断舍离的主角并不是物品，而是自己，而且<strong>时间轴永远都是现在</strong></p>
+<p>断舍离是一种活在当下的<strong>人生整理观</strong></p>
+<p>小事做起，比如整理一下自己的房间，吧所有内外在不需要的东西处理掉，并尽力维持这种状态和心态</p>
+<p>康德：<strong>自由，不是随心所欲，而是自我主宰。</strong></p>
+<p><strong>自律的三个层次</strong></p>
+<p>王小波说：“<strong>人一切的痛苦，本质上都是对自己无能的愤怒。</strong>“</p>
+<p>自律是解决人生痛苦的根本途径</p>
+<p>自律是一种<strong>技能</strong>，由一系列<strong>习惯</strong>组成</p>
+<p>自律的三个层次</p>
+<ul>
+<li>初级自律：关注高效处理任务，执着于各类时间管理工具；</li>
+<li>中级自律：聚焦于习惯的养成，关注身体健康，保持平和情绪，维系高品质人际关系，发展高层次兴趣爱好；</li>
+<li>高级自律：懂得充分发挥优势，追求人生价值的实现。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;记录一下每天上班途中听书片段&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="随笔" scheme="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="听书" scheme="//ezsay.cn/tags/%E5%90%AC%E4%B9%A6/"/>
+    
+      <category term="片段" scheme="//ezsay.cn/tags/%E7%89%87%E6%AE%B5/"/>
+    
+      <category term="提高" scheme="//ezsay.cn/tags/%E6%8F%90%E9%AB%98/"/>
+    
+      <category term="总结" scheme="//ezsay.cn/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>驾校学习-科目二</title>
@@ -552,10 +599,17 @@
     <link href="//ezsay.cn/2018/03/14/technology/MySQL_abc.html"/>
     <id>//ezsay.cn/2018/03/14/technology/MySQL_abc.html</id>
     <published>2018-03-14T02:26:24.000Z</published>
-    <updated>2018-03-14T10:18:38.730Z</updated>
+    <updated>2018-05-18T05:41:58.874Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>学习MySQL过程中的一些心得体会，知识点梳理汇总</p>
 <a id="more"></a>
+<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p>MySQL命令行登录数据库</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mysql -hxxx.xxx.com -uroot -p</div></pre></td></tr></table></figure>
+<p>查看mysql版本号</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 1、直接使用mysql命令查看版本</div><div class="line">mysql -V</div><div class="line"><span class="meta"></span></div><div class="line"># 2、命令行模式登录mysql会显示当前登录的MySQL基本信息，包含版本信息</div><div class="line">mysql -uusername -ppassword</div><div class="line"><span class="meta"></span></div><div class="line"># 3、进入命令行时可以用status命令查看基本信息，里面包含Server version</div><div class="line">status;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 4、使用sql查看版本信息</div><div class="line">select version();</div></pre></td></tr></table></figure>
+<p>显示配置参数</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">show global status;</div><div class="line">show variables;</div><div class="line"><span class="meta"></span></div><div class="line"># 技巧</div><div class="line">show global status like '%slow%'; </div><div class="line"></div><div class="line">show variables like 'max_connections';</div></pre></td></tr></table></figure>
 <h3 id="一、SQL连接"><a href="#一、SQL连接" class="headerlink" title="一、SQL连接"></a>一、SQL连接</h3><p>SQL的四种连接：内连接；外连接：左外连接、右外连接、全连接；</p>
 <p>内连接有两种写法（显式、隐式内连接），作用一样</p>
 <h4 id="ON和WHERE的区别"><a href="#ON和WHERE的区别" class="headerlink" title="ON和WHERE的区别"></a>ON和WHERE的区别</h4><p>left join,right join,full join的特殊性决定了ON条件的特殊性</p>
@@ -894,7 +948,7 @@
     <link href="//ezsay.cn/2018/01/02/health/fitness_diary_2018.html"/>
     <id>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</id>
     <published>2018-01-02T08:07:00.000Z</published>
-    <updated>2018-05-16T06:04:25.369Z</updated>
+    <updated>2018-05-18T04:40:13.598Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>2018走起，新年新气象，野蛮其体魄，文明其精神。bigger your body,bigger your mind.</p>
 <p>这一年身体管理的目标是：跑步成常态，成习惯；引体向上15个，双杠臂力撑15个，学会双力臂；体重控制在60kg以下，彻底纠正耸肩驼背。</p>
@@ -906,7 +960,13 @@
 <p>2017/9/14 强练了几组引体向上（8+8+5+3），右侧肩膀隐隐不舒服的感觉</p>
 </blockquote>
 <a id="more"></a>
-<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="五月份"><a href="#五月份" class="headerlink" title="五月份"></a>五月份</h2><h3 id="2018-05-16-上午很困"><a href="#2018-05-16-上午很困" class="headerlink" title="2018/05/16 上午很困"></a>2018/05/16 上午很困</h3><p><em>周三    雷阵雨    32/20℃    中度污染 179</em></p>
+<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="五月份"><a href="#五月份" class="headerlink" title="五月份"></a>五月份</h2><p>2018/05/18 鼻炎再发作</p>
+<p><em>周五    多云    27/16℃    优 34</em></p>
+<p>鼻炎发作，比昨天重，但是还没到最严重时候，还能坚持，今天是个难得的优等天气，没锻炼很不应该，回顾本周污染3天，空气良好2天（鼻炎发作），锻炼基本为0，看看周末能否补一下跑步</p>
+<p>2018/05/17 鼻炎小发作</p>
+<p><em>周四    小雨    27/16℃    良 78</em></p>
+<p>小雨，天气凉爽，挺舒服的。鼻子早起有点小不舒服，没到特别严重的地步，一会休息一下，看是否会加重。气候好，没锻炼。中午休息比较好，下午鼻炎缓解了。</p>
+<h3 id="2018-05-16-上午很困"><a href="#2018-05-16-上午很困" class="headerlink" title="2018/05/16 上午很困"></a>2018/05/16 上午很困</h3><p><em>周三    雷阵雨    32/20℃    中度污染 179</em></p>
 <p>上午，忽然之间非常困，趴了一小会儿。又是一个污染天，不适合锻炼，外面一眼望去，白蒙蒙一片。手上的硬茧揭了几次，软了不少。尽量不去做引体了，肩膀在跑完3km后，也会隐隐不舒服，摆臂竟也会如此。尽量忍住不去做引体了，多锻炼一下其他的，手上的硬茧但愿不要消失才好。今年的目标能达成吗？一口气11个引体是目前的极值了，最近7,8个感觉都是极限。不进则退，学习如此，人生如此，锻炼的身体亦是如此啊。有伤病有啥办法，此时控制不住，将来就不是隐隐作痛这般轻松了。</p>
 <h3 id="2018-05-15-有风很舒服"><a href="#2018-05-15-有风很舒服" class="headerlink" title="2018/05/15 有风很舒服"></a>2018/05/15 有风很舒服</h3><p><em>周二    阵雨    31/20℃    轻度污染 112</em></p>
 <p>今天有雨，还没下来，风吹身上很舒服。中午吃饺子加了个菜，鲅鱼，吃多了。楼下桑葚熟透了，大树，落一地的紫红桑葚。</p>
