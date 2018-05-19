@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</loc>
+    <lastmod>2018-05-19T04:41:53.596Z</lastmod>
+    <data>
+        <display>
+        <title>2018健身日志</title>
+        <pubTime>2018-01-02T08:07:00.000Z</pubTime>
+        
+        <tag>健身</tag>
+         
+        <tag>记录</tag>
+         
+        <tag>日记</tag>
+         
+        <tag>2018</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2018/03/14/technology/MySQL_abc.html</loc>
     <lastmod>2018-05-18T05:41:58.874Z</lastmod>
     <data>
@@ -23,32 +49,6 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</loc>
-    <lastmod>2018-05-18T04:40:13.598Z</lastmod>
-    <data>
-        <display>
-        <title>2018健身日志</title>
-        <pubTime>2018-01-02T08:07:00.000Z</pubTime>
-        
-        <tag>健身</tag>
-         
-        <tag>记录</tag>
-         
-        <tag>日记</tag>
-         
-        <tag>2018</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
           
         </display>
     </data>
