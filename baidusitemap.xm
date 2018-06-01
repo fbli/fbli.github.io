@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>//ezsay.cn/2018/05/15/skill/driving_test_II.html</loc>
+    <lastmod>2018-06-01T09:11:42.083Z</lastmod>
+    <data>
+        <display>
+        <title>驾校学习-科目二</title>
+        <pubTime>2018-05-15T02:26:00.000Z</pubTime>
+        
+        <tag>基础</tag>
+         
+        <tag>科目二</tag>
+         
+        <tag>知识点</tag>
+         
+         
+           
+             
+              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2018/02/22/ezsay/target_2018.html</loc>
     <lastmod>2018-06-01T08:38:36.428Z</lastmod>
     <data>
@@ -92,30 +116,6 @@
         <tag>MySQL</tag>
          
         <tag>连接查询</tag>
-         
-         
-           
-             
-              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2018/05/15/skill/driving_test_II.html</loc>
-    <lastmod>2018-05-16T09:27:05.963Z</lastmod>
-    <data>
-        <display>
-        <title>驾校学习-科目二</title>
-        <pubTime>2018-05-15T02:26:00.000Z</pubTime>
-        
-        <tag>基础</tag>
-         
-        <tag>科目二</tag>
-         
-        <tag>知识点</tag>
          
          
            
