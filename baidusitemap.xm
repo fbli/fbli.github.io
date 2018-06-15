@@ -4,30 +4,8 @@
 
     
   <url>
-    <loc>//ezsay.cn/2018/02/22/ezsay/target_2018.html</loc>
-    <lastmod>2018-06-13T08:46:23.972Z</lastmod>
-    <data>
-        <display>
-        <title>定个小目标</title>
-        <pubTime>2018-02-22T08:10:00.000Z</pubTime>
-        
-        <tag>历年小目标</tag>
-         
-        <tag>实现情况</tag>
-         
-         
-           
-             
-              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</loc>
-    <lastmod>2018-06-13T06:38:08.394Z</lastmod>
+    <lastmod>2018-06-15T09:10:52.010Z</lastmod>
     <data>
         <display>
         <title>2018健身日志</title>
@@ -45,6 +23,28 @@
            
              
               <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2018/02/22/ezsay/target_2018.html</loc>
+    <lastmod>2018-06-13T08:46:23.972Z</lastmod>
+    <data>
+        <display>
+        <title>定个小目标</title>
+        <pubTime>2018-02-22T08:10:00.000Z</pubTime>
+        
+        <tag>历年小目标</tag>
+         
+        <tag>实现情况</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>
