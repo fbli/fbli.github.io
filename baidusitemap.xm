@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2018/05/15/skill/driving_test_II.html</loc>
-    <lastmod>2018-06-22T09:06:33.888Z</lastmod>
+    <lastmod>2018-06-22T09:11:04.518Z</lastmod>
     <data>
         <display>
         <title>驾校学习-科目二</title>
