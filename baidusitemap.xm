@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</loc>
-    <lastmod>2018-12-07T11:51:36.730Z</lastmod>
+    <lastmod>2018-12-10T10:04:58.308Z</lastmod>
     <data>
         <display>
         <title>2018健身日志</title>
@@ -31,7 +31,7 @@
     
   <url>
     <loc>//ezsay.cn/2018/02/22/ezsay/target_2018.html</loc>
-    <lastmod>2018-11-09T01:58:42.399Z</lastmod>
+    <lastmod>2018-12-10T03:07:40.242Z</lastmod>
     <data>
         <display>
         <title>定个小目标</title>
