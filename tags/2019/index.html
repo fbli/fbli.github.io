@@ -6,19 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//ezsay.cn">
-  <title>Linux常用命令 | 易说博客</title>
+  <title>Tag: 2019 | 易说博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="序言归纳Linux系统高频命令，备查">
-<meta name="keywords" content="基础,入门,Linux,高频,常用">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Linux常用命令">
-<meta property="og:url" content="//ezsay.cn/2018/04/14/skill/linux_abc.html">
+  <meta name="description" content="易说博客，用心写好每篇文章。我之所得，你之所获！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="易说博客">
+<meta property="og:url" content="//ezsay.cn/tags/2019/index.html">
 <meta property="og:site_name" content="易说博客">
-<meta property="og:description" content="序言归纳Linux系统高频命令，备查">
-<meta property="og:updated_time" content="2018-05-09T05:08:22.287Z">
+<meta property="og:description" content="易说博客，用心写好每篇文章。我之所得，你之所获！">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux常用命令">
-<meta name="twitter:description" content="序言归纳Linux系统高频命令，备查">
+<meta name="twitter:title" content="易说博客">
+<meta name="twitter:description" content="易说博客，用心写好每篇文章。我之所得，你之所获！">
   
     <link rel="alternative" href="/atom.xml" title="易说博客" type="application/atom+xml">
   
@@ -176,274 +174,83 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-skill/linux_abc" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Linux常用命令
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/01/02/health/fitness_diary_2019.html" class="archive-article-date">
+  	<time datetime="2018-01-02T08:19:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-02</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/01/02/health/fitness_diary_2019.html">2019健身日志</a>
     </h1>
   
 
-        
-        <a href="/2018/04/14/skill/linux_abc.html" class="archive-article-date">
-  	<time datetime="2018-04-14T01:59:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>归纳Linux系统<strong>高频</strong>命令，备查</p>
-<a id="more"></a>
-<h2 id="磁盘相关"><a href="#磁盘相关" class="headerlink" title="磁盘相关"></a>磁盘相关</h2><h3 id="df-Disk-Free"><a href="#df-Disk-Free" class="headerlink" title="df(Disk Free)"></a><strong>df(Disk Free)</strong></h3><p>用于显示<strong>磁盘分区</strong>上的可使用的磁盘空间。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> -h：Human-readable； Filesystem：档案系统 | Mounted on：挂载点</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -h</span></div><div class="line">Filesystem            Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1              40G  6.7G   31G  18% /</div><div class="line">tmpfs                 939M     0  939M   0% /dev/shm</div><div class="line">nas:/ 	              1.0P     0  1.0P   0% /nas</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> -T：显示磁盘分区类型；注意看多了一个Type</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -Th</span></div><div class="line">Filesystem           Type   Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1            ext4    40G  6.7G   31G  18% /</div><div class="line">tmpfs                tmpfs  939M     0  939M   0% /dev/shm</div><div class="line">nas:/                nfs    1.0P     0  1.0P   0% /nas</div></pre></td></tr></table></figure>
-<h3 id="du-Disk-usage"><a href="#du-Disk-usage" class="headerlink" title="du (Disk usage)"></a><strong>du (Disk usage)</strong></h3><p>用于计算<strong>文件或目录</strong>所占的磁盘空间</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 显示/mnt文件夹总大小 <span class="_">-s</span>：显示工作目录所占总空间；-h：human-readable</span></div><div class="line"><span class="meta">$</span><span class="bash"> du -sh /mnt</span></div><div class="line">748M	/mnt</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 显示/mnt文件夹下的所有文件夹和文件大小，注意*号</span></div><div class="line"><span class="meta">$</span><span class="bash"> du -sh /mnt/*</span></div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 简略用法</span></div><div class="line">du -sh # 当前目录总空间</div><div class="line">du -sh * # 当前目录下所有文件夹大小排序</div></pre></td></tr></table></figure>
-<h3 id="按大小排序-ls-du-sort"><a href="#按大小排序-ls-du-sort" class="headerlink" title="按大小排序 ls | du sort"></a>按大小排序 ls | du sort</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 文件夹按照大小排序，缺点：并不显示文件夹真实大小</span></div><div class="line"><span class="meta">$</span><span class="bash"> ls -lhS /mnt</span></div><div class="line">总用量 16K</div><div class="line">drwxr-xr-x. 3 root root 4.0K 2月  26 2017 fastdfs_storage_data</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_storage_info</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_tracker</div><div class="line">drwxr-xr-x. 2 root root 4.0K 2月  26 2017 hgfs</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 列出所有文件、文件夹大小|管道排序 -h:human-readable -r:以相反的顺序 | 前20条</span></div><div class="line"><span class="meta">$</span><span class="bash"> du -sh /mnt/* | sort -hr | head -20</span></div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 简略用法</span></div><div class="line">ll -hS</div><div class="line">du -sh * | sort -hr | head # 显示前10个最大文件或文件夹</div></pre></td></tr></table></figure>
-<p>注意：</p>
-<blockquote>
-<p>sort命令默认由小到大排序，加上-r参数逆序，即由大到小</p>
-<p>-h：human-readable 区分kb、mb、gb…</p>
-<p>-n：依照数值的大小排序，此参数与-h冲突，举例说明 5M &lt; 3G(数字 5 &gt; 3)</p>
-</blockquote>
-<h3 id="文件归档命令-tar"><a href="#文件归档命令-tar" class="headerlink" title="文件归档命令 tar"></a>文件归档命令 tar</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 创建压缩文件 c：创建；z：gzip压缩；v:显示过程；f：固定必须有，后面接归档文档名</span></div><div class="line">tar -czvf jpgfile.tar.gz *.jpg</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 查看归档文件</span></div><div class="line">tar -tf jpgfile.tar.gz</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 解压文件到当前jpeg文件夹下</span></div><div class="line">tar -xvf jpgfile.tar.gz -C ./jpeg</div></pre></td></tr></table></figure>
-<h4 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h4><h5 id="常用参数"><a href="#常用参数" class="headerlink" title="常用参数"></a>常用参数</h5><blockquote>
-<p>-c：<strong>建立</strong>一个压缩文件(create 的意思)；    </p>
-<p>-x：<strong>解开</strong>一个压缩文件</p>
-<p>-t：<strong>查看</strong> tarfile 里面的文件</p>
-<p>-r：向压缩归档文件末尾<strong>追加</strong>文件</p>
-<p>-u：<strong>更新</strong>原压缩包中的文件</p>
-</blockquote>
-<p><strong>注意：</strong>c/x/t/r/u 仅能存在一个！不可同时存在！因为不可能同时压缩与解压缩。</p>
-<h5 id="其它参数："><a href="#其它参数：" class="headerlink" title="其它参数："></a>其它参数：</h5><blockquote>
-<p>-z：有gzip属性,即需要用 gzip 压缩</p>
-<p>-j：有bz2属性,即需要用 bzip2 压缩 </p>
-<p>-v ：压缩的过程中显示文件(显示所有过程)！这个常用，但不建议用在背景执行过程！</p>
-<p>-f ：使用档名，请留意，在 f 之后要立即接档名！不要再加参数！</p>
-<p>-p ：使用原文件的原来属性（属性不会依据使用者而变）</p>
-<p>-P ：可以使用绝对路径来压缩！</p>
-<p>–exclude FILE：在压缩的过程中，不要将 FILE 打包！</p>
-</blockquote>
-<p><strong>注意：</strong>-f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。</p>
-<h4 id="常见压缩类型"><a href="#常见压缩类型" class="headerlink" title="常见压缩类型"></a>常见压缩类型</h4><table>
-<thead>
-<tr>
-<th>扩展名</th>
-<th>解压命令</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>*.tar</td>
-<td>tar –xvf</td>
-</tr>
-<tr>
-<td>*.tar.gz 或者.tgz</td>
-<td>tar –xzvf</td>
-</tr>
-<tr>
-<td>*.tar.bz2</td>
-<td>tar –xjvf</td>
-</tr>
-<tr>
-<td>*.tar.Z</td>
-<td>tar –xZf</td>
-</tr>
-<tr>
-<td>*.bz2</td>
-<td>bzip2 -d 或者 bunzip2</td>
-</tr>
-<tr>
-<td>*.gz</td>
-<td>gzip -d或者gunzip</td>
-</tr>
-<tr>
-<td>*.Z</td>
-<td>uncompress</td>
-</tr>
-</tbody>
-</table>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>嗯，赏！<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/asset/img/alipay.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/asset/img/weixinpay.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">健身</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">入门</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">记录</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">高频</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">常用</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">2019</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/技能/" class="article-tag-list-link color3">技能</a>
+        			<a href="/categories/健康/" class="article-tag-list-link color3">健康</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKUlEQVR42u3aS27EIBAFwLn/pSfbkSLs1zSJxlCsIsvBVBad/vB6xev9a42eX7/z+WT08+eTxQsDA+OxjM5RkkOMDp28k5wNAwPjHEa+defzyQ7V72JgYGBcv5OExVEITp5jYGBgrA241QL4S/9vYGBgfDEjKWJHW3QCbvKtxbU4BgbGAxl51/3/f/6T+QYGBsajGO/imkvp8vRx8lQYGBhbM+YK0bw0vS5BVxXGGBgY5zDmDpQE3ySkdnbDwMDYm1FtyveTv7mh5s15MDAwtmZUX71OEFcdt5omYmBgnMaYKzLnStbqVbOb38LAwDiSMTcAqIbjuR0wMDBOY8yF1KQplofOZb1DDAyMAxj54dYWvdUW3s3ZMDAwtmMkl67y62LV1l41BA+/i4GBsSkjb+LnDbh8FJoXqNHwEgMDY1NGtYk/F4LzgyZBv5DhYmBgbMSoBsROM66zZ1TEYmBgbMeoDi9XBc0OY1iFY2BgbMqoNvc7Vx+qgHKbDwMD4xjG3AWIfglaTRyHvUMMDIytGdWmfL9MnRtzlocBGBgY2zHytK9/FaN6aaMw08DAwNiI8S6uhFQdFSR/lJu0FQMDY2tGvvKB4twgs983w8DA2JtRbZatSu+S4WUesjEwME5g5IGvM7zMm3p5GoqBgYHRIeXXwvIytXBnBAMD43jGqqJ0boSwIDXEwMB4ICO/MNEvWdeOPzEwME5gzJWO/WHndbst3wEDA2Nrxg+keomHCBvtfgAAAABJRU5ErkJggg==" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2018/03/14/technology/MySQL_abc.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          MySQL学习笔记
-        
-      </div>
-    </a>
   
   
-    <a href="/2018/04/14/skill/linux_raise.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Linux提高</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-
-
-
-  
-  
+    </div></section>
   
 
-  
-  <div id="SOHUCS" sid="skill/linux_abc" ></div> 
-<script type="text/javascript"> 
-(function(){ 
-var appid = "cysY18EIq"; 
-var conf = "prod_72d505c557d08a2b430c7c65697f6563"; 
-var width = window.innerWidth || document.documentElement.clientWidth; 
-if (width < 960) { 
-window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
-  
-
-  
+    
 
 
           </div>
@@ -466,9 +273,9 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
