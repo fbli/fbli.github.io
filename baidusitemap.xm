@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>//ezsay.cn/2018/01/02/health/fitness_diary_2019.html</loc>
-    <lastmod>2019-01-02T08:25:51.296Z</lastmod>
+    <loc>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</loc>
+    <lastmod>2019-01-02T10:01:09.052Z</lastmod>
     <data>
         <display>
         <title>2019健身日志</title>
-        <pubTime>2018-01-02T08:19:00.000Z</pubTime>
+        <pubTime>2019-01-02T08:19:00.000Z</pubTime>
         
         <tag>健身</tag>
          
