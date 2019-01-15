@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
-  <updated>2019-01-10T09:54:22.336Z</updated>
+  <updated>2019-01-15T06:04:53.003Z</updated>
   <id>//ezsay.cn/</id>
   
   <author>
@@ -20,11 +20,26 @@
     <link href="//ezsay.cn/2019/01/02/health/fitness_diary_2019.html"/>
     <id>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</id>
     <published>2019-01-02T08:19:00.000Z</published>
-    <updated>2019-01-10T09:54:22.336Z</updated>
+    <updated>2019-01-15T06:04:53.003Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>2019走起，又开始了新的一年，时间过的太快了，每年都在感慨</p>
 <a id="more"></a>
-<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="一月份"><a href="#一月份" class="headerlink" title="一月份"></a>一月份</h2><h3 id="2019-1-9-时间久了5个引体很费劲"><a href="#2019-1-9-时间久了5个引体很费劲" class="headerlink" title="2019/1/9 时间久了5个引体很费劲"></a>2019/1/9 时间久了5个引体很费劲</h3><p><em>周四    1/-10℃    多云    重度 217</em></p>
+<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="一月份"><a href="#一月份" class="headerlink" title="一月份"></a>一月份</h2><h3 id="2019-1-15-大风吹"><a href="#2019-1-15-大风吹" class="headerlink" title="2019/1/15 大风吹"></a>2019/1/15 大风吹</h3><p><em>周二    -1/-9℃    晴    优 50</em></p>
+<p>西北风转西南风4级转1级，今天风很大，感觉特别冷。</p>
+<blockquote>
+<p>中午跑步：1.05km；配速6‘34’‘；</p>
+</blockquote>
+<h3 id="2019-1-14-怎么一点不愿引体了"><a href="#2019-1-14-怎么一点不愿引体了" class="headerlink" title="2019/1/14 怎么一点不愿引体了"></a>2019/1/14 怎么一点不愿引体了</h3><p><em>周一    4/-7℃    多云    重度 220</em></p>
+<p>跑完才发现重度污染，跑的不多，但是依旧绕公园一圈，把之前没到过的地方都去了一遭</p>
+<blockquote>
+<p>中午跑步：1.05km；配速6‘34’‘；</p>
+</blockquote>
+<h3 id="2019-1-11-周五例行跑步"><a href="#2019-1-11-周五例行跑步" class="headerlink" title="2019/1/11 周五例行跑步"></a>2019/1/11 周五例行跑步</h3><p><em>周五</em></p>
+<p>例行跑步</p>
+<blockquote>
+<p>中午跑步：1.05km；配速6‘34’‘；</p>
+</blockquote>
+<h3 id="2019-1-10-时间久了5个引体很费劲"><a href="#2019-1-10-时间久了5个引体很费劲" class="headerlink" title="2019/1/10 时间久了5个引体很费劲"></a>2019/1/10 时间久了5个引体很费劲</h3><p><em>周四    1/-10℃    多云    重度 217</em></p>
 <p>一次5个引体很吃力的感觉，体重63.5kg</p>
 <blockquote>
 <p>中午跑步：1.08km；配速6‘1’‘；</p>
@@ -103,7 +118,7 @@
     <link href="//ezsay.cn/2018/05/18/ezsay/listen_book.html"/>
     <id>//ezsay.cn/2018/05/18/ezsay/listen_book.html</id>
     <published>2018-05-18T01:05:00.000Z</published>
-    <updated>2018-05-28T04:54:57.484Z</updated>
+    <updated>2018-05-28T04:54:57.485Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>记录一下每天上班途中听书片段</p>
 <a id="more"></a>
@@ -524,7 +539,7 @@
     <link href="//ezsay.cn/2018/04/16/skill/linux_basic.html"/>
     <id>//ezsay.cn/2018/04/16/skill/linux_basic.html</id>
     <published>2018-04-16T07:20:00.000Z</published>
-    <updated>2018-05-09T05:07:16.302Z</updated>
+    <updated>2018-05-09T05:07:16.303Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>学习Linux基础概念</p>
 <a id="more"></a>
@@ -567,11 +582,11 @@
       <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
     
     
+      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
+    
       <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
     
       <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
-    
-      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
     
       <category term="概念" scheme="//ezsay.cn/tags/%E6%A6%82%E5%BF%B5/"/>
     
@@ -589,9 +604,9 @@
 <p>通过管道<strong>多次过滤</strong>得到想要的结果</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netstat -anptl | grep tcp | grep LISTEN</div></pre></td></tr></table></figure>
 <p>/tmp文件是linux运行时产生的缓存文件，用于加速二次打开文件的速度。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> (清除/tmp下三小时以内没有使用的文件，并将结果输出)。</span></div><div class="line"><span class="meta">$</span><span class="bash"> /usr/sbin/tmpwatch -afv 3 /tmp</span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> (清除/tmp下三小时以内没有使用的文件，并将结果输出)。</div><div class="line"><span class="meta">$</span> /usr/sbin/tmpwatch -afv 3 /tmp</div></pre></td></tr></table></figure>
 <p>注意用法</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 动态显示机器各端口的链接情况</span></div><div class="line"><span class="meta">$</span><span class="bash"> <span class="keyword">while</span> :; <span class="keyword">do</span> netstat -apn | grep <span class="string">":80"</span>  | wc <span class="_">-l</span>; sleep 1; <span class="keyword">done</span></span></div></pre></td></tr></table></figure>]]></content>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 动态显示机器各端口的链接情况</div><div class="line"><span class="meta">$</span> while :; do netstat -apn | grep ":80"  | wc -l; sleep 1; done</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -618,17 +633,17 @@
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>归纳Linux系统<strong>高频</strong>命令，备查</p>
 <a id="more"></a>
 <h2 id="磁盘相关"><a href="#磁盘相关" class="headerlink" title="磁盘相关"></a>磁盘相关</h2><h3 id="df-Disk-Free"><a href="#df-Disk-Free" class="headerlink" title="df(Disk Free)"></a><strong>df(Disk Free)</strong></h3><p>用于显示<strong>磁盘分区</strong>上的可使用的磁盘空间。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> -h：Human-readable； Filesystem：档案系统 | Mounted on：挂载点</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -h</span></div><div class="line">Filesystem            Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1              40G  6.7G   31G  18% /</div><div class="line">tmpfs                 939M     0  939M   0% /dev/shm</div><div class="line">nas:/ 	              1.0P     0  1.0P   0% /nas</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> -T：显示磁盘分区类型；注意看多了一个Type</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -Th</span></div><div class="line">Filesystem           Type   Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1            ext4    40G  6.7G   31G  18% /</div><div class="line">tmpfs                tmpfs  939M     0  939M   0% /dev/shm</div><div class="line">nas:/                nfs    1.0P     0  1.0P   0% /nas</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> -h：Human-readable； Filesystem：档案系统 | Mounted on：挂载点</div><div class="line"><span class="meta">$</span> df -h</div><div class="line">Filesystem            Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1              40G  6.7G   31G  18% /</div><div class="line">tmpfs                 939M     0  939M   0% /dev/shm</div><div class="line">nas:/ 	              1.0P     0  1.0P   0% /nas</div><div class="line"><span class="meta"></span></div><div class="line"># -T：显示磁盘分区类型；注意看多了一个Type</div><div class="line"><span class="meta">$</span> df -Th</div><div class="line">Filesystem           Type   Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1            ext4    40G  6.7G   31G  18% /</div><div class="line">tmpfs                tmpfs  939M     0  939M   0% /dev/shm</div><div class="line">nas:/                nfs    1.0P     0  1.0P   0% /nas</div></pre></td></tr></table></figure>
 <h3 id="du-Disk-usage"><a href="#du-Disk-usage" class="headerlink" title="du (Disk usage)"></a><strong>du (Disk usage)</strong></h3><p>用于计算<strong>文件或目录</strong>所占的磁盘空间</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 显示/mnt文件夹总大小 <span class="_">-s</span>：显示工作目录所占总空间；-h：human-readable</span></div><div class="line"><span class="meta">$</span><span class="bash"> du -sh /mnt</span></div><div class="line">748M	/mnt</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 显示/mnt文件夹下的所有文件夹和文件大小，注意*号</span></div><div class="line"><span class="meta">$</span><span class="bash"> du -sh /mnt/*</span></div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 简略用法</span></div><div class="line">du -sh # 当前目录总空间</div><div class="line">du -sh * # 当前目录下所有文件夹大小排序</div></pre></td></tr></table></figure>
-<h3 id="按大小排序-ls-du-sort"><a href="#按大小排序-ls-du-sort" class="headerlink" title="按大小排序 ls | du sort"></a>按大小排序 ls | du sort</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 文件夹按照大小排序，缺点：并不显示文件夹真实大小</span></div><div class="line"><span class="meta">$</span><span class="bash"> ls -lhS /mnt</span></div><div class="line">总用量 16K</div><div class="line">drwxr-xr-x. 3 root root 4.0K 2月  26 2017 fastdfs_storage_data</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_storage_info</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_tracker</div><div class="line">drwxr-xr-x. 2 root root 4.0K 2月  26 2017 hgfs</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 列出所有文件、文件夹大小|管道排序 -h:human-readable -r:以相反的顺序 | 前20条</span></div><div class="line"><span class="meta">$</span><span class="bash"> du -sh /mnt/* | sort -hr | head -20</span></div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 简略用法</span></div><div class="line">ll -hS</div><div class="line">du -sh * | sort -hr | head # 显示前10个最大文件或文件夹</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 显示/mnt文件夹总大小 -s：显示工作目录所占总空间；-h：human-readable</div><div class="line"><span class="meta">$</span> du -sh /mnt</div><div class="line">748M	/mnt</div><div class="line"><span class="meta"></span></div><div class="line"># 显示/mnt文件夹下的所有文件夹和文件大小，注意*号</div><div class="line"><span class="meta">$</span> du -sh /mnt/*</div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 简略用法</div><div class="line">du -sh # 当前目录总空间</div><div class="line">du -sh * # 当前目录下所有文件夹大小排序</div></pre></td></tr></table></figure>
+<h3 id="按大小排序-ls-du-sort"><a href="#按大小排序-ls-du-sort" class="headerlink" title="按大小排序 ls | du sort"></a>按大小排序 ls | du sort</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 文件夹按照大小排序，缺点：并不显示文件夹真实大小</div><div class="line"><span class="meta">$</span> ls -lhS /mnt</div><div class="line">总用量 16K</div><div class="line">drwxr-xr-x. 3 root root 4.0K 2月  26 2017 fastdfs_storage_data</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_storage_info</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_tracker</div><div class="line">drwxr-xr-x. 2 root root 4.0K 2月  26 2017 hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 列出所有文件、文件夹大小|管道排序 -h:human-readable -r:以相反的顺序 | 前20条</div><div class="line"><span class="meta">$</span> du -sh /mnt/* | sort -hr | head -20</div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 简略用法</div><div class="line">ll -hS</div><div class="line">du -sh * | sort -hr | head # 显示前10个最大文件或文件夹</div></pre></td></tr></table></figure>
 <p>注意：</p>
 <blockquote>
 <p>sort命令默认由小到大排序，加上-r参数逆序，即由大到小</p>
 <p>-h：human-readable 区分kb、mb、gb…</p>
 <p>-n：依照数值的大小排序，此参数与-h冲突，举例说明 5M &lt; 3G(数字 5 &gt; 3)</p>
 </blockquote>
-<h3 id="文件归档命令-tar"><a href="#文件归档命令-tar" class="headerlink" title="文件归档命令 tar"></a>文件归档命令 tar</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 创建压缩文件 c：创建；z：gzip压缩；v:显示过程；f：固定必须有，后面接归档文档名</span></div><div class="line">tar -czvf jpgfile.tar.gz *.jpg</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 查看归档文件</span></div><div class="line">tar -tf jpgfile.tar.gz</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 解压文件到当前jpeg文件夹下</span></div><div class="line">tar -xvf jpgfile.tar.gz -C ./jpeg</div></pre></td></tr></table></figure>
+<h3 id="文件归档命令-tar"><a href="#文件归档命令-tar" class="headerlink" title="文件归档命令 tar"></a>文件归档命令 tar</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 创建压缩文件 c：创建；z：gzip压缩；v:显示过程；f：固定必须有，后面接归档文档名</div><div class="line">tar -czvf jpgfile.tar.gz *.jpg</div><div class="line"><span class="meta"></span></div><div class="line"># 查看归档文件</div><div class="line">tar -tf jpgfile.tar.gz</div><div class="line"><span class="meta"></span></div><div class="line"># 解压文件到当前jpeg文件夹下</div><div class="line">tar -xvf jpgfile.tar.gz -C ./jpeg</div></pre></td></tr></table></figure>
 <h4 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h4><h5 id="常用参数"><a href="#常用参数" class="headerlink" title="常用参数"></a>常用参数</h5><blockquote>
 <p>-c：<strong>建立</strong>一个压缩文件(create 的意思)；    </p>
 <p>-x：<strong>解开</strong>一个压缩文件</p>
@@ -696,11 +711,11 @@
       <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
     
     
+      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
+    
       <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
     
       <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
-    
-      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
     
       <category term="高频" scheme="//ezsay.cn/tags/%E9%AB%98%E9%A2%91/"/>
     
@@ -720,10 +735,10 @@
 <h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p>MySQL命令行登录数据库</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mysql -hxxx.xxx.com -uroot -p</div></pre></td></tr></table></figure>
 <p>查看mysql版本号</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 1、直接使用mysql命令查看版本</span></div><div class="line">mysql -V</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 2、命令行模式登录mysql会显示当前登录的MySQL基本信息，包含版本信息</span></div><div class="line">mysql -uusername -ppassword</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 3、进入命令行时可以用status命令查看基本信息，里面包含Server version</span></div><div class="line">status;</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 1、直接使用mysql命令查看版本</div><div class="line">mysql -V</div><div class="line"><span class="meta"></span></div><div class="line"># 2、命令行模式登录mysql会显示当前登录的MySQL基本信息，包含版本信息</div><div class="line">mysql -uusername -ppassword</div><div class="line"><span class="meta"></span></div><div class="line"># 3、进入命令行时可以用status命令查看基本信息，里面包含Server version</div><div class="line">status;</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 4、使用sql查看版本信息</div><div class="line">select version();</div></pre></td></tr></table></figure>
 <p>显示配置参数</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">show global status;</div><div class="line">show variables;</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 技巧</span></div><div class="line">show global status like '%slow%'; </div><div class="line"></div><div class="line">show variables like 'max_connections';</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">show global status;</div><div class="line">show variables;</div><div class="line"><span class="meta"></span></div><div class="line"># 技巧</div><div class="line">show global status like '%slow%'; </div><div class="line"></div><div class="line">show variables like 'max_connections';</div></pre></td></tr></table></figure>
 <h3 id="一、SQL连接"><a href="#一、SQL连接" class="headerlink" title="一、SQL连接"></a>一、SQL连接</h3><p>SQL的四种连接：内连接；外连接：左外连接、右外连接、全连接；</p>
 <p>内连接有两种写法（显式、隐式内连接），作用一样</p>
 <h4 id="ON和WHERE的区别"><a href="#ON和WHERE的区别" class="headerlink" title="ON和WHERE的区别"></a>ON和WHERE的区别</h4><p>left join,right join,full join的特殊性决定了ON条件的特殊性</p>
@@ -785,7 +800,7 @@
     <link href="//ezsay.cn/2018/02/22/ezsay/target_2018.html"/>
     <id>//ezsay.cn/2018/02/22/ezsay/target_2018.html</id>
     <published>2018-02-22T08:10:00.000Z</published>
-    <updated>2018-12-10T03:07:40.242Z</updated>
+    <updated>2019-01-14T08:15:21.706Z</updated>
     
     <content type="html"><![CDATA[<p><strong>梦想</strong>，是对未来的一种期望，指在现在想未来的事或是可以达到但<strong>必须努力</strong>才可以达到的情况，梦想就是一种让你感到坚持就是幸福的东西，甚至其可以视为一种信仰。</p>
 <p><strong>我的梦想</strong>是：有一份自己的值得<strong>自豪的事业</strong>，早日实现<strong>财务自由</strong>，让父母<strong>安享晚年</strong>，让自己和家人活的<strong>安康喜乐</strong>。</p>
@@ -1046,7 +1061,6 @@
 </tr>
 </tbody>
 </table>
-<hr>
 <h3 id="7月份总结"><a href="#7月份总结" class="headerlink" title="7月份总结"></a>7月份总结</h3><p>7月最后一天总结这个，这个月入伏，先后小暑大暑，热了一蛋子汗；肩袖莫名原因严重受伤过一次，健身次数教之前明显减少；买了辆小电动车，出行范围大大增加；读书目标了了、学习目标了了、网站建设进度了了，2018下半年第一个月过的有些波折，需继续努力！</p>
 <h3 id="6月份总结"><a href="#6月份总结" class="headerlink" title="6月份总结"></a>6月份总结</h3><p>6月份基本没有读书，蜗牛读书看了一小部分《失控》，每天上下班途中听网易公开课《跟着谷哥学科学》音频节目，读书的目标对我来讲似乎过于困难，但是这关乎自我修养与格局十分关键。这个月的唯一亮点是拿到了驾照，登记了摇号。增加摩托车需要C1实习期过了之后才可以，还要再等1年，费用2000左右</p>
 <p>本想着在7月前买辆电动自行车来着，现在看来也基本没戏，北京7月1号开始严查违规销售超标电动车，有钱都买不着</p>
@@ -1096,7 +1110,123 @@
 </li>
 </ul>
 <hr>
-<hr>
+<h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><p>目标全面崩盘，不忍直视。我的2018目标现在看来，仅仅实现了一个，考个驾照。身体管理还算尽职尽责，但是体重管理也崩溃了，现在还在缓慢恢复中。网站架设，python学习，内心建设，阅读都崩溃的一塌糊涂！</p>
+<p>体重自从今年3月28号达标之后一直在60kg左右浮动，2018/8/8号还有一次称重记录是59.3kg。转折应该是在9月底体检报告出来之后（2018/09/21），体检体重是60.4kg说明体重保持的还是不错的，但是体检报告里的总胆固醇TC指标值是：6.62mmol/L[3.1~5.72]彻底让自己蒙圈，比去年的7月份的指标值6.08竟然还上升了，震惊了！之后有一段的思想是锻炼不管用，由此带来的后果是体重一路飙升，极值到了65.3kg。心理的建设还是很重要的。</p>
+<p>17个细分指标达标4项目，达标率23.5%</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th>目标</th>
+<th>实现情况</th>
+<th style="text-align:center">是否达标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td>考个驾照</td>
+<td>2018/06/25驾照拿本（5280 + 40补考费）</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td>买个车-电动车</td>
+<td>2018/07/25傍晚购买小牛M+ sport（6699+200运费）</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td>汽车</td>
+<td>2018年06月25日参与摇号，后改为新能源编码序号：355723</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td>网站架设起来</td>
+<td>没动</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td>python</td>
+<td>长进不大</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td>体重控制（60kg）</td>
+<td>3月28号首次达标，8月8号最后一次达标，目前63.5&gt;62.2</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td>标准引体向上 15个</td>
+<td>目前8个左右吧，最高到11个</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td>宽距、窄距10个</td>
+<td>宽距5个，窄距7个左右</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td>双杠臂屈伸15个</td>
+<td>双杠臂屈伸5个</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td>学会双力臂</td>
+<td>没学会</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td>跑步成常态</td>
+<td>还可以，2018跑步147次，平均配速6‘28’‘</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td>挑战一下10km</td>
+<td>挑战一次，2018/03/15 傍晚跑步10.25km</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td>彻底纠正耸肩驼背</td>
+<td>应该是没有</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td>找到人生方向</td>
+<td>没有</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td>内心建设自我反省</td>
+<td>频率很低</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">16</td>
+<td>每月读书不小于3本</td>
+<td>没有坚持下来，打击巨大</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">17</td>
+<td>整年读书30本以上</td>
+<td>否</td>
+<td style="text-align:center">否</td>
+</tr>
+</tbody>
+</table>
 <h2 id="格言"><a href="#格言" class="headerlink" title="格言"></a>格言</h2><p><strong>读书与健身</strong></p>
 <blockquote>
 <p><strong>读书</strong>是为了心平气和地跟傻逼说话，而<strong>健身</strong>是为了让傻逼心平气和地和你说话</p>
@@ -1146,7 +1276,7 @@
     <link href="//ezsay.cn/2018/01/02/health/fitness_diary_2018.html"/>
     <id>//ezsay.cn/2018/01/02/health/fitness_diary_2018.html</id>
     <published>2018-01-02T08:07:00.000Z</published>
-    <updated>2018-12-27T06:41:05.908Z</updated>
+    <updated>2018-12-27T06:41:05.909Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>2018走起，新年新气象，野蛮其体魄，文明其精神。bigger your body,bigger your mind.</p>
 <p>这一年身体管理的目标是：跑步成常态，成习惯；引体向上15个，双杠臂力撑15个，学会双力臂；体重控制在60kg以下，彻底纠正耸肩驼背。</p>
@@ -4203,7 +4333,7 @@
     <link href="//ezsay.cn/2017/05/10/technology/redis_abc.html"/>
     <id>//ezsay.cn/2017/05/10/technology/redis_abc.html</id>
     <published>2017-05-10T07:19:24.000Z</published>
-    <updated>2017-05-27T09:49:48.140Z</updated>
+    <updated>2017-05-27T09:49:48.141Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。 它支持多种类型的数据结构，如 <code>字符串（strings）</code> <code>散列（hashes）</code>， <code>列表（lists）</code>， <code>集合（sets）</code>， <code>有序集合（sorted sets）</code> 与范围查询， <code>bitmaps</code>， <code>hyperloglogs</code> 和<code>地理空间（geospatial）</code> 索引半径查询。 Redis 内置了 <code>复制（replication）</code>，<code>LUA脚本（Lua scripting）</code>， <code>LRU驱动事件（LRU eviction）</code>，<code>事务（transactions）</code> 和不同级别的 <code>磁盘持久化（persistence）</code>， 并通过 <code>Redis哨兵（Sentinel）</code>和<code>自动 分区（Cluster）</code>提供高可用性（high availability）。</p>
 <a id="more"></a>
@@ -4350,11 +4480,11 @@
       <category term="技术" scheme="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="redis" scheme="//ezsay.cn/tags/redis/"/>
-    
       <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
     
       <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="redis" scheme="//ezsay.cn/tags/redis/"/>
     
   </entry>
   
@@ -5372,11 +5502,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
+    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
-    
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -5648,11 +5778,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
+    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
-    
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -5926,11 +6056,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
+    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
-    
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -6227,11 +6357,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
+    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
-    
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -6492,11 +6622,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
+    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
-    
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -6797,11 +6927,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
+    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
-    
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -7094,11 +7224,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
+    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
-    
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -7365,11 +7495,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
+    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
-    
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
