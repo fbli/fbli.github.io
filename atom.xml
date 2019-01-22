@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ezsay.cn/"/>
-  <updated>2019-01-16T05:52:29.272Z</updated>
+  <updated>2019-01-22T06:33:16.417Z</updated>
   <id>//ezsay.cn/</id>
   
   <author>
@@ -20,12 +20,32 @@
     <link href="//ezsay.cn/2019/01/02/health/fitness_diary_2019.html"/>
     <id>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</id>
     <published>2019-01-02T08:19:00.000Z</published>
-    <updated>2019-01-16T05:52:29.272Z</updated>
+    <updated>2019-01-22T06:33:16.417Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>2019走起，又开始了新的一年，时间过的太快了，每年都在感慨</p>
 <a id="more"></a>
-<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="一月份"><a href="#一月份" class="headerlink" title="一月份"></a>一月份</h2><h3 id="2019-1-16-碰到个牛逼的"><a href="#2019-1-16-碰到个牛逼的" class="headerlink" title="2019/1/16 碰到个牛逼的"></a>2019/1/16 碰到个牛逼的</h3><p><em>周三    2/-11℃    晴    良 52</em></p>
-<p>中午挑战了一下配速，是真的不成，慢慢来吧。碰到个锻炼身体摆拍视频的，挺厉害。</p>
+<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="一月份"><a href="#一月份" class="headerlink" title="一月份"></a>一月份</h2><h3 id="2019-1-22-反思"><a href="#2019-1-22-反思" class="headerlink" title="2019/1/22 反思"></a>2019/1/22 反思</h3><p><em>周二    10/-6℃    晴    良 62</em></p>
+<p>反思反思</p>
+<blockquote>
+<p>中午跑步：1.06km    配速：5‘56’‘</p>
+</blockquote>
+<h3 id="2019-1-21-跑步3km"><a href="#2019-1-21-跑步3km" class="headerlink" title="2019/1/21 跑步3km"></a>2019/1/21 跑步3km</h3><p><em>周一</em></p>
+<p>挺冷的，跑完又一身汗</p>
+<blockquote>
+<p>中午跑步：3km    配速：6‘45’‘</p>
+</blockquote>
+<h3 id="2019-1-18-本周6-5km"><a href="#2019-1-18-本周6-5km" class="headerlink" title="2019/1/18 本周6.5km"></a>2019/1/18 本周6.5km</h3><p><em>周五    5/-7℃    晴    良 95</em></p>
+<p>今天不知道说啥好了，公园溜达一圈而已，成习惯了</p>
+<blockquote>
+<p>中午跑步：1.11km    配速：6‘45’‘</p>
+</blockquote>
+<h3 id="2019-1-17-胸颠的疼"><a href="#2019-1-17-胸颠的疼" class="headerlink" title="2019/1/17 胸颠的疼"></a>2019/1/17 胸颠的疼</h3><p><em>周四    6/-10℃    晴    优 32</em></p>
+<p>昨天几个引体，今天跑步颠的胸痛，中午并不太冷，跑了一小会儿汗比较多，第一次近距离看到了鸳鸯，果然是一对一对的</p>
+<blockquote>
+<p>中午跑步：1.53km    配速：6‘16’‘</p>
+</blockquote>
+<h3 id="2019-1-16-碰到个牛逼的"><a href="#2019-1-16-碰到个牛逼的" class="headerlink" title="2019/1/16 碰到个牛逼的"></a>2019/1/16 碰到个牛逼的</h3><p><em>周三    2/-11℃    晴    良 52</em></p>
+<p>中午挑战了一下配速，是真的不成，慢慢来吧。碰到个锻炼身体摆拍视频的，挺厉害，旁边的大妈说是个猴儿。</p>
 <blockquote>
 <p>中午跑步：1.02km；配速5‘20’‘；</p>
 <p>引体向上：6 + 5 + 4</p>
@@ -589,11 +609,11 @@
       <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
     
     
-      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
-    
       <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
     
       <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
     
       <category term="概念" scheme="//ezsay.cn/tags/%E6%A6%82%E5%BF%B5/"/>
     
@@ -611,9 +631,9 @@
 <p>通过管道<strong>多次过滤</strong>得到想要的结果</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netstat -anptl | grep tcp | grep LISTEN</div></pre></td></tr></table></figure>
 <p>/tmp文件是linux运行时产生的缓存文件，用于加速二次打开文件的速度。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> (清除/tmp下三小时以内没有使用的文件，并将结果输出)。</div><div class="line"><span class="meta">$</span> /usr/sbin/tmpwatch -afv 3 /tmp</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> (清除/tmp下三小时以内没有使用的文件，并将结果输出)。</span></div><div class="line"><span class="meta">$</span><span class="bash"> /usr/sbin/tmpwatch -afv 3 /tmp</span></div></pre></td></tr></table></figure>
 <p>注意用法</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 动态显示机器各端口的链接情况</div><div class="line"><span class="meta">$</span> while :; do netstat -apn | grep ":80"  | wc -l; sleep 1; done</div></pre></td></tr></table></figure>]]></content>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 动态显示机器各端口的链接情况</span></div><div class="line"><span class="meta">$</span><span class="bash"> <span class="keyword">while</span> :; <span class="keyword">do</span> netstat -apn | grep <span class="string">":80"</span>  | wc <span class="_">-l</span>; sleep 1; <span class="keyword">done</span></span></div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -640,17 +660,17 @@
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>归纳Linux系统<strong>高频</strong>命令，备查</p>
 <a id="more"></a>
 <h2 id="磁盘相关"><a href="#磁盘相关" class="headerlink" title="磁盘相关"></a>磁盘相关</h2><h3 id="df-Disk-Free"><a href="#df-Disk-Free" class="headerlink" title="df(Disk Free)"></a><strong>df(Disk Free)</strong></h3><p>用于显示<strong>磁盘分区</strong>上的可使用的磁盘空间。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> -h：Human-readable； Filesystem：档案系统 | Mounted on：挂载点</div><div class="line"><span class="meta">$</span> df -h</div><div class="line">Filesystem            Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1              40G  6.7G   31G  18% /</div><div class="line">tmpfs                 939M     0  939M   0% /dev/shm</div><div class="line">nas:/ 	              1.0P     0  1.0P   0% /nas</div><div class="line"><span class="meta"></span></div><div class="line"># -T：显示磁盘分区类型；注意看多了一个Type</div><div class="line"><span class="meta">$</span> df -Th</div><div class="line">Filesystem           Type   Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1            ext4    40G  6.7G   31G  18% /</div><div class="line">tmpfs                tmpfs  939M     0  939M   0% /dev/shm</div><div class="line">nas:/                nfs    1.0P     0  1.0P   0% /nas</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> -h：Human-readable； Filesystem：档案系统 | Mounted on：挂载点</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -h</span></div><div class="line">Filesystem            Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1              40G  6.7G   31G  18% /</div><div class="line">tmpfs                 939M     0  939M   0% /dev/shm</div><div class="line">nas:/ 	              1.0P     0  1.0P   0% /nas</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> -T：显示磁盘分区类型；注意看多了一个Type</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -Th</span></div><div class="line">Filesystem           Type   Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1            ext4    40G  6.7G   31G  18% /</div><div class="line">tmpfs                tmpfs  939M     0  939M   0% /dev/shm</div><div class="line">nas:/                nfs    1.0P     0  1.0P   0% /nas</div></pre></td></tr></table></figure>
 <h3 id="du-Disk-usage"><a href="#du-Disk-usage" class="headerlink" title="du (Disk usage)"></a><strong>du (Disk usage)</strong></h3><p>用于计算<strong>文件或目录</strong>所占的磁盘空间</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 显示/mnt文件夹总大小 -s：显示工作目录所占总空间；-h：human-readable</div><div class="line"><span class="meta">$</span> du -sh /mnt</div><div class="line">748M	/mnt</div><div class="line"><span class="meta"></span></div><div class="line"># 显示/mnt文件夹下的所有文件夹和文件大小，注意*号</div><div class="line"><span class="meta">$</span> du -sh /mnt/*</div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 简略用法</div><div class="line">du -sh # 当前目录总空间</div><div class="line">du -sh * # 当前目录下所有文件夹大小排序</div></pre></td></tr></table></figure>
-<h3 id="按大小排序-ls-du-sort"><a href="#按大小排序-ls-du-sort" class="headerlink" title="按大小排序 ls | du sort"></a>按大小排序 ls | du sort</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 文件夹按照大小排序，缺点：并不显示文件夹真实大小</div><div class="line"><span class="meta">$</span> ls -lhS /mnt</div><div class="line">总用量 16K</div><div class="line">drwxr-xr-x. 3 root root 4.0K 2月  26 2017 fastdfs_storage_data</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_storage_info</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_tracker</div><div class="line">drwxr-xr-x. 2 root root 4.0K 2月  26 2017 hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 列出所有文件、文件夹大小|管道排序 -h:human-readable -r:以相反的顺序 | 前20条</div><div class="line"><span class="meta">$</span> du -sh /mnt/* | sort -hr | head -20</div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 简略用法</div><div class="line">ll -hS</div><div class="line">du -sh * | sort -hr | head # 显示前10个最大文件或文件夹</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 显示/mnt文件夹总大小 <span class="_">-s</span>：显示工作目录所占总空间；-h：human-readable</span></div><div class="line"><span class="meta">$</span><span class="bash"> du -sh /mnt</span></div><div class="line">748M	/mnt</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 显示/mnt文件夹下的所有文件夹和文件大小，注意*号</span></div><div class="line"><span class="meta">$</span><span class="bash"> du -sh /mnt/*</span></div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 简略用法</span></div><div class="line">du -sh # 当前目录总空间</div><div class="line">du -sh * # 当前目录下所有文件夹大小排序</div></pre></td></tr></table></figure>
+<h3 id="按大小排序-ls-du-sort"><a href="#按大小排序-ls-du-sort" class="headerlink" title="按大小排序 ls | du sort"></a>按大小排序 ls | du sort</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 文件夹按照大小排序，缺点：并不显示文件夹真实大小</span></div><div class="line"><span class="meta">$</span><span class="bash"> ls -lhS /mnt</span></div><div class="line">总用量 16K</div><div class="line">drwxr-xr-x. 3 root root 4.0K 2月  26 2017 fastdfs_storage_data</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_storage_info</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_tracker</div><div class="line">drwxr-xr-x. 2 root root 4.0K 2月  26 2017 hgfs</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 列出所有文件、文件夹大小|管道排序 -h:human-readable -r:以相反的顺序 | 前20条</span></div><div class="line"><span class="meta">$</span><span class="bash"> du -sh /mnt/* | sort -hr | head -20</span></div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 简略用法</span></div><div class="line">ll -hS</div><div class="line">du -sh * | sort -hr | head # 显示前10个最大文件或文件夹</div></pre></td></tr></table></figure>
 <p>注意：</p>
 <blockquote>
 <p>sort命令默认由小到大排序，加上-r参数逆序，即由大到小</p>
 <p>-h：human-readable 区分kb、mb、gb…</p>
 <p>-n：依照数值的大小排序，此参数与-h冲突，举例说明 5M &lt; 3G(数字 5 &gt; 3)</p>
 </blockquote>
-<h3 id="文件归档命令-tar"><a href="#文件归档命令-tar" class="headerlink" title="文件归档命令 tar"></a>文件归档命令 tar</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 创建压缩文件 c：创建；z：gzip压缩；v:显示过程；f：固定必须有，后面接归档文档名</div><div class="line">tar -czvf jpgfile.tar.gz *.jpg</div><div class="line"><span class="meta"></span></div><div class="line"># 查看归档文件</div><div class="line">tar -tf jpgfile.tar.gz</div><div class="line"><span class="meta"></span></div><div class="line"># 解压文件到当前jpeg文件夹下</div><div class="line">tar -xvf jpgfile.tar.gz -C ./jpeg</div></pre></td></tr></table></figure>
+<h3 id="文件归档命令-tar"><a href="#文件归档命令-tar" class="headerlink" title="文件归档命令 tar"></a>文件归档命令 tar</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 创建压缩文件 c：创建；z：gzip压缩；v:显示过程；f：固定必须有，后面接归档文档名</span></div><div class="line">tar -czvf jpgfile.tar.gz *.jpg</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 查看归档文件</span></div><div class="line">tar -tf jpgfile.tar.gz</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 解压文件到当前jpeg文件夹下</span></div><div class="line">tar -xvf jpgfile.tar.gz -C ./jpeg</div></pre></td></tr></table></figure>
 <h4 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h4><h5 id="常用参数"><a href="#常用参数" class="headerlink" title="常用参数"></a>常用参数</h5><blockquote>
 <p>-c：<strong>建立</strong>一个压缩文件(create 的意思)；    </p>
 <p>-x：<strong>解开</strong>一个压缩文件</p>
@@ -718,11 +738,11 @@
       <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
     
     
-      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
-    
       <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
     
       <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
     
       <category term="高频" scheme="//ezsay.cn/tags/%E9%AB%98%E9%A2%91/"/>
     
@@ -792,11 +812,11 @@
       <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
     
     
+      <category term="MySQL" scheme="//ezsay.cn/tags/MySQL/"/>
+    
       <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
     
       <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
-    
-      <category term="MySQL" scheme="//ezsay.cn/tags/MySQL/"/>
     
       <category term="连接查询" scheme="//ezsay.cn/tags/%E8%BF%9E%E6%8E%A5%E6%9F%A5%E8%AF%A2/"/>
     
@@ -5104,7 +5124,7 @@
     <link href="//ezsay.cn/2017/04/28/skill/git_abc.html"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc.html</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2018-04-09T05:40:50.512Z</updated>
+    <updated>2019-01-17T02:14:16.044Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
@@ -5162,6 +5182,8 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 删除本地分支</span></div><div class="line">git branch -d dev</div><div class="line">git branch -D dev # 强制删除（本地有未push的commit时使用）</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 删除远程分支dev： </span></div><div class="line">git push origin:dev</div><div class="line">git push origin --delete dev</div></pre></td></tr></table></figure>
 <p>暂存区会退到工作区</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset head file</div></pre></td></tr></table></figure>
+<p>更新所有分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git fetch --all</div><div class="line">git remote update</div><div class="line">git pull --all</div></pre></td></tr></table></figure>
 <h2 id="Git-log"><a href="#Git-log" class="headerlink" title="Git log"></a>Git log</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 一行显示日志信息，排除包含Merge branch字符串的描述，导出到lic.txt文件中</span></div><div class="line">git log --oneline | grep -v "Merge branch" &gt;&gt; lic.txt</div></pre></td></tr></table></figure>
 <h2 id="Git分支切换要点"><a href="#Git分支切换要点" class="headerlink" title="Git分支切换要点"></a>Git分支切换要点</h2><p>官方文档推荐在<strong>分支切换之前保证工作区clean</strong>，这个原则很重要原因如下：<br><strong>1、新增的文件</strong></p>
 <p>分支切换会带着这个文件到新分支中。新增的文件在git中是个特殊的存在，因为并未被git管理起来<br><strong>2、更新的文件</strong></p>
