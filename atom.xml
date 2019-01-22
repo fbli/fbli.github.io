@@ -609,11 +609,11 @@
       <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
     
     
+      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
+    
       <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
     
       <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
-    
-      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
     
       <category term="概念" scheme="//ezsay.cn/tags/%E6%A6%82%E5%BF%B5/"/>
     
@@ -631,9 +631,9 @@
 <p>通过管道<strong>多次过滤</strong>得到想要的结果</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netstat -anptl | grep tcp | grep LISTEN</div></pre></td></tr></table></figure>
 <p>/tmp文件是linux运行时产生的缓存文件，用于加速二次打开文件的速度。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> (清除/tmp下三小时以内没有使用的文件，并将结果输出)。</span></div><div class="line"><span class="meta">$</span><span class="bash"> /usr/sbin/tmpwatch -afv 3 /tmp</span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> (清除/tmp下三小时以内没有使用的文件，并将结果输出)。</div><div class="line"><span class="meta">$</span> /usr/sbin/tmpwatch -afv 3 /tmp</div></pre></td></tr></table></figure>
 <p>注意用法</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 动态显示机器各端口的链接情况</span></div><div class="line"><span class="meta">$</span><span class="bash"> <span class="keyword">while</span> :; <span class="keyword">do</span> netstat -apn | grep <span class="string">":80"</span>  | wc <span class="_">-l</span>; sleep 1; <span class="keyword">done</span></span></div></pre></td></tr></table></figure>]]></content>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 动态显示机器各端口的链接情况</div><div class="line"><span class="meta">$</span> while :; do netstat -apn | grep ":80"  | wc -l; sleep 1; done</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -738,11 +738,11 @@
       <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
     
     
+      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
+    
       <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
     
       <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
-    
-      <category term="Linux" scheme="//ezsay.cn/tags/Linux/"/>
     
       <category term="高频" scheme="//ezsay.cn/tags/%E9%AB%98%E9%A2%91/"/>
     
@@ -812,11 +812,11 @@
       <category term="技能" scheme="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
     
     
-      <category term="MySQL" scheme="//ezsay.cn/tags/MySQL/"/>
-    
       <category term="基础" scheme="//ezsay.cn/tags/%E5%9F%BA%E7%A1%80/"/>
     
       <category term="入门" scheme="//ezsay.cn/tags/%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="MySQL" scheme="//ezsay.cn/tags/MySQL/"/>
     
       <category term="连接查询" scheme="//ezsay.cn/tags/%E8%BF%9E%E6%8E%A5%E6%9F%A5%E8%AF%A2/"/>
     
@@ -5531,11 +5531,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -5807,11 +5807,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -6085,11 +6085,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -6386,11 +6386,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -6651,11 +6651,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -6956,11 +6956,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -7253,11 +7253,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
@@ -7524,11 +7524,11 @@
       <category term="健康" scheme="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
     
     
-      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
-    
       <category term="健康" scheme="//ezsay.cn/tags/%E5%81%A5%E5%BA%B7/"/>
     
       <category term="转载" scheme="//ezsay.cn/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+      <category term="健身" scheme="//ezsay.cn/tags/%E5%81%A5%E8%BA%AB/"/>
     
       <category term="囚徒" scheme="//ezsay.cn/tags/%E5%9B%9A%E5%BE%92/"/>
     
