@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</loc>
+    <lastmod>2019-02-19T06:53:46.281Z</lastmod>
+    <data>
+        <display>
+        <title>2019健身日志</title>
+        <pubTime>2019-01-02T08:19:00.000Z</pubTime>
+        
+        <tag>健身</tag>
+         
+        <tag>记录</tag>
+         
+        <tag>日记</tag>
+         
+        <tag>2019</tag>
+         
+         
+           
+             
+              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2019/02/19/ezsay/target_2019.html</loc>
     <lastmod>2019-02-19T06:49:58.431Z</lastmod>
     <data>
@@ -41,32 +67,6 @@
            
              
               <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</loc>
-    <lastmod>2019-02-18T05:39:18.133Z</lastmod>
-    <data>
-        <display>
-        <title>2019健身日志</title>
-        <pubTime>2019-01-02T08:19:00.000Z</pubTime>
-        
-        <tag>健身</tag>
-         
-        <tag>记录</tag>
-         
-        <tag>日记</tag>
-         
-        <tag>2019</tag>
-         
-         
-           
-             
-              <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
           
         </display>
     </data>
