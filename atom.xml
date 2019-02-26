@@ -315,11 +315,16 @@
     <link href="//ezsay.cn/2019/01/02/health/fitness_diary_2019.html"/>
     <id>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</id>
     <published>2019-01-02T08:19:00.000Z</published>
-    <updated>2019-02-26T02:01:16.189Z</updated>
+    <updated>2019-02-26T06:19:47.249Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>2019走起，又开始了新的一年，时间过的太快了，每年都在感慨</p>
 <a id="more"></a>
-<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="二月份"><a href="#二月份" class="headerlink" title="二月份"></a>二月份</h2><h3 id="2019-2-25-右侧肩袖有点不舒服"><a href="#2019-2-25-右侧肩袖有点不舒服" class="headerlink" title="2019/2/25 右侧肩袖有点不舒服"></a>2019/2/25 右侧肩袖有点不舒服</h3><p><em>周一</em></p>
+<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="二月份"><a href="#二月份" class="headerlink" title="二月份"></a>二月份</h2><h3 id="2019-2-26-没有锻炼的兴致"><a href="#2019-2-26-没有锻炼的兴致" class="headerlink" title="2019/2/26 没有锻炼的兴致"></a>2019/2/26 没有锻炼的兴致</h3><p><em>周二    9/-1℃    阴转少云    良 59</em></p>
+<p>突然有点低落，没有锻炼的兴致</p>
+<blockquote>
+<p>中午跑步：0.61km；配速：5‘5’‘</p>
+</blockquote>
+<h3 id="2019-2-25-右侧肩袖有点不舒服"><a href="#2019-2-25-右侧肩袖有点不舒服" class="headerlink" title="2019/2/25 右侧肩袖有点不舒服"></a>2019/2/25 右侧肩袖有点不舒服</h3><p><em>周一</em></p>
 <p>今天做完引体后，肩袖隐隐不舒服。后面还要注意一下</p>
 <blockquote>
 <p>中午跑步：1.05km；配速：6’26‘’</p>
@@ -5495,7 +5500,7 @@
     <link href="//ezsay.cn/2017/04/28/skill/git_abc.html"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc.html</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2019-02-25T10:14:47.351Z</updated>
+    <updated>2019-02-26T03:28:14.546Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
@@ -5514,6 +5519,13 @@
 <li>第二步【git commit】提交更改，将暂存区的所有内容提交到本地版本库</li>
 <li>第三步【git push】将当前分支的本地版本库信息推送到远程版本库</li>
 </ul>
+<p>head：默认指向最后那次commit = head^0</p>
+<p>head^：head提交的第1个父提交</p>
+<p>head^2：head提交的第2个父提交</p>
+<p>head^3：head提交的第3个父提交</p>
+<p>head~1：head提交的父提交</p>
+<p>head~2：head父提交的父提交 = head^^ = head^1^1</p>
+<p><strong>head~2^2：head父提交的父提交的第二个提交</strong></p>
 <h2 id="Git基本命令"><a href="#Git基本命令" class="headerlink" title="Git基本命令"></a>Git基本命令</h2><h3 id="1、初始设置"><a href="#1、初始设置" class="headerlink" title="1、初始设置"></a>1、初始设置</h3><p>git使用的第一步必须先设定自己的用户名、邮箱地址</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gitconfig --global user.name "王小二"</div><div class="line">gitconfig --global user.email "wangxiaoer@xxx.com"</div></pre></td></tr></table></figure>
 <h3 id="2、设置别名"><a href="#2、设置别名" class="headerlink" title="2、设置别名"></a>2、设置别名</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 设置别名 git st = git status</div><div class="line">git config --global alias.st status</div><div class="line">git config --global alias.ck checkout</div><div class="line">git config --global alias.br branch</div></pre></td></tr></table></figure>
