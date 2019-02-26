@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/04/26/ezsay/image_text.html</loc>
+    <lastmod>2019-02-26T08:05:39.243Z</lastmod>
+    <data>
+        <display>
+        <title>点滴累积-图文</title>
+        <pubTime>2017-04-26T02:24:24.000Z</pubTime>
+        
+        <tag>图文</tag>
+         
+        <tag>好玩</tag>
+         
+        <tag>有用</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
     <lastmod>2019-02-26T08:04:37.213Z</lastmod>
     <data>
@@ -293,30 +317,6 @@
            
              
               <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/26/ezsay/image_text.html</loc>
-    <lastmod>2018-03-30T03:23:08.461Z</lastmod>
-    <data>
-        <display>
-        <title>点滴累积-图文</title>
-        <pubTime>2017-04-26T02:24:24.000Z</pubTime>
-        
-        <tag>图文</tag>
-         
-        <tag>好玩</tag>
-         
-        <tag>有用</tag>
-         
-         
-           
-             
-              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>
