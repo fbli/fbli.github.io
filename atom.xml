@@ -5500,7 +5500,7 @@
     <link href="//ezsay.cn/2017/04/28/skill/git_abc.html"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc.html</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2019-02-26T08:04:37.213Z</updated>
+    <updated>2019-02-26T08:34:46.026Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
@@ -5511,7 +5511,7 @@
 <li>HEAD：指向master的一个指针</li>
 </ul>
 <a id="more"></a>
-<p>![][git-repo]</p>
+<p><img src="/asset/blog_img/skill/git/git_repository.jpg" alt="" title="git仓库结构"></p>
 <p>这个图非常重要，一定要理解。</p>
 <p>git的要达到类似svn的提交程度需要进行三步：</p>
 <ul>
@@ -5650,7 +5650,6 @@
 <h1 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h1><p>入门参考</p>
 <p><a href="http://git.oschina.net/progit/" target="_blank" rel="external">git中文文档</a></p>
 <p><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/" target="_blank" rel="external">廖雪峰git教程</a></p>
-<p>[git-repo]:/asset/blog_img/skill/git/git_repository.jpg git仓库结构</p>
 <hr>
 <p>2019-02-26 16:03 完善基础命令，reset、revert等</p>
 <p>2017-05-24 20:56 新增.gitignore配置</p>

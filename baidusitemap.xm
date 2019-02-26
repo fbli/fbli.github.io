@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
+    <lastmod>2019-02-26T08:34:46.026Z</lastmod>
+    <data>
+        <display>
+        <title>git入门到精通</title>
+        <pubTime>2017-04-28T02:57:07.000Z</pubTime>
+        
+        <tag>基础</tag>
+         
+        <tag>入门</tag>
+         
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2017/04/26/ezsay/image_text.html</loc>
     <lastmod>2019-02-26T08:05:39.243Z</lastmod>
     <data>
@@ -21,30 +45,6 @@
            
              
               <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
-    <lastmod>2019-02-26T08:04:37.213Z</lastmod>
-    <data>
-        <display>
-        <title>git入门到精通</title>
-        <pubTime>2017-04-28T02:57:07.000Z</pubTime>
-        
-        <tag>基础</tag>
-         
-        <tag>入门</tag>
-         
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
           
         </display>
     </data>
