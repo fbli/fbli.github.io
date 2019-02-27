@@ -315,11 +315,16 @@
     <link href="//ezsay.cn/2019/01/02/health/fitness_diary_2019.html"/>
     <id>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</id>
     <published>2019-01-02T08:19:00.000Z</published>
-    <updated>2019-02-26T06:19:47.249Z</updated>
+    <updated>2019-02-27T06:14:12.898Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>2019走起，又开始了新的一年，时间过的太快了，每年都在感慨</p>
 <a id="more"></a>
-<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="二月份"><a href="#二月份" class="headerlink" title="二月份"></a>二月份</h2><h3 id="2019-2-26-没有锻炼的兴致"><a href="#2019-2-26-没有锻炼的兴致" class="headerlink" title="2019/2/26 没有锻炼的兴致"></a>2019/2/26 没有锻炼的兴致</h3><p><em>周二    9/-1℃    阴转少云    良 59</em></p>
+<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="二月份"><a href="#二月份" class="headerlink" title="二月份"></a>二月份</h2><h3 id="2019-2-27-天气暖和了"><a href="#2019-2-27-天气暖和了" class="headerlink" title="2019/2/27 天气暖和了"></a>2019/2/27 天气暖和了</h3><p><em>周三    12/-2℃    晴    晴 103</em></p>
+<p>中午跑了1km，就满头大汗，湖里的冰要化完了</p>
+<blockquote>
+<p>中午跑步：1.06km；配速：5‘42’‘</p>
+</blockquote>
+<h3 id="2019-2-26-没有锻炼的兴致"><a href="#2019-2-26-没有锻炼的兴致" class="headerlink" title="2019/2/26 没有锻炼的兴致"></a>2019/2/26 没有锻炼的兴致</h3><p><em>周二    9/-1℃    阴转少云    良 59</em></p>
 <p>突然有点低落，没有锻炼的兴致</p>
 <blockquote>
 <p>中午跑步：0.61km；配速：5‘5’‘</p>
@@ -492,7 +497,7 @@
 <li>前不露肘，后不露手，手肘弯曲＜90°</li>
 <li><strong>快</strong>步频，中<strong>小</strong>步幅</li>
 <li>膝关节，脚尖在一条直线上</li>
-<li>不要<strong>坐姿跑</strong>，不要<strong>前搓跑</strong></li>
+<li>不要<strong>坐姿跑</strong>，不要<strong>前搓跑</strong>  </li>
 </ol>
 </blockquote>
 ]]></content>
@@ -5500,7 +5505,7 @@
     <link href="//ezsay.cn/2017/04/28/skill/git_abc.html"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc.html</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2019-02-26T10:15:11.736Z</updated>
+    <updated>2019-02-27T03:32:53.787Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
