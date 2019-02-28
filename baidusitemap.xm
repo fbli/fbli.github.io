@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
-    <lastmod>2019-02-27T08:51:34.402Z</lastmod>
+    <lastmod>2019-02-28T10:42:06.733Z</lastmod>
     <data>
         <display>
         <title>git入门到精通</title>
@@ -29,7 +29,7 @@
     
   <url>
     <loc>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</loc>
-    <lastmod>2019-02-27T06:14:12.898Z</lastmod>
+    <lastmod>2019-02-28T06:35:00.910Z</lastmod>
     <data>
         <display>
         <title>2019健身日志</title>
