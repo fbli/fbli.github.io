@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</loc>
-    <lastmod>2019-04-08T06:24:44.104Z</lastmod>
+    <lastmod>2019-04-11T01:22:59.713Z</lastmod>
     <data>
         <display>
         <title>2019健身日志</title>
@@ -30,30 +30,8 @@
 
     
   <url>
-    <loc>//ezsay.cn/2019/02/19/ezsay/target_2019.html</loc>
-    <lastmod>2019-03-26T08:59:53.357Z</lastmod>
-    <data>
-        <display>
-        <title>我的2019</title>
-        <pubTime>2019-02-19T06:27:00.000Z</pubTime>
-        
-        <tag>历年小目标</tag>
-         
-        <tag>实现情况</tag>
-         
-         
-           
-             
-              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
-    <lastmod>2019-03-08T01:59:43.429Z</lastmod>
+    <lastmod>2019-04-10T07:58:40.401Z</lastmod>
     <data>
         <display>
         <title>git入门到精通</title>
@@ -69,6 +47,28 @@
            
              
               <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2019/02/19/ezsay/target_2019.html</loc>
+    <lastmod>2019-03-26T08:59:53.357Z</lastmod>
+    <data>
+        <display>
+        <title>我的2019</title>
+        <pubTime>2019-02-19T06:27:00.000Z</pubTime>
+        
+        <tag>历年小目标</tag>
+         
+        <tag>实现情况</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="//ezsay.cn/categories/%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>
