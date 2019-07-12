@@ -320,11 +320,29 @@
     <link href="//ezsay.cn/2019/01/02/health/fitness_diary_2019.html"/>
     <id>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</id>
     <published>2019-01-02T08:19:00.000Z</published>
-    <updated>2019-07-08T06:35:11.847Z</updated>
+    <updated>2019-07-12T11:04:50.127Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>2019走起，又开始了新的一年，时间过的太快了，每年都在感慨</p>
 <a id="more"></a>
-<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="七月份"><a href="#七月份" class="headerlink" title="七月份"></a>七月份</h2><h3 id="2019-7-8-荷花真香，和风送爽"><a href="#2019-7-8-荷花真香，和风送爽" class="headerlink" title="2019/7/8 荷花真香，和风送爽"></a>2019/7/8 荷花真香，和风送爽</h3><p><em>周一    多云    30/19℃    良 53</em></p>
+<h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="七月份"><a href="#七月份" class="headerlink" title="七月份"></a>七月份</h2><h3 id="2019-7-11-入伏"><a href="#2019-7-11-入伏" class="headerlink" title="2019/7/11 入伏"></a>2019/7/11 入伏</h3><p><em>周五    多云    34/21℃    良 88</em></p>
+<p>今天入伏，中午捡了几个滚圆的杏核</p>
+<blockquote>
+<p>中午跑步：1.52km；配速：5‘35’‘</p>
+</blockquote>
+<h3 id="2019-7-10-天气放晴"><a href="#2019-7-10-天气放晴" class="headerlink" title="2019/7/10 天气放晴"></a>2019/7/10 天气放晴</h3><p><em>周四    多云    30/20℃    优 50</em></p>
+<p>天气放晴，生日跑了一次</p>
+<blockquote>
+<p>中午跑步：1.5km；配速6‘13’‘</p>
+</blockquote>
+<h3 id="2019-7-10-大雨"><a href="#2019-7-10-大雨" class="headerlink" title="2019/7/10 大雨"></a>2019/7/10 大雨</h3><p><em>周三    大雨</em></p>
+<p>早晨大雨，中午阴天难得的跑步好天气，跑了1km，老位置睡了一小会儿，开始下雨，害怕吓大，往回跑。最近几天老是感觉饿，体重64kg了，比去年的这个时候重了足足8斤</p>
+<blockquote>
+<p>中午跑步：1.3km；配速：6‘09’‘</p>
+<p>1.2km；配速5’42‘’</p>
+</blockquote>
+<h3 id="2019-7-9-过敏鼻炎发作"><a href="#2019-7-9-过敏鼻炎发作" class="headerlink" title="2019/7/9 过敏鼻炎发作"></a>2019/7/9 过敏鼻炎发作</h3><p><em>周二    小雨    28/21℃    优 38</em></p>
+<p>昨晚熬夜了，今天鼻子爽翻了，没去锻炼。</p>
+<h3 id="2019-7-8-荷花真香，和风送爽"><a href="#2019-7-8-荷花真香，和风送爽" class="headerlink" title="2019/7/8 荷花真香，和风送爽"></a>2019/7/8 荷花真香，和风送爽</h3><p><em>周一    多云    30/19℃    良 53</em></p>
 <p>周末加班两天，周六晚上吃全家桶，周日晚上撸串撸到恶心。今天中午跑了来回两次，算是消化消化。跑完后在荷塘变迎风荷香，清爽宜人。</p>
 <blockquote>
 <p>中午跑步：1.52km；配速：6‘04’‘</p>
@@ -5958,7 +5976,7 @@
     <link href="//ezsay.cn/2017/04/28/skill/git_abc.html"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc.html</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2019-05-14T12:33:52.969Z</updated>
+    <updated>2019-07-11T07:25:35.327Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
@@ -5990,7 +6008,7 @@
 </ul>
 <p>在 Windows 系统上，Git 会找寻用户主目录下的 .gitconfig 文件。主目录即 $HOME 变量指定的目录，一般都是C:\Documents and Settings\$USER。此外，Git 还会尝试找寻/etc/gitconfig 文件，只不过看当初 Git 装在什么目录，就以此作为根目录来定位。</p>
 </blockquote>
-<h3 id="3、clone远程git仓库到本地"><a href="#3、clone远程git仓库到本地" class="headerlink" title="3、clone远程git仓库到本地"></a>3、clone远程git仓库到本地</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> git协议clone</div><div class="line">git clone git@github.com:xxx/xxxx.git</div><div class="line"><span class="meta">#</span> https协议clone且重命名文件夹</div><div class="line">git clone https://github.com/xxx/hello.git hello_local</div><div class="line"><span class="meta">#</span> 特殊端口clone</div><div class="line">git clone ssh://git@xxx.com:555/srv/xxx.git</div></pre></td></tr></table></figure>
+<h3 id="3、clone远程git仓库到本地"><a href="#3、clone远程git仓库到本地" class="headerlink" title="3、clone远程git仓库到本地"></a>3、clone远程git仓库到本地</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> git协议clone</div><div class="line">git clone git@github.com:xxx/xxxx.git</div><div class="line"><span class="meta">#</span> https协议clone且重命名文件夹</div><div class="line">git clone https://github.com/xxx/hello.git hello_local</div><div class="line"><span class="meta">#</span> 特殊端口clone</div><div class="line">git clone ssh://git@xxx.com:555/srv/xxx.git</div><div class="line"><span class="meta">#</span> 用户名密码clone</div><div class="line">git clone https://username:password@github.com/your_repo_path.git</div></pre></td></tr></table></figure>
 <p>常见场景</p>
 <p>github本地免密码 </p>
 <blockquote>
@@ -6006,7 +6024,7 @@
 <p>3）、验证是否成功</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span> ssh -T git@github.com</div><div class="line"><span class="meta">&gt;</span> </div><div class="line"><span class="meta">&gt;</span> # Hi XXXX! You've successfully authenticated, but GitHub does not provide shell access.</div><div class="line"><span class="meta">&gt;</span></div></pre></td></tr></table></figure>
 </blockquote>
-<h3 id="4、分支命令"><a href="#4、分支命令" class="headerlink" title="4、分支命令"></a>4、分支命令</h3><h4 id="4-1-基本命令"><a href="#4-1-基本命令" class="headerlink" title="4.1 基本命令"></a>4.1 基本命令</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 查看本地分支列表，前带*号的为当前分支</div><div class="line">git branch</div><div class="line"><span class="meta">#</span> 查看所有分支列表，本地+远程（remotes/origin/***）</div><div class="line">git branch -a</div><div class="line"><span class="meta">#</span> 切换分支到dev</div><div class="line">git checkout dev</div><div class="line"><span class="meta"></span></div><div class="line"># 显示远程分支等信息</div><div class="line"><span class="meta">$</span> git remote show origin</div><div class="line"><span class="meta">$</span> git ls-remote --heads origin</div><div class="line"><span class="meta"></span></div><div class="line"># 合并release2.1分支到当前分支</div><div class="line">git merge release2.1</div></pre></td></tr></table></figure>
+<h3 id="4、分支命令"><a href="#4、分支命令" class="headerlink" title="4、分支命令"></a>4、分支命令</h3><h4 id="4-1-基本命令"><a href="#4-1-基本命令" class="headerlink" title="4.1 基本命令"></a>4.1 基本命令</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 查看本地分支列表，前带*号的为当前分支</div><div class="line">git branch</div><div class="line"><span class="meta">#</span> 查看所有分支列表，本地+远程（remotes/origin/***）</div><div class="line">git branch -a</div><div class="line"><span class="meta">#</span> 切换分支到dev</div><div class="line">git checkout dev</div><div class="line"><span class="meta"></span></div><div class="line"># 显示远程分支等信息</div><div class="line"><span class="meta">$</span> git remote show origin # 显示详细信息</div><div class="line"><span class="meta">$</span> git ls-remote --heads origin</div><div class="line"><span class="meta">$</span> git remote -v</div><div class="line">origin  https://code.jointforce.com/jfscm3424/scpfxkz.git (fetch)</div><div class="line">origin  https://code.jointforce.com/jfscm3424/scpfxkz.git (push)</div><div class="line"><span class="meta"></span></div><div class="line"></div><div class="line"># 合并release2.1分支到当前分支</div><div class="line">git merge release2.1</div></pre></td></tr></table></figure>
 <h4 id="4-2-高频使用分支命令"><a href="#4-2-高频使用分支命令" class="headerlink" title="4.2 高频使用分支命令"></a>4.2 高频使用分支命令</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 新建dev分支并与远程分支建立关联，且切换至该分支</div><div class="line">git checkout -b dev origin/dev</div><div class="line"><span class="meta"></span></div><div class="line"># 推送本地分支【dev_locale 】到远程并进行关联，二者名称一致</div><div class="line">git push -u origin dev_locale</div></pre></td></tr></table></figure>
 <h4 id="4-3-谨慎使用分支命令"><a href="#4-3-谨慎使用分支命令" class="headerlink" title="4.3 谨慎使用分支命令"></a>4.3 谨慎使用分支命令</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 删除本地分支</div><div class="line">git branch -d dev</div><div class="line">git branch -D dev # 强制删除（本地有未push的commit时使用）</div><div class="line"><span class="meta"></span></div><div class="line"># 删除远程分支dev： </div><div class="line">git push origin:dev</div><div class="line">git push origin --delete dev</div></pre></td></tr></table></figure>
 <h4 id="4-4-更新所有分支"><a href="#4-4-更新所有分支" class="headerlink" title="4.4 更新所有分支"></a>4.4 更新所有分支</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git fetch --all</div><div class="line">git remote update</div><div class="line">git pull --all</div></pre></td></tr></table></figure>
