@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
+    <lastmod>2019-07-29T03:08:28.351Z</lastmod>
+    <data>
+        <display>
+        <title>git入门到精通</title>
+        <pubTime>2017-04-28T02:57:07.000Z</pubTime>
+        
+        <tag>基础</tag>
+         
+        <tag>入门</tag>
+         
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</loc>
     <lastmod>2019-07-22T10:15:37.537Z</lastmod>
     <data>
@@ -23,30 +47,6 @@
            
              
               <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
-    <lastmod>2019-07-11T07:25:35.327Z</lastmod>
-    <data>
-        <display>
-        <title>git入门到精通</title>
-        <pubTime>2017-04-28T02:57:07.000Z</pubTime>
-        
-        <tag>基础</tag>
-         
-        <tag>入门</tag>
-         
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="技能" url="//ezsay.cn/categories/%E6%8A%80%E8%83%BD/"/>
           
         </display>
     </data>
