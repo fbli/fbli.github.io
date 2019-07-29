@@ -320,13 +320,13 @@
     <link href="//ezsay.cn/2019/01/02/health/fitness_diary_2019.html"/>
     <id>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</id>
     <published>2019-01-02T08:19:00.000Z</published>
-    <updated>2019-07-29T06:18:26.140Z</updated>
+    <updated>2019-07-29T06:18:55.385Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>2019走起，又开始了新的一年，时间过的太快了，每年都在感慨</p>
 <a id="more"></a>
 <h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><h2 id="七月份"><a href="#七月份" class="headerlink" title="七月份"></a>七月份</h2><h3 id="2019-7-29-雨中漫步"><a href="#2019-7-29-雨中漫步" class="headerlink" title="2019/7/29 雨中漫步"></a>2019/7/29 雨中漫步</h3><p><em>周一    中雨    30/23℃    优 40</em></p>
 <p>中午忍不住桃核诱惑冒雨去了公园，也实在没地去，没想到雨下大了，倾盆大雨浇头而下，雨中强捡了几颗，淌水而行，鞋子都湿了。</p>
-<p>雨天确实不一样</p>
+<p>雨天确实不一样，各种不方便。</p>
 <h3 id="2019-7-22-难得好天气"><a href="#2019-7-22-难得好天气" class="headerlink" title="2019/7/22 难得好天气"></a>2019/7/22 难得好天气</h3><p><em>周一    阴    35/25℃    轻度 137</em></p>
 <p>健身计划能不能毁在这玩意手里，天天到公园不干别的了，光弄桃核了。今天中午天气虽然闷热，但是因为阴天比一样也要凉快是个难得的好天气，可是一到公园不干别的了，老是捡桃核，无止境了。</p>
 <h3 id="2019-7-18、19、20-天天公园捡桃核"><a href="#2019-7-18、19、20-天天公园捡桃核" class="headerlink" title="2019/7/18、19、20 天天公园捡桃核"></a>2019/7/18、19、20 天天公园捡桃核</h3><p><em>周四、五、六</em></p>
@@ -5995,7 +5995,7 @@
     <link href="//ezsay.cn/2017/04/28/skill/git_abc.html"/>
     <id>//ezsay.cn/2017/04/28/skill/git_abc.html</id>
     <published>2017-04-28T02:57:07.000Z</published>
-    <updated>2019-07-29T03:08:28.351Z</updated>
+    <updated>2019-07-29T11:29:50.230Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><p>svn的提交是一步提交，即将本地代码一步commit到中央服务器，但是git跟这个概念完全不同，git有工作区、暂存区、本地版本库、远程版本库的概念。</p>
 <ul>
@@ -6098,7 +6098,9 @@
 <h2 id="git分支与tag重名"><a href="#git分支与tag重名" class="headerlink" title="git分支与tag重名"></a>git分支与tag重名</h2><p>比较麻烦的是每个人都将tag同步到了本地，你即使删除掉了远程的同名tag，依然会有人推送本地所有tag到远程（如：sourcetree默认推送会勾选【】）</p>
 <p>查看分支的创建时间</p>
 <p>git reflog show –date=iso bug_on_staging</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 删除服务器tag</div><div class="line">git tag -d [tag] </div><div class="line">git push origin :refs/tags/[tag]</div></pre></td></tr></table></figure>
 <h1 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h1><p><a href="https://help.github.com/categories/advanced-git/" target="_blank" rel="external">官方高级操作说明文档</a>里面列举了6种问题的解决方案，可以去了解一下。如下是我自己实践过程中总结的相比较而言比较高级的操作，希望对你有用</p>
+<h2 id="批量删除"><a href="#批量删除" class="headerlink" title="批量删除"></a>批量删除</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 批量删除master or dev分支以外的所有分支</div><div class="line">git branch -a | grep -v -E 'master|dev' |xargs git branch -D</div><div class="line"><span class="meta">#</span> -v 或 --revert-match : 显示不包含匹配文本的所有行。即，排除</div><div class="line"><span class="meta">#</span> -E 或 --extended-regexp 扩展选项为正则表达式。 如果使用了grep 命令的选项-E，则应该使用 | 来分割多个pattern，以此实现OR操作。</div><div class="line"><span class="meta"></span></div><div class="line"># egrep 命令等同于‘grep -E’。</div><div class="line">git branch -a | egrep -v 'master|dev' | xargs git branch -D</div><div class="line"><span class="meta"></span></div><div class="line"># 批量删除远程分支</div><div class="line">git branch -r| grep -v -E 'master|develop' | sed 's/origin\///g' | xargs -I &#123;&#125; git push origin :&#123;&#125;</div><div class="line"><span class="meta">#</span> xargs -i 或者是-I，看linux支持哪种，将xargs的每项名称，一般是一行一行赋值给&#123;&#125;，可以用&#123;&#125;代替。</div><div class="line"><span class="meta">#</span> sed 's/origin\///g' 替换所有</div><div class="line"><span class="meta">#</span> 如果有些分支无法删除，是因为远程分支的缓存问题，可以使用</div><div class="line">git remote prune</div><div class="line"><span class="meta"></span></div><div class="line"># 批量删除本地tag</div><div class="line">git tag | xargs -I &#123;&#125; git tag -d &#123;&#125;</div><div class="line"><span class="meta">#</span> 批量删除远程tag</div><div class="line">git tag | xargs -I &#123;&#125; git push origin :refs/tags/&#123;&#125;</div></pre></td></tr></table></figure>
 <h2 id="git分支合并忽略部分文件"><a href="#git分支合并忽略部分文件" class="headerlink" title="git分支合并忽略部分文件"></a>git分支合并忽略部分文件</h2><p><strong>合并分支时忽略某些文件</strong>，举例说明两个分支 base、基于base创建target</p>
 <p>正常的流程是</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 1、base分支新建.gitattributes文件</div><div class="line">echo file1.txt merge=ours &gt;&gt; .gitattributes</div><div class="line"><span class="meta">#</span> 2、开启merge.ours.driver</div><div class="line">git config --global merge.ours.driver=true</div><div class="line"><span class="meta">#</span> 3、切换到target分支进行分支合并</div><div class="line">git checkout target</div><div class="line">git merge base</div><div class="line"><span class="meta">#</span> 4、坑：此时发现配置的file1.txt merge=ours根本没起作用，会正常合并至当前分支，不仅如此，此时切换到base分支再编辑一下file1.txt，再切换回target，再次合并base分支到target，会发现刚刚的base上的提交依旧会合并至当前分支，那么问题来了，怎么才能不合并file1.txt呢</div><div class="line"></div><div class="line">git checkout target</div><div class="line">echo "update file1.txt by target" &gt;&gt; file.txt</div><div class="line">git commit -am "target分支更新并提交想忽略的文件"</div><div class="line">git checkout base</div><div class="line">echo "update file1.txt by base" &gt;&gt; file.txt</div><div class="line">git commit -am "base分支更新并提交想忽略的文件"</div><div class="line">git checkout target</div><div class="line">git merge base # 此时会发现target分支的file文件还是之前的内容，base分支的并没有合并过来</div></pre></td></tr></table></figure>
