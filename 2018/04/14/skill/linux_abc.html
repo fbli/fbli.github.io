@@ -199,17 +199,17 @@
         <h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>归纳Linux系统<strong>高频</strong>命令，备查</p>
 <a id="more"></a>
 <h2 id="磁盘相关"><a href="#磁盘相关" class="headerlink" title="磁盘相关"></a>磁盘相关</h2><h3 id="df-Disk-Free"><a href="#df-Disk-Free" class="headerlink" title="df(Disk Free)"></a><strong>df(Disk Free)</strong></h3><p>用于显示<strong>磁盘分区</strong>上的可使用的磁盘空间。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> -h：Human-readable； Filesystem：档案系统 | Mounted on：挂载点</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -h</span></div><div class="line">Filesystem            Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1              40G  6.7G   31G  18% /</div><div class="line">tmpfs                 939M     0  939M   0% /dev/shm</div><div class="line">nas:/ 	              1.0P     0  1.0P   0% /nas</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> -T：显示磁盘分区类型；注意看多了一个Type</span></div><div class="line"><span class="meta">$</span><span class="bash"> df -Th</span></div><div class="line">Filesystem           Type   Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1            ext4    40G  6.7G   31G  18% /</div><div class="line">tmpfs                tmpfs  939M     0  939M   0% /dev/shm</div><div class="line">nas:/                nfs    1.0P     0  1.0P   0% /nas</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> -h：Human-readable； Filesystem：档案系统 | Mounted on：挂载点</div><div class="line"><span class="meta">$</span> df -h</div><div class="line">Filesystem            Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1              40G  6.7G   31G  18% /</div><div class="line">tmpfs                 939M     0  939M   0% /dev/shm</div><div class="line">nas:/ 	              1.0P     0  1.0P   0% /nas</div><div class="line"><span class="meta"></span></div><div class="line"># -T：显示磁盘分区类型；注意看多了一个Type</div><div class="line"><span class="meta">$</span> df -Th</div><div class="line">Filesystem           Type   Size  Used Avail Use% Mounted on</div><div class="line">/dev/vda1            ext4    40G  6.7G   31G  18% /</div><div class="line">tmpfs                tmpfs  939M     0  939M   0% /dev/shm</div><div class="line">nas:/                nfs    1.0P     0  1.0P   0% /nas</div></pre></td></tr></table></figure>
 <h3 id="du-Disk-usage"><a href="#du-Disk-usage" class="headerlink" title="du (Disk usage)"></a><strong>du (Disk usage)</strong></h3><p>用于计算<strong>文件或目录</strong>所占的磁盘空间</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 显示/mnt文件夹总大小 <span class="_">-s</span>：显示工作目录所占总空间；-h：human-readable</span></div><div class="line"><span class="meta">$</span><span class="bash"> du -sh /mnt</span></div><div class="line">748M	/mnt</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 显示/mnt文件夹下的所有文件夹和文件大小，注意*号</span></div><div class="line"><span class="meta">$</span><span class="bash"> du -sh /mnt/*</span></div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 简略用法</span></div><div class="line">du -sh # 当前目录总空间</div><div class="line">du -sh * # 当前目录下所有文件夹大小排序</div></pre></td></tr></table></figure>
-<h3 id="按大小排序-ls-du-sort"><a href="#按大小排序-ls-du-sort" class="headerlink" title="按大小排序 ls | du sort"></a>按大小排序 ls | du sort</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 文件夹按照大小排序，缺点：并不显示文件夹真实大小</span></div><div class="line"><span class="meta">$</span><span class="bash"> ls -lhS /mnt</span></div><div class="line">总用量 16K</div><div class="line">drwxr-xr-x. 3 root root 4.0K 2月  26 2017 fastdfs_storage_data</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_storage_info</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_tracker</div><div class="line">drwxr-xr-x. 2 root root 4.0K 2月  26 2017 hgfs</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 列出所有文件、文件夹大小|管道排序 -h:human-readable -r:以相反的顺序 | 前20条</span></div><div class="line"><span class="meta">$</span><span class="bash"> du -sh /mnt/* | sort -hr | head -20</span></div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 简略用法</span></div><div class="line">ll -hS</div><div class="line">du -sh * | sort -hr | head # 显示前10个最大文件或文件夹</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 显示/mnt文件夹总大小 -s：显示工作目录所占总空间；-h：human-readable</div><div class="line"><span class="meta">$</span> du -sh /mnt</div><div class="line">748M	/mnt</div><div class="line"><span class="meta"></span></div><div class="line"># 显示/mnt文件夹下的所有文件夹和文件大小，注意*号</div><div class="line"><span class="meta">$</span> du -sh /mnt/*</div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 简略用法</div><div class="line">du -sh # 当前目录总空间</div><div class="line">du -sh * # 当前目录下所有文件夹大小排序</div></pre></td></tr></table></figure>
+<h3 id="按大小排序-ls-du-sort"><a href="#按大小排序-ls-du-sort" class="headerlink" title="按大小排序 ls | du sort"></a>按大小排序 ls | du sort</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 文件夹按照大小排序，缺点：并不显示文件夹真实大小</div><div class="line"><span class="meta">$</span> ls -lhS /mnt</div><div class="line">总用量 16K</div><div class="line">drwxr-xr-x. 3 root root 4.0K 2月  26 2017 fastdfs_storage_data</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_storage_info</div><div class="line">drwxr-xr-x. 4 root root 4.0K 2月  26 2017 fastdfs_tracker</div><div class="line">drwxr-xr-x. 2 root root 4.0K 2月  26 2017 hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 列出所有文件、文件夹大小|管道排序 -h:human-readable -r:以相反的顺序 | 前20条</div><div class="line"><span class="meta">$</span> du -sh /mnt/* | sort -hr | head -20</div><div class="line">747M	/mnt/fastdfs_storage_data</div><div class="line">924K	/mnt/fastdfs_storage_info</div><div class="line">128K	/mnt/fastdfs_tracker</div><div class="line">4.0K	/mnt/hgfs</div><div class="line"><span class="meta"></span></div><div class="line"># 简略用法</div><div class="line">ll -hS</div><div class="line">du -sh * | sort -hr | head # 显示前10个最大文件或文件夹</div></pre></td></tr></table></figure>
 <p>注意：</p>
 <blockquote>
 <p>sort命令默认由小到大排序，加上-r参数逆序，即由大到小</p>
 <p>-h：human-readable 区分kb、mb、gb…</p>
 <p>-n：依照数值的大小排序，此参数与-h冲突，举例说明 5M &lt; 3G(数字 5 &gt; 3)</p>
 </blockquote>
-<h3 id="文件归档命令-tar"><a href="#文件归档命令-tar" class="headerlink" title="文件归档命令 tar"></a>文件归档命令 tar</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 创建压缩文件 c：创建；z：gzip压缩；v:显示过程；f：固定必须有，后面接归档文档名</span></div><div class="line">tar -czvf jpgfile.tar.gz *.jpg</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 查看归档文件</span></div><div class="line">tar -tf jpgfile.tar.gz</div><div class="line"><span class="meta"></span></div><div class="line">#<span class="bash"> 解压文件到当前jpeg文件夹下</span></div><div class="line">tar -xvf jpgfile.tar.gz -C ./jpeg</div></pre></td></tr></table></figure>
+<h3 id="文件归档命令-tar"><a href="#文件归档命令-tar" class="headerlink" title="文件归档命令 tar"></a>文件归档命令 tar</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 创建压缩文件 c：创建；z：gzip压缩；v:显示过程；f：固定必须有，后面接归档文档名</div><div class="line">tar -czvf jpgfile.tar.gz *.jpg</div><div class="line"><span class="meta"></span></div><div class="line"># 查看归档文件</div><div class="line">tar -tf jpgfile.tar.gz</div><div class="line"><span class="meta"></span></div><div class="line"># 解压文件到当前jpeg文件夹下</div><div class="line">tar -xvf jpgfile.tar.gz -C ./jpeg</div></pre></td></tr></table></figure>
 <h4 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h4><h5 id="常用参数"><a href="#常用参数" class="headerlink" title="常用参数"></a>常用参数</h5><blockquote>
 <p>-c：<strong>建立</strong>一个压缩文件(create 的意思)；    </p>
 <p>-x：<strong>解开</strong>一个压缩文件</p>
@@ -547,11 +547,15 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">历年小目标</a>
+                <a href="javascript:void(0)" class="js-tag color3">拉筋</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">实现情况</a>
+                <a href="javascript:void(0)" class="js-tag color3">健康</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">转载</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -568,18 +572,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">总结</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">拉筋</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">健康</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">转载</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -603,10 +595,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">2019</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
@@ -623,6 +611,14 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">高频</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">常用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">概念</a>
               </li>
              
@@ -635,11 +631,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">高频</a>
+                <a href="javascript:void(0)" class="js-tag color1">历年小目标</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">常用</a>
+                <a href="javascript:void(0)" class="js-tag color5">实现情况</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -671,6 +667,10 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">服务搭建</a>
               </li>
              
@@ -683,7 +683,7 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">redis</a>
+                <a href="javascript:void(0)" class="js-tag color5">2019</a>
               </li>
              
               <li class="article-tag-list-item">
