@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</loc>
-    <lastmod>2019-09-03T11:45:18.963Z</lastmod>
+    <lastmod>2019-10-11T07:40:04.191Z</lastmod>
     <data>
         <display>
         <title>2019健身日志</title>
@@ -23,6 +23,30 @@
            
              
               <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
+    <lastmod>2019-09-16T12:48:33.061Z</lastmod>
+    <data>
+        <display>
+        <title>redis入门</title>
+        <pubTime>2017-05-10T07:19:24.000Z</pubTime>
+        
+        <tag>基础</tag>
+         
+        <tag>入门</tag>
+         
+        <tag>redis</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>
@@ -343,30 +367,6 @@
            
              
               <breadCrumb title="健康" url="//ezsay.cn/categories/%E5%81%A5%E5%BA%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
-    <lastmod>2017-05-27T09:49:48.141Z</lastmod>
-    <data>
-        <display>
-        <title>redis入门</title>
-        <pubTime>2017-05-10T07:19:24.000Z</pubTime>
-        
-        <tag>基础</tag>
-         
-        <tag>入门</tag>
-         
-        <tag>redis</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="//ezsay.cn/categories/%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>
