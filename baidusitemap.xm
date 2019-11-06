@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2019/01/02/health/fitness_diary_2019.html</loc>
-    <lastmod>2019-10-11T07:40:04.191Z</lastmod>
+    <lastmod>2019-11-06T09:49:48.614Z</lastmod>
     <data>
         <display>
         <title>2019健身日志</title>
@@ -31,7 +31,7 @@
     
   <url>
     <loc>//ezsay.cn/2017/05/10/technology/redis_abc.html</loc>
-    <lastmod>2019-09-16T12:48:33.061Z</lastmod>
+    <lastmod>2019-11-01T08:07:12.538Z</lastmod>
     <data>
         <display>
         <title>redis入门</title>
