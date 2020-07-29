@@ -5,7 +5,7 @@
     
   <url>
     <loc>//ezsay.cn/2017/04/28/skill/git_abc.html</loc>
-    <lastmod>2020-05-27T03:16:36.714Z</lastmod>
+    <lastmod>2020-06-05T09:56:55.253Z</lastmod>
     <data>
         <display>
         <title>git入门到精通</title>
